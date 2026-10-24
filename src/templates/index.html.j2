@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ t.meta.title }}</title>
+<meta name="description" content="{{ t.meta.description }}">
+<style>
+{{ css }}
+</style>
+</head>
+<body>
+<div class="bar" id="bar"></div>
+<header class="nav"><b>{{ t.brand }}</b>
+{% for s in sections %}<a href="#{{ s }}">{{ t.nav[s] }}</a>{% endfor %}</header>
+<main>
+{% include "sections/hero.j2" %}
+{% for s in sections %}{% include "sections/" ~ s ~ ".j2" %}
+{% endfor %}
+</main>
+<footer>
+  <p>{{ t.footer.independence }}</p>
+  <p>{{ t.footer.references }}</p>
+  {% include "logos.j2" %}
+  <p>{{ t.meta.version_line }}</p>
+</footer>
+<script id="data" type="application/json">{{ data_json }}</script>
+<script>
+{{ js }}
+</script>
+</body>
+</html>

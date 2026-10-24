@@ -1,0 +1,10 @@
+{% set s = t.why %}
+<section id="why">
+  <div class="kicker reveal">{{ s.kicker }}</div>
+  <h2 class="reveal">{{ s.title }}</h2>
+  <p class="lead reveal">{{ s.lead }}</p>
+  <div class="grid g3 reveal" style="margin:22px 0">
+    {% for c in s.cards %}<div class="card"><div class="stat">{{ n.stats[c.stat_key] }}</div><small>{{ c.text }}</small></div>{% endfor %}
+  </div>
+  <p class="note">{{ s.note }}</p>
+</section>

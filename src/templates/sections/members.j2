@@ -1,0 +1,11 @@
+{% set s = t.members %}
+<section id="members">
+  <div class="kicker reveal">{{ s.kicker }}</div>
+  <h2 class="reveal">{{ s.title }}</h2>
+  <div class="chips" id="rtabs"></div>
+  <div class="grid g2"><div class="card" id="rgive" style="min-height:110px"></div><div class="card" id="rget" style="min-height:110px"></div></div>
+  <h3 style="margin-top:34px">{{ s.early_title }}</h3>
+  <p class="lead">{{ s.early_lead }}</p>
+  <div class="grid g3">{% for c in s.early_cards %}<div class="card"><b>{{ c.title }}</b><p>{{ c.text }}</p></div>{% endfor %}</div>
+  <p class="note">{{ s.note }}</p>
+</section>

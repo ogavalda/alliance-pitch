@@ -1,0 +1,14 @@
+# Which sections appear, and in which order.
+# Move lines to reorder; set enabled: false to hide a section.
+# The navigation bar follows this list automatically (labels live in text.yaml > nav).
+sections:
+  - {id: why,      enabled: true}
+  - {id: problem,  enabled: true}
+  - {id: alliance, enabled: true}
+  - {id: demo,     enabled: false}   # optional feeder-load chart (set true to show it)
+  - {id: form,     enabled: true}
+  - {id: members,  enabled: true}
+  - {id: govern,   enabled: true}
+  - {id: roadmap,  enabled: true}
+  - {id: status,   enabled: true}
+  - {id: ask,      enabled: true}

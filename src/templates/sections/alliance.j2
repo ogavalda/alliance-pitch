@@ -1,0 +1,12 @@
+{% set s = t.alliance %}
+<section id="alliance">
+  <div class="kicker reveal">{{ s.kicker }}</div>
+  <h2 class="reveal">{{ s.title }}</h2>
+  <p class="lead reveal">{{ s.lead }}</p>
+  <div class="grid g3 reveal" style="margin:22px 0">
+    {% for j in s.jobs %}<div class="fn f{{ loop.index }}"><div class="ic">{{ loop.index }}</div><h3>{{ j.title }}</h3><p>{{ j.tagline }}</p></div>{% endfor %}
+  </div>
+  <div class="chips" id="jtabs"></div>
+  <div class="card" id="jout" style="min-height:140px"></div>
+  <p class="note" style="margin-top:14px">{{ s.note }}</p>
+</section>

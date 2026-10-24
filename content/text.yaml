@@ -1,0 +1,201 @@
+# All the words. Plain text or simple HTML (<b>, <em>, <a>) is allowed.
+# Tip: keep each value on one line inside double quotes, or use the  >-  folded style.
+
+meta:
+  title: "Alliance for Digital Twins for Decarbonization: a draft proposal"
+  description: "A draft proposal for a member-owned alliance that gives local energy actors a shared commons, a project pipeline and a common voice."
+  version_line: "Draft v0.2 · October 2026"
+
+brand: "Digital Twins Alliance"
+
+# Logos shown in the hero band and the footer.
+# Put the image files in assets/logos/ (PNG, SVG or JPG) and set `file` to the file name.
+# Until a file exists, a dashed "add logo" box is shown instead.
+logos:
+  - {name: "Next Generation Cities Institute", file: "ngci.png", url: ""}
+  - {name: "IREC", file: "irec.png", url: ""}
+
+nav:                           # label of each section in the top bar
+  why: "Why now"
+  problem: "Problem"
+  alliance: "The Alliance"
+  demo: "In action"
+  form: "Why an alliance"
+  members: "Who and what"
+  govern: "Governance"
+  roadmap: "Roadmap"
+  status: "Status"
+  ask: "The ask"
+
+hero:
+  kicker: "Draft proposal · open for discussion"
+  title: "Local energy is where decarbonization gets built. <em>Nobody should build it alone.</em>"
+  lead: "A proposed member-owned alliance of energy community networks, cities, research centres, grid operators and companies, giving local energy actors three things they cannot easily get alone: <b>a shared commons</b>, <b>a project pipeline</b> and <b>a common voice</b>."
+  meta:
+    - {label: "Occasion", value: "[?] meeting or event"}
+    - {label: "Status", value: "Concept 0.1 · draft, not implemented"}
+    - {label: "Starting engine", value: "An IEA EBC Annex proposal, in parallel"}
+  button_start: "Start the story ↓"
+  button_ask: "Jump to the ask"
+  presenting_hint: "Presenting? Use the <b>→</b> and <b>←</b> keys to step through sections."
+  net_tab_off: "Today: isolated efforts"
+  net_tab_on: "With the Alliance: connected"
+  net_hub_title: "Alliance"
+  net_hub_sub: "commons · pipeline · voice"
+  net_note: "Illustration. Hypothetical organisations. Each dot is an actor working on local energy; lines show shared knowledge, tools and projects."
+  actor_labels: {communities: "Communities", cities: "Cities", research: "Research", grid: "Grid", industry: "Industry"}
+
+why:
+  kicker: "01 · Why now"
+  title: "Policy, money and technology are lining up on the local level."
+  lead: "Three shifts make local energy the place where the transition is won or lost, and make the next few years a rare window to organise."
+  cards:
+    - {stat_key: policy, text: "<b>Policy.</b> The European Commission's 2026 Citizens Energy Package aims for roughly a tenfold rise in community-owned renewables by 2030. It is voluntary, so delivery depends on capacity on the ground."}
+    - {stat_key: scale,  text: "<b>Scale.</b> Energy communities counted in the EU by the Commission (an academic mapping counts about 3,900: definitions differ). Cities, regions and grid operators are moving too."}
+    - {stat_key: twins,  text: "<b>Technology and funding.</b> EU programmes already fund digital twins on the grid side (e.g. TwinEU, DSO4DT) and community facilities separately. The bridge between them is missing."}
+  note: "Sources: European Commission, REScoop.eu, mapping study (Sustainability 2023), project sites. See references."
+
+problem:
+  kicker: "02 · The problem"
+  title: "The obstacle is not effort. It is <em>duplication and isolation</em>."
+  lead: "Reviews keep finding the same pattern: tools and methods exist but are fragmented, hard to connect and rarely built for communities; start-ups lack expertise; evidence stays inside each project; and no one speaks for local energy systems with one voice."
+  slider_title: "What does going alone cost?"
+  slider_text: "Move the slider: how many organisations each build their own version of the same basic capability, versus sharing one and adapting it locally."
+  slider_labels: {orgs: "organisations", alone: "effort units going alone", shared: "effort units sharing a commons"}
+  slider_note: "Illustration. Numbers are hypothetical and only show the logic, not a measured saving. Parameters are in numbers.yaml > duplication."
+  cards:
+    - {title: "Fragmented tools", text: "Mature tools exist for design, but community-specific and interoperable ones are mostly prototypes."}
+    - {title: "Evidence stays local", text: "Many ways to measure impact, none agreed, so lessons do not add up across projects."}
+    - {title: "No shared voice", text: "Communities, cities and grid operators lobby separately, often on the same issues."}
+  note: "Based on our review of recent literature on energy community gaps (2021 to 2026)."
+
+alliance:
+  kicker: "03 · The proposal"
+  title: "An alliance with three jobs."
+  lead: "Digital twins are the shared language and the first thing we build, but the Alliance is about what organisations can do together. Select a job."
+  jobs:
+    - title: "Commons"
+      tagline: "Shared, open building blocks that no one wins by keeping private."
+      detail: "Shared building blocks, open by default: data models and schemas, flexibility and grid-interaction methods, common KPIs and verification rules, validation tests, benchmark datasets, reference architecture, model contracts for buyers."
+      value: "Value: any tool or study built on them can be compared, reused and trusted. Members keep their proprietary products."
+    - title: "Pipeline"
+      tagline: "A way to turn ideas into funded projects, with the right partners."
+      detail: "A proposal desk that watches calls, matches partners, offers consortium templates and a rotation rule so competing centres can cooperate. Shared deliverable and reporting templates."
+      value: "Value: more and better bids, shared writing cost, and a recognised route into EU, national and international programmes. The Alliance facilitates; it does not pick winners."
+    - title: "Voice"
+      tagline: "One credible, evidence-based voice towards EU, IEA, OECD and city networks."
+      detail: "Evidence-based positions and joint statements towards the European Commission, the IEA, the OECD and city networks, transparent and approved by members."
+      value: "Value: one counterpart for institutions, and local energy systems and digital twins recognised in funding and policy."
+  note: "The commons starts where the literature is strongest: shared data models, flexibility and grid-interaction methods, common KPIs and validation. These are examples, not the whole proposal."
+
+demo:
+  kicker: "03b · What a shared method gives you"
+  title: "The same community, three futures for the local grid."
+  lead: "Flexible heat pumps and batteries can relieve a congested feeder, or create a new peak if everyone reacts to the same cheap hours. A shared method lets a community and its grid operator test this before investing."
+  tabs: {base: "Today", uncoordinated: "Uncoordinated flexibility", coordinated: "Coordinated flexibility"}
+  labels: {peak: "peak load", hours: "hours above grid limit", limit: "Feeder limit", unit: "kW"}
+  verdicts:
+    base: "Evening peak breaks the limit."
+    uncoordinated: "Everyone reacts to the same signal: a new peak at night."
+    coordinated: "Coordinated: no hour above the limit."
+  note: "Illustration. Hypothetical community and numbers, 24 hours. Profile and scenarios are in numbers.yaml > feeder."
+
+form:
+  kicker: "04 · Why an alliance"
+  title: "Compared with the alternatives, a member-owned alliance fills the gap."
+  lead: "We are not replacing anything. The IEA Annex is the first engine, the Alliance is its permanent, wider home. Highlight a requirement you care about."
+  requirements: ["Permanence", "Non-government members", "Fees and contracts", "Speed to start"]
+  col_option: "Option"
+  col_weakness: "Main weakness"
+  scale: {y: "Yes", p: "Partly", n: "No"}
+  # values per requirement: y = yes, p = partly, n = no
+  options:
+    - {name: "Alliance (member-owned association)", highlight: true, values: [y, y, y, p], weakness: "Slow to build credibility"}
+    - {name: "IEA Annex only",           values: [p, n, n, n], weakness: "Government members only; no fees or contracts"}
+    - {name: "Foundation",               values: [y, y, p, n], weakness: "Notary, endowment and higher cost"}
+    - {name: "Project consortium only",  values: [n, y, n, y], weakness: "Ends when funding ends"}
+    - {name: "Vendor platform",          values: [p, n, n, y], weakness: "Not neutral; members become customers"}
+  note: "Assessment is our reading and open to challenge. IEA programmes are agreements between governments and have no legal personality of their own."
+
+members:
+  kicker: "05 · Who takes part, and what they get"
+  title: "Five kinds of members, each with a clear reason to join."
+  bring_label: "What you bring"
+  get_label: "What you get"
+  roles:
+    - {name: "Community networks", bring: "Reach to member communities, real needs, legitimacy, anonymised data.", get: "Free or low-cost tools and training, evidence for their policy work, stronger bids, a seat shaping the roadmap."}
+    - {name: "Research centres", bring: "Methods, models, validation, students.", get: "Co-authored proposals, shared datasets, influence on standards, a safe way to cooperate with competitors."}
+    - {name: "Cities and regions", bring: "Use cases, planning mandates, pilot sites, local data.", get: "Ready-to-use methods for local planning, peer learning, access to funding consortia."}
+    - {name: "Grid operators and utilities", bring: "Grid data under agreement, interfaces, co-funding, pilot access.", get: "Early view of standards, tested congestion and flexibility methods, a structured way to work with communities."}
+    - {name: "Funders and institutions", bring: "Policy direction, grants, convening power.", get: "Evidence and validated methods, one counterpart for communities and twins, less duplication."}
+  early_title: "Joining early"
+  early_lead: "Early members fund the work before it is proven, so they would get a founders' package. The shape is still open:"
+  early_cards:
+    - {title: "Rate", text: "A reduced fee locked for several years."}
+    - {title: "Seat", text: "A reserved role in the first board and technical committee."}
+    - {title: "Credit", text: "Part of the fee returned as services such as training or proposal support."}
+  note: "Fee levels are undecided and left blank on purpose. Umbrella networks would pay little or nothing in cash; their contribution is membership reach, validation and legitimacy."
+
+govern:
+  kicker: "06 · How it is run"
+  title: "Neutral by design, so competitors can sit at the same table."
+  columns:
+    - title: "A short charter"
+      items: ["Open by default for the shared core", "Members keep their proprietary work", "No services that compete with members", "Competition-law guidance for all meetings"]
+    - title: "Balanced bodies"
+      items: ["Assembly of all members", "Board balanced across the five member families", "Technical committee for the commons", "Small secretariat"]
+    - title: "Fair play on projects"
+      items: ["Lead roles rotate with clear criteria", "The Alliance facilitates, never picks winners", "A share of won projects returns to the commons (if funders allow)"]
+  note: "Legal form starts as a Spanish association (fast and low cost) and could move to an international non-profit when membership and funding justify it."
+
+roadmap:
+  kicker: "07 · Long term"
+  title: "From first proof to a reference body."
+  phases:
+    - {when: "To mid-2027 · Foundation", title: "Be credible", text: "Association set up, founding members, Annex decision, first proposals."}
+    - {when: "2027–2029 · Prove", title: "Show it works", text: "Annex prototype and case studies, proposal desk live, first training and position papers."}
+    - {when: "2030–2032 · Scale", title: "Become the default", text: "Release cycle, regional hubs, framework agreements with cities and grid operators."}
+    - {when: "2033–2036 · Institutionalise", title: "Stable reference", text: "Standards cited by funders and regulators, stable multi-year funding."}
+  note: "Indicative dates; they depend on funding and on the Annex decision (November 2026)."
+
+status:
+  kicker: "08 · Where things stand, honestly"
+  title: "What exists, what is drafted, what is only an idea."
+  columns:
+    - badge: "EXISTS"
+      style: ex
+      items: ["Open ontologies and modelling tools to build on [external]", "EU funding for community facilities and for grid twins [external]", "IEA EBC Annexes on communities and data-driven buildings [external]", "Partner conversations: [?] list"]
+    - badge: "DOCUMENTED DRAFT"
+      style: dr
+      items: ["Concept note and long-term plan", "Market study and literature gap analysis", "Feasibility scorecard with 24 assumptions", "Annex proposal for the ExCo"]
+    - badge: "PROPOSED · NOT BUILT"
+      style: pr
+      items: ["The association and its charter", "Membership and founders' package", "The commons (data models, methods, benchmarks)", "Proposal desk and first joint bids"]
+  note: "<b>Main open risks:</b> willingness to pay is unproven; it is not yet clear that competing centres and networks will share. We plan to test both with interviews, a short survey and a price test before committing."
+
+ask:
+  kicker: "09 · The ask"
+  title: "This is a draft. <em>Tell us where it breaks.</em>"
+  lead: "Depending on who you are, the next step is small. Select your role."
+  next_step_label: "Next step for you"
+  roles:
+    - {name: "Community networks", text: "Join a 45-minute conversation on what would help your members; consider a letter of support or becoming a founding partner."}
+    - {name: "Research centres", text: "Tell us which shared building blocks you would open and which you would not; identify one call to bid on together."}
+    - {name: "Cities and regions", text: "Share one planning question a shared method could help with; consider hosting a pilot."}
+    - {name: "Grid operators", text: "Explore a data-sharing agreement for one feeder or district; share your hosting-capacity pain points."}
+    - {name: "Funders", text: "Tell us what evidence and structure you would need to fund a shared commons; share relevant upcoming calls."}
+  questions_title: "Six questions we need your critique on"
+  questions:
+    - {tag: "Value", title: "Does the problem match your reality?", text: "Which of duplication, fragmented tools, lack of evidence or lack of voice costs your organisation most today?"}
+    - {tag: "Sharing", title: "What would you open, and what would stay yours?", text: "Which shared building blocks would you contribute to, and what would make you comfortable sharing with a competitor?"}
+    - {tag: "Money", title: "What would you pay or contribute in kind?", text: "Fee, staff time, data, or a share of project income? Which founder benefits would matter to you?"}
+    - {tag: "Governance", title: "Who should decide?", text: "One vote per member, per family, or weighted? How should changes to the shared core be reviewed?"}
+    - {tag: "Role", title: "Which job matters most: commons, pipeline or voice?", text: "If we had to start with one, which should it be?"}
+    - {tag: "Adoption", title: "What would stop you from joining?", text: "Budget, politics, trust, tooling, competition with your own services? Tell us what the first step would need to look like."}
+  copy_button: "Copy the questions"
+  copied: " Copied."
+  copy_failed: " Copy not available here."
+
+footer:
+  independence: "<b>Independence and names.</b> This is an independent draft proposal, not an official programme of any organisation named here. Nothing implies endorsement by the European Commission, the IEA or its programmes, REScoop.eu, or any other body. Illustrations use hypothetical data."
+  references: "<b>References.</b> European Commission (energy communities page; Citizens Energy Package); REScoop.eu annual reports; Mapping of Energy Communities in Europe, <i>Sustainability</i> 2023, doi 10.3390/su15108201; Systematic Review of Software and Algorithms for RECs, <i>Energies</i> 2026, doi 10.3390/en19163718; Digital Twin Architectures for Buildings and RECs, <i>Sustainability</i> 2026, doi 10.3390/su18125869; Synergy Between Demand Flexibility and Energy Communities, <i>Sustainability</i> 2026, doi 10.3390/su18041858; TwinEU (twineu.net); DSO4DT (DSO Entity)."

@@ -1,0 +1,16 @@
+{% set s = t.demo %}
+<section id="demo">
+  <div class="kicker reveal">{{ s.kicker }}</div>
+  <h2 class="reveal">{{ s.title }}</h2>
+  <p class="lead reveal">{{ s.lead }}</p>
+  <div class="card reveal">
+    <div class="chips" id="mtabs" data-labels='{{ s.tabs | tojson }}'></div>
+    <div id="chart"></div>
+    <div class="grid g3" style="margin-top:8px">
+      <div class="bubble"><span class="num" id="pk">-</span><br>{{ s.labels.peak }}</div>
+      <div class="bubble"><span class="num" id="hr">-</span><br>{{ s.labels.hours }}</div>
+      <div class="bubble" id="vd" style="font-weight:600"></div>
+    </div>
+    <p class="note">{{ s.note }}</p>
+  </div>
+</section>

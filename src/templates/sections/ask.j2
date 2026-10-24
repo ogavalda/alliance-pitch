@@ -1,0 +1,11 @@
+{% set s = t.ask %}
+<section id="ask">
+  <div class="kicker reveal">{{ s.kicker }}</div>
+  <h2 class="reveal">{{ s.title }}</h2>
+  <p class="lead reveal">{{ s.lead }}</p>
+  <div class="chips" id="atabs"></div>
+  <div class="card" id="aout" style="min-height:90px"></div>
+  <h3 style="margin-top:36px">{{ s.questions_title }}</h3>
+  <div id="qs"></div>
+  <button class="btn" id="copyq">{{ s.copy_button }}</button><span id="cm" class="note"></span>
+</section>

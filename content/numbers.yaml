@@ -1,0 +1,65 @@
+# All numbers and chart inputs. Colours follow the Concordia template (burgundy 93002D, pink E90065, blue 1598D6, green 00776F, orange E83F21).
+# (kept as one comment line). Edit values, re-run: python build.py
+
+palette:                       # colours used by the charts
+  communities: "#1598d6"
+  cities:      "#e83f21"
+  research:    "#93002d"
+  grid:        "#e90065"
+  industry:    "#00776f"
+  teal:        "#93002d"
+  alert:       "#e90065"
+  ok:          "#1598d6"
+
+# ---- Section "why": the three headline statistics (text for each is in text.yaml)
+stats:
+  policy: "9 → 90 GW"
+  scale:  "8,000+"
+  twins:  "Twins"
+
+# ---- Chart 1: network illustration (hero)
+# Each node: x, y (in a 900 x 300 canvas) and actor type (must match a palette key)
+network:
+  hub: {x: 450, y: 150, radius: 46}
+  link_distance: 170           # nodes closer than this are linked to each other
+  nodes:
+    - {x: 90,  y: 60,  type: communities}
+    - {x: 210, y: 200, type: communities}
+    - {x: 330, y: 70,  type: cities}
+    - {x: 450, y: 230, type: research}
+    - {x: 560, y: 90,  type: grid}
+    - {x: 700, y: 60,  type: industry}
+    - {x: 800, y: 190, type: grid}
+    - {x: 640, y: 240, type: cities}
+    - {x: 160, y: 130, type: research}
+    - {x: 400, y: 150, type: communities}
+    - {x: 760, y: 110, type: cities}
+    - {x: 300, y: 250, type: industry}
+    - {x: 520, y: 170, type: research}
+    - {x: 860, y: 60,  type: communities}
+    - {x: 60,  y: 230, type: grid}
+
+# ---- Chart 2: "cost of going alone" slider (section "problem")
+duplication:
+  units_to_build_alone: 10     # effort for one organisation to build the capability itself
+  units_to_build_shared: 10    # effort to build one shared version
+  units_to_adapt_shared: 2     # effort per organisation to adapt the shared version
+  slider_min: 2
+  slider_max: 30
+  slider_default: 12
+
+# ---- Chart 3: feeder load (optional section "demo")
+feeder:
+  limit_kw: 100
+  y_max: 140
+  base_profile_kw: [40,36,34,33,34,40,58,80,86,70,62,60,62,60,58,62,74,98,112,106,92,78,60,48]   # 24 hourly values
+  # Changes applied to the base profile, in kW, for each scenario. hours = [first, last] inclusive.
+  uncoordinated:
+    - {hours: [3, 5],   delta: 38}
+    - {hours: [12, 13], delta: 8}
+    - {hours: [17, 20], delta: -24}
+  coordinated:
+    - {hours: [1, 5],   delta: 14}
+    - {hours: [11, 15], delta: 6}
+    - {hours: [17, 20], delta: -24}
+    - {hours: [22, 23], delta: 8}

@@ -1,0 +1,1 @@
+{% if logos %}<div class="logos">{% for l in logos %}<div class="logo-plate">{% if l.src %}{% if l.url %}<a href="{{ l.url }}">{% endif %}<img src="{{ l.src }}" alt="{{ l.name }}">{% if l.url %}</a>{% endif %}{% else %}<span class="logo-missing">Add logo: assets/logos/{{ l.file }} ({{ l.name }})</span>{% endif %}</div>{% endfor %}</div>{% endif %}

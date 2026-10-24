@@ -1,0 +1,9 @@
+{% set s = t.govern %}
+<section id="govern">
+  <div class="kicker reveal">{{ s.kicker }}</div>
+  <h2 class="reveal">{{ s.title }}</h2>
+  <div class="grid g3 reveal" style="margin:22px 0">
+    {% for c in s.columns %}<div class="card"><h3>{{ c.title }}</h3><ul class="clean">{% for i in c['items'] %}<li>{{ i }}</li>{% endfor %}</ul></div>{% endfor %}
+  </div>
+  <p class="note">{{ s.note }}</p>
+</section>

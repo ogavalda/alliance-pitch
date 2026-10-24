@@ -1,0 +1,9 @@
+{% set s = t.roadmap %}
+<section id="roadmap">
+  <div class="kicker reveal">{{ s.kicker }}</div>
+  <h2 class="reveal">{{ s.title }}</h2>
+  <div class="timeline reveal">
+    {% for p in s.phases %}<div class="ph"><small>{{ p.when }}</small><h3>{{ p.title }}</h3><p>{{ p.text }}</p></div>{% endfor %}
+  </div>
+  <p class="note">{{ s.note }}</p>
+</section>
