@@ -15,7 +15,7 @@
 {% for s in sections %}<a href="#{{ s }}">{{ t.nav[s] }}</a>{% endfor %}</header>
 <main>
 {% include "sections/hero.j2" %}
-{% for s in sections %}{% include "sections/" ~ s ~ ".j2" %}
+{% for num, sid in numbered %}{% include "sections/" ~ sid ~ ".j2" %}
 {% endfor %}
 </main>
 <footer>

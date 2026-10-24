@@ -1,6 +1,6 @@
 {% set s = t.ask %}
 <section id="ask">
-  <div class="kicker reveal">{{ s.kicker }}</div>
+  <div class="kicker reveal">{{ "%02d"|format(num) }} · {{ s.kicker }}</div>
   <h2 class="reveal">{{ s.title }}</h2>
   <p class="lead reveal">{{ s.lead }}</p>
   <div class="chips" id="atabs"></div>

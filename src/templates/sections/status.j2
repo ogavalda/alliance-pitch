@@ -1,6 +1,6 @@
 {% set s = t.status %}
 <section id="status">
-  <div class="kicker reveal">{{ s.kicker }}</div>
+  <div class="kicker reveal">{{ "%02d"|format(num) }} · {{ s.kicker }}</div>
   <h2 class="reveal">{{ s.title }}</h2>
   <div class="grid g3">
     {% for c in s.columns %}<div class="card"><span class="badge b-{{ c.style }}">{{ c.badge }}</span><ul class="clean">

@@ -1,6 +1,6 @@
 {% set s = t.members %}
 <section id="members">
-  <div class="kicker reveal">{{ s.kicker }}</div>
+  <div class="kicker reveal">{{ "%02d"|format(num) }} · {{ s.kicker }}</div>
   <h2 class="reveal">{{ s.title }}</h2>
   <div class="chips" id="rtabs"></div>
   <div class="grid g2"><div class="card" id="rgive" style="min-height:110px"></div><div class="card" id="rget" style="min-height:110px"></div></div>

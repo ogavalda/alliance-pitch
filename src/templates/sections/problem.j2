@@ -1,21 +1,9 @@
 {% set s = t.problem %}
 <section id="problem">
-  <div class="kicker reveal">{{ s.kicker }}</div>
+  <div class="kicker reveal">{{ "%02d"|format(num) }} · {{ s.kicker }}</div>
   <h2 class="reveal">{{ s.title }}</h2>
   <p class="lead reveal">{{ s.lead }}</p>
-  <div class="card reveal" style="margin-top:22px">
-    <h3>{{ s.slider_title }}</h3>
-    <p style="margin:.2em 0 12px;color:var(--mute)">{{ s.slider_text }}</p>
-    <input type="range" id="sl" aria-label="{{ s.slider_labels.orgs }}">
-    <div class="grid g3" style="margin-top:12px">
-      <div class="bubble"><span class="num" id="n1"></span><br>{{ s.slider_labels.orgs }}</div>
-      <div class="bubble"><span class="num" id="n2" style="color:#9c0058"></span><br>{{ s.slider_labels.alone }}</div>
-      <div class="bubble"><span class="num" id="n3" style="color:#256a3b"></span><br>{{ s.slider_labels.shared }}</div>
-    </div>
-    <svg id="dup" viewBox="0 0 900 70" width="100%" style="margin-top:10px"></svg>
-    <p class="note">{{ s.slider_note }}</p>
-  </div>
-  <div class="grid g3 reveal" style="margin-top:20px">
+  <div class="grid g3 reveal" style="margin-top:24px">
     {% for c in s.cards %}<div class="card"><b>{{ c.title }}</b><p>{{ c.text }}</p></div>{% endfor %}
   </div>
   <p class="note">{{ s.note }}</p>

@@ -44,15 +44,29 @@ def build() -> Path:
         if s not in t:
             raise SystemExit(f"layout.yaml lists section '{s}' but text.yaml has no '{s}' block")
     hero, demo = t["hero"], t["demo"]
+    tools_cfg = load("tools.yaml")
+    budget = load("budget.yaml")
+    for w in charts.budget_checks(budget):
+        print("BUDGET WARNING:", w)
+    bst = charts.budget_stats(budget)
     figs = {
         "net_off": charts.network_svg(n, hero["actor_labels"], False, hero["net_hub_title"], hero["net_hub_sub"]),
         "net_on": charts.network_svg(n, hero["actor_labels"], True, hero["net_hub_title"], hero["net_hub_sub"]),
+        "budget": {"stats": bst, "income_svg": charts.budget_income_svg(budget), "legend": charts.budget_legend_html(budget),
+                   "team_svg": charts.budget_team_svg(budget, t["budget"]["team_unit"]), "mix_svg": charts.budget_mix_svg(budget),
+                   "table": charts.budget_table_html(budget)},
+        "irec": {**charts.irec_budget(budget), "svg": charts.irec_first_years_svg(budget), "legend": charts.budget_legend_html(budget)},
+        "tools_map": charts.tools_map_html(tools_cfg),
+        "tools_map_legend": charts.tools_map_legend_html(tools_cfg),
+        "tools_matrix": charts.tools_matrix_html(tools_cfg),
+        "stack_today": charts.stack_diagram_html(tools_cfg, t["landscape"]["rows"], False),
+        "stack_core": charts.stack_diagram_html(tools_cfg, t["landscape"]["rows"], True),
+        "core_layers": charts.core_layers_html(tools_cfg),
         "net_legend": charts.network_legend_html(n, hero["actor_labels"], hero.get("engaged_label", "Already engaged")),
         "feeder": {s: {"svg": charts.feeder_svg(n, s, demo["labels"]), **charts.feeder_stats(n, s)}
                    for s in ("base", "uncoordinated", "coordinated")},
     }
     js_data = {
-        "duplication": n["duplication"],
         "jobs": t["alliance"]["jobs"],
         "roles": t["members"]["roles"],
         "bring_label": t["members"]["bring_label"], "get_label": t["members"]["get_label"],
@@ -65,7 +79,7 @@ def build() -> Path:
     env = Environment(loader=FileSystemLoader(ROOT / "src" / "templates"),
                       undefined=StrictUndefined, autoescape=False)
     html = env.get_template("index.html.j2").render(
-        t=t, n=n, sections=sections, figs=figs, logos=load_logos(t.get("logos", [])),
+        t=t, n=n, sections=sections, numbered=list(enumerate(sections, 1)), figs=figs, logos=load_logos(t.get("logos", [])),
         css=(ROOT / "src/static/style.css").read_text(encoding="utf-8"),
         js=(ROOT / "src/static/app.js").read_text(encoding="utf-8"),
         data_json=json.dumps(js_data, ensure_ascii=False).replace("</", "<\\/"))

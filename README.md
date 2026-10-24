@@ -5,7 +5,9 @@ A one-page storytelling site, generated from plain files so you can change **tex
 ```
 content/text.yaml      all the words (and the lists: jobs, roles, options, questions...)
 content/numbers.yaml   all the numbers and chart inputs (stats, network nodes, slider, feeder profile)
-content/layout.yaml    which sections show up, and in what order
+content/tools.yaml     the tool landscape (one entry per tool) and the five shared-core layers
+content/budget.yaml    the budget (costs and incomes per year); build.py warns if totals do not add up
+content/layout.yaml    which sections show up, and in what order (chapters are numbered automatically)
 src/charts.py          how the charts are drawn (SVG, generated in Python)
 src/templates/         HTML templates (one file per section)
 src/static/            style.css and app.js (look and behaviour)
@@ -32,8 +34,9 @@ Open `docs/index.html` in any browser. To publish, push the repo to GitHub and e
 | a headline, paragraph, tab, table or question | `content/text.yaml` |
 | the big statistics (9 → 90 GW, 8,000+) | `content/numbers.yaml` > `stats` (the explanation under each is in `text.yaml` > `why.cards`) |
 | the network picture (dots, positions, colours) | `numbers.yaml` > `network`, `palette` |
-| the "cost of going alone" slider | `numbers.yaml` > `duplication` |
+| the budget chapter, its charts and table | `content/budget.yaml` (text in `text.yaml` > `budget`) |
 | the feeder-load chart (optional section) | `numbers.yaml` > `feeder`; set `demo` to `enabled: true` in `layout.yaml` |
+| add or correct a tool, change the core layers | `content/tools.yaml` (a `?` means not documented; `diagram: true` puts a tool in the stack diagram). `python export_tools.py` writes `tools_register.xlsx` |
 | section order, hide a section | `content/layout.yaml` |
 | chart styling | `src/charts.py` |
 | colours, fonts, spacing | `src/static/style.css` (palette at the top, in `:root`) and `numbers.yaml` > `palette` for the charts |

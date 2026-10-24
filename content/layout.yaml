@@ -4,11 +4,14 @@
 sections:
   - {id: why,      enabled: true}
   - {id: problem,  enabled: true}
+  - {id: landscape, enabled: true}   # tool landscape and the shared core
   - {id: alliance, enabled: true}
   - {id: demo,     enabled: false}   # optional feeder-load chart (set true to show it)
   - {id: form,     enabled: true}
   - {id: members,  enabled: true}
+  - {id: irec,     enabled: true}   # what's in it for IREC
   - {id: govern,   enabled: true}
   - {id: roadmap,  enabled: true}
   - {id: status,   enabled: true}
+  - {id: budget,   enabled: true}   # budget foreseen, just before the ask
   - {id: ask,      enabled: true}

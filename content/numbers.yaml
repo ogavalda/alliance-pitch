@@ -55,15 +55,6 @@ network:
     - {label: "IDAE", scope: Spain, type: funders, x: 800, y: 445}
     - {label: "ICAEN", scope: Spain, type: funders, x: 925, y: 448}
 
-# ---- Chart 2: "cost of going alone" slider (section "problem")
-duplication:
-  units_to_build_alone: 10     # effort for one organisation to build the capability itself
-  units_to_build_shared: 10    # effort to build one shared version
-  units_to_adapt_shared: 2     # effort per organisation to adapt the shared version
-  slider_min: 2
-  slider_max: 30
-  slider_default: 12
-
 # ---- Chart 3: feeder load (optional section "demo")
 feeder:
   limit_kw: 100

@@ -37,19 +37,6 @@ if ($('#net-off')) $$('[data-n]').forEach(b => b.onclick = () => {
   $('#net-on').style.display = b.dataset.n === '1' ? 'block' : 'none';
 });
 
-// duplication slider
-if ($('#sl')) {
-  const d = DATA.duplication, sl = $('#sl');
-  sl.min = d.slider_min; sl.max = d.slider_max; sl.value = d.slider_default;
-  const draw = () => {
-    const n = +sl.value, alone = d.units_to_build_alone * n, shared = d.units_to_build_shared + d.units_to_adapt_shared * n;
-    $('#n1').textContent = n; $('#n2').textContent = alone; $('#n3').textContent = shared;
-    const top = d.units_to_build_alone * d.slider_max, s = 860 / top;
-    $('#dup').innerHTML = `<rect x="20" y="8" width="${alone * s}" height="22" fill="#e90065" opacity=".8" rx="3"/><rect x="20" y="40" width="${shared * s}" height="22" fill="#1598d6" rx="3"/>`;
-  };
-  sl.oninput = draw; draw();
-}
-
 // jobs
 if ($('#jtabs')) tabs('#jtabs', DATA.jobs,
   j => $('#jout').innerHTML = `<h3>${j.title}</h3><p>${j.detail}</p><p><b>${j.value}</b></p>`, j => j.title);
@@ -93,3 +80,18 @@ if ($('#qs')) {
     navigator.clipboard ? navigator.clipboard.writeText(t).then(ok, no) : no();
   };
 }
+
+// stack toggle (tool landscape)
+if ($('#stabs')) $$('[data-s]').forEach(b => b.onclick = () => {
+  $$('[data-s]').forEach(x => x.classList.remove('on')); b.classList.add('on');
+  $('#stk-today').style.display = b.dataset.s === 'today' ? 'block' : 'none';
+  $('#stk-core').style.display = b.dataset.s === 'core' ? 'block' : 'none';
+});
+
+// tool map colour mode
+if ($('#mtoggle')) $$('[data-mc]').forEach(b => b.onclick = () => {
+  $$('[data-mc]').forEach(x => x.classList.remove('on')); b.classList.add('on');
+  $('#mapbox').dataset.mode = b.dataset.mc;
+  $('.leg-who').style.display = b.dataset.mc === 'who' ? 'flex' : 'none';
+  $('.leg-geo').style.display = b.dataset.mc === 'geo' ? 'flex' : 'none';
+});

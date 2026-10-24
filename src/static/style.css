@@ -61,3 +61,41 @@ footer{border-top:1px solid var(--line);padding:40px 24px;max-width:1080px;margi
 footer .logos{margin:18px 0 0}footer .logo-plate{border:1px solid var(--line)}
 .herowrap .card{color:var(--ink)}.herowrap .card .note{color:var(--mute);border-color:var(--line)}
 .herowrap .card .tab{color:var(--ink)}.herowrap .card .tab.on{color:#fff}
+
+/* ---- tool landscape ---- */
+.tscroll{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:#fff}
+table.tm{border-collapse:collapse;font-size:.78rem;min-width:1100px;width:100%}
+table.tm th{background:var(--teal);color:#fff;text-align:left;padding:8px 10px;position:sticky;top:0}
+table.tm td{border-top:1px solid var(--line);padding:8px 10px;vertical-align:top}
+table.tm td.tn span{color:var(--mute);font-size:.72rem}
+table.tm td.unk{color:#b00052;font-weight:700;background:#fff7fa;text-align:center}
+.stk{display:grid;grid-template-columns:110px repeat(var(--n),minmax(120px,1fr));gap:6px;overflow-x:auto;min-width:760px}
+.stk .rl{font-size:.72rem;font-weight:700;color:var(--mute);display:flex;align-items:center}
+.stk .rl.core{color:var(--teal)}
+.stk .th{color:#fff;font-weight:700;font-size:.78rem;overflow-wrap:anywhere;border-radius:8px;padding:8px;text-align:center;display:flex;align-items:center;justify-content:center}
+.stk .cell{border:1.5px solid;border-radius:8px;padding:6px 8px;font-size:.72rem;line-height:1.3}
+.stk .cell.unk{border-style:dashed;color:#b00052;text-align:center;font-weight:700}
+.stk .corebar{background:var(--teal);color:#fff;border-radius:8px;padding:12px;font-size:.82rem;font-weight:700;text-align:center;display:flex;align-items:center;justify-content:center}
+.layer p{margin:.3em 0 0;font-size:.9rem;color:var(--mute)}
+
+/* ---- budget ---- */
+table.bt{border-collapse:collapse;font-size:.8rem;min-width:760px;width:100%}
+table.bt th{background:var(--teal);color:#fff;padding:8px 10px;text-align:right}table.bt th:first-child{text-align:left}
+table.bt td{border-top:1px solid var(--line);padding:6px 10px;text-align:right}table.bt td:first-child{text-align:left}
+table.bt tr.sec td{background:#f8e9ed;font-weight:700;color:var(--teal);text-align:left}
+table.bt tr.tot td{font-weight:700;background:#fafafa}
+table.bt tr.cnt td{color:var(--mute);font-style:italic}
+
+/* ---- tool map ---- */
+.tmap{overflow-x:auto}
+.tm-head,.tm-row{display:grid;grid-template-columns:150px 1fr;gap:8px;min-width:820px}
+.tm-head{margin-bottom:6px}
+.tm-head{grid-template-columns:150px repeat(4,1fr)}
+.tm-col{font-size:.78rem;font-weight:700;color:#fff;background:var(--teal);border-radius:8px;padding:6px 8px;text-align:center}
+.tm-row{margin:8px 0;padding:8px 0;border-top:1px solid var(--line)}
+.tm-lab{font-size:.8rem;font-weight:700;color:var(--teal);display:flex;align-items:center}
+.tm-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.tchip{display:flex;flex-direction:column;justify-content:center;text-decoration:none;color:#fff;border-radius:9px;padding:7px 10px;min-height:44px;font-size:.78rem;line-height:1.25;background:var(--who);transition:filter .15s}
+.tchip:hover{filter:brightness(1.12)}
+.tchip b{font-size:.82rem}.tchip span{font-size:.68rem;opacity:.9}
+#mapbox[data-mode="geo"] .tchip{background:var(--geo)}

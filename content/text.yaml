@@ -18,13 +18,16 @@ logos:
 nav:                           # label of each section in the top bar
   why: "Why now"
   problem: "Problem"
+  landscape: "Tools"
   alliance: "The Alliance"
   demo: "In action"
   form: "Why an alliance"
   members: "Who and what"
+  irec: "For IREC"
   govern: "Governance"
   roadmap: "Roadmap"
   status: "Status"
+  budget: "Budget"
   ask: "The ask"
 
 hero:
@@ -47,7 +50,7 @@ hero:
   engaged_label: "Already engaged"
 
 why:
-  kicker: "01 · Why now"
+  kicker: "Why now"
   title: "Policy, money and technology are lining up on the local level."
   lead: "Three shifts make local energy the place where the transition is won or lost, and make the next few years a rare window to organise."
   cards:
@@ -57,21 +60,53 @@ why:
   note: "Sources: European Commission, REScoop.eu, mapping study (Sustainability 2023), project sites. See references."
 
 problem:
-  kicker: "02 · The problem"
+  kicker: "The problem"
   title: "The obstacle is not effort. It is <em>duplication and isolation</em>."
   lead: "Reviews keep finding the same pattern: tools and methods exist but are fragmented, hard to connect and rarely built for communities; start-ups lack expertise; evidence stays inside each project; and no one speaks for local energy systems with one voice."
-  slider_title: "What does going alone cost?"
-  slider_text: "Move the slider: how many organisations each build their own version of the same basic capability, versus sharing one and adapting it locally."
-  slider_labels: {orgs: "organisations", alone: "effort units going alone", shared: "effort units sharing a commons"}
-  slider_note: "Illustration. Numbers are hypothetical and only show the logic, not a measured saving. Parameters are in numbers.yaml > duplication."
   cards:
     - {title: "Fragmented tools", text: "Mature tools exist for design, but community-specific and interoperable ones are mostly prototypes."}
     - {title: "Evidence stays local", text: "Many ways to measure impact, none agreed, so lessons do not add up across projects."}
     - {title: "No shared voice", text: "Communities, cities and grid operators lobby separately, often on the same issues."}
   note: "Based on our review of recent literature on energy community gaps (2021 to 2026)."
 
+landscape:
+  kicker: "The tools that exist today"
+  title: "Many good tools. Each one built on its own foundations."
+  lead: "Community and local energy management already has tools from research projects, networks, public bodies and companies. It is healthy that front ends differ: users are different. The problem is underneath: every tool organises its data, its data capture and its indicators in its own way."
+  map_title: "The landscape on one map"
+  map_lead: "Each tool sits by topic (rows) and by the scale it works at (columns). Colour it by who builds it or by where it comes from."
+  map_by_who: "Colour by who builds it"
+  map_by_geo: "Colour by where it comes from"
+  map_note: "Our first classification from public descriptions; a tool can cover several scales (wider boxes). Click a box to open its source. Classification is editable in tools.yaml."
+  matrix_title: "A first list of tools (to be completed)"
+  matrix_note: "Desk research, October 2026. A question mark means we did not find it documented in public sources, not that it does not exist. Please correct and complete the list."
+  stack_title: "What happens under the hood"
+  stack_lead: "Switch between today and a world with a shared core."
+  tab_today: "Today: each tool has its own foundations"
+  tab_core: "With a shared core: same foundations, different tools"
+  rows:
+    row_frontend: "Front end"
+    row_model: "Data model"
+    row_capture: "Data capture"
+    row_kpis: "Key indicators"
+    row_backend: "Back end"
+    row_model_core: "Shared ontology: building and geospatial metadata, socioeconomic structure, real-case records"
+    row_capture_core: "Shared capture and provenance protocol: what is collected, how, by whom, measured or modelled"
+    row_kpis_core: "Shared indicator definitions: formulas, units, boundaries"
+  stack_note: "Illustration built from the table above. Only the middle layers are shared; each organisation keeps its own front end, back end and extra data."
+  core_title: "The shared core: five layers developed once, used by all"
+  core_lead: "Not a platform and not a database: a common structure and vocabulary that any tool can read and write."
+  benefits:
+    - {title: "If a tool disappears", text: "The data survives in a structure others can read, instead of being lost with the tool."}
+    - {title: "If two tools want to join", text: "Integration is mapping to the same core once, not rewriting every connector."}
+    - {title: "If a community compares cases", text: "Real cases are described with the same fields and indicators, so they can be compared."}
+    - {title: "If you want to keep your own approach", text: "You keep your front end, back end and extras. Exchange within the association is optional."}
+  split_title: "Core versus yours"
+  split_core: "Core (shared, versioned, open): ontology, capture and provenance rules, indicator definitions, case-record format."
+  split_yours: "Yours: front ends, back ends, algorithms, local extras (with a clear prefix), and whatever you choose to exchange."
+
 alliance:
-  kicker: "03 · The proposal"
+  kicker: "The proposal"
   title: "An alliance with three jobs."
   lead: "Digital twins are the shared language and the first thing we build, but the Alliance is about what organisations can do together. Select a job."
   jobs:
@@ -90,7 +125,7 @@ alliance:
   note: "The commons starts where the literature is strongest: shared data models, flexibility and grid-interaction methods, common KPIs and validation. These are examples, not the whole proposal."
 
 demo:
-  kicker: "03b · What a shared method gives you"
+  kicker: "What a shared method gives you"
   title: "The same community, three futures for the local grid."
   lead: "Flexible heat pumps and batteries can relieve a congested feeder, or create a new peak if everyone reacts to the same cheap hours. A shared method lets a community and its grid operator test this before investing."
   tabs: {base: "Today", uncoordinated: "Uncoordinated flexibility", coordinated: "Coordinated flexibility"}
@@ -102,7 +137,7 @@ demo:
   note: "Illustration. Hypothetical community and numbers, 24 hours. Profile and scenarios are in numbers.yaml > feeder."
 
 form:
-  kicker: "04 · Why an alliance"
+  kicker: "Why an alliance"
   title: "Compared with the alternatives, a member-owned alliance fills the gap."
   lead: "We are not replacing anything. The IEA Annex is the first engine, the Alliance is its permanent, wider home. Highlight a requirement you care about."
   requirements: ["Permanence", "Non-government members", "Fees and contracts", "Speed to start"]
@@ -119,7 +154,7 @@ form:
   note: "Assessment is our reading and open to challenge. IEA programmes are agreements between governments and have no legal personality of their own."
 
 members:
-  kicker: "05 · Who takes part, and what they get"
+  kicker: "Who takes part, and what they get"
   title: "Five kinds of members, each with a clear reason to join."
   bring_label: "What you bring"
   get_label: "What you get"
@@ -137,8 +172,37 @@ members:
     - {title: "Credit", text: "Part of the fee returned as services such as training or proposal support."}
   note: "Fee levels are undecided and left blank on purpose. Umbrella networks would pay little or nothing in cash; their contribution is membership reach, validation and legitimacy."
 
+irec:
+  kicker: "What's in it for IREC?"
+  title: "A light start, with access to funding, peers and real cases across the Atlantic."
+  lead: "IREC would join with a small first commitment, space and some technical support, while Concordia carries the first-year salary. In return it gains reach that is harder to build alone."
+  start_title: "A light start"
+  start_text: "How the first two years are covered, according to the budget."
+  start_cards:
+    - {title: "Concordia carries the salary", text: "The alliance director is paid by Concordia in kind: {c27} EUR in {y0} and {c28} EUR in {y1}."}
+    - {title: "IREC brings space and technical support", text: "In-kind rent of {i27} EUR in {y0} and {i28} EUR in {y1}, plus technical support (hours to be agreed). That is {p27}% and {p28}% of the costs."}
+    - {title: "No cash commitment in the early years", text: "Partner contributions start in {y1} ({pc28} EUR in total across all partners). IREC's share is to be agreed, and could stay in kind."}
+  benefits_title: "What IREC gains"
+  benefits:
+    - title: "More financing lines"
+      text: "Concordia and North American partners can reach philanthropic foundations (for example Rockefeller or Schmidt) and international bodies (UN-Habitat, OECD). Our understanding of that access, to be confirmed; nothing is committed. The budget aims at bilateral research projects ({bil} EUR over the period), a Horizon project ({hor} EUR) and multilateral calls such as IEA, World Bank and UN ({mul} EUR). Canada and Spain have also opened bilateral EUREKA calls through NRC-IRAP and CDTI (2020 and 2022; we found none open for 2025-2026)."
+    - title: "Peers building similar tools"
+      text: "Direct discussion with teams whose tools are stronger in specific aspects: Tools4Cities (open-source city digital twin framework with a REST API), REScoopVPP (open-source home gateway and community cloud for flexibility) and MAKING-PEDs (digital twins, with El Prat in Catalonia as a testbed). IREC brings its own community tools (comunitatenergetica.cat, SomComunitatEnergetica.cat). A shared data structure would make exchanging methods and integrating tools much easier."
+    - title: "Use cases in other places"
+      text: "Test and validate IREC's methods on cases elsewhere: Greater Montreal (solar, geothermal and waste-heat assessment), the Carre Laval living lab, Toronto district energy, Indigenous communities in BC and Alberta; and across Spain and Europe, Osona (27 communities in development), Gipuzkoa (60 in operation) and La Bordeta in Barcelona. Comparable case records turn each into evidence."
+    - title: "Bridges for Catalonia"
+      text: "Catalonia and Quebec have had a cooperation agreement since 1996 (30 years in 2026), with a joint committee that sets a work programme every two years; climate was added in 2010 and research and innovation, including clean energy, are priorities. Idea to explore: ask for community energy and digital twins to be reflected in the next programme. Beyond that, a Canada-Spain-Europe axis connects IREC to REScoop.eu, Energy Cities and the IEA route."
+  ask_title: "What IREC could ask for"
+  ask_items:
+    - "Clear rules on intellectual property and data sharing; IREC's own tools keep their identity."
+    - "A limit on time and technical support, with a review point after the first year."
+    - "A founding seat on the board and technical committee."
+    - "How partner contributions are shared from the second year, and the option to contribute in kind."
+    - "An exit clause and no exclusivity."
+  note: "Figures come from the budget chapter. Access to foundations and the Catalonia-Quebec idea are not commitments; they are routes to explore together."
+
 govern:
-  kicker: "06 · How it is run"
+  kicker: "How it is run"
   title: "Neutral by design, so competitors can sit at the same table."
   columns:
     - title: "A short charter"
@@ -150,7 +214,7 @@ govern:
   note: "Legal form starts as a Spanish association (fast and low cost) and could move to an international non-profit when membership and funding justify it."
 
 roadmap:
-  kicker: "07 · Long term"
+  kicker: "Long term"
   title: "From first proof to a reference body."
   phases:
     - {when: "To mid-2027 · Foundation", title: "Be credible", text: "Association set up, founding members, Annex decision, first proposals."}
@@ -160,7 +224,7 @@ roadmap:
   note: "Indicative dates; they depend on funding and on the Annex decision (November 2026)."
 
 status:
-  kicker: "08 · Where things stand, honestly"
+  kicker: "Where things stand, honestly"
   title: "What exists, what is drafted, what is only an idea."
   columns:
     - badge: "EXISTS"
@@ -174,8 +238,25 @@ status:
       items: ["The association and its charter", "Membership and founders' package", "The commons (data models, methods, benchmarks)", "Proposal desk and first joint bids"]
   note: "<b>Main open risks:</b> willingness to pay is unproven; it is not yet clear that competing centres and networks will share. We plan to test both with interviews, a short survey and a price test before committing."
 
+budget:
+  kicker: "Budget foreseen"
+  title: "What it takes, and where the money would come from."
+  lead: "A lean team that grows from one project manager to a small group, funded by a mix of in-kind contributions, partner contributions and project income. All amounts in EUR."
+  stats:
+    total_costs: "Total costs"
+    first_year: "Costs in the first year (partial year)"
+    partners_share: "Share covered by partner contributions"
+    projects_share: "Share from research and multilateral projects"
+    team_2033: "Team in 2033"
+  team_unit: "people"
+  chart_income_title: "Costs and where they are covered, per year"
+  chart_team_title: "Team size"
+  chart_mix_title: "Funding mix, 2027 to 2033"
+  table_title: "The full budget"
+  note: "Planned figures. Partner contributions (membership fees and partner funding) are the balancing item that closes the gap between costs and the other income lines. Project income depends on funding decisions. The first year includes a half year of project management."
+
 ask:
-  kicker: "09 · The ask"
+  kicker: "The ask"
   title: "This is a draft. <em>Tell us where it breaks.</em>"
   lead: "Depending on who you are, the next step is small. Select your role."
   next_step_label: "Next step for you"
