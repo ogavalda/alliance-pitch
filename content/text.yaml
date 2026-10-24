@@ -42,8 +42,9 @@ hero:
   net_tab_on: "With the Alliance: connected"
   net_hub_title: "Alliance"
   net_hub_sub: "commons · pipeline · voice"
-  net_note: "Illustration. Hypothetical organisations. Each dot is an actor working on local energy; lines show shared knowledge, tools and projects."
-  actor_labels: {communities: "Communities", cities: "Cities", research: "Research", grid: "Grid", industry: "Industry"}
+  net_note: "Real organisations from our stakeholder map (desk research, October 2026), shown as examples. Being listed does not mean participation or endorsement. Pink ring: already engaged. Lines are illustrative."
+  actor_labels: {networks: "Networks and cooperatives", cities: "Cities and regions", grid: "Grid and utilities", dhc: "District heating and cooling", research: "Research", funders: "Government and funders"}
+  engaged_label: "Already engaged"
 
 why:
   kicker: "01 · Why now"

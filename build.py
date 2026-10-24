@@ -47,7 +47,7 @@ def build() -> Path:
     figs = {
         "net_off": charts.network_svg(n, hero["actor_labels"], False, hero["net_hub_title"], hero["net_hub_sub"]),
         "net_on": charts.network_svg(n, hero["actor_labels"], True, hero["net_hub_title"], hero["net_hub_sub"]),
-        "net_legend": charts.network_legend_html(n, hero["actor_labels"]),
+        "net_legend": charts.network_legend_html(n, hero["actor_labels"], hero.get("engaged_label", "Already engaged")),
         "feeder": {s: {"svg": charts.feeder_svg(n, s, demo["labels"]), **charts.feeder_stats(n, s)}
                    for s in ("base", "uncoordinated", "coordinated")},
     }

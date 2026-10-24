@@ -1,15 +1,17 @@
 # All numbers and chart inputs. Colours follow the Concordia template (burgundy 93002D, pink E90065, blue 1598D6, green 00776F, orange E83F21).
 # (kept as one comment line). Edit values, re-run: python build.py
 
-palette:                       # colours used by the charts
-  communities: "#1598d6"
-  cities:      "#e83f21"
-  research:    "#93002d"
-  grid:        "#e90065"
-  industry:    "#00776f"
-  teal:        "#93002d"
-  alert:       "#e90065"
-  ok:          "#1598d6"
+palette:                       # colours used by the charts (Concordia template)
+  networks:  "#1598d6"
+  cities:    "#e83f21"
+  grid:      "#e90065"
+  dhc:       "#e08a00"
+  research:  "#93002d"
+  funders:   "#00776f"
+  teal:      "#93002d"
+  alert:     "#e90065"
+  ok:        "#1598d6"
+  engaged:   "#e90065"
 
 # ---- Section "why": the three headline statistics (text for each is in text.yaml)
 stats:
@@ -20,24 +22,38 @@ stats:
 # ---- Chart 1: network illustration (hero)
 # Each node: x, y (in a 900 x 300 canvas) and actor type (must match a palette key)
 network:
-  hub: {x: 450, y: 150, radius: 46}
-  link_distance: 170           # nodes closer than this are linked to each other
+  # Real organisations from the stakeholder map (examples; listing implies no participation).
+  # label, scope (Canada / International / Spain), type (palette key), x, y in a 1000 x 480 canvas, engaged: true = pink ring
+  hub: {x: 500, y: 232, radius: 44}
+  neighbours: 2                # each node is linked to this many nearest nodes when 'connected'
+  scopes:                      # faint cluster titles: label, x
+    - {label: CANADA, x: 150}
+    - {label: INTERNATIONAL, x: 500}
+    - {label: SPAIN, x: 850}
   nodes:
-    - {x: 90,  y: 60,  type: communities}
-    - {x: 210, y: 200, type: communities}
-    - {x: 330, y: 70,  type: cities}
-    - {x: 450, y: 230, type: research}
-    - {x: 560, y: 90,  type: grid}
-    - {x: 700, y: 60,  type: industry}
-    - {x: 800, y: 190, type: grid}
-    - {x: 640, y: 240, type: cities}
-    - {x: 160, y: 130, type: research}
-    - {x: 400, y: 150, type: communities}
-    - {x: 760, y: 110, type: cities}
-    - {x: 300, y: 250, type: industry}
-    - {x: 520, y: 170, type: research}
-    - {x: 860, y: 60,  type: communities}
-    - {x: 60,  y: 230, type: grid}
+    - {label: "CECC", scope: Canada, type: networks, x: 70, y: 70}
+    - {label: "OSEA", scope: Canada, type: networks, x: 200, y: 52}
+    - {label: "QUEST Canada", scope: Canada, type: cities, x: 80, y: 190}
+    - {label: "FCM Green Municipal Fund", scope: Canada, type: cities, x: 215, y: 175}
+    - {label: "Concordia NGCI", scope: Canada, type: research, x: 70, y: 320, engaged: true}
+    - {label: "Enwave", scope: Canada, type: dhc, x: 215, y: 305}
+    - {label: "NRCan", scope: Canada, type: funders, x: 145, y: 420}
+    - {label: "REScoop.eu", scope: International, type: networks, x: 385, y: 62}
+    - {label: "Energy Cities", scope: International, type: cities, x: 500, y: 48}
+    - {label: "European Commission", scope: International, type: funders, x: 620, y: 62}
+    - {label: "IEA EBC and DHC", scope: International, type: research, x: 395, y: 395}
+    - {label: "Euroheat & Power", scope: International, type: dhc, x: 520, y: 410}
+    - {label: "EU DSO Entity", scope: International, type: grid, x: 640, y: 395}
+    - {label: "Som Energia", scope: Spain, type: networks, x: 775, y: 62}
+    - {label: "OECoop", scope: Spain, type: networks, x: 905, y: 85}
+    - {label: "Unión Renovables", scope: Spain, type: networks, x: 800, y: 155}
+    - {label: "ADHAC", scope: Spain, type: dhc, x: 925, y: 180}
+    - {label: "IREC", scope: Spain, type: research, x: 785, y: 265, engaged: true}
+    - {label: "Aiguasol", scope: Spain, type: research, x: 915, y: 280, engaged: true}
+    - {label: "Districlima", scope: Spain, type: dhc, x: 790, y: 360}
+    - {label: "i-DE", scope: Spain, type: grid, x: 915, y: 385}
+    - {label: "IDAE", scope: Spain, type: funders, x: 800, y: 445}
+    - {label: "ICAEN", scope: Spain, type: funders, x: 925, y: 448}
 
 # ---- Chart 2: "cost of going alone" slider (section "problem")
 duplication:
