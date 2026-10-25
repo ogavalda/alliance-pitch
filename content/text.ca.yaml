@@ -1,7 +1,7 @@
 # Traducció al català de tot el text comú.
 meta:
   title: "Aliança de Solucions Energètiques Comunitàries per a la Descarbonització Local: proposta preliminar"
-  description: "Proposta preliminar d'una aliança participada pels seus membres que dona als actors locals de l'energia un comú compartit, una cartera de projectes i una veu comuna."
+  description: "Proposta preliminar d'una aliança participada pels seus membres que dona als actors locals de l'energia uns comuns compartits, una cartera de projectes i una veu comuna."
   version_line: "Esborrany v0.2 · octubre de 2026"
 brand: "Aliança de Solucions Energètiques Comunitàries"
 nav:
@@ -33,7 +33,7 @@ annex:
 hero:
   kicker: "Proposta preliminar · oberta a debat"
   title: "L'energia local és on es construeix la descarbonització. <em>Ningú no hauria de construir-la sol.</em>"
-  lead: "Una aliança proposada, participada pels seus membres, de xarxes de comunitats energètiques, ciutats, centres de recerca, operadors de xarxa i empreses, que dona als actors locals de l'energia tres coses que costa aconseguir en solitari: <b>un comú compartit</b>, <b>una cartera de projectes</b> i <b>una veu comuna</b>."
+  lead: "Una aliança proposada, participada pels seus membres, de xarxes de comunitats energètiques, ciutats, centres de recerca, operadors de xarxa i empreses, que dona als actors locals de l'energia tres coses que costa aconseguir en solitari: <b>uns comuns compartits</b>, <b>una cartera de projectes</b> i <b>una veu comuna</b>."
   meta:
     - {label: "Motiu", value: "[?] reunió o esdeveniment"}
     - {label: "Estat", value: "Concepte 0.1 · esborrany, no implementat"}
@@ -44,7 +44,7 @@ hero:
   net_tab_off: "Avui: esforços aïllats"
   net_tab_on: "Amb l'Aliança: connectats"
   net_hub_title: "Aliança"
-  net_hub_sub: "comú · cartera · veu"
+  net_hub_sub: "comuns · cartera · veu"
   net_note: "Organitzacions reals del nostre mapa d'actors (recerca documental, octubre de 2026), mostrades com a exemples. Sortir-hi no implica participació ni suport. Anell rosa: ja implicades. Les línies són il·lustratives."
   scope_labels: {CANADA: "CANADÀ", INTERNATIONAL: "INTERNACIONAL", SPAIN: "ESPANYA"}
   actor_labels: {networks: "Xarxes i cooperatives", cities: "Ciutats i regions", grid: "Xarxa i empreses elèctriques", dhc: "Calefacció i refrigeració urbanes", research: "Recerca", funders: "Govern i finançadors"}
@@ -122,7 +122,7 @@ alliance:
   title: "Una aliança amb tres tasques."
   lead: "Els bessons digitals són el llenguatge compartit i el primer que construïm, però l'Aliança va del que les organitzacions poden fer juntes. Selecciona una tasca."
   jobs:
-    - title: "Comú"
+    - title: "Comuns a compartir"
       tagline: "Blocs compartits i oberts que ningú no guanya tenint-los en privat."
       detail: "Blocs compartits, oberts per defecte: models i esquemes de dades, mètodes de flexibilitat i interacció amb la xarxa, KPI i regles de verificació comuns, proves de validació, conjunts de dades de referència, arquitectura de referència, contractes de model per als compradors."
       value: "Valor: qualsevol eina o estudi construït sobre aquests blocs es pot comparar, reutilitzar i trobar fiable. Els membres conserven els seus productes propis."
@@ -134,7 +134,7 @@ alliance:
       tagline: "Una veu creïble i basada en l'evidència davant la UE, l'IEA, l'OCDE i les xarxes de ciutats."
       detail: "Posicionaments basats en l'evidència i declaracions conjuntes davant la Comissió Europea, l'IEA, l'OCDE i les xarxes de ciutats, transparents i aprovats pels membres."
       value: "Valor: un sol interlocutor per a les institucions, i sistemes energètics locals i bessons digitals reconeguts en el finançament i les polítiques."
-  note: "El comú comença on la literatura és més sòlida: models de dades compartits, mètodes de flexibilitat i interacció amb la xarxa, KPI comuns i validació. Són exemples, no tota la proposta."
+  note: "Els comuns comencen on la literatura és més sòlida: models de dades compartits, mètodes de flexibilitat i interacció amb la xarxa, KPI comuns i validació. Són exemples, no tota la proposta."
 demo:
   kicker: "Què dona un mètode compartit"
   title: "La mateixa comunitat, tres futurs per a la xarxa local."
@@ -196,9 +196,9 @@ govern:
     - title: "Un primer contracte breu"
       items: ["Obert per defecte pel que fa al nucli compartit", "Els membres conserven la seva feina pròpia", "Cap servei que competeixi amb els membres", "Orientació de dret de la competència a totes les reunions"]
     - title: "Òrgans equilibrats"
-      items: ["Assemblea de tots els membres", "Junta equilibrada entre les cinc famílies de membres", "Comitè tècnic per al comú", "Secretaria petita"]
+      items: ["Assemblea de tots els membres", "Junta equilibrada entre les cinc famílies de membres", "Comitè tècnic per als comuns", "Secretaria petita"]
     - title: "Joc net en projectes"
-      items: ["Els rols de lideratge roten amb criteris clars", "L'Aliança facilita, mai tria guanyadors", "Una part dels projectes guanyats torna al comú (si els finançadors ho permeten)"]
+      items: ["Els rols de lideratge roten amb criteris clars", "L'Aliança facilita, mai tria guanyadors", "Una part dels projectes guanyats torna als comuns (si els finançadors ho permeten)"]
   note: "La forma jurídica comença com a associació espanyola (ràpida i barata) i podria passar a una entitat internacional sense ànim de lucre quan els membres i el finançament ho justifiquin."
 roadmap:
   kicker: "Llarg termini"
@@ -221,7 +221,7 @@ status:
       items: ["Nota conceptual i pla a llarg termini", "Estudi de mercat i anàlisi de llacunes de la literatura", "Quadre de viabilitat amb 24 hipòtesis", "Proposta d'Annex per a l'ExCo"]
     - badge: "PROPOSAT · NO CONSTRUÏT"
       style: pr
-      items: ["L'associació i la seva carta", "Afiliació i paquet de fundadors", "El comú (models de dades, mètodes, referències)", "Oficina de propostes i primeres ofertes conjuntes"]
+      items: ["L'associació i la seva carta", "Afiliació i paquet de fundadors", "Els comuns (models de dades, mètodes, referències)", "Oficina de propostes i primeres ofertes conjuntes"]
   note: "<b>Principals riscos oberts:</b> la disposició a pagar no està provada; encara no és clar que centres i xarxes competidors compartiran. Pensem provar-ho amb entrevistes, una enquesta breu i una prova de preu abans de comprometre'ns."
 budget:
   kicker: "Pressupost previst"
