@@ -2,9 +2,9 @@ hero:
   kicker: "Proposta preliminar · preparada per a l'IREC"
 irec_ask:
   kicker: "Què hi guanya l'IREC, i la petició"
-  title: "Un inici lleuger, amb accés a finançament, iguals i casos reals a l'altra banda de l'Atlàntic."
+  title: "Un inici contingut, amb accés a finançament, iguals i casos reals a l'altra banda de l'Atlàntic."
   lead: "L'IREC s'hi sumaria amb un primer compromís petit, espai i suport tècnic, mentre Concordia assumeix el sou del primer any. A canvi guanya un abast difícil de construir en solitari."
-  start_title: "Un inici lleuger"
+  start_title: "Un inici amb poc requeriments"
   start_text: "Com es cobreixen els dos primers anys, segons el pressupost."
   start_cards:
     - {title: "Concordia assumeix el sou", text: "El director o directora de l'aliança és pagat per Concordia en espècie: {c27} EUR el {y0} i {c28} EUR el {y1}."}
@@ -37,6 +37,6 @@ irec_ask:
   questions:
     - {tag: "Valor", title: "Quin dels quatre beneficis importa més a l'IREC?", text: "Línies de finançament, iguals, casos d'ús o el pont Catalunya-Quebec? Quin descartaríeu?"}
     - {tag: "Suport", title: "Què podria oferir realment l'IREC?", text: "Espai, hores tècniques, dades, un lloc per a investigadors visitants?"}
-    - {tag: "Decisió", title: "Qui a l'IREC hauria de ser el contacte i decidir?", text: "I quina aprovació necessitaria un primer compromís lleuger?"}
+    - {tag: "Decisió", title: "Qui a l'IREC hauria de ser el contacte i decidir?", text: "I quina aprovació necessitaria un primer compromís?"}
     - {tag: "Adopció", title: "Què impediria que l'IREC s'hi sumés?", text: "Recursos, propietat intel·lectual, prioritats, competència amb serveis propis? Digueu-nos com hauria de ser el primer pas."}
   note: "Les xifres surten del pressupost. L'accés a fundacions i la idea Catalunya-Quebec no són compromisos; són vies per explorar junts."
