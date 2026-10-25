@@ -84,7 +84,6 @@ table.bt th{background:var(--teal);color:#fff;padding:8px 10px;text-align:right}
 table.bt td{border-top:1px solid var(--line);padding:6px 10px;text-align:right}table.bt td:first-child{text-align:left}
 table.bt tr.sec td{background:#f8e9ed;font-weight:700;color:var(--teal);text-align:left}
 table.bt tr.tot td{font-weight:700;background:#fafafa}
-table.bt tr.cnt td{color:var(--mute);font-style:italic}
 
 /* ---- tool map ---- */
 .tmap{overflow-x:auto}

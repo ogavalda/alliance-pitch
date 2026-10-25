@@ -180,14 +180,10 @@ def budget_checks(b: dict) -> list[str]:
     w = []
     ys = b["years"]; c = b["costs"]; i = b["incomes"]
     for k, y in enumerate(ys):
-        comp = _num(c["rent"]["values"][k]) + _num(c["labour_total"]["values"][k]) \
-            + _num(c["students"]["values"][k]) + _num(c["travel"]["values"][k])
+        comp = sum(_num(v["values"][k]) for v in c.values() if not v.get("total"))
         tot = _num(c["total_costs"]["values"][k])
         if abs(comp - tot) > 2:
-            w.append(f"{y}: total costs {tot:,} but rent + total labour + students + travel = {comp:,} (difference {tot-comp:,})")
-        lab = _num(c["ra_unit"]["values"][k]) * _num(c["ra_number"]["values"][k]) + _num(c["pm_unit"]["values"][k])
-        if abs(lab - _num(c["labour_total"]["values"][k])) > 2 and y != ys[0]:
-            w.append(f"{y}: total labour {c['labour_total']['values'][k]:,} but RA x number + PM = {lab:,}")
+            w.append(f"{y}: total costs {tot:,} but the cost lines add up to {comp:,} (difference {tot-comp:,})")
         inc = sum(_num(v["values"][k]) for key, v in i.items() if not v.get("total"))
         if abs(inc - _num(i["total_incomes"]["values"][k])) > 2:
             w.append(f"{y}: total incomes {i['total_incomes']['values'][k]:,} but the lines add up to {inc:,}")
@@ -200,10 +196,9 @@ def budget_stats(b: dict) -> dict:
     c = b["costs"]; i = b["incomes"]
     total = sum(_num(v) for v in c["total_costs"]["values"])
     src = {k: sum(_num(x) for x in v["values"]) for k, v in i.items() if not v.get("total")}
-    team_last = _num(c["ra_number"]["values"][-1]) + _num(c["pm_number"]["values"][-1])
     return {"total": total, "first": _num(c["total_costs"]["values"][0]), "y0": b["years"][0], "y1": b["years"][-1],
             "partners_pct": round(100 * src["partners"] / total), "projects_pct": round(100 * (src["bilateral"] + src["horizon"] + src["multilateral"]) / total),
-            "team_last": team_last, "src": src}
+            "src": src}
 
 
 def budget_income_svg(b: dict) -> str:
@@ -234,26 +229,6 @@ def budget_legend_html(b: dict) -> str:
                    for k, d in b["incomes"].items() if not d.get("total"))
 
 
-def budget_team_svg(b: dict, unit: str, pm_word: str = "Project manager", ra_word: str = "Research assistants") -> str:
-    ys = b["years"]; c = b["costs"]
-    W, H, L, B, T = 440, 240, 30, 36, 20
-    mx = 5
-    bw = (W - L - 10) / len(ys) * 0.6
-    Y = lambda v: H - B - v / mx * (H - B - T)
-    g = [f'<line x1="{L}" x2="{W-10}" y1="{Y(0)}" y2="{Y(0)}" stroke="#e2d9d6"/>']
-    for v in range(1, mx + 1):
-        g.append(f'<line x1="{L}" x2="{W-10}" y1="{Y(v)}" y2="{Y(v)}" stroke="#f0e8e5"/><text x="{L-6}" y="{Y(v)+4}" text-anchor="end" font-size="10" fill="#5f5a5b">{v}</text>')
-    for k, y in enumerate(ys):
-        x = L + k * (W - L - 10) / len(ys) + ((W - L - 10) / len(ys) - bw) / 2
-        pm = _num(c["pm_number"]["values"][k]); ra = _num(c["ra_number"]["values"][k])
-        g.append(f'<rect x="{x:.1f}" y="{Y(pm):.1f}" width="{bw:.1f}" height="{Y(0)-Y(pm):.1f}" fill="#93002d"><title>{pm_word}: {pm}</title></rect>')
-        if ra:
-            g.append(f'<rect x="{x:.1f}" y="{Y(pm+ra):.1f}" width="{bw:.1f}" height="{Y(pm)-Y(pm+ra):.1f}" fill="#1598d6"><title>{ra_word}: {ra}</title></rect>')
-        g.append(f'<text x="{x+bw/2:.1f}" y="{Y(pm+ra)-5:.1f}" text-anchor="middle" font-size="11" font-weight="700" fill="#1f1a1b">{pm+ra}</text>')
-        g.append(f'<text x="{x+bw/2:.1f}" y="{H-14}" text-anchor="middle" font-size="10.5" fill="#1f1a1b">{y}</text>')
-    return (f'<svg viewBox="0 0 440 240" width="100%" role="img" aria-label="Team size per year">' + "".join(g) + "</svg>")
-
-
 def budget_mix_svg(b: dict) -> str:
     st = budget_stats(b); inc = {k: v for k, v in b["incomes"].items() if not v.get("total")}
     tot = st["total"]; W, rowh = 440, 34
@@ -270,11 +245,11 @@ def budget_table_html(b: dict, ui: dict) -> str:
     ys = b["years"]
     head = f"<tr><th>{ui['eur']}</th>" + "".join(f"<th>{y}</th>" for y in ys) + f"<th>{ui['total']}</th></tr>"
     def row(d, cls=""):
-        tot = "" if d.get("count") else f"{sum(_num(v) for v in d['values']):,.0f}"
+        tot = f"{sum(_num(v) for v in d['values']):,.0f}"
         return f'<tr class="{cls}"><td>{_esc(d["label"])}</td>' + "".join(f"<td>{_fmt(v)}</td>" for v in d["values"]) + f"<td>{tot}</td></tr>"
     out = [head, '<tr class="sec"><td colspan="%d">%s</td></tr>' % (len(ys) + 2, ui["costs"])]
     for k, d in b["costs"].items():
-        out.append(row(d, "tot" if d.get("total") else ("cnt" if d.get("count") else "")))
+        out.append(row(d, "tot" if d.get("total") else ""))
     out.append('<tr class="sec"><td colspan="%d">%s</td></tr>' % (len(ys) + 2, ui["incomes"]))
     for k, d in b["incomes"].items():
         out.append(row(d, "tot" if d.get("total") else ""))

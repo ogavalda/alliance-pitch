@@ -37,8 +37,6 @@ ui:                            # small words used by tables and charts
   costs: "Costs"
   incomes: "Incomes"
   total_costs_word: "total costs"
-  pm: "Project manager"
-  ra: "Research assistants"
   read_annex: "Details in the annex"
 
 annex:
@@ -256,8 +254,6 @@ budget_summary:
     first_year: "Costs in the first year (partial year)"
     partners_share: "Share covered by partner contributions"
     projects_share: "Share from research and multilateral projects"
-    team_2033: "Team in the last year"
-  team_unit: "people"
   note: "Planned figures. Charts and the full table are in the annex."
 
 govern:
@@ -300,19 +296,16 @@ status:
 budget:
   kicker: "Budget foreseen"
   title: "What it takes, and where the money would come from."
-  lead: "A lean team that grows from one project manager to a small group, funded by a mix of in-kind contributions, partner contributions and project income. All amounts in EUR."
+  lead: "A lean team led by an alliance director, with a research assistant and student placements, funded by a mix of in-kind contributions, partner contributions and project income. All amounts in EUR."
   stats:
     total_costs: "Total costs"
     first_year: "Costs in the first year (partial year)"
     partners_share: "Share covered by partner contributions"
     projects_share: "Share from research and multilateral projects"
-    team_2033: "Team in 2033"
-  team_unit: "people"
   chart_income_title: "Costs and where they are covered, per year"
-  chart_team_title: "Team size"
   chart_mix_title: "Funding mix, 2027 to 2033"
   table_title: "The full budget"
-  note: "Planned figures. Partner contributions (membership fees and partner funding) are the balancing item that closes the gap between costs and the other income lines. Project income depends on funding decisions. The first year includes a half year of project management."
+  note: "Planned figures. Partner contributions (membership fees and partner funding) are the balancing item that closes the gap between costs and the other income lines. Project income depends on funding decisions. The first year is a partial year."
 
 ask:
   kicker: "The ask"
