@@ -1,9 +1,9 @@
 # Traducció al català de tot el text comú.
 meta:
-  title: "Aliança de Bessons Digitals per a la Descarbonització: proposta preliminar"
+  title: "Aliança de Solucions Energètiques Comunitàries per a la Descarbonització Local: proposta preliminar"
   description: "Proposta preliminar d'una aliança participada pels seus membres que dona als actors locals de l'energia un comú compartit, una cartera de projectes i una veu comuna."
   version_line: "Esborrany v0.2 · octubre de 2026"
-brand: "Aliança de Bessons Digitals"
+brand: "Aliança de Solucions Energètiques Comunitàries"
 nav:
   problem: "Problema"
   why: "Per què ara"
@@ -35,7 +35,7 @@ hero:
   title: "L'energia local és on es construeix la descarbonització. <em>Ningú no hauria de construir-la sol.</em>"
   lead: "Una aliança proposada, participada pels seus membres, de xarxes de comunitats energètiques, ciutats, centres de recerca, operadors de xarxa i empreses, que dona als actors locals de l'energia tres coses que costa aconseguir en solitari: <b>un comú compartit</b>, <b>una cartera de projectes</b> i <b>una veu comuna</b>."
   meta:
-    - {label: "Ocasió", value: "[?] reunió o esdeveniment"}
+    - {label: "Motiu", value: "[?] reunió o esdeveniment"}
     - {label: "Estat", value: "Concepte 0.1 · esborrany, no implementat"}
     - {label: "Motor inicial", value: "Una proposta d'Annex de l'IEA EBC, en paral·lel"}
   button_start: "Comença la història ↓"
@@ -72,8 +72,8 @@ landscape_summary:
   title: "Hi ha bones eines. No comparteixen fonaments."
   text: "Hem revisat {n} eines i famílies d'eines per gestionar comunitats energètiques i sistemes energètics locals, de projectes de recerca, xarxes, organismes públics i empreses. Cadascuna té la seva interfície, backend, model de dades i indicadors. De {m} d'elles no hem trobat el model de dades documentat en fonts públiques."
   points:
-    - {title: "Interfícies diferents és bo", text: "Els usuaris són diferents, i les interfícies també ho han de ser."}
-    - {title: "Fonaments diferents són cars", text: "L'estructura de dades, la captura i els indicadors es reconstrueixen cada cop; les eines són difícils d'integrar i els casos de comparar."}
+    - {title: "És bo que hi hagi interfícies diferents", text: "Els usuaris són diferents, i les interfícies també ho han de ser."}
+    - {title: "És car que els fonaments siguin diferents", text: "L'estructura de dades, la captura i els indicadors es reconstrueixen cada cop; les eines són difícils d'integrar i els casos de comparar."}
     - {title: "Un nucli compartit ajudaria", text: "Si una eina desapareix o dues s'uneixen, les dades i els indicadors mantenen el significat."}
   note: "El mapa i les taules d'eines són a l'annex."
 landscape:
@@ -181,7 +181,7 @@ members:
   note: "Els nivells de quota no estan decidits i es deixen en blanc a propòsit. Les xarxes paraigua pagarien poc o res en efectiu; la seva contribució és l'abast de la seva base, la validació i la legitimitat."
 budget_summary:
   kicker: "Pressupost previst"
-  title: "Un inici lleuger que creix amb la feina."
+  title: "Un inici contingut que creix amb la els recursos a trobar."
   lead: "Un equip petit finançat primer amb contribucions en espècie, després amb aportacions dels socis i ingressos de projectes. Imports en EUR."
   stats:
     total_costs: "Costos totals"
@@ -193,7 +193,7 @@ govern:
   kicker: "Com funciona"
   title: "Neutral per disseny, perquè els competidors puguin seure a la mateixa taula."
   columns:
-    - title: "Una carta breu"
+    - title: "Un primer contracte breu"
       items: ["Obert per defecte pel que fa al nucli compartit", "Els membres conserven la seva feina pròpia", "Cap servei que competeixi amb els membres", "Orientació de dret de la competència a totes les reunions"]
     - title: "Òrgans equilibrats"
       items: ["Assemblea de tots els membres", "Junta equilibrada entre les cinc famílies de membres", "Comitè tècnic per al comú", "Secretaria petita"]
@@ -226,7 +226,7 @@ status:
 budget:
   kicker: "Pressupost previst"
   title: "Què cal, i d'on vindrien els diners."
-  lead: "Un equip lleuger encapçalat per un/a director/a de l'aliança, amb un/a investigador/a assistent i pràctiques d'estudiants, finançat amb una barreja de contribucions en espècie, aportacions de socis i ingressos de projectes. Tots els imports en EUR."
+  lead: "Un equip reduït encapçalat per un/a director/a de l'aliança, amb un/a investigador/a assistent i pràctiques d'estudiants, finançat amb una barreja de contribucions en espècie, aportacions de socis i ingressos de projectes. Tots els imports en EUR."
   stats:
     total_costs: "Costos totals"
     first_year: "Costos del primer any (any parcial)"
