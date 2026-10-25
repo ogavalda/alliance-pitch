@@ -6,18 +6,18 @@ sys.path.insert(0, str(ROOT)); sys.path.insert(0, str(ROOT / "src"))
 import build, charts  # noqa: E402
 
 
-def test_build_runs_and_contains_title():
-    out = build.build()
-    html = out.read_text(encoding="utf-8")
-    assert "Nobody should build it alone" in html and 'id="why"' in html
+def test_all_editions_build():
+    outs = build.build_all()
+    assert len(outs) >= 3
+    for o in outs:
+        html = o.read_text(encoding="utf-8")
+        assert 'id="problem"' in html and 'id="annex"' in html
 
 
 def test_feeder_scenarios():
     n = build.load("numbers.yaml")
-    base = charts.feeder_stats(n, "base")
-    coord = charts.feeder_stats(n, "coordinated")
-    assert base["hours_over"] >= 1 and coord["hours_over"] == 0
+    assert charts.feeder_stats(n, "base")["hours_over"] >= 1 and charts.feeder_stats(n, "coordinated")["hours_over"] == 0
 
 
 if __name__ == "__main__":
-    test_build_runs_and_contains_title(); test_feeder_scenarios(); print("ok")
+    test_all_editions_build(); test_feeder_scenarios(); print("ok")

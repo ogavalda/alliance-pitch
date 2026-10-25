@@ -6,7 +6,7 @@
   <h1>{{ h.title }}</h1>
   <p class="lead">{{ h.lead }}</p>
   <div class="meta">{% for m in h.meta %}<div><span>{{ m.label }}</span>{{ m.value }}</div>{% endfor %}</div>
-  <a class="btn" href="#{{ sections[0] }}">{{ h.button_start }}</a><a class="btn alt" href="#{{ 'ask' if 'ask' in sections else sections[-1] }}">{{ h.button_ask }}</a>
+  <a class="btn" href="#{{ main[0] }}">{{ h.button_start }}</a><a class="btn alt" href="#{{ main[-1] }}">{{ h.button_ask }}</a>
   <p class="note">{{ h.presenting_hint }}</p>
   <div class="card" style="margin-top:26px">
     <div class="ctl"><button class="tab on" data-n="0">{{ h.net_tab_off }}</button><button class="tab" data-n="1">{{ h.net_tab_on }}</button></div>

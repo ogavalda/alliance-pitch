@@ -15,20 +15,36 @@ logos:
   - {name: "Next Generation Cities Institute", file: "ngci.png", url: ""}
   - {name: "IREC", file: "irec.png", url: ""}
 
-nav:                           # label of each section in the top bar
-  why: "Why now"
+nav:                           # label of each chapter in the top bar (keys = template names)
   problem: "Problem"
-  landscape: "Tools"
+  why: "Why now"
+  landscape_summary: "Tools"
   alliance: "The Alliance"
-  demo: "In action"
-  form: "Why an alliance"
-  members: "Who and what"
-  irec: "For IREC"
-  govern: "Governance"
-  roadmap: "Roadmap"
-  status: "Status"
-  budget: "Budget"
+  members_summary: "Who"
+  govern: "How it is run"
+  roadmap: "Long term"
+  budget_summary: "Budget"
   ask: "The ask"
+  irec_ask: "IREC and the ask"
+  annex: "Annex"
+
+ui:                            # small words used by tables and charts
+  tool: "Tool"
+  source: "Source"
+  link: "link"
+  eur: "EUR"
+  total: "Total"
+  costs: "Costs"
+  incomes: "Incomes"
+  total_costs_word: "total costs"
+  pm: "Project manager"
+  ra: "Research assistants"
+  read_annex: "Details in the annex"
+
+annex:
+  label: "Annex"
+  title: "Supporting material"
+  lead: "The pages above are the short version. This annex holds the evidence and detail behind them."
 
 hero:
   kicker: "Draft proposal · open for discussion"
@@ -46,6 +62,7 @@ hero:
   net_hub_title: "Alliance"
   net_hub_sub: "commons · pipeline · voice"
   net_note: "Real organisations from our stakeholder map (desk research, October 2026), shown as examples. Being listed does not mean participation or endorsement. Pink ring: already engaged. Lines are illustrative."
+  scope_labels: {CANADA: "CANADA", INTERNATIONAL: "INTERNATIONAL", SPAIN: "SPAIN"}
   actor_labels: {networks: "Networks and cooperatives", cities: "Cities and regions", grid: "Grid and utilities", dhc: "District heating and cooling", research: "Research", funders: "Government and funders"}
   engaged_label: "Already engaged"
 
@@ -68,6 +85,16 @@ problem:
     - {title: "Evidence stays local", text: "Many ways to measure impact, none agreed, so lessons do not add up across projects."}
     - {title: "No shared voice", text: "Communities, cities and grid operators lobby separately, often on the same issues."}
   note: "Based on our review of recent literature on energy community gaps (2021 to 2026)."
+
+landscape_summary:
+  kicker: "Many tools, no common foundations"
+  title: "Good tools exist. They do not share foundations."
+  text: "We reviewed {n} tools and tool families for managing energy communities and local energy systems, from research projects, networks, public bodies and companies. Each has its own front end, back end, data model and indicators. For {m} of them we could not find the data model documented in public sources."
+  points:
+    - {title: "Different front ends are fine", text: "Users differ, so interfaces should too."}
+    - {title: "Different foundations are costly", text: "Data structure, data capture and indicators are rebuilt each time, so tools are hard to integrate and cases hard to compare."}
+    - {title: "A shared core would help", text: "If a tool disappears or two tools join, data and indicators keep their meaning."}
+  note: "The map and tables of tools are in the annex."
 
 landscape:
   kicker: "The tools that exist today"
@@ -104,6 +131,13 @@ landscape:
   split_title: "Core versus yours"
   split_core: "Core (shared, versioned, open): ontology, capture and provenance rules, indicator definitions, case-record format."
   split_yours: "Yours: front ends, back ends, algorithms, local extras (with a clear prefix), and whatever you choose to exchange."
+
+members_summary:
+  kicker: "Who takes part"
+  title: "Five kinds of members, one shared table."
+  lead: "Community and cooperative networks, cities and regions, research centres, grid operators and utilities, and funders. Each brings something the others lack."
+  families: ["Community networks", "Cities and regions", "Research centres", "Grid operators and utilities", "Funders and institutions"]
+  note: "What each brings and gets, and the founders' package, are in the annex."
 
 alliance:
   kicker: "The proposal"
@@ -172,8 +206,8 @@ members:
     - {title: "Credit", text: "Part of the fee returned as services such as training or proposal support."}
   note: "Fee levels are undecided and left blank on purpose. Umbrella networks would pay little or nothing in cash; their contribution is membership reach, validation and legitimacy."
 
-irec:
-  kicker: "What's in it for IREC?"
+irec_ask:
+  kicker: "What's in it for IREC, and the ask"
   title: "A light start, with access to funding, peers and real cases across the Atlantic."
   lead: "IREC would join with a small first commitment, space and some technical support, while Concordia carries the first-year salary. In return it gains reach that is harder to build alone."
   start_title: "A light start"
@@ -185,21 +219,46 @@ irec:
   benefits_title: "What IREC gains"
   benefits:
     - title: "More financing lines"
-      text: "Concordia and North American partners can reach philanthropic foundations (for example Rockefeller or Schmidt) and international bodies (UN-Habitat, OECD). Our understanding of that access, to be confirmed; nothing is committed. The budget aims at bilateral research projects ({bil} EUR over the period), a Horizon project ({hor} EUR) and multilateral calls such as IEA, World Bank and UN ({mul} EUR). Canada and Spain have also opened bilateral EUREKA calls through NRC-IRAP and CDTI (2020 and 2022; we found none open for 2025-2026)."
+      text: "Concordia and North American partners can reach philanthropic foundations (for example Rockefeller or Schmidt) and international bodies (UN-Habitat, OECD). This is our understanding of that access, to be confirmed; nothing is committed. The budget aims at bilateral research projects ({bil} EUR over the period), a Horizon project ({hor} EUR) and multilateral calls such as IEA, World Bank and UN ({mul} EUR). Canada and Spain have also opened bilateral EUREKA calls through NRC-IRAP and CDTI (2020 and 2022; we found none open for 2025-2026)."
     - title: "Peers building similar tools"
       text: "Direct discussion with teams whose tools are stronger in specific aspects: Tools4Cities (open-source city digital twin framework with a REST API), REScoopVPP (open-source home gateway and community cloud for flexibility) and MAKING-PEDs (digital twins, with El Prat in Catalonia as a testbed). IREC brings its own community tools (comunitatenergetica.cat, SomComunitatEnergetica.cat). A shared data structure would make exchanging methods and integrating tools much easier."
     - title: "Use cases in other places"
       text: "Test and validate IREC's methods on cases elsewhere: Greater Montreal (solar, geothermal and waste-heat assessment), the Carre Laval living lab, Toronto district energy, Indigenous communities in BC and Alberta; and across Spain and Europe, Osona (27 communities in development), Gipuzkoa (60 in operation) and La Bordeta in Barcelona. Comparable case records turn each into evidence."
     - title: "Bridges for Catalonia"
       text: "Catalonia and Quebec have had a cooperation agreement since 1996 (30 years in 2026), with a joint committee that sets a work programme every two years; climate was added in 2010 and research and innovation, including clean energy, are priorities. Idea to explore: ask for community energy and digital twins to be reflected in the next programme. Beyond that, a Canada-Spain-Europe axis connects IREC to REScoop.eu, Energy Cities and the IEA route."
-  ask_title: "What IREC could ask for"
-  ask_items:
+  we_ask_title: "What we ask of IREC"
+  we_ask:
+    - "Working space in Barcelona for the alliance team (in kind, as in the budget)."
+    - "A technical contact and an agreed, limited amount of technical support."
+    - "A place in the founding group: a seat on the board and the technical committee."
+    - "One call to prepare together within the first year."
+    - "A first review, with IREC's own tools, of the shared data structure."
+  could_ask_title: "What IREC could ask for"
+  could_ask:
     - "Clear rules on intellectual property and data sharing; IREC's own tools keep their identity."
     - "A limit on time and technical support, with a review point after the first year."
-    - "A founding seat on the board and technical committee."
     - "How partner contributions are shared from the second year, and the option to contribute in kind."
     - "An exit clause and no exclusivity."
-  note: "Figures come from the budget chapter. Access to foundations and the Catalonia-Quebec idea are not commitments; they are routes to explore together."
+  questions_title: "Four questions for IREC"
+  questions:
+    - {tag: "Value", title: "Which of the four gains matters most to IREC?", text: "Funding lines, peers, use cases, or the Catalonia-Quebec bridge? Which would you drop?"}
+    - {tag: "Support", title: "What could IREC realistically offer?", text: "Space, technical hours, data, a place for visiting researchers?"}
+    - {tag: "Decision", title: "Who at IREC should be the contact and decide?", text: "And what approval would a first, light commitment need?"}
+    - {tag: "Adoption", title: "What would stop IREC from joining?", text: "Resources, intellectual property, priorities, competition with own services? Tell us what the first step would need to look like."}
+  note: "Figures come from the budget. Access to foundations and the Catalonia-Quebec idea are not commitments; they are routes to explore together."
+
+budget_summary:
+  kicker: "Budget foreseen"
+  title: "A lean start that grows with the work."
+  lead: "A small team funded by in-kind contributions at first, then by partner contributions and project income. Amounts in EUR."
+  stats:
+    total_costs: "Total costs"
+    first_year: "Costs in the first year (partial year)"
+    partners_share: "Share covered by partner contributions"
+    projects_share: "Share from research and multilateral projects"
+    team_2033: "Team in the last year"
+  team_unit: "people"
+  note: "Planned figures. Charts and the full table are in the annex."
 
 govern:
   kicker: "How it is run"

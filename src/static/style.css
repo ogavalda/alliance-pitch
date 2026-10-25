@@ -99,3 +99,6 @@ table.bt tr.cnt td{color:var(--mute);font-style:italic}
 .tchip:hover{filter:brightness(1.12)}
 .tchip b{font-size:.82rem}.tchip span{font-size:.68rem;opacity:.9}
 #mapbox[data-mode="geo"] .tchip{background:var(--geo)}
+
+.annexhead{background:#f8e9ed;max-width:none;border-top:6px solid var(--pink);border-bottom:1px solid var(--line)}
+.annexhead>*{max-width:1032px;margin-left:auto;margin-right:auto}

@@ -3,14 +3,16 @@ from __future__ import annotations
 import math
 
 
-def network_svg(n: dict, labels: dict, connected: bool, hub_title: str, hub_sub: str) -> str:
+def network_svg(n: dict, labels: dict, connected: bool, hub_title: str, hub_sub: str, scope_labels: dict | None = None) -> str:
     """Stakeholder network: real organisations, grouped by scope. connected=False shows them isolated."""
     pal = n["palette"]; net = n["network"]
     nodes = net["nodes"]; hub = net["hub"]; k = net.get("neighbours", 2)
     g = []
+    scope_labels = scope_labels or {}
     for sc in net.get("scopes", []):
+        lab = scope_labels.get(sc["label"], sc["label"])
         g.append(f'<text x="{sc["x"]}" y="18" text-anchor="middle" font-size="12" font-weight="700" '
-                 f'letter-spacing="2" fill="#93002d" opacity=".55">{sc["label"]}</text>')
+                 f'letter-spacing="2" fill="#93002d" opacity=".55">{lab}</text>')
     if connected:
         for p in nodes:
             g.append(f'<line x1="{p["x"]}" y1="{p["y"]}" x2="{hub["x"]}" y2="{hub["y"]}" '
@@ -35,7 +37,7 @@ def network_svg(n: dict, labels: dict, connected: bool, hub_title: str, hub_sub:
         if p.get("engaged"):
             g.append(f'<circle cx="{p["x"]}" cy="{p["y"]}" r="17" fill="none" stroke="{pal["engaged"]}" stroke-width="2.5"/>')
         g.append(f'<circle cx="{p["x"]}" cy="{p["y"]}" r="11" fill="{pal[p["type"]]}" stroke="#fff" stroke-width="2">'
-                 f'<title>{p["label"]} ({p["scope"]})</title></circle>')
+                 f'<title>{p["label"]} ({scope_labels.get(p["scope"].upper(), p["scope"])})</title></circle>')
         g.append(f'<text x="{p["x"]}" y="{p["y"]+(30 if p.get("engaged") else 26)}" text-anchor="middle" font-size="12.5" '
                  f'font-weight="{700 if p.get("engaged") else 400}" fill="#1f1a1b">{p["label"]}</text>')
     return ('<svg viewBox="0 0 1000 480" width="100%" role="img" '
@@ -109,11 +111,11 @@ def _esc(x):
     return (str(x).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
 
 
-def tools_matrix_html(tools_cfg: dict) -> str:
+def tools_matrix_html(tools_cfg: dict, ui: dict) -> str:
     """Table: one row per tool, one column per layer. Empty cells show '?' (not confirmed)."""
     cols = tools_cfg["columns"]
     keys = list(cols.keys())
-    head = "<tr><th>Tool</th>" + "".join(f"<th>{_esc(cols[k])}</th>" for k in keys) + "<th>Source</th></tr>"
+    head = f"<tr><th>{_esc(ui['tool'])}</th>" + "".join(f"<th>{_esc(cols[k])}</th>" for k in keys) + f"<th>{_esc(ui['source'])}</th></tr>"
     rows = []
     for i, t in enumerate(tools_cfg["tools"]):
         col = TOOL_COLOURS[i % len(TOOL_COLOURS)]
@@ -121,7 +123,7 @@ def tools_matrix_html(tools_cfg: dict) -> str:
         for k in keys:
             v = t.get(k)
             cells.append(f'<td>{_esc(v)}</td>' if v else '<td class="unk">?</td>')
-        src = f'<a href="{t["source"]}">link</a>' if t.get("source") else ""
+        src = f'<a href="{t["source"]}">{_esc(ui["link"])}</a>' if t.get("source") else ""
         rows.append(f'<tr><td class="tn" style="border-left:5px solid {col}"><b>{_esc(t["name"])}</b>'
                     f'<br><span>{_esc(t["owner"])}</span></td>' + "".join(cells) + f"<td>{src}</td></tr>")
     return f'<div class="tscroll"><table class="tm">{head}{"".join(rows)}</table></div>'
@@ -199,7 +201,7 @@ def budget_stats(b: dict) -> dict:
     total = sum(_num(v) for v in c["total_costs"]["values"])
     src = {k: sum(_num(x) for x in v["values"]) for k, v in i.items() if not v.get("total")}
     team_last = _num(c["ra_number"]["values"][-1]) + _num(c["pm_number"]["values"][-1])
-    return {"total": total, "first": _num(c["total_costs"]["values"][0]), "years": f'{b["years"][0]} to {b["years"][-1]}',
+    return {"total": total, "first": _num(c["total_costs"]["values"][0]), "y0": b["years"][0], "y1": b["years"][-1],
             "partners_pct": round(100 * src["partners"] / total), "projects_pct": round(100 * (src["bilateral"] + src["horizon"] + src["multilateral"]) / total),
             "team_last": team_last, "src": src}
 
@@ -232,7 +234,7 @@ def budget_legend_html(b: dict) -> str:
                    for k, d in b["incomes"].items() if not d.get("total"))
 
 
-def budget_team_svg(b: dict, unit: str) -> str:
+def budget_team_svg(b: dict, unit: str, pm_word: str = "Project manager", ra_word: str = "Research assistants") -> str:
     ys = b["years"]; c = b["costs"]
     W, H, L, B, T = 440, 240, 30, 36, 20
     mx = 5
@@ -244,9 +246,9 @@ def budget_team_svg(b: dict, unit: str) -> str:
     for k, y in enumerate(ys):
         x = L + k * (W - L - 10) / len(ys) + ((W - L - 10) / len(ys) - bw) / 2
         pm = _num(c["pm_number"]["values"][k]); ra = _num(c["ra_number"]["values"][k])
-        g.append(f'<rect x="{x:.1f}" y="{Y(pm):.1f}" width="{bw:.1f}" height="{Y(0)-Y(pm):.1f}" fill="#93002d"><title>Project manager: {pm}</title></rect>')
+        g.append(f'<rect x="{x:.1f}" y="{Y(pm):.1f}" width="{bw:.1f}" height="{Y(0)-Y(pm):.1f}" fill="#93002d"><title>{pm_word}: {pm}</title></rect>')
         if ra:
-            g.append(f'<rect x="{x:.1f}" y="{Y(pm+ra):.1f}" width="{bw:.1f}" height="{Y(pm)-Y(pm+ra):.1f}" fill="#1598d6"><title>Research assistants: {ra}</title></rect>')
+            g.append(f'<rect x="{x:.1f}" y="{Y(pm+ra):.1f}" width="{bw:.1f}" height="{Y(pm)-Y(pm+ra):.1f}" fill="#1598d6"><title>{ra_word}: {ra}</title></rect>')
         g.append(f'<text x="{x+bw/2:.1f}" y="{Y(pm+ra)-5:.1f}" text-anchor="middle" font-size="11" font-weight="700" fill="#1f1a1b">{pm+ra}</text>')
         g.append(f'<text x="{x+bw/2:.1f}" y="{H-14}" text-anchor="middle" font-size="10.5" fill="#1f1a1b">{y}</text>')
     return (f'<svg viewBox="0 0 440 240" width="100%" role="img" aria-label="Team size per year">' + "".join(g) + "</svg>")
@@ -264,16 +266,16 @@ def budget_mix_svg(b: dict) -> str:
     return (f'<svg viewBox="0 0 440 {12+len(inc)*rowh}" width="100%" role="img" aria-label="Share of each income source over the whole period">' + "".join(g) + "</svg>")
 
 
-def budget_table_html(b: dict) -> str:
+def budget_table_html(b: dict, ui: dict) -> str:
     ys = b["years"]
-    head = "<tr><th>EUR</th>" + "".join(f"<th>{y}</th>" for y in ys) + "<th>Total</th></tr>"
+    head = f"<tr><th>{ui['eur']}</th>" + "".join(f"<th>{y}</th>" for y in ys) + f"<th>{ui['total']}</th></tr>"
     def row(d, cls=""):
         tot = "" if d.get("count") else f"{sum(_num(v) for v in d['values']):,.0f}"
         return f'<tr class="{cls}"><td>{_esc(d["label"])}</td>' + "".join(f"<td>{_fmt(v)}</td>" for v in d["values"]) + f"<td>{tot}</td></tr>"
-    out = [head, '<tr class="sec"><td colspan="%d">Costs</td></tr>' % (len(ys) + 2)]
+    out = [head, '<tr class="sec"><td colspan="%d">%s</td></tr>' % (len(ys) + 2, ui["costs"])]
     for k, d in b["costs"].items():
         out.append(row(d, "tot" if d.get("total") else ("cnt" if d.get("count") else "")))
-    out.append('<tr class="sec"><td colspan="%d">Incomes</td></tr>' % (len(ys) + 2))
+    out.append('<tr class="sec"><td colspan="%d">%s</td></tr>' % (len(ys) + 2, ui["incomes"]))
     for k, d in b["incomes"].items():
         out.append(row(d, "tot" if d.get("total") else ""))
     return '<div class="tscroll"><table class="bt">' + "".join(out) + "</table></div>"
@@ -293,11 +295,7 @@ def tools_map_html(tools_cfg: dict) -> str:
             if t["topic"] != tk:
                 continue
             a, b = t["scale"]
-            nm = t["name"].split(" (")[0].split(" / ")[0]
-            if t["id"] == "commercial":
-                nm = "Commercial platforms (Italy)"
-            if t["id"] == "inventories":
-                nm = "Tool inventories (openmod, quarree100)"
+            nm = t.get("short") or t["name"].split(" (")[0].split(" / ")[0]
             link = t.get("source", "")
             chips.append(
                 f'<a class="tchip" href="{link}" style="grid-column:{a} / span {b - a + 1};--who:{who[t["who"]]["colour"]};--geo:{geo[t["geo"]]["colour"]}" '
@@ -330,7 +328,7 @@ def irec_budget(b: dict) -> dict:
     }
 
 
-def irec_first_years_svg(b: dict) -> str:
+def irec_first_years_svg(b: dict, ui: dict) -> str:
     inc = {k: v for k, v in b["incomes"].items() if not v.get("total")}
     ys = b["years"][:2]; tot = b["costs"]["total_costs"]["values"]
     W, L, bh = 900, 70, 34
@@ -347,5 +345,5 @@ def irec_first_years_svg(b: dict) -> str:
             if w > 70:
                 g.append(f'<text x="{x+w/2:.1f}" y="{top+22}" text-anchor="middle" font-size="11.5" font-weight="700" fill="#fff">{100*v/tot[r]:.0f}%</text>')
             x += w
-        g.append(f'<text x="{W-18}" y="{top+bh+14}" text-anchor="end" font-size="11" fill="#5f5a5b">total costs {tot[r]:,} EUR</text>')
+        g.append(f'<text x="{W-18}" y="{top+bh+14}" text-anchor="end" font-size="11" fill="#5f5a5b">{ui["total_costs_word"]} {tot[r]:,} {ui["eur"]}</text>')
     return f'<svg viewBox="0 0 900 150" width="100%" role="img" aria-label="Who covers the costs in the first two years">' + "".join(g) + "</svg>"

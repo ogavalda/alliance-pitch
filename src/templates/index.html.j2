@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ lang|default("en") }}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,10 +12,18 @@
 <body>
 <div class="bar" id="bar"></div>
 <header class="nav"><b>{{ t.brand }}</b>
-{% for s in sections %}<a href="#{{ s }}">{{ t.nav[s] }}</a>{% endfor %}</header>
+{% for s in main %}<a href="#{{ s }}">{{ t.nav[s] }}</a>{% endfor %}<a href="#annex">{{ t.nav.annex }}</a></header>
 <main>
 {% include "sections/hero.j2" %}
 {% for num, sid in numbered %}{% include "sections/" ~ sid ~ ".j2" %}
+{% endfor %}
+<section id="annex" class="annexhead">
+  <div class="kicker">{{ t.annex.label }}</div>
+  <h2>{{ t.annex.title }}</h2>
+  <p class="lead">{{ t.annex.lead }}</p>
+  <div class="chips">{% for num, sid in annexed %}<a class="tab" href="#{{ sid }}" style="text-decoration:none">{{ num }} · {{ t[sid].kicker }}</a>{% endfor %}</div>
+</section>
+{% for num, sid in annexed %}{% include "sections/" ~ sid ~ ".j2" %}
 {% endfor %}
 </main>
 <footer>
