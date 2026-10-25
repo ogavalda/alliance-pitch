@@ -5,7 +5,7 @@ years: [2027, 2028, 2029, 2030, 2031, 2032, 2033]
 
 costs:
   rent:            {label: "Rent costs",                    values: [5000, 10000, 1500, 1500, 1500, 1500, 1500]}
-  ra_unit:         {label: "Labour costs (1 research assistant)", values: [36000, 37800, 39690, 41675, 43758, 45946, 48243]}
+  ra_unit:         {label: "Labour costs (1 research assistant)", values: [null, 37800, 39690, 41675, 43758, 45946, 48243]}
   labour_total:    {label: "Labour costs (1 alliance director) ", values: [59207, 162136, 209932, 220429, 275209, 288969, 303417]}
   students:        {label: "Student placements (bursaries)", values: [null, 45000, 45000, 45000, 45000, 45000, 45000]}
   travel:          {label: "Travel and subsistence",        values: [null, 8000, 8000, 8000, 8000, 8000, 8000]}
