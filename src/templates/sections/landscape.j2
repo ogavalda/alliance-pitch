@@ -1,0 +1,35 @@
+{% set s = t.landscape %}
+<section id="landscape">
+  <div class="kicker reveal">{{ num }} · {{ s.kicker }}</div>
+  <h2 class="reveal">{{ s.title }}</h2>
+  <p class="lead reveal">{{ s.lead }}</p>
+  <h3 style="margin-top:28px">{{ s.map_title }}</h3>
+  <p class="lead">{{ s.map_lead }}</p>
+  <div class="chips" id="mtoggle"><button class="tab on" data-mc="who">{{ s.map_by_who }}</button><button class="tab" data-mc="geo">{{ s.map_by_geo }}</button></div>
+  <div class="card" id="mapbox" data-mode="who">
+    {{ figs.tools_map }}
+    {{ figs.tools_map_legend }}
+    <p class="note">{{ s.map_note }}</p>
+  </div>
+  <h3 style="margin-top:40px">{{ s.matrix_title }}</h3>
+  {{ figs.tools_matrix }}
+  <p class="note">{{ s.matrix_note }}</p>
+  <h3 style="margin-top:40px">{{ s.stack_title }}</h3>
+  <p class="lead">{{ s.stack_lead }}</p>
+  <div class="chips" id="stabs"><button class="tab on" data-s="today">{{ s.tab_today }}</button><button class="tab" data-s="core">{{ s.tab_core }}</button></div>
+  <div class="card">
+    <div id="stk-today">{{ figs.stack_today }}</div>
+    <div id="stk-core" style="display:none">{{ figs.stack_core }}</div>
+    <p class="note">{{ s.stack_note }}</p>
+  </div>
+  <h3 style="margin-top:40px">{{ s.core_title }}</h3>
+  <p class="lead">{{ s.core_lead }}</p>
+  {{ figs.core_layers }}
+  <div class="grid g2" style="margin-top:20px">
+    {% for b in s.benefits %}<div class="card"><b>{{ b.title }}</b><p>{{ b.text }}</p></div>{% endfor %}
+  </div>
+  <div class="grid g2" style="margin-top:20px">
+    <div class="tier t1"><b>{{ s.split_title }}</b><p>{{ s.split_core }}</p></div>
+    <div class="tier t3"><p style="margin-top:2em">{{ s.split_yours }}</p></div>
+  </div>
+</section>

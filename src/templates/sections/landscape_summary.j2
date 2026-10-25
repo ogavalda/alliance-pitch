@@ -1,0 +1,10 @@
+{% set s = t.landscape_summary %}{% set ts = figs.tstats %}
+<section id="landscape_summary">
+  <div class="kicker reveal">{{ num }} · {{ s.kicker }}</div>
+  <h2 class="reveal">{{ s.title }}</h2>
+  <p class="lead reveal">{{ s.text.format(n=ts.n, m=ts.m, k=ts.k) }}</p>
+  <div class="grid g3 reveal" style="margin-top:20px">
+    {% for c in s.points %}<div class="card"><b>{{ c.title }}</b><p>{{ c.text }}</p></div>{% endfor %}
+  </div>
+  <p class="note">{{ s.note }} <a href="#landscape">{{ t.ui.read_annex }} ↓</a></p>
+</section>

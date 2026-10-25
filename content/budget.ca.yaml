@@ -1,0 +1,15 @@
+costs:
+  rent: {label: "Lloguer"}
+  ra_unit: {label: "Cost laboral (1 investigador/a assistent)"}
+  labour_total: {label: "Cost laboral (1 director/a de l'aliança)"}
+  students: {label: "Pràctiques d'estudiants (beques)"}
+  travel: {label: "Viatges i dietes"}
+  total_costs: {label: "TOTAL COSTOS"}
+incomes:
+  concordia: {label: "Concordia en espècie"}
+  irec: {label: "IREC en espècie (lloguer)"}
+  partners: {label: "Aportacions dels socis"}
+  bilateral: {label: "Projecte de recerca bilateral"}
+  horizon: {label: "Projecte Horizon"}
+  multilateral: {label: "Convocatòries multilaterals (IEA, BM, ONU)"}
+  total_incomes: {label: "TOTAL INGRESSOS"}

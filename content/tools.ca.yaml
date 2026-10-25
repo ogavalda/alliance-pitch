@@ -1,0 +1,49 @@
+# Catalan labels. Individual tool descriptions stay in English (names and technical terms).
+columns:
+  frontend: "Interfície"
+  backend: "Backend"
+  data_model: "Model de dades"
+  capture: "Captura de dades"
+  kpis: "Indicadors clau"
+  openness: "Obertura"
+map:
+  topics:
+    planning: "Planificació i simulació"
+    operation: "Operació i flexibilitat"
+    setup: "Creació i administració de la comunitat"
+    knowledge: "Dades, indicadors i coneixement"
+    unclassified: "Pendent de classificar"
+  scales:
+    1: "Edifici i llar"
+    2: "Comunitat energètica"
+    3: "Districte i barri"
+    4: "Ciutat i regió"
+  who:
+    research: {label: "Recerca i universitats"}
+    eu: {label: "UE i organismes públics (projectes)"}
+    public: {label: "Organismes públics regionals i nacionals"}
+    network: {label: "Xarxes i cooperatives"}
+    company: {label: "Empreses"}
+    programme: {label: "Programes internacionals i inventaris"}
+  geo:
+    canada: {label: "Canadà"}
+    spain: {label: "Espanya / Catalunya"}
+    europe: {label: "Europa"}
+    global: {label: "Global / internacional"}
+    unknown: {label: "No confirmat"}
+core_layers:
+  - id: geo
+    title: "Metadades geoespacials i d'edificis"
+    text: "Identitat i empremta de l'edifici, ús, antiguitat, alçada, sistemes, sistema de referència de coordenades, enllaços amb el cadastre i dades obertes d'edificis."
+  - id: socio
+    title: "Estructura socioeconòmica"
+    text: "Llars, propietat i pertinença, vulnerabilitat, tarifes i costos, descrits amb els mateixos camps i codis."
+  - id: capture
+    title: "Captura de dades i procedència"
+    text: "Què es recull, com, qui i quan. Cada valor indica si és mesurat, modelat o declarat, i d'on ve."
+  - id: cases
+    title: "Fitxes de casos reals"
+    text: "Un registre estàndard per a l'estudi d'una comunitat o districte, perquè projectes diferents es puguin comparar en igualtat de condicions."
+  - id: kpis
+    title: "Indicadors clau"
+    text: "Definicions, fórmules, unitats i límits acordats, perquè els números de eines diferents signifiquin el mateix."

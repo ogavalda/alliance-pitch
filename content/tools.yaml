@@ -1,0 +1,285 @@
+# Tool landscape for community and local energy management. One entry per tool or tool family.
+# Fields left empty (null) are shown as "?" = not confirmed in the public sources we found. Please complete them.
+# diagram: true  -> the tool appears as a column in the stack diagram (keep it to 6 or 7).
+columns:
+  frontend: "Front end"
+  backend: "Back end"
+  data_model: "Data model"
+  capture: "Data capture"
+  kpis: "Key indicators"
+  openness: "Openness"
+
+# How the map classifies tools (edit freely):
+#   topic = row, scale = [first, last] column it covers, who = owner type (colour), geo = where it comes from (colour)
+map:
+  topics:
+    planning:     "Planning and simulation"
+    operation:    "Operation and flexibility"
+    setup:        "Community set-up and administration"
+    knowledge:    "Data, indicators and knowledge"
+    unclassified: "Not yet classified"
+  scales:
+    1: "Building and household"
+    2: "Energy community"
+    3: "District and neighbourhood"
+    4: "City and region"
+  who:
+    research:  {label: "Research and universities", colour: "#93002d"}
+    eu:        {label: "EU and public bodies (projects)", colour: "#00776f"}
+    public:    {label: "Regional and national public bodies", colour: "#1598d6"}
+    network:   {label: "Networks and cooperatives", colour: "#e83f21"}
+    company:   {label: "Companies", colour: "#e08a00"}
+    programme: {label: "International programmes and inventories", colour: "#7a4fa0"}
+  geo:
+    canada:  {label: "Canada", colour: "#e83f21"}
+    spain:   {label: "Spain / Catalonia", colour: "#e90065"}
+    europe:  {label: "Europe", colour: "#1598d6"}
+    global:  {label: "Global / international", colour: "#7a4fa0"}
+    unknown: {label: "Not confirmed", colour: "#8a8f93"}
+
+tools:
+  - id: tools4cities
+    topic: planning
+    scale: [3, 4]
+    who: research
+    geo: canada
+    name: "Tools4Cities"
+    owner: "Concordia NGCI (Canada)"
+    diagram: true
+    frontend: "CITYlayers (browser viewer), CITYplayer (neighbourhood game), RETROfitter"
+    backend: "CITYhub open-source Python framework, REST API"
+    data_model: "Shared city data model (schema not confirmed)"
+    capture: "CITYdata tool; datasets per domain"
+    kpis: "Energy and emissions simulation outputs"
+    openness: "CITYhub open source (licence to check)"
+    source: "https://tools4cities-wiki.readthedocs.io/en/latest/"
+  - id: makingpeds
+    topic: planning
+    scale: [3, 3]
+    who: eu
+    geo: europe
+    name: "MAKING-PEDs"
+    owner: "EU project (Linz, Civitavecchia-Rome, El Prat, Baerum)"
+    diagram: true
+    frontend: "Integrated visualisation platform, decision-support mock-ups"
+    backend: "Digital twins on 3D city models"
+    data_model: "CityGML (planned)"
+    capture: null
+    kpis: null
+    openness: null
+    source: "https://www.r2msolution.com/en/projects/making-peds/"
+  - id: rescoopvpp
+    topic: operation
+    scale: [1, 2]
+    who: network
+    geo: europe
+    name: "REScoopVPP (COFYbox, COFYcloud)"
+    owner: "REScoop.eu and members (EU Horizon 2020)"
+    diagram: true
+    frontend: "Personal dashboard, community aggregated view"
+    backend: "COFYcloud (forecasting, price matrix, OpenADR flexibility); COFYbox on Home Assistant"
+    data_model: null
+    capture: "Home gateway (Raspberry Pi) metering and device control"
+    kpis: null
+    openness: "Open source on code.rescoop.eu (GitLab)"
+    source: "https://code.rescoop.eu/rescoopvpp"
+  - id: comunitatenergetica
+    topic: setup
+    scale: [1, 2]
+    who: public
+    geo: spain
+    name: "comunitatenergetica.cat"
+    owner: "ICAEN, with IREC and Ciclica (Catalonia)"
+    diagram: true
+    frontend: "Public web platform: simulator and directory of communities"
+    backend: null
+    data_model: null
+    capture: "User inputs plus building data (source not stated)"
+    kpis: "Solar potential, production and sharing reports within the 2 km limit"
+    openness: null
+    source: "https://icaen.gencat.cat/ca/energia/autoconsum/comunitats-energetiques/comunitatenergetica.cat-leina-dimpuls-de-les-comunitats-energetiques-de-catalunya/index.html"
+  - id: somcomunitats
+    topic: setup
+    scale: [2, 2]
+    who: network
+    geo: spain
+    name: "Som Comunitats / OECoop tools"
+    owner: "Som Energia, OECoop and cooperative alliance (Spain)"
+    diagram: true
+    frontend: "Digital services for communities; OECoop GIS map for shared self-consumption"
+    backend: "Free, collaborative software (second-degree cooperative)"
+    data_model: null
+    capture: "Community and member administration"
+    kpis: null
+    openness: "Free software (details to check)"
+    source: "https://www.energias-renovables.com/autoconsumo/som-comunitats-nace-la-cooperativa-lanzadera-de-20240527"
+  - id: commercial
+    short: "Commercial platforms (Italy)"
+    topic: setup
+    scale: [2, 2]
+    who: company
+    geo: europe
+    name: "Commercial CER platforms (Maps Group ROSE CER, Engineering Neta, Hive Power FLEXO, Sistematica ECMS, Energy SpA)"
+    owner: "Companies (Italy)"
+    diagram: true
+    frontend: "SaaS dashboards, member portals"
+    backend: "Proprietary: setup, monitoring, incentive splitting"
+    data_model: null
+    capture: "Smart-meter and device monitoring"
+    kpis: "Incentive and sharing calculations"
+    openness: "Proprietary"
+    source: "https://www.hivepower.tech/blog/pioneer-energy-communities-in-the-italian-alps-hive-power-rittana"
+  - id: peddb
+    topic: knowledge
+    scale: [3, 3]
+    who: research
+    geo: europe
+    name: "PED Database (COST PED-EU-NET / DUT)"
+    owner: "COST Action and DUT partnership"
+    diagram: true
+    frontend: "Web database of positive energy districts"
+    backend: "Database with questionnaire-based entries"
+    data_model: "Questionnaire structure"
+    capture: "Questionnaires filled by project teams"
+    kpis: "KPIs derived from questionnaire inputs"
+    openness: null
+    source: "https://peddatabase.dutpartnership.eu/"
+  - id: ebc83
+    topic: knowledge
+    scale: [3, 3]
+    who: programme
+    geo: global
+    name: "IEA EBC Annex 83 (Positive Energy Districts)"
+    owner: "IEA EBC programme"
+    diagram: false
+    frontend: "Reports and guidelines (no single tool found)"
+    backend: null
+    data_model: "Framework; lists data and tools for PED modelling (Subtask B)"
+    capture: null
+    kpis: "Framework for PED definition and assessment"
+    openness: "Public reports"
+    source: "https://nachhaltigwirtschaften.at/en/iea/technologyprogrammes/ebc/iea-ebc-annex-83.php"
+  - id: cities4peds
+    topic: knowledge
+    scale: [3, 4]
+    who: network
+    geo: europe
+    name: "Cities4PEDs toolbox"
+    owner: "Energy Cities"
+    diagram: false
+    frontend: "Toolbox for cities (details to check)"
+    backend: null
+    data_model: null
+    capture: null
+    kpis: null
+    openness: null
+    source: "https://energy-cities.eu/project/cities4peds-toolbox/"
+  - id: repository
+    topic: knowledge
+    scale: [2, 2]
+    who: eu
+    geo: europe
+    name: "Energy Communities Repository"
+    owner: "European Commission, coordinated by REScoop.eu (2022-2024)"
+    diagram: false
+    frontend: "Website with toolbox and best practices"
+    backend: null
+    data_model: null
+    capture: "Data collection and analysis on communities"
+    kpis: null
+    openness: null
+    source: "https://energy-cities.eu/project/energy-communities-repository/"
+  - id: reho
+    topic: planning
+    scale: [2, 3]
+    who: research
+    geo: europe
+    name: "REHO"
+    owner: "EPFL IPESE"
+    diagram: false
+    frontend: null
+    backend: "Decision support optimisation for renewable energy communities"
+    data_model: null
+    capture: null
+    kpis: null
+    openness: "Apache-2.0"
+    source: "https://tool-overview-energy-planning.readthedocs.io/en/latest/readme.html"
+  - id: acept
+    topic: planning
+    scale: [2, 3]
+    who: research
+    geo: unknown
+    name: "ACEPT"
+    owner: "Open-source project"
+    diagram: false
+    frontend: null
+    backend: "Automated communal energy planning: demand, supply, distribution"
+    data_model: null
+    capture: "Building characteristics, regional data"
+    kpis: null
+    openness: "Open source"
+    source: "https://acept.readthedocs.io/en/latest/"
+  - id: jrc
+    topic: planning
+    scale: [2, 2]
+    who: eu
+    geo: europe
+    name: "JRC renewable energy community forecasting tool"
+    owner: "European Commission JRC (2025)"
+    diagram: false
+    frontend: "Web tool for non-technical users"
+    backend: "Techno-economic forecasting"
+    data_model: null
+    capture: null
+    kpis: "Techno-economic performance"
+    openness: "Open source"
+    source: "https://publications.jrc.ec.europa.eu/repository/handle/JRC139475"
+  - id: masterpiece
+    topic: unclassified
+    scale: [1, 4]
+    who: eu
+    geo: europe
+    name: "MASTERPIECE platform"
+    owner: "EU Horizon Europe project (about 7 M EUR)"
+    diagram: false
+    frontend: "Platform (target mid-2026)"
+    backend: null
+    data_model: null
+    capture: null
+    kpis: null
+    openness: null
+    source: "https://www.economyup.it/innovazione/utility-e-cvc-la-corsa-al-software-che-governa-le-comunita-energetiche-rinnovabili-cer"
+  - id: inventories
+    short: "Tool inventories (openmod, quarree100)"
+    topic: knowledge
+    scale: [1, 4]
+    who: programme
+    geo: global
+    name: "Inventories of tools (openmod tracker, quarree100 overview)"
+    owner: "Open community"
+    diagram: false
+    frontend: null
+    backend: "Catalogues of about 200 energy modelling tools"
+    data_model: null
+    capture: null
+    kpis: null
+    openness: "Open"
+    source: "https://tool-overview-energy-planning.readthedocs.io/en/latest/readme.html"
+
+# The proposed shared core: what would be developed once and shared by all.
+core_layers:
+  - id: geo
+    title: "Geospatial and building metadata"
+    text: "Building identity and footprint, use, age, height, systems, coordinate reference, links to cadastre and open building datasets."
+  - id: socio
+    title: "Socioeconomic structure"
+    text: "Households, ownership and membership, vulnerability, tariffs and costs, described with the same fields and codes."
+  - id: capture
+    title: "Data capture and provenance"
+    text: "What is collected, how, by whom and when. Each value says if it was measured, modelled or declared, and where it came from."
+  - id: cases
+    title: "Real-case records"
+    text: "A standard record for a community or district case study so that different projects can be compared like with like."
+  - id: kpis
+    title: "Key indicators"
+    text: "Agreed definitions, formulas, units and boundaries for the indicators, so numbers from different tools mean the same thing."

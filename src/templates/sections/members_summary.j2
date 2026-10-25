@@ -1,0 +1,8 @@
+{% set s = t.members_summary %}
+<section id="members_summary">
+  <div class="kicker reveal">{{ num }} · {{ s.kicker }}</div>
+  <h2 class="reveal">{{ s.title }}</h2>
+  <p class="lead reveal">{{ s.lead }}</p>
+  <div class="chips">{% for f in s.families %}<span class="tab" style="cursor:default">{{ f }}</span>{% endfor %}</div>
+  <p class="note">{{ s.note }} <a href="#members">{{ t.ui.read_annex }} ↓</a></p>
+</section>

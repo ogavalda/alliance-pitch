@@ -1,0 +1,21 @@
+# Budget as prepared (source: TaskCES_v2, slide "Costs and business model"). All amounts in EUR.
+# Edit the numbers here, then run python build.py. null = empty cell.
+# build.py checks the totals and prints warnings if they do not add up.
+years: [2027, 2028, 2029, 2030, 2031, 2032, 2033]
+
+costs:
+  rent:            {label: "Rent costs",                    values: [5000, 10000, 1500, 1500, 1500, 1500, 1500]}
+  ra_unit:         {label: "Labour costs (1 research assistant)", values: [36000, 37800, 39690, 41675, 43758, 45946, 48243]}
+  labour_total:    {label: "Labour costs (1 alliance director) ", values: [59207, 162136, 209932, 220429, 275209, 288969, 303417]}
+  students:        {label: "Student placements (bursaries)", values: [null, 45000, 45000, 45000, 45000, 45000, 45000]}
+  travel:          {label: "Travel and subsistence",        values: [null, 8000, 8000, 8000, 8000, 8000, 8000]}
+  total_costs:     {label: "TOTAL COSTS",                   values: [64207, 262936, 304122, 316603, 373467, 389415, 406161], total: true}
+
+incomes:
+  concordia:       {label: "Concordia in kind",             values: [59207, 113495, null, null, null, null, null], colour: "#93002d"}
+  irec:            {label: "IREC in kind (rent)",           values: [5000, 10000, null, null, null, null, null], colour: "#e90065"}
+  partners:        {label: "Partner contributions",         values: [null, 47573, 92254, 111603, 168467, 184415, 201161], colour: "#1598d6"}
+  bilateral:       {label: "Bilateral research project",    values: [null, 91868, 121868, 90000, 90000, 90000, 90000], colour: "#e08a00"}
+  horizon:         {label: "Horizon project",               values: [null, null, 65000, 65000, 65000, 65000, 65000], colour: "#00776f"}
+  multilateral:    {label: "Multilateral project calls (IEA, WB, UN)", values: [null, null, 25000, 50000, 50000, 50000, 50000], colour: "#7a4fa0"}
+  total_incomes:   {label: "TOTAL INCOMES",                 values: [64207, 262936, 304122, 316603, 373467, 389415, 406161], total: true}

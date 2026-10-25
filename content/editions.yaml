@@ -1,0 +1,23 @@
+# The documents this repository builds. Each edition = a main pitch plus an annex.
+# main / annex: template names from src/templates/sections/ (order = order on the page; main chapters are numbered 01, 02...; annex A, B...)
+# overlays: text files merged on top of text.yaml, in order (language and audience changes)
+# set enabled: false to skip an edition.
+editions:
+  - id: generic
+    lang: en
+    output: index.html            # generic document, any entity
+    overlays: []
+    main: [problem, why, landscape_summary, alliance, members_summary, govern, roadmap, budget_summary, ask]
+    annex: [landscape, form, members, budget, status]
+  - id: irec_en
+    lang: en
+    output: irec_en.html          # document for IREC, English
+    overlays: [text.irec.en.yaml]
+    main: [problem, why, landscape_summary, alliance, members_summary, govern, roadmap, budget_summary, irec_ask]
+    annex: [landscape, form, members, budget, status]
+  - id: irec_ca
+    lang: ca
+    output: irec_ca.html          # document for IREC, Catalan
+    overlays: [text.ca.yaml, text.irec.ca.yaml]
+    main: [problem, why, landscape_summary, alliance, members_summary, govern, roadmap, budget_summary, irec_ask]
+    annex: [landscape, form, members, budget, status]

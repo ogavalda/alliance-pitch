@@ -1,0 +1,25 @@
+{% set s = t.irec_ask %}{% set f = figs.irec %}
+{% macro fill(txt) %}{{ txt.format(c27="{:,}".format(f.concordia_27), c28="{:,}".format(f.concordia_28), i27="{:,}".format(f.irec_27), i28="{:,}".format(f.irec_28), p27=f.irec_pct_27, p28=f.irec_pct_28, pc28="{:,}".format(f.partners_28), y0=f.year0, y1=f.year1, bil="{:,}".format(f.bilateral), hor="{:,}".format(f.horizon), mul="{:,}".format(f.multilateral)) }}{% endmacro %}
+<section id="irec_ask">
+  <div class="kicker reveal">{{ num }} · {{ s.kicker }}</div>
+  <h2 class="reveal">{{ s.title }}</h2>
+  <p class="lead reveal">{{ s.lead }}</p>
+  <h3 style="margin-top:28px">{{ s.start_title }}</h3>
+  <p class="lead">{{ s.start_text }}</p>
+  <div class="card">{{ f.svg }}<div class="chips">{{ f.legend }}</div></div>
+  <div class="grid g3" style="margin-top:16px">
+    {% for c in s.start_cards %}<div class="card"><b>{{ c.title }}</b><p>{{ fill(c.text) }}</p></div>{% endfor %}
+  </div>
+  <h3 style="margin-top:36px">{{ s.benefits_title }}</h3>
+  <div class="grid g2">
+    {% for c in s.benefits %}<div class="card"><b>{{ loop.index }}. {{ c.title }}</b><p>{{ fill(c.text) }}</p></div>{% endfor %}
+  </div>
+  <div class="grid g2" style="margin-top:36px">
+    <div><h3>{{ s.we_ask_title }}</h3><div class="card"><ul class="clean">{% for i in s.we_ask %}<li>{{ i }}</li>{% endfor %}</ul></div></div>
+    <div><h3>{{ s.could_ask_title }}</h3><div class="card"><ul class="clean">{% for i in s.could_ask %}<li>{{ i }}</li>{% endfor %}</ul></div></div>
+  </div>
+  <h3 style="margin-top:36px">{{ s.questions_title }}</h3>
+  <div id="qs"></div>
+  <button class="btn" id="copyq">{{ t.ask.copy_button }}</button><span id="cm" class="note"></span>
+  <p class="note">{{ s.note }}</p>
+</section>
