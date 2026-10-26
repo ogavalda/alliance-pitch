@@ -91,7 +91,7 @@ def build_edition(ed: dict) -> Path:
         "net_on": charts.network_svg(n, hero["actor_labels"], True, hero["net_hub_title"], hero["net_hub_sub"], hero.get("scope_labels")),
         "net_legend": charts.network_legend_html(n, hero["actor_labels"], hero.get("engaged_label", "Already engaged")),
         "budget": {"stats": bst, "income_svg": charts.budget_income_svg(budget), "legend": charts.budget_legend_html(budget),
-                   "mix_svg": charts.budget_mix_svg(budget),
+                   "team_svg": charts.budget_team_svg(budget, t["budget"]["team_unit"], t["ui"]["pm"], t["ui"]["ra"]), "mix_svg": charts.budget_mix_svg(budget),
                    "table": charts.budget_table_html(budget, ui)},
         "irec": {**charts.irec_budget(budget), "svg": charts.irec_first_years_svg(budget, ui), "legend": charts.budget_legend_html(budget)},
         "tools_map": charts.tools_map_html(tools_cfg),

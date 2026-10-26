@@ -19,3 +19,8 @@ incomes:
   horizon:         {label: "Horizon project",               values: [null, null, 65000, 65000, 65000, 65000, 65000], colour: "#00776f"}
   multilateral:    {label: "Multilateral project calls (IEA, WB, UN)", values: [null, null, 25000, 50000, 50000, 50000, 50000], colour: "#7a4fa0"}
   total_incomes:   {label: "TOTAL INCOMES",                 values: [64207, 262936, 304122, 316603, 373467, 389415, 406161], total: true}
+
+# Team size per year (used for the team chart and the "team in the last year" figure; not shown in the table).
+team:
+  pm: [1, 1, 1, 1, 1, 1, 1]
+  ra: [0, 1, 2, 2, 3, 3, 3]

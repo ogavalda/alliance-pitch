@@ -8,13 +8,17 @@
     <div class="card"><div class="stat">{{ "{:,.0f}".format(st.first / 1000) }}k</div><small>{{ s.stats.first_year }}</small></div>
     <div class="card"><div class="stat">{{ st.partners_pct }}%</div><small>{{ s.stats.partners_share }}</small></div>
     <div class="card"><div class="stat">{{ st.projects_pct }}%</div><small>{{ s.stats.projects_share }}</small></div>
+    <div class="card"><div class="stat">{{ st.team_last }}</div><small>{{ s.stats.team_2033 }} ({{ s.team_unit }})</small></div>
   </div>
   <div class="card">
     <h3>{{ s.chart_income_title }}</h3>
     {{ figs.budget.income_svg }}
     <div class="chips">{{ figs.budget.legend }}</div>
   </div>
-  <div class="card" style="margin-top:16px"><h3>{{ s.chart_mix_title }}</h3>{{ figs.budget.mix_svg }}</div>
+  <div class="grid g2" style="margin-top:16px">
+    <div class="card"><h3>{{ s.chart_team_title }}</h3>{{ figs.budget.team_svg }}<div class="chips"><span class="tab" style="cursor:default"><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#93002d;margin-right:6px"></span>{{ t.ui.pm }}</span><span class="tab" style="cursor:default"><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#1598d6;margin-right:6px"></span>{{ t.ui.ra }}</span></div></div>
+    <div class="card"><h3>{{ s.chart_mix_title }}</h3>{{ figs.budget.mix_svg }}</div>
+  </div>
   <h3 style="margin-top:34px">{{ s.table_title }}</h3>
   {{ figs.budget.table }}
   <p class="note">{{ s.note }}</p>

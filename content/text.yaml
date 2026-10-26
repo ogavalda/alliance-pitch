@@ -37,6 +37,8 @@ ui:                            # small words used by tables and charts
   costs: "Costs"
   incomes: "Incomes"
   total_costs_word: "total costs"
+  pm: "Project manager"
+  ra: "Research assistants"
   read_annex: "Details in the annex"
 
 annex:
@@ -50,8 +52,8 @@ hero:
   lead: "A proposed member-owned alliance of energy community networks, cities, research centres, grid operators and companies, giving local energy actors three things they cannot easily get alone: <b>a shared commons</b>, <b>a project pipeline</b> and <b>a common voice</b>."
   meta:
     - {label: "Occasion", value: "[?] meeting or event"}
-    - {label: "Status", value: "Concept 0.1 · draft, not implemented"}
-    - {label: "Starting engine", value: "An IEA EBC Annex proposal, in parallel"}
+    - {label: "Status", value: "Concept 0.1 · draft. Annex proposal submitted to the IEA EBC ExCo (early October 2026), supported by NRCan"}
+    - {label: "Starting engine", value: "A new IEA EBC Annex (task) proposal, in parallel: see the annex"}
   button_start: "Start the story ↓"
   button_ask: "Jump to the ask"
   presenting_hint: "Presenting? Use the <b>→</b> and <b>←</b> keys to step through sections."
@@ -206,9 +208,9 @@ members:
 
 irec_ask:
   kicker: "What's in it for IREC, and the ask"
-  title: "A light start, with access to funding, peers and real cases across the Atlantic."
+  title: "A contained start, with access to funding, peers and real cases across the Atlantic."
   lead: "IREC would join with a small first commitment, space and some technical support, while Concordia carries the first-year salary. In return it gains reach that is harder to build alone."
-  start_title: "A light start"
+  start_title: "A start with few requirements"
   start_text: "How the first two years are covered, according to the budget."
   start_cards:
     - {title: "Concordia carries the salary", text: "The alliance director is paid by Concordia in kind: {c27} EUR in {y0} and {c28} EUR in {y1}."}
@@ -217,8 +219,8 @@ irec_ask:
   benefits_title: "What IREC gains"
   benefits:
     - title: "More financing lines"
-      text: "Concordia and North American partners can reach philanthropic foundations (for example Rockefeller or Schmidt) and international bodies (UN-Habitat, OECD). This is our understanding of that access, to be confirmed; nothing is committed. The budget aims at bilateral research projects ({bil} EUR over the period), a Horizon project ({hor} EUR) and multilateral calls such as IEA, World Bank and UN ({mul} EUR). Canada and Spain have also opened bilateral EUREKA calls through NRC-IRAP and CDTI (2020 and 2022; we found none open for 2025-2026)."
-    - title: "Peers building similar tools"
+      text: "Concordia and North American partners can reach philanthropic foundations (for example Rockefeller or Schmidt) and international bodies (UN-Habitat, OECD); the Annex proposal already names UN-Habitat and the OECD as proposed collaborators. Access through the Alliance is our understanding, to be confirmed; nothing is committed. The budget aims at bilateral research projects ({bil} EUR over the period), a Horizon project ({hor} EUR) and multilateral calls such as IEA, World Bank and UN ({mul} EUR). Canada and Spain have also opened bilateral EUREKA calls through NRC-IRAP and CDTI (2020 and 2022; we found none open for 2025-2026)."
+    - title: "Allied centres building similar tools"
       text: "Direct discussion with teams whose tools are stronger in specific aspects: Tools4Cities (open-source city digital twin framework with a REST API), REScoopVPP (open-source home gateway and community cloud for flexibility) and MAKING-PEDs (digital twins, with El Prat in Catalonia as a testbed). IREC brings its own community tools (comunitatenergetica.cat, SomComunitatEnergetica.cat). A shared data structure would make exchanging methods and integrating tools much easier."
     - title: "Use cases in other places"
       text: "Test and validate IREC's methods on cases elsewhere: Greater Montreal (solar, geothermal and waste-heat assessment), the Carre Laval living lab, Toronto district energy, Indigenous communities in BC and Alberta; and across Spain and Europe, Osona (27 communities in development), Gipuzkoa (60 in operation) and La Bordeta in Barcelona. Comparable case records turn each into evidence."
@@ -241,7 +243,7 @@ irec_ask:
   questions:
     - {tag: "Value", title: "Which of the four gains matters most to IREC?", text: "Funding lines, peers, use cases, or the Catalonia-Quebec bridge? Which would you drop?"}
     - {tag: "Support", title: "What could IREC realistically offer?", text: "Space, technical hours, data, a place for visiting researchers?"}
-    - {tag: "Decision", title: "Who at IREC should be the contact and decide?", text: "And what approval would a first, light commitment need?"}
+    - {tag: "Decision", title: "Who at IREC should be the contact and decide?", text: "And what approval would a first commitment need?"}
     - {tag: "Adoption", title: "What would stop IREC from joining?", text: "Resources, intellectual property, priorities, competition with own services? Tell us what the first step would need to look like."}
   note: "Figures come from the budget. Access to foundations and the Catalonia-Quebec idea are not commitments; they are routes to explore together."
 
@@ -254,6 +256,8 @@ budget_summary:
     first_year: "Costs in the first year (partial year)"
     partners_share: "Share covered by partner contributions"
     projects_share: "Share from research and multilateral projects"
+    team_2033: "Team in the last year"
+  team_unit: "people"
   note: "Planned figures. Charts and the full table are in the annex."
 
 govern:
@@ -276,7 +280,7 @@ roadmap:
     - {when: "2027–2029 · Prove", title: "Show it works", text: "Annex prototype and case studies, proposal desk live, first training and position papers."}
     - {when: "2030–2032 · Scale", title: "Become the default", text: "Release cycle, regional hubs, framework agreements with cities and grid operators."}
     - {when: "2033–2036 · Institutionalise", title: "Stable reference", text: "Standards cited by funders and regulators, stable multi-year funding."}
-  note: "Indicative dates; they depend on funding and on the Annex decision (November 2026)."
+  note: "Indicative dates; they depend on funding and on the ExCo decision on the Annex proposal submitted in early October 2026 (supported by NRCan; ExCo meeting in November 2026). If approved, the Annex runs 1 year of preparation, 3 of work and 1 of reporting."
 
 status:
   kicker: "Where things stand, honestly"
@@ -284,10 +288,10 @@ status:
   columns:
     - badge: "EXISTS"
       style: ex
-      items: ["Open ontologies and modelling tools to build on [external]", "EU funding for community facilities and for grid twins [external]", "IEA EBC Annexes on communities and data-driven buildings [external]", "Partner conversations: [?] list"]
+      items: ["Open ontologies and modelling tools to build on [external]", "EU funding for community facilities and for grid twins [external]", "IEA EBC Annexes on communities and data-driven buildings [external]", "Proposal for a new EBC Annex (task) submitted to the ExCo in early October 2026, supported by NRCan", "Partner conversations: [?] list"]
     - badge: "DOCUMENTED DRAFT"
       style: dr
-      items: ["Concept note and long-term plan", "Market study and literature gap analysis", "Feasibility scorecard with 24 assumptions", "Annex proposal for the ExCo"]
+      items: ["Concept note and long-term plan", "Market study and literature gap analysis", "Feasibility scorecard with 24 assumptions", "Annex proposal text (EBC Project Concept, 24 August 2026), as submitted to the ExCo"]
     - badge: "PROPOSED · NOT BUILT"
       style: pr
       items: ["The association and its charter", "Membership and founders' package", "The commons (data models, methods, benchmarks)", "Proposal desk and first joint bids"]
@@ -296,16 +300,19 @@ status:
 budget:
   kicker: "Budget foreseen"
   title: "What it takes, and where the money would come from."
-  lead: "A lean team led by an alliance director, with a research assistant and student placements, funded by a mix of in-kind contributions, partner contributions and project income. All amounts in EUR."
+  lead: "A lean team that grows from one project manager to a small group, funded by a mix of in-kind contributions, partner contributions and project income. All amounts in EUR."
   stats:
     total_costs: "Total costs"
     first_year: "Costs in the first year (partial year)"
     partners_share: "Share covered by partner contributions"
     projects_share: "Share from research and multilateral projects"
+    team_2033: "Team in 2033"
+  team_unit: "people"
   chart_income_title: "Costs and where they are covered, per year"
+  chart_team_title: "Team size"
   chart_mix_title: "Funding mix, 2027 to 2033"
   table_title: "The full budget"
-  note: "Planned figures. Partner contributions (membership fees and partner funding) are the balancing item that closes the gap between costs and the other income lines. Project income depends on funding decisions. The first year is a partial year."
+  note: "Planned figures. Partner contributions (membership fees and partner funding) are the balancing item that closes the gap between costs and the other income lines. Project income depends on funding decisions. The first year includes a half year of project management."
 
 ask:
   kicker: "The ask"
@@ -333,3 +340,30 @@ ask:
 footer:
   independence: "<b>Independence and names.</b> This is an independent draft proposal, not an official programme of any organisation named here. Nothing implies endorsement by the European Commission, the IEA or its programmes, REScoop.eu, or any other body. Illustrations use hypothetical data."
   references: "<b>References.</b> European Commission (energy communities page; Citizens Energy Package); REScoop.eu annual reports; Mapping of Energy Communities in Europe, <i>Sustainability</i> 2023, doi 10.3390/su15108201; Systematic Review of Software and Algorithms for RECs, <i>Energies</i> 2026, doi 10.3390/en19163718; Digital Twin Architectures for Buildings and RECs, <i>Sustainability</i> 2026, doi 10.3390/su18125869; Synergy Between Demand Flexibility and Energy Communities, <i>Sustainability</i> 2026, doi 10.3390/su18041858; TwinEU (twineu.net); DSO4DT (DSO Entity)."
+
+ebc_annex:
+  kicker: "The IEA EBC Annex proposal"
+  title: "The Annex is the first engine: from \"can it work?\" to \"who will make it work?\""
+  lead: "Proposed title: <em>Enabling implementation of Community Energy Solutions through digital platforms</em>. The concept was submitted to the IEA EBC Executive Committee in early October 2026, supported by NRCan. Proposed lead and Operating Agent: Ursula Eicker (Concordia University)."
+  problem_title: "The problem it addresses"
+  problem_text: "Community-scale energy systems (solar PV energy communities, district heating and cooling, mixed-energy districts and campuses) are technically mature, yet uptake is slow. Feasibility studies answer \"can this work?\" but rarely \"who will make this work?\", so sound projects stall between planning and implementation. The Annex uses digital twins for fast technical and financial assessment and treats governance, participation, ownership, financing and regulation as part of the model."
+  objectives_title: "Six objectives"
+  objectives:
+    - {title: "Governance structures", text: "Identify successful stakeholder roles, ownership and operating structures, utility engagement, participation and risk allocation."}
+    - {title: "The implementation gap", text: "Find out why feasible projects do not advance, and build frameworks for institutional barriers, coordination, procurement and acceptance."}
+    - {title: "Financing", text: "Business models, public-private and utility partnerships, community ownership and risk-sharing."}
+    - {title: "Regulation", text: "Compare frameworks for district energy, energy communities, electricity sharing, tariffs, building design and zoning."}
+    - {title: "Digital planning tools", text: "Apply and scale open-source digital-twin tools for demand simulation, community energy mapping, technology screening and life-cycle cost, with regulatory, financing and governance constraints built in."}
+    - {title: "Implementation roadmaps", text: "Step-by-step guidance for municipalities, developers and citizen organisations, from feasibility study to operation."}
+  outputs_title: "Outputs"
+  outputs: "A governance and stakeholder framework, a participation and co-creation framework, a financing and business-model guidebook, a regulatory assessment, implementation roadmaps, demonstration case studies and policy recommendations, all integrated in one digital platform that guides the whole planning process."
+  lineage_title: "Builds on earlier EBC work"
+  lineage: "Annex 51 (Energy Efficient Communities), Annex 63 (Implementation of Energy Strategies in Communities), Annex 73 (Net Zero Energy Resilient Public Communities), Annex 75 (Cost-effective Building Renovation at District Level) and Annex 83 (Positive Energy Districts). None of them combined fast digital feasibility assessment with the organisational delivery problem."
+  plan_title: "Timeline and partners"
+  plan_cards:
+    - {title: "Duration", text: "Preparation 1 year, working phase 3 years, reporting 1 year. Start depends on the ExCo decision."}
+    - {title: "Coordination", text: "With the DHC, Cities, SHC, Energy Storage and Users (DSM) Technology Collaboration Programmes."}
+    - {title: "Outside collaborators proposed", text: "Municipal organisations such as FCM, the Global Covenant of Mayors, C40 and Transition Accelerator organisations, and international bodies such as UN-Habitat and the OECD's Cities, Urban Policies and Sustainable Development Division."}
+  link_title: "How the Alliance relates to it"
+  link_text: "The Annex is government-led and time-limited. The Alliance would be its permanent, wider home: it keeps the shared core, the tools and the partners alive after the Annex ends, and lets companies and community networks take part, which an Annex cannot do."
+  note: "Source: EBC Project Concept dated 24 August 2026. Open item: a Technology Readiness Assessment has not been carried out yet; the ExCo would ask for it at the workshop that develops the full proposal."

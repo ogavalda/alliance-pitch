@@ -1,9 +1,9 @@
 # Traducció al català de tot el text comú.
 meta:
-  title: "Aliança de Solucions Energètiques Comunitàries per a la Descarbonització Local: proposta preliminar"
-  description: "Proposta preliminar d'una aliança participada pels seus membres que dona als actors locals de l'energia uns comuns compartits, una cartera de projectes i una veu comuna."
+  title: "Aliança de Bessons Digitals per a la Descarbonització: proposta preliminar"
+  description: "Proposta preliminar d'una aliança participada pels seus membres que dona als actors locals de l'energia un comú compartit, una cartera de projectes i una veu comuna."
   version_line: "Esborrany v0.2 · octubre de 2026"
-brand: "Aliança de Solucions Energètiques Comunitàries"
+brand: "Aliança de Bessons Digitals"
 nav:
   problem: "Problema"
   why: "Per què ara"
@@ -25,6 +25,8 @@ ui:
   costs: "Costos"
   incomes: "Ingressos"
   total_costs_word: "costos totals"
+  pm: "Director/a de projecte"
+  ra: "Investigadors/es assistents"
   read_annex: "Detall a l'annex"
 annex:
   label: "Annex"
@@ -33,18 +35,18 @@ annex:
 hero:
   kicker: "Proposta preliminar · oberta a debat"
   title: "L'energia local és on es construeix la descarbonització. <em>Ningú no hauria de construir-la sol.</em>"
-  lead: "Una aliança proposada, participada pels seus membres, de xarxes de comunitats energètiques, ciutats, centres de recerca, operadors de xarxa i empreses, que dona als actors locals de l'energia tres coses que costa aconseguir en solitari: <b>uns comuns compartits</b>, <b>una cartera de projectes</b> i <b>una veu comuna</b>."
+  lead: "Una aliança proposada, participada pels seus membres, de xarxes de comunitats energètiques, ciutats, centres de recerca, operadors de xarxa i empreses, que dona als actors locals de l'energia tres coses que costa aconseguir en solitari: <b>un comú compartit</b>, <b>una cartera de projectes</b> i <b>una veu comuna</b>."
   meta:
-    - {label: "Motiu", value: "[?] reunió o esdeveniment"}
-    - {label: "Estat", value: "Concepte 0.1 · esborrany, no implementat"}
-    - {label: "Motor inicial", value: "Una proposta d'Annex de l'IEA EBC, en paral·lel"}
+    - {label: "Ocasió", value: "[?] reunió o esdeveniment"}
+    - {label: "Estat", value: "Concepte 0.1 · esborrany. Proposta d'Annex presentada a l'ExCo de l'IEA EBC (principis d'octubre de 2026), amb el suport de NRCan"}
+    - {label: "Motor inicial", value: "Una proposta de nou Annex (tasca) de l'IEA EBC, en paral·lel: vegeu l'annex"}
   button_start: "Comença la història ↓"
   button_ask: "Ves a la petició"
   presenting_hint: "Presentant? Fes servir les tecles <b>→</b> i <b>←</b> per canviar de secció."
   net_tab_off: "Avui: esforços aïllats"
   net_tab_on: "Amb l'Aliança: connectats"
   net_hub_title: "Aliança"
-  net_hub_sub: "comuns · cartera · veu"
+  net_hub_sub: "comú · cartera · veu"
   net_note: "Organitzacions reals del nostre mapa d'actors (recerca documental, octubre de 2026), mostrades com a exemples. Sortir-hi no implica participació ni suport. Anell rosa: ja implicades. Les línies són il·lustratives."
   scope_labels: {CANADA: "CANADÀ", INTERNATIONAL: "INTERNACIONAL", SPAIN: "ESPANYA"}
   actor_labels: {networks: "Xarxes i cooperatives", cities: "Ciutats i regions", grid: "Xarxa i empreses elèctriques", dhc: "Calefacció i refrigeració urbanes", research: "Recerca", funders: "Govern i finançadors"}
@@ -72,8 +74,8 @@ landscape_summary:
   title: "Hi ha bones eines. No comparteixen fonaments."
   text: "Hem revisat {n} eines i famílies d'eines per gestionar comunitats energètiques i sistemes energètics locals, de projectes de recerca, xarxes, organismes públics i empreses. Cadascuna té la seva interfície, backend, model de dades i indicadors. De {m} d'elles no hem trobat el model de dades documentat en fonts públiques."
   points:
-    - {title: "És bo que hi hagi interfícies diferents", text: "Els usuaris són diferents, i les interfícies també ho han de ser."}
-    - {title: "És car que els fonaments siguin diferents", text: "L'estructura de dades, la captura i els indicadors es reconstrueixen cada cop; les eines són difícils d'integrar i els casos de comparar."}
+    - {title: "Interfícies diferents és bo", text: "Els usuaris són diferents, i les interfícies també ho han de ser."}
+    - {title: "Fonaments diferents són cars", text: "L'estructura de dades, la captura i els indicadors es reconstrueixen cada cop; les eines són difícils d'integrar i els casos de comparar."}
     - {title: "Un nucli compartit ajudaria", text: "Si una eina desapareix o dues s'uneixen, les dades i els indicadors mantenen el significat."}
   note: "El mapa i les taules d'eines són a l'annex."
 landscape:
@@ -122,7 +124,7 @@ alliance:
   title: "Una aliança amb tres tasques."
   lead: "Els bessons digitals són el llenguatge compartit i el primer que construïm, però l'Aliança va del que les organitzacions poden fer juntes. Selecciona una tasca."
   jobs:
-    - title: "Comuns a compartir"
+    - title: "Comú"
       tagline: "Blocs compartits i oberts que ningú no guanya tenint-los en privat."
       detail: "Blocs compartits, oberts per defecte: models i esquemes de dades, mètodes de flexibilitat i interacció amb la xarxa, KPI i regles de verificació comuns, proves de validació, conjunts de dades de referència, arquitectura de referència, contractes de model per als compradors."
       value: "Valor: qualsevol eina o estudi construït sobre aquests blocs es pot comparar, reutilitzar i trobar fiable. Els membres conserven els seus productes propis."
@@ -134,7 +136,7 @@ alliance:
       tagline: "Una veu creïble i basada en l'evidència davant la UE, l'IEA, l'OCDE i les xarxes de ciutats."
       detail: "Posicionaments basats en l'evidència i declaracions conjuntes davant la Comissió Europea, l'IEA, l'OCDE i les xarxes de ciutats, transparents i aprovats pels membres."
       value: "Valor: un sol interlocutor per a les institucions, i sistemes energètics locals i bessons digitals reconeguts en el finançament i les polítiques."
-  note: "Els comuns comencen on la literatura és més sòlida: models de dades compartits, mètodes de flexibilitat i interacció amb la xarxa, KPI comuns i validació. Són exemples, no tota la proposta."
+  note: "El comú comença on la literatura és més sòlida: models de dades compartits, mètodes de flexibilitat i interacció amb la xarxa, KPI comuns i validació. Són exemples, no tota la proposta."
 demo:
   kicker: "Què dona un mètode compartit"
   title: "La mateixa comunitat, tres futurs per a la xarxa local."
@@ -181,24 +183,26 @@ members:
   note: "Els nivells de quota no estan decidits i es deixen en blanc a propòsit. Les xarxes paraigua pagarien poc o res en efectiu; la seva contribució és l'abast de la seva base, la validació i la legitimitat."
 budget_summary:
   kicker: "Pressupost previst"
-  title: "Un inici contingut que creix amb la els recursos a trobar."
+  title: "Un inici lleuger que creix amb la feina."
   lead: "Un equip petit finançat primer amb contribucions en espècie, després amb aportacions dels socis i ingressos de projectes. Imports en EUR."
   stats:
     total_costs: "Costos totals"
     first_year: "Costos del primer any (any parcial)"
     partners_share: "Part coberta per aportacions dels socis"
     projects_share: "Part de projectes de recerca i multilaterals"
+    team_2033: "Equip el darrer any"
+  team_unit: "persones"
   note: "Xifres previstes. Els gràfics i la taula completa són a l'annex."
 govern:
   kicker: "Com funciona"
   title: "Neutral per disseny, perquè els competidors puguin seure a la mateixa taula."
   columns:
-    - title: "Un primer contracte breu"
+    - title: "Una carta breu"
       items: ["Obert per defecte pel que fa al nucli compartit", "Els membres conserven la seva feina pròpia", "Cap servei que competeixi amb els membres", "Orientació de dret de la competència a totes les reunions"]
     - title: "Òrgans equilibrats"
-      items: ["Assemblea de tots els membres", "Junta equilibrada entre les cinc famílies de membres", "Comitè tècnic per als comuns", "Secretaria petita"]
+      items: ["Assemblea de tots els membres", "Junta equilibrada entre les cinc famílies de membres", "Comitè tècnic per al comú", "Secretaria petita"]
     - title: "Joc net en projectes"
-      items: ["Els rols de lideratge roten amb criteris clars", "L'Aliança facilita, mai tria guanyadors", "Una part dels projectes guanyats torna als comuns (si els finançadors ho permeten)"]
+      items: ["Els rols de lideratge roten amb criteris clars", "L'Aliança facilita, mai tria guanyadors", "Una part dels projectes guanyats torna al comú (si els finançadors ho permeten)"]
   note: "La forma jurídica comença com a associació espanyola (ràpida i barata) i podria passar a una entitat internacional sense ànim de lucre quan els membres i el finançament ho justifiquin."
 roadmap:
   kicker: "Llarg termini"
@@ -208,34 +212,37 @@ roadmap:
     - {when: "2027–2029 · Demostrar", title: "Mostrar que funciona", text: "Prototip de l'Annex i estudis de cas, oficina de propostes activa, primera formació i documents de posició."}
     - {when: "2030–2032 · Escalar", title: "Esdevenir el referent", text: "Cicle de versions, hubs regionals, acords marc amb ciutats i operadors de xarxa."}
     - {when: "2033–2036 · Institucionalitzar", title: "Referència estable", text: "Estàndards citats per finançadors i reguladors, finançament plurianual estable."}
-  note: "Dates indicatives; depenen del finançament i de la decisió sobre l'Annex (novembre de 2026)."
+  note: "Dates indicatives; depenen del finançament i de la decisió de l'ExCo sobre la proposta d'Annex presentada a principis d'octubre de 2026 (amb el suport de NRCan; reunió de l'ExCo al novembre de 2026). Si s'aprova, l'Annex dura 1 any de preparació, 3 de treball i 1 d'informes."
 status:
   kicker: "On som, amb honestedat"
   title: "El que existeix, el que és un esborrany, el que només és una idea."
   columns:
     - badge: "EXISTEIX"
       style: ex
-      items: ["Ontologies obertes i eines de modelització on construir [extern]", "Finançament de la UE per a instal·lacions comunitàries i per a bessons de xarxa [extern]", "Annexos de l'IEA EBC sobre comunitats i edificis basats en dades [extern]", "Converses amb socis: [?] llista"]
+      items: ["Ontologies obertes i eines de modelització on construir [extern]", "Finançament de la UE per a instal·lacions comunitàries i per a bessons de xarxa [extern]", "Annexos de l'IEA EBC sobre comunitats i edificis basats en dades [extern]", "Proposta de nou Annex (tasca) presentada a l'ExCo a principis d'octubre de 2026, amb el suport de NRCan", "Converses amb socis: [?] llista"]
     - badge: "ESBORRANY DOCUMENTAT"
       style: dr
-      items: ["Nota conceptual i pla a llarg termini", "Estudi de mercat i anàlisi de llacunes de la literatura", "Quadre de viabilitat amb 24 hipòtesis", "Proposta d'Annex per a l'ExCo"]
+      items: ["Nota conceptual i pla a llarg termini", "Estudi de mercat i anàlisi de llacunes de la literatura", "Quadre de viabilitat amb 24 hipòtesis", "Text de la proposta d'Annex (EBC Project Concept, 24 d'agost de 2026), tal com es va presentar a l'ExCo"]
     - badge: "PROPOSAT · NO CONSTRUÏT"
       style: pr
-      items: ["L'associació i la seva carta", "Afiliació i paquet de fundadors", "Els comuns (models de dades, mètodes, referències)", "Oficina de propostes i primeres ofertes conjuntes"]
+      items: ["L'associació i la seva carta", "Afiliació i paquet de fundadors", "El comú (models de dades, mètodes, referències)", "Oficina de propostes i primeres ofertes conjuntes"]
   note: "<b>Principals riscos oberts:</b> la disposició a pagar no està provada; encara no és clar que centres i xarxes competidors compartiran. Pensem provar-ho amb entrevistes, una enquesta breu i una prova de preu abans de comprometre'ns."
 budget:
   kicker: "Pressupost previst"
   title: "Què cal, i d'on vindrien els diners."
-  lead: "Un equip reduït encapçalat per un/a director/a de l'aliança, amb un/a investigador/a assistent i pràctiques d'estudiants, finançat amb una barreja de contribucions en espècie, aportacions de socis i ingressos de projectes. Tots els imports en EUR."
+  lead: "Un equip lleuger que passa d'un director de projecte a un grup petit, finançat amb una barreja de contribucions en espècie, aportacions de socis i ingressos de projectes. Tots els imports en EUR."
   stats:
     total_costs: "Costos totals"
     first_year: "Costos del primer any (any parcial)"
     partners_share: "Part coberta per aportacions dels socis"
     projects_share: "Part de projectes de recerca i multilaterals"
+    team_2033: "Equip el 2033"
+  team_unit: "persones"
   chart_income_title: "Costos i com es cobreixen, per any"
+  chart_team_title: "Mida de l'equip"
   chart_mix_title: "Barreja de finançament, 2027 a 2033"
   table_title: "El pressupost complet"
-  note: "Xifres previstes. Les aportacions dels socis (quotes i finançament de socis) són la partida d'equilibri que tanca la diferència entre costos i la resta d'ingressos. Els ingressos de projectes depenen de decisions de finançament. El primer any és un any parcial."
+  note: "Xifres previstes. Les aportacions dels socis (quotes i finançament de socis) són la partida d'equilibri que tanca la diferència entre costos i la resta d'ingressos. Els ingressos de projectes depenen de decisions de finançament. El primer any inclou mig any de direcció de projecte."
 ask:
   copy_button: "Copia les preguntes"
   copied: " Copiat."
@@ -243,3 +250,30 @@ ask:
 footer:
   independence: "<b>Independència i noms.</b> Aquesta és una proposta preliminar independent, no un programa oficial de cap organització esmentada. Res no implica el suport de la Comissió Europea, de l'IEA o dels seus programes, de REScoop.eu ni de cap altre organisme. Les il·lustracions fan servir dades hipotètiques."
   references: "<b>Referències.</b> Comissió Europea (pàgina de comunitats energètiques; Paquet d'Energia Ciutadana); informes anuals de REScoop.eu; Mapping of Energy Communities in Europe, <i>Sustainability</i> 2023, doi 10.3390/su15108201; Systematic Review of Software and Algorithms for RECs, <i>Energies</i> 2026, doi 10.3390/en19163718; Digital Twin Architectures for Buildings and RECs, <i>Sustainability</i> 2026, doi 10.3390/su18125869; Synergy Between Demand Flexibility and Energy Communities, <i>Sustainability</i> 2026, doi 10.3390/su18041858; TwinEU (twineu.net); DSO4DT (DSO Entity)."
+
+ebc_annex:
+  kicker: "La proposta d'Annex de l'IEA EBC"
+  title: "L'Annex és el primer motor: de «pot funcionar?» a «qui ho farà funcionar?»"
+  lead: "Títol proposat: <em>Enabling implementation of Community Energy Solutions through digital platforms</em>. El concepte es va presentar al Comitè Executiu de l'IEA EBC a principis d'octubre de 2026, amb el suport de NRCan. Líder i Operating Agent proposada: Ursula Eicker (Universitat Concordia)."
+  problem_title: "El problema que aborda"
+  problem_text: "Els sistemes energètics a escala comunitària (comunitats energètiques solars fotovoltaiques, calefacció i refrigeració urbanes, districtes i campus amb energies mixtes) són tècnicament madurs, però l'adopció és lenta. Els estudis de viabilitat responen «pot funcionar?» però rarament «qui ho farà funcionar?», i per això projectes sòlids s'encallen entre la planificació i la implementació. L'Annex fa servir bessons digitals per a una avaluació tècnica i financera ràpida i tracta la governança, la participació, la propietat, el finançament i la regulació com a part del model."
+  objectives_title: "Sis objectius"
+  objectives:
+    - {title: "Estructures de governança", text: "Identificar rols d'actors, estructures de propietat i d'operació, implicació de les empreses elèctriques, participació i repartiment del risc que funcionen."}
+    - {title: "La bretxa d'implementació", text: "Saber per què projectes viables no avancen, i construir marcs per a barreres institucionals, coordinació, contractació i acceptació."}
+    - {title: "Finançament", text: "Models de negoci, aliances publicoprivades i amb empreses elèctriques, propietat comunitària i repartiment del risc."}
+    - {title: "Regulació", text: "Comparar els marcs de xarxes de calor i fred, comunitats energètiques, compartició d'electricitat, tarifes, disseny d'edificis i zonificació."}
+    - {title: "Eines de planificació digitals", text: "Aplicar i escalar eines de codi obert basades en bessons digitals per a simulació de la demanda, cartografia energètica comunitària, selecció de tecnologies i cost de cicle de vida, amb les restriccions regulatòries, financeres i de governança incorporades."}
+    - {title: "Fulls de ruta d'implementació", text: "Guia pas a pas per a ajuntaments, promotors i organitzacions ciutadanes, de l'estudi de viabilitat a l'operació."}
+  outputs_title: "Resultats"
+  outputs: "Un marc de governança i actors, un marc de participació i cocreació, una guia de finançament i models de negoci, una avaluació regulatòria, fulls de ruta d'implementació, estudis de cas demostratius i recomanacions de polítiques, tot integrat en una plataforma digital que guia tot el procés de planificació."
+  lineage_title: "Es basa en treballs anteriors de l'EBC"
+  lineage: "Annex 51 (Energy Efficient Communities), Annex 63 (Implementation of Energy Strategies in Communities), Annex 73 (Net Zero Energy Resilient Public Communities), Annex 75 (Cost-effective Building Renovation at District Level) i Annex 83 (Positive Energy Districts). Cap d'ells no va combinar l'avaluació digital ràpida de viabilitat amb el problema organitzatiu de l'execució."
+  plan_title: "Calendari i col·laboradors"
+  plan_cards:
+    - {title: "Durada", text: "Preparació 1 any, fase de treball 3 anys, informes 1 any. L'inici depèn de la decisió de l'ExCo."}
+    - {title: "Coordinació", text: "Amb els programes de col·laboració tecnològica DHC, Cities, SHC, Energy Storage i Users (DSM)."}
+    - {title: "Col·laboradors externs proposats", text: "Organitzacions municipals com FCM, el Global Covenant of Mayors, C40 i organitzacions de la Transition Accelerator, i organismes internacionals com ONU-Hàbitat i la divisió Cities, Urban Policies and Sustainable Development de l'OCDE."}
+  link_title: "Com s'hi relaciona l'Aliança"
+  link_text: "L'Annex el lideren els governs i té una durada limitada. L'Aliança seria la seva llar permanent i més àmplia: manté vius el nucli compartit, les eines i els socis quan l'Annex acabi, i deixa participar empreses i xarxes comunitàries, cosa que un Annex no pot fer."
+  note: "Font: EBC Project Concept de 24 d'agost de 2026. Punt obert: encara no s'ha fet cap Technology Readiness Assessment; l'ExCo el demanaria al taller que desenvolupi la proposta completa."
