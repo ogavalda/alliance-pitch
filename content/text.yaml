@@ -3,7 +3,7 @@
 
 meta:
   title: "Alliance for Digital Twins for Decarbonization: a draft proposal"
-  description: "A draft proposal for a member-owned alliance that gives local energy actors a shared commons, a project pipeline and a common voice."
+  description: "A draft proposal for a member-owned alliance that gives local energy actors a shared commons, a neutral table, a project pipeline and a common voice."
   version_line: "Draft v0.2 · October 2026"
 
 brand: "Digital Twins Alliance"
@@ -18,6 +18,8 @@ logos:
 nav:                           # label of each chapter in the top bar (keys = template names)
   problem: "Problem"
   why: "Why now"
+  ebc_summary: "IEA Annex"
+  facilitation: "Facilitation"
   landscape_summary: "Tools"
   alliance: "The Alliance"
   members_summary: "Who"
@@ -49,7 +51,7 @@ annex:
 hero:
   kicker: "Draft proposal · open for discussion"
   title: "Local energy is where decarbonization gets built. <em>Nobody should build it alone.</em>"
-  lead: "A proposed member-owned alliance of energy community networks, cities, research centres, grid operators and companies, giving local energy actors three things they cannot easily get alone: <b>a shared commons</b>, <b>a project pipeline</b> and <b>a common voice</b>."
+  lead: "A proposed member-owned alliance of energy community networks, cities, research centres, grid operators and companies, giving local energy actors four things they cannot easily get alone: <b>a shared commons</b>, <b>a neutral table</b>, <b>a project pipeline</b> and <b>a common voice</b>."
   meta:
     - {label: "Occasion", value: "[?] meeting or event"}
     - {label: "Status", value: "Concept 0.1 · draft. Annex proposal submitted to the IEA EBC ExCo (early October 2026), supported by NRCan"}
@@ -59,8 +61,10 @@ hero:
   presenting_hint: "Presenting? Use the <b>→</b> and <b>←</b> keys to step through sections."
   net_tab_off: "Today: isolated efforts"
   net_tab_on: "With the Alliance: connected"
+  annex_call_title: "IEA EBC Annex submitted"
+  annex_call_text: "A proposal for a new Annex (task) on community energy solutions with digital platforms was submitted to the ExCo in early October 2026, supported by NRCan."
   net_hub_title: "Alliance"
-  net_hub_sub: "commons · pipeline · voice"
+  net_hub_sub: "commons · table · pipeline · voice"
   net_note: "Real organisations from our stakeholder map (desk research, October 2026), shown as examples. Being listed does not mean participation or endorsement. Pink ring: already engaged. Lines are illustrative."
   scope_labels: {CANADA: "CANADA", INTERNATIONAL: "INTERNATIONAL", SPAIN: "SPAIN"}
   actor_labels: {networks: "Networks and cooperatives", cities: "Cities and regions", grid: "Grid and utilities", dhc: "District heating and cooling", research: "Research", funders: "Government and funders"}
@@ -79,11 +83,12 @@ why:
 problem:
   kicker: "The problem"
   title: "The obstacle is not effort. It is <em>duplication and isolation</em>."
-  lead: "Reviews keep finding the same pattern: tools and methods exist but are fragmented, hard to connect and rarely built for communities; start-ups lack expertise; evidence stays inside each project; and no one speaks for local energy systems with one voice."
+  lead: "Reviews keep finding the same pattern: tools and methods exist but are fragmented, hard to connect and rarely built for communities; start-ups lack expertise; evidence stays inside each project; and no one speaks for local energy systems with one voice. Projects also stall because the actors they depend on rarely sit at the same table."
   cards:
     - {title: "Fragmented tools", text: "Mature tools exist for design, but community-specific and interoperable ones are mostly prototypes."}
     - {title: "Evidence stays local", text: "Many ways to measure impact, none agreed, so lessons do not add up across projects."}
     - {title: "No shared voice", text: "Communities, cities and grid operators lobby separately, often on the same issues."}
+    - {title: "No neutral table", text: "City, utility, financiers, developers and neighbours rarely meet around the same project, so it stalls between planning and implementation."}
   note: "Based on our review of recent literature on energy community gaps (2021 to 2026)."
 
 landscape_summary:
@@ -141,13 +146,17 @@ members_summary:
 
 alliance:
   kicker: "The proposal"
-  title: "An alliance with three jobs."
+  title: "An alliance with four jobs."
   lead: "Digital twins are the shared language and the first thing we build, but the Alliance is about what organisations can do together. Select a job."
   jobs:
     - title: "Commons"
       tagline: "Shared, open building blocks that no one wins by keeping private."
       detail: "Shared building blocks, open by default: data models and schemas, flexibility and grid-interaction methods, common KPIs and verification rules, validation tests, benchmark datasets, reference architecture, model contracts for buyers."
       value: "Value: any tool or study built on them can be compared, reused and trusted. Members keep their proprietary products."
+    - title: "Facilitation"
+      tagline: "A neutral table where the actors a project depends on sit down together."
+      detail: "A trusted intermediary that convenes the people a local energy project needs: neighbours and community groups, the city, the utility or grid operator, financiers, developers, engineers and lawyers. It runs workshops, maps each party's problems and constraints, agrees the rules of the game (roles, confidentiality, data), coordinates working groups and documents the result. It does not design the project or sell engineering; members' experts contribute the advice."
+      value: "Value: projects that would stall between planning and implementation get a shared diagnosis and an agreed way forward, and each organisation sees the others' barriers without giving up its own business. We already do this: see the next chapter."
     - title: "Pipeline"
       tagline: "A way to turn ideas into funded projects, with the right partners."
       detail: "A proposal desk that watches calls, matches partners, offers consortium templates and a rotation rule so competing centres can cooperate. Shared deliverable and reporting templates."
@@ -195,7 +204,7 @@ members:
   roles:
     - {name: "Community networks", bring: "Reach to member communities, real needs, legitimacy, anonymised data.", get: "Free or low-cost tools and training, evidence for their policy work, stronger bids, a seat shaping the roadmap."}
     - {name: "Research centres", bring: "Methods, models, validation, students.", get: "Co-authored proposals, shared datasets, influence on standards, a safe way to cooperate with competitors."}
-    - {name: "Cities and regions", bring: "Use cases, planning mandates, pilot sites, local data.", get: "Ready-to-use methods for local planning, peer learning, access to funding consortia."}
+    - {name: "Cities and regions", bring: "Use cases, planning mandates, pilot sites, local data.", get: "Ready-to-use methods for local planning, a neutral facilitator for local planning questions, peer learning, access to funding consortia."}
     - {name: "Grid operators and utilities", bring: "Grid data under agreement, interfaces, co-funding, pilot access.", get: "Early view of standards, tested congestion and flexibility methods, a structured way to work with communities."}
     - {name: "Funders and institutions", bring: "Policy direction, grants, convening power.", get: "Evidence and validated methods, one counterpart for communities and twins, less duplication."}
   early_title: "Joining early"
@@ -277,7 +286,7 @@ roadmap:
   title: "From first proof to a reference body."
   phases:
     - {when: "To mid-2027 · Foundation", title: "Be credible", text: "Association set up, founding members, Annex decision, first proposals."}
-    - {when: "2027–2029 · Prove", title: "Show it works", text: "Annex prototype and case studies, proposal desk live, first training and position papers."}
+    - {when: "2027–2029 · Prove", title: "Show it works", text: "Annex prototype and case studies, proposal desk live, first facilitated processes with partners, first training and position papers."}
     - {when: "2030–2032 · Scale", title: "Become the default", text: "Release cycle, regional hubs, framework agreements with cities and grid operators."}
     - {when: "2033–2036 · Institutionalise", title: "Stable reference", text: "Standards cited by funders and regulators, stable multi-year funding."}
   note: "Indicative dates; they depend on funding and on the ExCo decision on the Annex proposal submitted in early October 2026 (supported by NRCan; ExCo meeting in November 2026). If approved, the Annex runs 1 year of preparation, 3 of work and 1 of reporting."
@@ -288,7 +297,7 @@ status:
   columns:
     - badge: "EXISTS"
       style: ex
-      items: ["Open ontologies and modelling tools to build on [external]", "EU funding for community facilities and for grid twins [external]", "IEA EBC Annexes on communities and data-driven buildings [external]", "Proposal for a new EBC Annex (task) submitted to the ExCo in early October 2026, supported by NRCan", "Partner conversations: [?] list"]
+      items: ["Open ontologies and modelling tools to build on [external]", "EU funding for community facilities and for grid twins [external]", "IEA EBC Annexes on communities and data-driven buildings [external]", "Proposal for a new EBC Annex (task) submitted to the ExCo in early October 2026, supported by NRCan", "Facilitation track record: district heating at Laval and Concordia, ABC Accelerator (Montréal, since 2022); CÔTÉ Habitat in development", "Partner conversations: [?] list"]
     - badge: "DOCUMENTED DRAFT"
       style: dr
       items: ["Concept note and long-term plan", "Market study and literature gap analysis", "Feasibility scorecard with 24 assumptions", "Annex proposal text (EBC Project Concept, 24 August 2026), as submitted to the ExCo"]
@@ -331,7 +340,7 @@ ask:
     - {tag: "Sharing", title: "What would you open, and what would stay yours?", text: "Which shared building blocks would you contribute to, and what would make you comfortable sharing with a competitor?"}
     - {tag: "Money", title: "What would you pay or contribute in kind?", text: "Fee, staff time, data, or a share of project income? Which founder benefits would matter to you?"}
     - {tag: "Governance", title: "Who should decide?", text: "One vote per member, per family, or weighted? How should changes to the shared core be reviewed?"}
-    - {tag: "Role", title: "Which job matters most: commons, pipeline or voice?", text: "If we had to start with one, which should it be?"}
+    - {tag: "Role", title: "Which job matters most: commons, facilitation, pipeline or voice?", text: "If we had to start with one, which should it be?"}
     - {tag: "Adoption", title: "What would stop you from joining?", text: "Budget, politics, trust, tooling, competition with your own services? Tell us what the first step would need to look like."}
   copy_button: "Copy the questions"
   copied: " Copied."
@@ -339,7 +348,7 @@ ask:
 
 footer:
   independence: "<b>Independence and names.</b> This is an independent draft proposal, not an official programme of any organisation named here. Nothing implies endorsement by the European Commission, the IEA or its programmes, REScoop.eu, or any other body. Illustrations use hypothetical data."
-  references: "<b>References.</b> European Commission (energy communities page; Citizens Energy Package); REScoop.eu annual reports; Mapping of Energy Communities in Europe, <i>Sustainability</i> 2023, doi 10.3390/su15108201; Systematic Review of Software and Algorithms for RECs, <i>Energies</i> 2026, doi 10.3390/en19163718; Digital Twin Architectures for Buildings and RECs, <i>Sustainability</i> 2026, doi 10.3390/su18125869; Synergy Between Demand Flexibility and Energy Communities, <i>Sustainability</i> 2026, doi 10.3390/su18041858; TwinEU (twineu.net); DSO4DT (DSO Entity)."
+  references: "<b>References.</b> European Commission (energy communities page; Citizens Energy Package); REScoop.eu annual reports; Mapping of Energy Communities in Europe, <i>Sustainability</i> 2023, doi 10.3390/su15108201; Systematic Review of Software and Algorithms for RECs, <i>Energies</i> 2026, doi 10.3390/en19163718; Digital Twin Architectures for Buildings and RECs, <i>Sustainability</i> 2026, doi 10.3390/su18125869; Synergy Between Demand Flexibility and Energy Communities, <i>Sustainability</i> 2026, doi 10.3390/su18041858; TwinEU (twineu.net); DSO4DT (DSO Entity); Gavaldà, Voland and Eicker, The ABC accelerator (draft chapter, 2024); CÔTÉ Habitat two-pager (internal)."
 
 ebc_annex:
   kicker: "The IEA EBC Annex proposal"
@@ -367,3 +376,100 @@ ebc_annex:
   link_title: "How the Alliance relates to it"
   link_text: "The Annex is government-led and time-limited. The Alliance would be its permanent, wider home: it keeps the shared core, the tools and the partners alive after the Annex ends, and lets companies and community networks take part, which an Annex cannot do."
   note: "Source: EBC Project Concept dated 24 August 2026. Open item: a Technology Readiness Assessment has not been carried out yet; the ExCo would ask for it at the workshop that develops the full proposal."
+
+ebc_summary:
+  kicker: "The first engine"
+  title: "A new IEA EBC Annex is already on the table, supported by NRCan."
+  lead: "In early October 2026 we submitted a proposal to the IEA EBC Executive Committee for a new Annex: <em>Enabling implementation of Community Energy Solutions through digital platforms</em>. It moves the question from \"can this work?\" to \"who will make it work?\", using digital twins for fast feasibility and adding governance, financing and regulation to the model."
+  cards:
+    - {title: "What it does", text: "Governance models, financing, regulation and open-source digital-twin tools, brought together in one platform that guides a project from pre-feasibility to implementation."}
+    - {title: "How long", text: "1 year of preparation, 3 of work and 1 of reporting, if the ExCo approves (decision expected at its November 2026 meeting)."}
+    - {title: "Why an Alliance too", text: "An Annex is government-led and ends. The Alliance keeps the shared core, tools and partners alive afterwards, and lets companies and community networks take part."}
+  note: "Proposed lead and Operating Agent: Ursula Eicker (Concordia). Proposed outside collaborators include FCM, the Global Covenant of Mayors, C40, UN-Habitat and the OECD."
+
+services:
+  kicker: "What the Alliance offers outside its members"
+  title: "Services that help everyone and compete with no one."
+  lead: "The test is simple: the Alliance does what no single member has a reason to do alone, and never delivers work a member could sell. Anything touching a client's own project, a specific site or a commercial product is out."
+  first_title: "Start with four"
+  first:
+    - {title: "A white paper", text: "An annual state of local energy and digital twins: evidence across projects, how indicators are defined, a map of tools and gaps. Cheap, builds credibility and gives the Alliance its voice."}
+    - {title: "Case-record and indicator standard", text: "A common record for community and district case studies, with agreed indicator definitions and reference calculations, so cases can be compared like with like."}
+    - {title: "Proposal desk", text: "Watches calls, matches partners, offers consortium and reporting templates and a rotation rule. It does not write bids or pick winners."}
+    - {title: "Facilitated processes", text: "A neutral convener runs a multi-stakeholder process around one concrete project or place: workshops, shared diagnosis, working groups, documented outcome. We already do this (see the facilitation chapter). It takes more effort, so it starts with a few pilot processes."}
+  first_note: "The first three are cheap, show value within a year, and none touches a member's own business. Facilitation is the Alliance's signature activity and needs a funded coordinator."
+  later_title: "Once trust exists"
+  later:
+    - {title: "Benchmarking and validation", text: "Run members' models against shared test datasets and publish the results. A neutral referee, not a consultant."}
+    - {title: "Procurement support", text: "Model contract clauses and a checklist for cities buying digital twins, so buyers can ask for interoperability."}
+  scope_title: "In scope and out of scope"
+  col_in: "In scope: infrastructure and neutral services"
+  col_out: "Out of scope: what members do"
+  scope:
+    - ["Convening and facilitating multi-stakeholder processes around a concrete project", "Designing the project, selling engineering or taking a role in its delivery"]
+    - ["Data model, ontology and a validator that checks conformity", "Platforms or interfaces for managing a community or serving end users"]
+    - ["Case-record template and an open library of cases", "Studies or designs for a specific client, site or project"]
+    - ["Indicator definitions with reference calculations", "Proprietary algorithms or products sold to communities"]
+    - ["Mapping tool that converts a member's data to the shared structure", "Operating a member's data or platform"]
+    - ["White papers, benchmarks, training and forums", "Consulting and bid writing for individual members"]
+    - ["Model contracts and procurement checklists", "Selecting vendors or winners"]
+    - ["Hosting anonymised datasets members agree to share", "Competing with members' own services"]
+  paid_title: "What could be paid for"
+  paid_yes_title: "Neutral paid services"
+  paid_yes: ["Training and courses", "Participation in benchmarks", "Certification against the shared core", "Coordination of a facilitated process, at cost (to be discussed)"]
+  paid_no_title: "Not offered"
+  paid_no: ["Anything that looks like consulting"]
+  note: "Our proposal, open to discussion. Members' views on the line between neutral and competing are one of the questions we need critique on."
+
+facilitation:
+  kicker: "Already doing it"
+  title: "Bringing people to the table is something we already do."
+  lead: "Our centre has played the intermediary in two district heating initiatives and has started two projects that bring the stakeholders of a sector together. We would make this one of the Alliance's essential activities, with more partners and at a larger scale."
+  cards:
+    - {title: "District heating at Laval and at Concordia", text: "We acted as the intermediary between the partners, running workshops and working out the different problems of the neighbours."}
+    - {title: "ABC Accelerator (Montréal, since 2022)", text: "A \"sustainability SWAT team\" of the city, a utility, a bank, developers, engineers, architects, lawyers and the university works on real projects. Two pilots, over 200 hours each, a three-month process."}
+    - {title: "CÔTÉ Habitat (Montréal)", text: "A centre that brings together a housing network, a transition alliance and Concordia around the transition of existing housing: technical, social, urban and financial support in one process. Under development, looking for a salaried lead."}
+    - {title: "What we learned", text: "A university as neutral convener builds trust. A concrete project beats an abstract debate. With the whole chain at one table, barriers become opportunities. It takes three to four months and a funded coordinator."}
+  note: "Method, lessons and the line with what members do are in the annex."
+
+facilitation_detail:
+  kicker: "Facilitation: method and track record"
+  title: "How the Alliance would run a facilitated process."
+  lead: "Local energy projects rarely fail because the technology does not work. They stall because the city, the utility, the financier, the developer and the neighbours have never worked out together who does what. A neutral convener closes that gap."
+  record_title: "Track record"
+  record:
+    - {title: "District heating at Laval and at Concordia", text: "Our centre played the intermediary between the partners, ran workshops and worked out the different problems of the neighbours."}
+    - {title: "ABC Accelerator", text: "Started in 2022 within the Montréal climate partnership. A \"sustainability SWAT team\" of seven kinds of actors: university, developer, financing, utility, engineering and architecture, law and the city. First test with two real developers."}
+    - {title: "CÔTÉ Habitat", text: "A centre for the ecological transition of existing housing in Montréal, led by a housing network, a transition alliance and Concordia. Technical, social, urban and financial support in one process; two pilots planned to test the assumptions and the business models."}
+  abc_title: "The ABC Accelerator in numbers"
+  abc_stats:
+    - {value: "7", label: "kinds of actors at one table"}
+    - {value: "2", label: "pilot projects with real developers"}
+    - {value: "200+", label: "expert hours per project, plus about 400 hours to build reusable tools"}
+    - {value: "3 months", label: "per project, ending in four documents"}
+  abc_note: "Estimated emission reductions for the two pilots: about 19% with the baseline proposals and 33% with the next-generation proposals (the project's own estimates, not measured results)."
+  method_title: "A process in six steps"
+  method:
+    - {title: "Start from a concrete project", text: "A real project or place, not an abstract topic."}
+    - {title: "Invite the whole chain", text: "City, utility, financier, developer, engineers and architects, legal advice, and the community or neighbours."}
+    - {title: "Agree the rules first", text: "Roles, confidentiality, what can be shared, and a fair way to select who takes part."}
+    - {title: "Listen and map", text: "Workshops to understand each party's problems and constraints, and who is most and least open to change."}
+    - {title: "Work in small commissions", text: "For example public space, energy systems, buildings and certification, with a monthly plenary."}
+    - {title: "Document and hand back", text: "A diagnosis, proposals at two levels of ambition, ways to fund them and recommendations with costs and impacts, plus templates others can reuse."}
+  lessons_title: "What we learned"
+  lessons:
+    - "A university acting as a central, neutral agent is seen very positively and builds trust."
+    - "Innovative options scare people less when banks, municipalities and key actors visibly back them."
+    - "Examples from others, and a good pitch, speed up decisions."
+    - "Technical teams can start as the conservative force. Meeting after meeting, with their fears addressed, they became collaborative."
+    - "Three to four months of process help to smooth the first doubts."
+    - "Confidentiality worries come first: a non-disclosure agreement with the convener and side agreements with each partner were needed."
+    - "Free expert time does not allow deep dedication. The coordination needs funding: CÔTÉ plans a salaried lead from the start."
+  scope_title: "The line with what members do"
+  scope_in_title: "The Alliance does"
+  scope_in: ["Convene, run workshops and facilitate", "Map problems and agree the rules", "Coordinate working groups and document the result", "Turn what is learned into templates and tools open to all"]
+  scope_out_title: "The Alliance does not"
+  scope_out: ["Design the project or sell engineering", "Take a commercial role in delivery", "Choose vendors or winners", "Replace the expertise members bring to the table"]
+  link_title: "How it connects to the rest"
+  link_text: "Each process produces a real case for the shared case-record standard, evidence for the white paper and the Annex's governance work, and a pipeline of projects that are ready to be funded."
+  note: "Sources: draft chapter on the ABC Accelerator (2024) and the CÔTÉ Habitat two-pager. Partner organisations are not named here on purpose. Results are estimates."

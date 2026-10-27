@@ -1,12 +1,14 @@
 # Traducció al català de tot el text comú.
 meta:
   title: "Aliança de Bessons Digitals per a la Descarbonització: proposta preliminar"
-  description: "Proposta preliminar d'una aliança participada pels seus membres que dona als actors locals de l'energia un comú compartit, una cartera de projectes i una veu comuna."
+  description: "Proposta preliminar d'una aliança participada pels seus membres que dona als actors locals de l'energia un comú compartit, una taula neutral, una cartera de projectes i una veu comuna."
   version_line: "Esborrany v0.2 · octubre de 2026"
 brand: "Aliança de Bessons Digitals"
 nav:
   problem: "Problema"
   why: "Per què ara"
+  ebc_summary: "Annex IEA"
+  facilitation: "Facilitació"
   landscape_summary: "Eines"
   alliance: "L'Aliança"
   members_summary: "Qui"
@@ -35,7 +37,7 @@ annex:
 hero:
   kicker: "Proposta preliminar · oberta a debat"
   title: "L'energia local és on es construeix la descarbonització. <em>Ningú no hauria de construir-la sol.</em>"
-  lead: "Una aliança proposada, participada pels seus membres, de xarxes de comunitats energètiques, ciutats, centres de recerca, operadors de xarxa i empreses, que dona als actors locals de l'energia tres coses que costa aconseguir en solitari: <b>un comú compartit</b>, <b>una cartera de projectes</b> i <b>una veu comuna</b>."
+  lead: "Una aliança proposada, participada pels seus membres, de xarxes de comunitats energètiques, ciutats, centres de recerca, operadors de xarxa i empreses, que dona als actors locals de l'energia quatre coses que costa aconseguir en solitari: <b>un comú compartit</b>, <b>una taula neutral</b>, <b>una cartera de projectes</b> i <b>una veu comuna</b>."
   meta:
     - {label: "Ocasió", value: "[?] reunió o esdeveniment"}
     - {label: "Estat", value: "Concepte 0.1 · esborrany. Proposta d'Annex presentada a l'ExCo de l'IEA EBC (principis d'octubre de 2026), amb el suport de NRCan"}
@@ -45,8 +47,10 @@ hero:
   presenting_hint: "Presentant? Fes servir les tecles <b>→</b> i <b>←</b> per canviar de secció."
   net_tab_off: "Avui: esforços aïllats"
   net_tab_on: "Amb l'Aliança: connectats"
+  annex_call_title: "Annex IEA EBC presentat"
+  annex_call_text: "Una proposta de nou Annex (tasca) sobre solucions energètiques comunitàries amb plataformes digitals es va presentar a l'ExCo a principis d'octubre de 2026, amb el suport de NRCan."
   net_hub_title: "Aliança"
-  net_hub_sub: "comú · cartera · veu"
+  net_hub_sub: "comú · taula · cartera · veu"
   net_note: "Organitzacions reals del nostre mapa d'actors (recerca documental, octubre de 2026), mostrades com a exemples. Sortir-hi no implica participació ni suport. Anell rosa: ja implicades. Les línies són il·lustratives."
   scope_labels: {CANADA: "CANADÀ", INTERNATIONAL: "INTERNACIONAL", SPAIN: "ESPANYA"}
   actor_labels: {networks: "Xarxes i cooperatives", cities: "Ciutats i regions", grid: "Xarxa i empreses elèctriques", dhc: "Calefacció i refrigeració urbanes", research: "Recerca", funders: "Govern i finançadors"}
@@ -63,11 +67,12 @@ why:
 problem:
   kicker: "El problema"
   title: "L'obstacle no és l'esforç. És <em>la duplicació i l'aïllament</em>."
-  lead: "Les revisions troben sempre el mateix patró: hi ha eines i mètodes però fragmentats, difícils de connectar i poc pensats per a comunitats; les empreses emergents no tenen l'expertesa; l'evidència es queda dins de cada projecte; i ningú no parla amb una sola veu pels sistemes energètics locals."
+  lead: "Les revisions troben sempre el mateix patró: hi ha eines i mètodes però fragmentats, difícils de connectar i poc pensats per a comunitats; les empreses emergents no tenen l'expertesa; l'evidència es queda dins de cada projecte; i ningú no parla amb una sola veu pels sistemes energètics locals. Els projectes també s'encallen perquè els actors dels quals depenen poques vegades seuen a la mateixa taula."
   cards:
     - {title: "Eines fragmentades", text: "Hi ha eines madures per al disseny, però les específiques per a comunitats i interoperables són sobretot prototips."}
     - {title: "L'evidència es queda local", text: "Moltes maneres de mesurar l'impacte, cap d'acordada; les lliçons no se sumen entre projectes."}
     - {title: "Cap veu compartida", text: "Comunitats, ciutats i operadors de xarxa fan incidència per separat, sovint sobre els mateixos temes."}
+    - {title: "Cap taula neutral", text: "Ajuntament, empresa elèctrica, finançadors, promotors i veïnat poques vegades es troben al voltant del mateix projecte, que s'encalla entre la planificació i la implementació."}
   note: "Basat en la nostra revisió de la literatura recent sobre llacunes de les comunitats energètiques (2021 a 2026)."
 landscape_summary:
   kicker: "Moltes eines, sense fonaments comuns"
@@ -121,13 +126,17 @@ members_summary:
   note: "El que aporta i rep cadascú, i el paquet de fundadors, són a l'annex."
 alliance:
   kicker: "La proposta"
-  title: "Una aliança amb tres tasques."
+  title: "Una aliança amb quatre tasques."
   lead: "Els bessons digitals són el llenguatge compartit i el primer que construïm, però l'Aliança va del que les organitzacions poden fer juntes. Selecciona una tasca."
   jobs:
     - title: "Comú"
       tagline: "Blocs compartits i oberts que ningú no guanya tenint-los en privat."
       detail: "Blocs compartits, oberts per defecte: models i esquemes de dades, mètodes de flexibilitat i interacció amb la xarxa, KPI i regles de verificació comuns, proves de validació, conjunts de dades de referència, arquitectura de referència, contractes de model per als compradors."
       value: "Valor: qualsevol eina o estudi construït sobre aquests blocs es pot comparar, reutilitzar i trobar fiable. Els membres conserven els seus productes propis."
+    - title: "Facilitació"
+      tagline: "Una taula neutral on seuen junts els actors dels quals depèn un projecte."
+      detail: "Un intermediari de confiança que reuneix les persones que necessita un projecte d'energia local: veïnat i grups comunitaris, l'ajuntament, l'empresa elèctrica o l'operador de xarxa, finançadors, promotors, enginyeries i advocats. Fa tallers, cartografia els problemes i les restriccions de cada part, acorda les regles del joc (rols, confidencialitat, dades), coordina grups de treball i documenta el resultat. No dissenya el projecte ni ven enginyeria; els experts dels membres aporten l'assessorament."
+      value: "Valor: els projectes que s'encallarien entre la planificació i la implementació obtenen un diagnòstic compartit i una via acordada, i cada organització veu les barreres dels altres sense renunciar al seu negoci. Ja ho fem: vegeu el capítol següent."
     - title: "Cartera"
       tagline: "Una manera de convertir idees en projectes finançats, amb els socis adequats."
       detail: "Una oficina de propostes que vigila convocatòries, busca socis, ofereix plantilles de consorci i una regla de rotació perquè centres competidors puguin cooperar. Plantilles compartides d'entregables i justificació."
@@ -171,7 +180,7 @@ members:
   roles:
     - {name: "Xarxes de comunitats", bring: "Accés a les comunitats membres, necessitats reals, legitimitat, dades anonimitzades.", get: "Eines i formació gratuïtes o de baix cost, evidència per a la seva incidència política, propostes més fortes, un lloc per orientar el full de ruta."}
     - {name: "Centres de recerca", bring: "Mètodes, models, validació, estudiants.", get: "Propostes coescrites, dades compartides, influència en estàndards, una manera segura de cooperar amb competidors."}
-    - {name: "Ciutats i regions", bring: "Casos d'ús, competències de planificació, emplaçaments pilot, dades locals.", get: "Mètodes llestos per a la planificació local, aprenentatge entre iguals, accés a consorcis de finançament."}
+    - {name: "Ciutats i regions", bring: "Casos d'ús, competències de planificació, emplaçaments pilot, dades locals.", get: "Mètodes llestos per a la planificació local, un facilitador neutral per a qüestions de planificació local, aprenentatge entre iguals, accés a consorcis de finançament."}
     - {name: "Operadors de xarxa i empreses elèctriques", bring: "Dades de xarxa sota acord, interfícies, cofinançament, accés a pilots.", get: "Visió anticipada d'estàndards, mètodes provats de congestió i flexibilitat, una manera estructurada de treballar amb comunitats."}
     - {name: "Finançadors i institucions", bring: "Orientació política, subvencions, capacitat de convocatòria.", get: "Evidència i mètodes validats, un sol interlocutor per a comunitats i bessons, menys duplicació."}
   early_title: "Unir-se d'hora"
@@ -219,7 +228,7 @@ status:
   columns:
     - badge: "EXISTEIX"
       style: ex
-      items: ["Ontologies obertes i eines de modelització on construir [extern]", "Finançament de la UE per a instal·lacions comunitàries i per a bessons de xarxa [extern]", "Annexos de l'IEA EBC sobre comunitats i edificis basats en dades [extern]", "Proposta de nou Annex (tasca) presentada a l'ExCo a principis d'octubre de 2026, amb el suport de NRCan", "Converses amb socis: [?] llista"]
+      items: ["Ontologies obertes i eines de modelització on construir [extern]", "Finançament de la UE per a instal·lacions comunitàries i per a bessons de xarxa [extern]", "Annexos de l'IEA EBC sobre comunitats i edificis basats en dades [extern]", "Proposta de nou Annex (tasca) presentada a l'ExCo a principis d'octubre de 2026, amb el suport de NRCan", "Trajectòria en facilitació: calefacció urbana a Laval i Concordia, ABC Accelerator (Montréal, des del 2022); CÔTÉ Habitat en desenvolupament", "Converses amb socis: [?] llista"]
     - badge: "ESBORRANY DOCUMENTAT"
       style: dr
       items: ["Nota conceptual i pla a llarg termini", "Estudi de mercat i anàlisi de llacunes de la literatura", "Quadre de viabilitat amb 24 hipòtesis", "Text de la proposta d'Annex (EBC Project Concept, 24 d'agost de 2026), tal com es va presentar a l'ExCo"]
@@ -249,7 +258,7 @@ ask:
   copy_failed: " Còpia no disponible aquí."
 footer:
   independence: "<b>Independència i noms.</b> Aquesta és una proposta preliminar independent, no un programa oficial de cap organització esmentada. Res no implica el suport de la Comissió Europea, de l'IEA o dels seus programes, de REScoop.eu ni de cap altre organisme. Les il·lustracions fan servir dades hipotètiques."
-  references: "<b>Referències.</b> Comissió Europea (pàgina de comunitats energètiques; Paquet d'Energia Ciutadana); informes anuals de REScoop.eu; Mapping of Energy Communities in Europe, <i>Sustainability</i> 2023, doi 10.3390/su15108201; Systematic Review of Software and Algorithms for RECs, <i>Energies</i> 2026, doi 10.3390/en19163718; Digital Twin Architectures for Buildings and RECs, <i>Sustainability</i> 2026, doi 10.3390/su18125869; Synergy Between Demand Flexibility and Energy Communities, <i>Sustainability</i> 2026, doi 10.3390/su18041858; TwinEU (twineu.net); DSO4DT (DSO Entity)."
+  references: "<b>Referències.</b> Comissió Europea (pàgina de comunitats energètiques; Paquet d'Energia Ciutadana); informes anuals de REScoop.eu; Mapping of Energy Communities in Europe, <i>Sustainability</i> 2023, doi 10.3390/su15108201; Systematic Review of Software and Algorithms for RECs, <i>Energies</i> 2026, doi 10.3390/en19163718; Digital Twin Architectures for Buildings and RECs, <i>Sustainability</i> 2026, doi 10.3390/su18125869; Synergy Between Demand Flexibility and Energy Communities, <i>Sustainability</i> 2026, doi 10.3390/su18041858; TwinEU (twineu.net); DSO4DT (DSO Entity); Gavaldà, Voland i Eicker, The ABC accelerator (capítol en esborrany, 2024); CÔTÉ Habitat two-pager (intern)."
 
 ebc_annex:
   kicker: "La proposta d'Annex de l'IEA EBC"
@@ -277,3 +286,100 @@ ebc_annex:
   link_title: "Com s'hi relaciona l'Aliança"
   link_text: "L'Annex el lideren els governs i té una durada limitada. L'Aliança seria la seva llar permanent i més àmplia: manté vius el nucli compartit, les eines i els socis quan l'Annex acabi, i deixa participar empreses i xarxes comunitàries, cosa que un Annex no pot fer."
   note: "Font: EBC Project Concept de 24 d'agost de 2026. Punt obert: encara no s'ha fet cap Technology Readiness Assessment; l'ExCo el demanaria al taller que desenvolupi la proposta completa."
+
+ebc_summary:
+  kicker: "El primer motor"
+  title: "Un nou Annex de l'IEA EBC ja és sobre la taula, amb el suport de NRCan."
+  lead: "A principis d'octubre de 2026 vam presentar al Comitè Executiu de l'IEA EBC una proposta de nou Annex: <em>Enabling implementation of Community Energy Solutions through digital platforms</em>. Mou la pregunta de «pot funcionar?» a «qui ho farà funcionar?», amb bessons digitals per a una viabilitat ràpida i afegint governança, finançament i regulació al model."
+  cards:
+    - {title: "Què fa", text: "Models de governança, finançament, regulació i eines de bessons digitals de codi obert, reunits en una plataforma que guia un projecte de la prefactibilitat a la implementació."}
+    - {title: "Quant dura", text: "1 any de preparació, 3 de treball i 1 d'informes, si l'ExCo l'aprova (decisió prevista a la reunió de novembre de 2026)."}
+    - {title: "Per què també una Aliança", text: "Un Annex el lideren els governs i s'acaba. L'Aliança manté vius el nucli compartit, les eines i els socis després, i deixa participar empreses i xarxes comunitàries."}
+  note: "Líder i Operating Agent proposada: Ursula Eicker (Concordia). Entre els col·laboradors externs proposats hi ha FCM, el Global Covenant of Mayors, C40, ONU-Hàbitat i l'OCDE."
+
+services:
+  kicker: "Què ofereix l'Aliança més enllà dels seus membres"
+  title: "Serveis que ajuden tothom i no competeixen amb ningú."
+  lead: "El criteri és simple: l'Aliança fa el que cap membre té motiu per fer sol, i mai no lliura feina que un membre podria vendre. Tot allò que toqui el projecte d'un client, un emplaçament concret o un producte comercial queda fora."
+  first_title: "Començar amb quatre"
+  first:
+    - {title: "Un llibre blanc", text: "Un estat anual de l'energia local i els bessons digitals: evidència entre projectes, com es defineixen els indicadors, un mapa d'eines i llacunes. Barat, construeix credibilitat i dona veu a l'Aliança."}
+    - {title: "Estàndard de fitxa de cas i d'indicadors", text: "Un registre comú per a estudis de cas de comunitats i districtes, amb definicions d'indicadors acordades i càlculs de referència, perquè els casos es puguin comparar en igualtat de condicions."}
+    - {title: "Oficina de propostes", text: "Vigila convocatòries, busca socis, ofereix plantilles de consorci i de justificació i una regla de rotació. No escriu ofertes ni tria guanyadors."}
+    - {title: "Processos facilitats", text: "Un convocant neutral dirigeix un procés amb molts actors al voltant d'un projecte o lloc concret: tallers, diagnòstic compartit, grups de treball, resultat documentat. Ja ho fem (vegeu el capítol de facilitació). Costa més esforç, així que comença amb uns quants processos pilot."}
+  first_note: "Els tres primers són barats, mostren valor en un any, i cap no toca la feina pròpia d'un membre. La facilitació és l'activitat distintiva de l'Aliança i necessita un coordinador finançat."
+  later_title: "Quan hi hagi confiança"
+  later:
+    - {title: "Avaluació comparativa i validació", text: "Executar els models dels membres amb conjunts de dades de prova compartits i publicar els resultats. Un àrbitre neutral, no un consultor."}
+    - {title: "Suport a la contractació", text: "Clàusules de contracte model i una llista de verificació per a ciutats que compren bessons digitals, perquè els compradors puguin exigir interoperabilitat."}
+  scope_title: "Dins i fora de l'abast"
+  col_in: "Dins de l'abast: infraestructura i serveis neutrals"
+  col_out: "Fora de l'abast: el que fan els membres"
+  scope:
+    - ["Convocar i facilitar processos amb molts actors al voltant d'un projecte concret", "Dissenyar el projecte, vendre enginyeria o tenir un rol en l'execució"]
+    - ["Model de dades, ontologia i un validador que comprova la conformitat", "Plataformes o interfícies per gestionar una comunitat o atendre usuaris finals"]
+    - ["Plantilla de fitxa de cas i una biblioteca oberta de casos", "Estudis o dissenys per a un client, emplaçament o projecte concret"]
+    - ["Definicions d'indicadors amb càlculs de referència", "Algorismes o productes propis venuts a comunitats"]
+    - ["Eina de mapatge que converteix les dades d'un membre a l'estructura compartida", "Operar les dades o la plataforma d'un membre"]
+    - ["Llibres blancs, avaluacions comparatives, formació i fòrums", "Consultoria i redacció d'ofertes per a membres concrets"]
+    - ["Contractes model i llistes de verificació de contractació", "Triar proveïdors o guanyadors"]
+    - ["Allotjar conjunts de dades anonimitzats que els membres accepten compartir", "Competir amb els serveis propis dels membres"]
+  paid_title: "Què es podria cobrar"
+  paid_yes_title: "Serveis neutrals de pagament"
+  paid_yes: ["Formació i cursos", "Participació en avaluacions comparatives", "Certificació segons el nucli compartit", "Coordinació d'un procés facilitat, a cost (per parlar-ne)"]
+  paid_no_title: "No s'ofereix"
+  paid_no: ["Res que s'assembli a consultoria"]
+  note: "És una proposta nostra, oberta a debat. L'opinió dels membres sobre on és la frontera entre neutral i competidor és una de les qüestions que necessitem criticar."
+
+facilitation:
+  kicker: "Ja ho fem"
+  title: "Reunir la gent a la taula és una cosa que ja fem."
+  lead: "El nostre centre ha fet d'intermediari en dues iniciatives de calefacció urbana i ha impulsat dos projectes que reuneixen els actors d'un sector. Ho volem convertir en una de les activitats essencials de l'Aliança, amb més socis i a més escala."
+  cards:
+    - {title: "Calefacció urbana a Laval i a Concordia", text: "Hem actuat d'intermediaris entre els socis, fent tallers i entenent els diferents problemes del veïnat."}
+    - {title: "ABC Accelerator (Montréal, des del 2022)", text: "Un «equip SWAT de sostenibilitat» format per l'ajuntament, una empresa elèctrica, un banc, promotors, enginyeries, arquitectes, advocats i la universitat treballa en projectes reals. Dos pilots, més de 200 hores cadascun, un procés de tres mesos."}
+    - {title: "CÔTÉ Habitat (Montréal)", text: "Un centre que reuneix una xarxa d'habitatge, una aliança de transició i Concordia al voltant de la transició de l'habitatge existent: acompanyament tècnic, social, urbanístic i financer en un sol procés. En desenvolupament, cercant una persona líder assalariada."}
+    - {title: "Què hem après", text: "Una universitat com a convocant neutral genera confiança. Un projecte concret val més que un debat abstracte. Amb tota la cadena a la mateixa taula, les barreres esdevenen oportunitats. Calen tres o quatre mesos i un coordinador finançat."}
+  note: "El mètode, les lliçons i la frontera amb allò que fan els membres són a l'annex."
+
+facilitation_detail:
+  kicker: "Facilitació: mètode i trajectòria"
+  title: "Com dirigiria l'Aliança un procés facilitat."
+  lead: "Els projectes d'energia local rarament fracassen perquè la tecnologia no funcioni. S'encallen perquè l'ajuntament, l'empresa elèctrica, el finançador, el promotor i el veïnat no han acordat mai junts qui fa què. Un convocant neutral tanca aquesta bretxa."
+  record_title: "Trajectòria"
+  record:
+    - {title: "Calefacció urbana a Laval i a Concordia", text: "El nostre centre va fer d'intermediari entre els socis, va fer tallers i va entendre els diferents problemes del veïnat."}
+    - {title: "ABC Accelerator", text: "Iniciat el 2022 dins del partenariat climàtic de Montréal. Un «equip SWAT de sostenibilitat» de set tipus d'actors: universitat, promotor, finançament, empresa elèctrica, enginyeria i arquitectura, dret i l'ajuntament. Primera prova amb dos promotors reals."}
+    - {title: "CÔTÉ Habitat", text: "Un centre per a la transició ecològica de l'habitatge existent a Montréal, impulsat per una xarxa d'habitatge, una aliança de transició i Concordia. Acompanyament tècnic, social, urbanístic i financer en un sol procés; dos pilots previstos per provar les hipòtesis i els models de negoci."}
+  abc_title: "L'ABC Accelerator en xifres"
+  abc_stats:
+    - {value: "7", label: "tipus d'actors a la mateixa taula"}
+    - {value: "2", label: "projectes pilot amb promotors reals"}
+    - {value: "200+", label: "hores d'experts per projecte, més unes 400 hores per construir eines reutilitzables"}
+    - {value: "3 mesos", label: "per projecte, amb quatre documents finals"}
+  abc_note: "Reduccions d'emissions estimades per als dos pilots: al voltant del 19% amb les propostes de base i del 33% amb les propostes de nova generació (estimacions del mateix projecte, no resultats mesurats)."
+  method_title: "Un procés en sis passos"
+  method:
+    - {title: "Partir d'un projecte concret", text: "Un projecte o lloc real, no un tema abstracte."}
+    - {title: "Convidar tota la cadena", text: "Ajuntament, empresa elèctrica, finançador, promotor, enginyeries i arquitectes, assessorament jurídic, i la comunitat o el veïnat."}
+    - {title: "Acordar primer les regles", text: "Rols, confidencialitat, què es pot compartir, i una manera justa de seleccionar qui hi participa."}
+    - {title: "Escoltar i cartografiar", text: "Tallers per entendre els problemes i les restriccions de cada part, i qui està més o menys obert al canvi."}
+    - {title: "Treballar en comissions petites", text: "Per exemple espai públic, sistemes energètics, edificis i certificació, amb un plenari mensual."}
+    - {title: "Documentar i retornar", text: "Un diagnòstic, propostes a dos nivells d'ambició, vies de finançament i recomanacions amb costos i impactes, més plantilles que altres puguin reutilitzar."}
+  lessons_title: "Què hem après"
+  lessons:
+    - "Una universitat que actua com a agent central i neutral és molt ben vista i genera confiança."
+    - "Les opcions innovadores fan menys por quan bancs, ajuntaments i actors clau les avalen de manera visible."
+    - "Els exemples d'altres i una bona presentació acceleren les decisions."
+    - "Els equips tècnics poden començar com la força conservadora. Reunió rere reunió, abordant les seves pors, es van tornar col·laboratius."
+    - "Tres o quatre mesos de procés ajuden a suavitzar els primers dubtes."
+    - "Les preocupacions de confidencialitat van primer: calia un acord de confidencialitat amb el convocant i acords paral·lels amb cada soci."
+    - "El temps d'experts gratuït no permet una dedicació profunda. La coordinació necessita finançament: CÔTÉ preveu una persona líder assalariada des del principi."
+  scope_title: "La frontera amb allò que fan els membres"
+  scope_in_title: "L'Aliança fa"
+  scope_in: ["Convocar, fer tallers i facilitar", "Cartografiar problemes i acordar les regles", "Coordinar grups de treball i documentar el resultat", "Convertir el que s'aprèn en plantilles i eines obertes a tothom"]
+  scope_out_title: "L'Aliança no fa"
+  scope_out: ["Dissenyar el projecte ni vendre enginyeria", "Tenir un rol comercial en l'execució", "Triar proveïdors o guanyadors", "Substituir l'expertesa que els membres porten a la taula"]
+  link_title: "Com es connecta amb la resta"
+  link_text: "Cada procés genera un cas real per a l'estàndard de fitxa de cas, evidència per al llibre blanc i per a la feina de governança de l'Annex, i una cartera de projectes preparats per ser finançats."
+  note: "Fonts: capítol en esborrany sobre l'ABC Accelerator (2024) i el two-pager de CÔTÉ Habitat. Les organitzacions sòcies no hi apareixen amb nom a propòsit. Els resultats són estimacions."

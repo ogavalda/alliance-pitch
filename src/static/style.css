@@ -102,3 +102,9 @@ table.bt tr.cnt td{color:var(--mute);font-style:italic}
 
 .annexhead{background:#f8e9ed;max-width:none;border-top:6px solid var(--pink);border-bottom:1px solid var(--line)}
 .annexhead>*{max-width:1032px;margin-left:auto;margin-right:auto}
+
+.annexcall{display:flex;gap:14px;align-items:center;background:#fff;color:var(--ink);border-left:6px solid var(--pink);border-radius:10px;padding:14px 18px;margin:20px 0;text-decoration:none}
+.annexcall b{color:var(--teal);white-space:nowrap}.annexcall span{flex:1;font-size:.95rem}.annexcall i{font-style:normal;font-size:1.3rem;color:var(--pink)}
+@media(max-width:700px){.annexcall{flex-direction:column;align-items:flex-start}.annexcall b{white-space:normal}}
+.engine{background:#fff;border-left:6px solid var(--pink)}
+.g4{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}.f4{border-color:var(--blue,#1598D6)}.f4 .ic{color:#1598D6}

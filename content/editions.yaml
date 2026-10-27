@@ -7,17 +7,17 @@ editions:
     lang: en
     output: index.html            # generic document, any entity
     overlays: []
-    main: [problem, why, landscape_summary, alliance, members_summary, govern, roadmap, budget_summary, ask]
-    annex: [ebc_annex, landscape, form, members, budget, status]
+    main: [problem, why, ebc_summary, landscape_summary, alliance, facilitation, members_summary, govern, roadmap, budget_summary, ask]
+    annex: [ebc_annex, facilitation_detail, landscape, form, members, services, budget, status]
   - id: irec_en
     lang: en
     output: irec_en.html          # document for IREC, English
     overlays: [text.irec.en.yaml]
-    main: [problem, why, landscape_summary, alliance, members_summary, govern, roadmap, budget_summary, irec_ask]
-    annex: [ebc_annex, landscape, form, members, budget, status]
+    main: [problem, why, ebc_summary, landscape_summary, alliance, facilitation, members_summary, govern, roadmap, budget_summary, irec_ask]
+    annex: [ebc_annex, facilitation_detail, landscape, form, members, services, budget, status]
   - id: irec_ca
     lang: ca
     output: irec_ca.html          # document for IREC, Catalan
     overlays: [text.ca.yaml, text.irec.ca.yaml]
-    main: [problem, why, landscape_summary, alliance, members_summary, govern, roadmap, budget_summary, irec_ask]
-    annex: [ebc_annex, landscape, form, members, budget, status]
+    main: [problem, why, ebc_summary, landscape_summary, alliance, facilitation, members_summary, govern, roadmap, budget_summary, irec_ask]
+    annex: [ebc_annex, facilitation_detail, landscape, form, members, services, budget, status]
