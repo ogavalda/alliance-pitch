@@ -15,7 +15,8 @@
 {% for s in main %}<a href="#{{ s }}">{{ t.nav[s] }}</a>{% endfor %}<a href="#annex">{{ t.nav.annex }}</a></header>
 <main>
 {% include "sections/hero.j2" %}
-{% for num, sid in numbered %}{% include "sections/" ~ sid ~ ".j2" %}
+{% for num, sid in numbered %}{% if sid in act_starts %}{% set a = t.acts[act_starts[sid]] %}<div class="actband"><div class="kicker">{{ a.kicker }}</div><h2>{{ a.title }}</h2><p>{{ a.lead }}</p></div>
+{% endif %}{% include "sections/" ~ sid ~ ".j2" %}
 {% endfor %}
 <section id="annex" class="annexhead">
   <div class="kicker">{{ t.annex.label }}</div>

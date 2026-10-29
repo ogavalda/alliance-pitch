@@ -1,14 +1,14 @@
 # Traducció al català de tot el text comú.
 meta:
   title: "Aliança de Bessons Digitals per a la Descarbonització: proposta preliminar"
-  description: "Proposta preliminar d'una aliança participada pels seus membres que dona als actors locals de l'energia un comú compartit, una taula neutral, una cartera de projectes i una veu comuna."
+  description: "Proposta preliminar d'una aliança participada pels seus membres que dona als actors locals de l'energia un comú compartit, una taula neutral amb lideratge, una cartera de projectes i una veu comuna."
   version_line: "Esborrany v0.2 · octubre de 2026"
 brand: "Aliança de Bessons Digitals"
 nav:
   problem: "Problema"
   why: "Per què ara"
   ebc_summary: "Annex IEA"
-  facilitation: "Facilitació"
+  facilitation: "Lideratge"
   landscape_summary: "Eines"
   alliance: "L'Aliança"
   members_summary: "Qui"
@@ -37,11 +37,10 @@ annex:
 hero:
   kicker: "Proposta preliminar · oberta a debat"
   title: "L'energia local és on es construeix la descarbonització. <em>Ningú no hauria de construir-la sol.</em>"
-  lead: "Una aliança proposada, participada pels seus membres, de xarxes de comunitats energètiques, ciutats, centres de recerca, operadors de xarxa i empreses, que dona als actors locals de l'energia quatre coses que costa aconseguir en solitari: <b>un comú compartit</b>, <b>una taula neutral</b>, <b>una cartera de projectes</b> i <b>una veu comuna</b>."
+  lead: "Una aliança proposada, participada pels seus membres, de xarxes comunitàries, ciutats, centres de recerca, operadors de xarxa i finançadors."
   meta:
-    - {label: "Ocasió", value: "[?] reunió o esdeveniment"}
-    - {label: "Estat", value: "Concepte 0.1 · esborrany. Proposta d'Annex presentada a l'ExCo de l'IEA EBC (principis d'octubre de 2026), amb el suport de NRCan"}
-    - {label: "Motor inicial", value: "Una proposta de nou Annex (tasca) de l'IEA EBC, en paral·lel: vegeu l'annex"}
+    - {label: "Estat", value: "Esborrany, obert a debat"}
+    - {label: "Primer motor", value: "Proposta d'Annex de l'IEA EBC presentada, amb el suport de NRCan"}
   button_start: "Comença la història ↓"
   button_ask: "Ves a la petició"
   presenting_hint: "Presentant? Fes servir les tecles <b>→</b> i <b>←</b> per canviar de secció."
@@ -50,7 +49,7 @@ hero:
   annex_call_title: "Annex IEA EBC presentat"
   annex_call_text: "Una proposta de nou Annex (tasca) sobre solucions energètiques comunitàries amb plataformes digitals es va presentar a l'ExCo a principis d'octubre de 2026, amb el suport de NRCan."
   net_hub_title: "Aliança"
-  net_hub_sub: "comú · taula · cartera · veu"
+  net_hub_sub: "comú · lideratge · cartera · veu"
   net_note: "Organitzacions reals del nostre mapa d'actors (recerca documental, octubre de 2026), mostrades com a exemples. Sortir-hi no implica participació ni suport. Anell rosa: ja implicades. Les línies són il·lustratives."
   scope_labels: {CANADA: "CANADÀ", INTERNATIONAL: "INTERNACIONAL", SPAIN: "ESPANYA"}
   actor_labels: {networks: "Xarxes i cooperatives", cities: "Ciutats i regions", grid: "Xarxa i empreses elèctriques", dhc: "Calefacció i refrigeració urbanes", research: "Recerca", funders: "Govern i finançadors"}
@@ -67,12 +66,12 @@ why:
 problem:
   kicker: "El problema"
   title: "L'obstacle no és l'esforç. És <em>la duplicació i l'aïllament</em>."
-  lead: "Les revisions troben sempre el mateix patró: hi ha eines i mètodes però fragmentats, difícils de connectar i poc pensats per a comunitats; les empreses emergents no tenen l'expertesa; l'evidència es queda dins de cada projecte; i ningú no parla amb una sola veu pels sistemes energètics locals. Els projectes també s'encallen perquè els actors dels quals depenen poques vegades seuen a la mateixa taula."
+  lead: "Les revisions troben sempre el mateix patró: hi ha eines i mètodes però fragmentats, difícils de connectar i poc pensats per a comunitats; les empreses emergents no tenen l'expertesa; l'evidència es queda dins de cada projecte; i ningú no parla amb una sola veu pels sistemes energètics locals. Els projectes també s'encallen perquè els actors dels quals depenen poques vegades seuen a la mateixa taula i, quan ho fan, ningú no lidera el procés."
   cards:
     - {title: "Eines fragmentades", text: "Hi ha eines madures per al disseny, però les específiques per a comunitats i interoperables són sobretot prototips."}
     - {title: "L'evidència es queda local", text: "Moltes maneres de mesurar l'impacte, cap d'acordada; les lliçons no se sumen entre projectes."}
     - {title: "Cap veu compartida", text: "Comunitats, ciutats i operadors de xarxa fan incidència per separat, sovint sobre els mateixos temes."}
-    - {title: "Cap taula neutral", text: "Ajuntament, empresa elèctrica, finançadors, promotors i veïnat poques vegades es troben al voltant del mateix projecte, que s'encalla entre la planificació i la implementació."}
+    - {title: "Ningú no lidera la taula", text: "Ajuntament, empresa elèctrica, finançadors, promotors i veïnat poques vegades es troben al voltant del mateix projecte, i quan ho fan ningú no té la confiança de tothom per liderar i guiar el procés. Sense lideratge, l'intermediari perd el seu paper i les coses no avancen."}
   note: "Basat en la nostra revisió de la literatura recent sobre llacunes de les comunitats energètiques (2021 a 2026)."
 landscape_summary:
   kicker: "Moltes eines, sense fonaments comuns"
@@ -133,10 +132,10 @@ alliance:
       tagline: "Blocs compartits i oberts que ningú no guanya tenint-los en privat."
       detail: "Blocs compartits, oberts per defecte: models i esquemes de dades, mètodes de flexibilitat i interacció amb la xarxa, KPI i regles de verificació comuns, proves de validació, conjunts de dades de referència, arquitectura de referència, contractes de model per als compradors."
       value: "Valor: qualsevol eina o estudi construït sobre aquests blocs es pot comparar, reutilitzar i trobar fiable. Els membres conserven els seus productes propis."
-    - title: "Facilitació"
-      tagline: "Una taula neutral on seuen junts els actors dels quals depèn un projecte."
-      detail: "Un intermediari de confiança que reuneix les persones que necessita un projecte d'energia local: veïnat i grups comunitaris, l'ajuntament, l'empresa elèctrica o l'operador de xarxa, finançadors, promotors, enginyeries i advocats. Fa tallers, cartografia els problemes i les restriccions de cada part, acorda les regles del joc (rols, confidencialitat, dades), coordina grups de treball i documenta el resultat. No dissenya el projecte ni ven enginyeria; els experts dels membres aporten l'assessorament."
-      value: "Valor: els projectes que s'encallarien entre la planificació i la implementació obtenen un diagnòstic compartit i una via acordada, i cada organització veu les barreres dels altres sense renunciar al seu negoci. Ja ho fem: vegeu el capítol següent."
+    - title: "Facilitació i lideratge"
+      tagline: "Una taula neutral, i algú que la lideri: un panell d'experts que guia el procés fins que les coses avancin."
+      detail: "Un intermediari de confiança que reuneix les persones que necessita un projecte d'energia local: veïnat i grups comunitaris, l'ajuntament, l'empresa elèctrica o l'operador de xarxa, finançadors, promotors, enginyeries i advocats. La taula sola no n'hi ha prou. Sense lideratge i guia l'intermediari perd el seu paper i res no avança, així que l'Aliança també aportaria el lideratge: un panell d'experts de diferents equips membres que lideren i guien la transició cap als sistemes locals. Fan tallers, cartografien els problemes de cada part, acorden les regles del joc (rols, confidencialitat, dades), coordinen grups de treball, mantenen el procés en marxa cap a una decisió i documenten el resultat. No dissenyen el projecte ni venen enginyeria; els experts dels membres aporten l'assessorament."
+      value: "Valor: els projectes que s'encallarien entre la planificació i la implementació obtenen un diagnòstic compartit, un líder i una via acordada, i cada organització veu les barreres dels altres sense renunciar al seu negoci. Ja ho fem: vegeu el capítol següent."
     - title: "Cartera"
       tagline: "Una manera de convertir idees en projectes finançats, amb els socis adequats."
       detail: "Una oficina de propostes que vigila convocatòries, busca socis, ofereix plantilles de consorci i una regla de rotació perquè centres competidors puguin cooperar. Plantilles compartides d'entregables i justificació."
@@ -209,7 +208,7 @@ govern:
     - title: "Una carta breu"
       items: ["Obert per defecte pel que fa al nucli compartit", "Els membres conserven la seva feina pròpia", "Cap servei que competeixi amb els membres", "Orientació de dret de la competència a totes les reunions"]
     - title: "Òrgans equilibrats"
-      items: ["Assemblea de tots els membres", "Junta equilibrada entre les cinc famílies de membres", "Comitè tècnic per al comú", "Secretaria petita"]
+      items: ["Assemblea de tots els membres", "Junta equilibrada entre les cinc famílies de membres", "Comitè tècnic per al comú", "Panell d'experts per liderar els processos facilitats", "Secretaria petita"]
     - title: "Joc net en projectes"
       items: ["Els rols de lideratge roten amb criteris clars", "L'Aliança facilita, mai tria guanyadors", "Una part dels projectes guanyats torna al comú (si els finançadors ho permeten)"]
   note: "La forma jurídica comença com a associació espanyola (ràpida i barata) i podria passar a una entitat internacional sense ànim de lucre quan els membres i el finançament ho justifiquin."
@@ -218,7 +217,7 @@ roadmap:
   title: "De la primera prova a un organisme de referència."
   phases:
     - {when: "Fins a mitjan 2027 · Fonaments", title: "Ser creïble", text: "Associació creada, membres fundadors, decisió sobre l'Annex, primeres propostes."}
-    - {when: "2027–2029 · Demostrar", title: "Mostrar que funciona", text: "Prototip de l'Annex i estudis de cas, oficina de propostes activa, primera formació i documents de posició."}
+    - {when: "2027–2029 · Demostrar", title: "Mostrar que funciona", text: "Prototip de l'Annex i estudis de cas, oficina de propostes activa, primers processos liderats pel panell d'experts, primera formació i documents de posició."}
     - {when: "2030–2032 · Escalar", title: "Esdevenir el referent", text: "Cicle de versions, hubs regionals, acords marc amb ciutats i operadors de xarxa."}
     - {when: "2033–2036 · Institucionalitzar", title: "Referència estable", text: "Estàndards citats per finançadors i reguladors, finançament plurianual estable."}
   note: "Dates indicatives; depenen del finançament i de la decisió de l'ExCo sobre la proposta d'Annex presentada a principis d'octubre de 2026 (amb el suport de NRCan; reunió de l'ExCo al novembre de 2026). Si s'aprova, l'Annex dura 1 any de preparació, 3 de treball i 1 d'informes."
@@ -234,7 +233,7 @@ status:
       items: ["Nota conceptual i pla a llarg termini", "Estudi de mercat i anàlisi de llacunes de la literatura", "Quadre de viabilitat amb 24 hipòtesis", "Text de la proposta d'Annex (EBC Project Concept, 24 d'agost de 2026), tal com es va presentar a l'ExCo"]
     - badge: "PROPOSAT · NO CONSTRUÏT"
       style: pr
-      items: ["L'associació i la seva carta", "Afiliació i paquet de fundadors", "El comú (models de dades, mètodes, referències)", "Oficina de propostes i primeres ofertes conjuntes"]
+      items: ["L'associació i la seva carta", "El panell d'experts per al lideratge i la facilitació", "Afiliació i paquet de fundadors", "El comú (models de dades, mètodes, referències)", "Oficina de propostes i primeres ofertes conjuntes"]
   note: "<b>Principals riscos oberts:</b> la disposició a pagar no està provada; encara no és clar que centres i xarxes competidors compartiran. Pensem provar-ho amb entrevistes, una enquesta breu i una prova de preu abans de comprometre'ns."
 budget:
   kicker: "Pressupost previst"
@@ -306,7 +305,7 @@ services:
     - {title: "Un llibre blanc", text: "Un estat anual de l'energia local i els bessons digitals: evidència entre projectes, com es defineixen els indicadors, un mapa d'eines i llacunes. Barat, construeix credibilitat i dona veu a l'Aliança."}
     - {title: "Estàndard de fitxa de cas i d'indicadors", text: "Un registre comú per a estudis de cas de comunitats i districtes, amb definicions d'indicadors acordades i càlculs de referència, perquè els casos es puguin comparar en igualtat de condicions."}
     - {title: "Oficina de propostes", text: "Vigila convocatòries, busca socis, ofereix plantilles de consorci i de justificació i una regla de rotació. No escriu ofertes ni tria guanyadors."}
-    - {title: "Processos facilitats", text: "Un convocant neutral dirigeix un procés amb molts actors al voltant d'un projecte o lloc concret: tallers, diagnòstic compartit, grups de treball, resultat documentat. Ja ho fem (vegeu el capítol de facilitació). Costa més esforç, així que comença amb uns quants processos pilot."}
+    - {title: "Processos liderats i facilitats", text: "Un convocant neutral, amb un panell d'experts d'equips membres com a líders, dirigeix un procés amb molts actors al voltant d'un projecte o lloc concret: tallers, diagnòstic compartit, grups de treball, resultat documentat. Ja ho fem (vegeu el capítol de facilitació). Costa més esforç, així que comença amb uns quants processos pilot."}
   first_note: "Els tres primers són barats, mostren valor en un any, i cap no toca la feina pròpia d'un membre. La facilitació és l'activitat distintiva de l'Aliança i necessita un coordinador finançat."
   later_title: "Quan hi hagi confiança"
   later:
@@ -333,19 +332,21 @@ services:
 
 facilitation:
   kicker: "Ja ho fem"
-  title: "Reunir la gent a la taula és una cosa que ja fem."
-  lead: "El nostre centre ha fet d'intermediari en dues iniciatives de calefacció urbana i ha impulsat dos projectes que reuneixen els actors d'un sector. Ho volem convertir en una de les activitats essencials de l'Aliança, amb més socis i a més escala."
+  title: "Reunir la gent a la taula, i portar-la fins a una decisió, és una cosa que ja fem."
+  lead: "El nostre centre ha fet d'intermediari en dues iniciatives de calefacció urbana i ha impulsat dos projectes que reuneixen els actors d'un sector. En cada cas algú va haver de liderar i guiar el procés, o no hauria avançat. Ho volem convertir en una de les activitats essencials de l'Aliança, amb més socis i a més escala."
   cards:
     - {title: "Calefacció urbana a Laval i a Concordia", text: "Hem actuat d'intermediaris entre els socis, fent tallers i entenent els diferents problemes del veïnat."}
     - {title: "ABC Accelerator (Montréal, des del 2022)", text: "Un «equip SWAT de sostenibilitat» format per l'ajuntament, una empresa elèctrica, un banc, promotors, enginyeries, arquitectes, advocats i la universitat treballa en projectes reals. Dos pilots, més de 200 hores cadascun, un procés de tres mesos."}
     - {title: "CÔTÉ Habitat (Montréal)", text: "Un centre que reuneix una xarxa d'habitatge, una aliança de transició i Concordia al voltant de la transició de l'habitatge existent: acompanyament tècnic, social, urbanístic i financer en un sol procés. En desenvolupament, cercant una persona líder assalariada."}
-    - {title: "Què hem après", text: "Una universitat com a convocant neutral genera confiança. Un projecte concret val més que un debat abstracte. Amb tota la cadena a la mateixa taula, les barreres esdevenen oportunitats. Calen tres o quatre mesos i un coordinador finançat."}
+    - {title: "Què hem après", text: "Una universitat com a convocant neutral genera confiança. Un projecte concret val més que un debat abstracte. Amb tota la cadena a la mateixa taula, les barreres esdevenen oportunitats. Sense lideratge i guia, l'intermediari perd el seu paper i tot s'atura. Calen tres o quatre mesos i un coordinador finançat."}
+  panel_title: "L'Aliança lideraria, no només acolliria"
+  panel_text: "Un panell d'experts de diferents equips membres actuaria com a líder i intermediari d'aquests processos, per donar suport a la transició cap als sistemes locals. L'Aliança no ofereix només la taula, sinó el lideratge de com s'apliquen els processos."
   note: "El mètode, les lliçons i la frontera amb allò que fan els membres són a l'annex."
 
 facilitation_detail:
   kicker: "Facilitació: mètode i trajectòria"
   title: "Com dirigiria l'Aliança un procés facilitat."
-  lead: "Els projectes d'energia local rarament fracassen perquè la tecnologia no funcioni. S'encallen perquè l'ajuntament, l'empresa elèctrica, el finançador, el promotor i el veïnat no han acordat mai junts qui fa què. Un convocant neutral tanca aquesta bretxa."
+  lead: "Els projectes d'energia local rarament fracassen perquè la tecnologia no funcioni. S'encallen perquè l'ajuntament, l'empresa elèctrica, el finançador, el promotor i el veïnat no han acordat mai junts qui fa què, i ningú no els porta fins a una decisió. Un convocant neutral amb lideratge tanca aquesta bretxa."
   record_title: "Trajectòria"
   record:
     - {title: "Calefacció urbana a Laval i a Concordia", text: "El nostre centre va fer d'intermediari entre els socis, va fer tallers i va entendre els diferents problemes del veïnat."}
@@ -358,6 +359,13 @@ facilitation_detail:
     - {value: "200+", label: "hores d'experts per projecte, més unes 400 hores per construir eines reutilitzables"}
     - {value: "3 mesos", label: "per projecte, amb quatre documents finals"}
   abc_note: "Reduccions d'emissions estimades per als dos pilots: al voltant del 19% amb les propostes de base i del 33% amb les propostes de nova generació (estimacions del mateix projecte, no resultats mesurats)."
+  panel_title: "Un panell d'experts que lidera"
+  panel_lead: "La taula no n'hi ha prou: sense lideratge i guia l'intermediari perd el seu paper i res no avança. L'Aliança formaria un panell per aportar aquest lideratge. És una proposta, encara per dissenyar."
+  panel:
+    - {title: "Qui", text: "Experts dels diferents equips membres (tècnics, socials, financers, jurídics, urbanístics), equilibrats entre les famílies de membres."}
+    - {title: "Què fan", text: "Lideren i guien un procés de transició local, mantenen intacte el paper d'intermediari i procuren que avanci cap a una decisió."}
+    - {title: "Com s'assigna", text: "Un líder o equip per procés, amb rotació, i una regla clara quan un membre té interès comercial propi en el resultat."}
+    - {title: "Què els dona suport", text: "Una secretaria petita, plantilles compartides i un coordinador finançat, perquè el lideratge no depengui del temps lliure."}
   method_title: "Un procés en sis passos"
   method:
     - {title: "Partir d'un projecte concret", text: "Un projecte o lloc real, no un tema abstracte."}
@@ -374,12 +382,33 @@ facilitation_detail:
     - "Els equips tècnics poden començar com la força conservadora. Reunió rere reunió, abordant les seves pors, es van tornar col·laboratius."
     - "Tres o quatre mesos de procés ajuden a suavitzar els primers dubtes."
     - "Les preocupacions de confidencialitat van primer: calia un acord de confidencialitat amb el convocant i acords paral·lels amb cada soci."
+    - "Sense lideratge i guia l'intermediari perd el seu paper. A l'ABC Accelerator la universitat va coordinar cada pas; CÔTÉ preveu una persona líder assalariada."
     - "El temps d'experts gratuït no permet una dedicació profunda. La coordinació necessita finançament: CÔTÉ preveu una persona líder assalariada des del principi."
   scope_title: "La frontera amb allò que fan els membres"
   scope_in_title: "L'Aliança fa"
-  scope_in: ["Convocar, fer tallers i facilitar", "Cartografiar problemes i acordar les regles", "Coordinar grups de treball i documentar el resultat", "Convertir el que s'aprèn en plantilles i eines obertes a tothom"]
+  scope_in: ["Liderar i guiar el procés amb un panell d'experts d'equips membres", "Convocar, fer tallers i facilitar", "Cartografiar problemes i acordar les regles", "Coordinar grups de treball i documentar el resultat", "Convertir el que s'aprèn en plantilles i eines obertes a tothom"]
   scope_out_title: "L'Aliança no fa"
   scope_out: ["Dissenyar el projecte ni vendre enginyeria", "Tenir un rol comercial en l'execució", "Triar proveïdors o guanyadors", "Substituir l'expertesa que els membres porten a la taula"]
   link_title: "Com es connecta amb la resta"
   link_text: "Cada procés genera un cas real per a l'estàndard de fitxa de cas, evidència per al llibre blanc i per a la feina de governança de l'Annex, i una cartera de projectes preparats per ser finançats."
   note: "Fonts: capítol en esborrany sobre l'ABC Accelerator (2024) i el two-pager de CÔTÉ Habitat. Les organitzacions sòcies no hi apareixen amb nom a propòsit. Els resultats són estimacions."
+
+cover:
+  roof: "Actors de l'energia local construint junts la transició"
+  pillars_label: "Què fa l'Aliança"
+  pillars:
+    - {title: "Comú", text: "Blocs compartits i oberts"}
+    - {title: "Facilitació i lideratge", text: "Una taula neutral, i algú que la lideri"}
+    - {title: "Cartera", text: "De les idees als projectes finançats"}
+    - {title: "Veu", text: "Una veu basada en l'evidència"}
+  base_label: "Principis sobre els quals es fonamenta"
+  base:
+    - {title: "Neutral per disseny", text: "Competidors i organismes públics a la mateixa taula"}
+    - {title: "Obert on importa", text: "El nucli compartit és obert per defecte"}
+    - {title: "Els membres mantenen el seu negoci", text: "Cap servei que competeixi amb els membres"}
+    - {title: "Dels seus membres", text: "Governança equilibrada entre cinc famílies"}
+
+acts:
+  - {kicker: "Part 1", title: "El problema", lead: "Per què l'energia local està encallada, i per què ara."}
+  - {kicker: "Part 2", title: "La proposta", lead: "Què és l'Aliança, què fa i qui hi participa."}
+  - {kicker: "Part 3", title: "El pla", lead: "Com creix, què costa i què demanem."}

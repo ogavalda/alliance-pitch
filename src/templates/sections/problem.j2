@@ -6,5 +6,12 @@
   <div class="grid g3 reveal" style="margin-top:24px">
     {% for c in s.cards %}<div class="card"><b>{{ c.title }}</b><p>{{ c.text }}</p></div>{% endfor %}
   </div>
+  {% set h = t.hero %}
+  <div class="card reveal" style="margin-top:26px">
+    <div class="ctl"><button class="tab on" data-n="0">{{ h.net_tab_off }}</button><button class="tab" data-n="1">{{ h.net_tab_on }}</button></div>
+    <div id="net-off">{{ figs.net_off }}</div><div id="net-on" style="display:none">{{ figs.net_on }}</div>
+    <div class="chips">{{ figs.net_legend }}</div>
+    <p class="note">{{ h.net_note }}</p>
+  </div>
   <p class="note">{{ s.note }}</p>
 </section>

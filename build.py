@@ -76,7 +76,9 @@ def build_edition(ed: dict) -> Path:
     n, tools_cfg, budget = load("numbers.yaml"), load_tools(lang), load_budget(lang)
     for w in charts.budget_checks(budget):
         print("BUDGET WARNING:", w)
-    main, annex = ed["main"], ed["annex"]
+    acts = ed["acts"]
+    main, annex = [s for a in acts for s in a], ed["annex"]
+    act_starts = {a[0]: i for i, a in enumerate(acts)}
     for s in main + annex:
         key = {"landscape_summary": "landscape_summary", "members_summary": "members_summary", "budget_summary": "budget_summary", "irec_ask": "irec_ask"}.get(s, s)
         if key not in t:
@@ -120,7 +122,7 @@ def build_edition(ed: dict) -> Path:
     annexed = [(f"{t['annex']['label']} {letters[i]}", s) for i, s in enumerate(annex)]
     env = Environment(loader=FileSystemLoader(ROOT / "src" / "templates"), undefined=StrictUndefined, autoescape=False)
     html = env.get_template("index.html.j2").render(
-        t=t, n=n, main=main, annex=annex, numbered=numbered, annexed=annexed, figs=figs, lang=lang,
+        t=t, n=n, main=main, act_starts=act_starts, annex=annex, numbered=numbered, annexed=annexed, figs=figs, lang=lang,
         logos=load_logos(t.get("logos", [])),
         css=(ROOT / "src/static/style.css").read_text(encoding="utf-8"),
         js=(ROOT / "src/static/app.js").read_text(encoding="utf-8"),

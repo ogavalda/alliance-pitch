@@ -1,19 +1,18 @@
-{% set h = t.hero %}
+{% set h = t.hero %}{% set cv = t.cover %}
 <div class="herowrap">
 <section class="hero" id="top">
   {% include "logos.j2" %}
-  <a class="annexcall" href="#ebc_summary"><b>{{ h.annex_call_title }}</b><span>{{ h.annex_call_text }}</span><i>→</i></a>
   <div class="kicker">{{ h.kicker }}</div>
   <h1>{{ h.title }}</h1>
   <p class="lead">{{ h.lead }}</p>
+  <div class="temple" role="img" aria-label="{{ cv.roof }}">
+    <div class="roof">{{ cv.roof }}</div>
+    <div class="tlabel">{{ cv.pillars_label }}</div>
+    <div class="pillars">{% for p in cv.pillars %}<div class="pillar p{{ loop.index }}"><b>{{ p.title }}</b><span>{{ p.text }}</span></div>{% endfor %}</div>
+    <div class="tlabel">{{ cv.base_label }}</div>
+    <div class="base">{% for p in cv.base %}<div><b>{{ p.title }}</b><span>{{ p.text }}</span></div>{% endfor %}</div>
+  </div>
   <div class="meta">{% for m in h.meta %}<div><span>{{ m.label }}</span>{{ m.value }}</div>{% endfor %}</div>
   <a class="btn" href="#{{ main[0] }}">{{ h.button_start }}</a><a class="btn alt" href="#{{ main[-1] }}">{{ h.button_ask }}</a>
-  <p class="note">{{ h.presenting_hint }}</p>
-  <div class="card" style="margin-top:26px">
-    <div class="ctl"><button class="tab on" data-n="0">{{ h.net_tab_off }}</button><button class="tab" data-n="1">{{ h.net_tab_on }}</button></div>
-    <div id="net-off">{{ figs.net_off }}</div><div id="net-on" style="display:none">{{ figs.net_on }}</div>
-    <div class="chips">{{ figs.net_legend }}</div>
-    <p class="note">{{ h.net_note }}</p>
-  </div>
 </section>
 </div>

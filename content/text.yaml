@@ -3,7 +3,7 @@
 
 meta:
   title: "Alliance for Digital Twins for Decarbonization: a draft proposal"
-  description: "A draft proposal for a member-owned alliance that gives local energy actors a shared commons, a neutral table, a project pipeline and a common voice."
+  description: "A draft proposal for a member-owned alliance that gives local energy actors a shared commons, a neutral table with leadership, a project pipeline and a common voice."
   version_line: "Draft v0.2 · October 2026"
 
 brand: "Digital Twins Alliance"
@@ -19,7 +19,7 @@ nav:                           # label of each chapter in the top bar (keys = te
   problem: "Problem"
   why: "Why now"
   ebc_summary: "IEA Annex"
-  facilitation: "Facilitation"
+  facilitation: "Leadership"
   landscape_summary: "Tools"
   alliance: "The Alliance"
   members_summary: "Who"
@@ -51,11 +51,10 @@ annex:
 hero:
   kicker: "Draft proposal · open for discussion"
   title: "Local energy is where decarbonization gets built. <em>Nobody should build it alone.</em>"
-  lead: "A proposed member-owned alliance of energy community networks, cities, research centres, grid operators and companies, giving local energy actors four things they cannot easily get alone: <b>a shared commons</b>, <b>a neutral table</b>, <b>a project pipeline</b> and <b>a common voice</b>."
+  lead: "A proposed member-owned alliance of community networks, cities, research centres, grid operators and funders."
   meta:
-    - {label: "Occasion", value: "[?] meeting or event"}
-    - {label: "Status", value: "Concept 0.1 · draft. Annex proposal submitted to the IEA EBC ExCo (early October 2026), supported by NRCan"}
-    - {label: "Starting engine", value: "A new IEA EBC Annex (task) proposal, in parallel: see the annex"}
+    - {label: "Status", value: "Draft, open for discussion"}
+    - {label: "First engine", value: "IEA EBC Annex proposal submitted, supported by NRCan"}
   button_start: "Start the story ↓"
   button_ask: "Jump to the ask"
   presenting_hint: "Presenting? Use the <b>→</b> and <b>←</b> keys to step through sections."
@@ -64,7 +63,7 @@ hero:
   annex_call_title: "IEA EBC Annex submitted"
   annex_call_text: "A proposal for a new Annex (task) on community energy solutions with digital platforms was submitted to the ExCo in early October 2026, supported by NRCan."
   net_hub_title: "Alliance"
-  net_hub_sub: "commons · table · pipeline · voice"
+  net_hub_sub: "commons · leadership · pipeline · voice"
   net_note: "Real organisations from our stakeholder map (desk research, October 2026), shown as examples. Being listed does not mean participation or endorsement. Pink ring: already engaged. Lines are illustrative."
   scope_labels: {CANADA: "CANADA", INTERNATIONAL: "INTERNATIONAL", SPAIN: "SPAIN"}
   actor_labels: {networks: "Networks and cooperatives", cities: "Cities and regions", grid: "Grid and utilities", dhc: "District heating and cooling", research: "Research", funders: "Government and funders"}
@@ -83,12 +82,12 @@ why:
 problem:
   kicker: "The problem"
   title: "The obstacle is not effort. It is <em>duplication and isolation</em>."
-  lead: "Reviews keep finding the same pattern: tools and methods exist but are fragmented, hard to connect and rarely built for communities; start-ups lack expertise; evidence stays inside each project; and no one speaks for local energy systems with one voice. Projects also stall because the actors they depend on rarely sit at the same table."
+  lead: "Reviews keep finding the same pattern: tools and methods exist but are fragmented, hard to connect and rarely built for communities; start-ups lack expertise; evidence stays inside each project; and no one speaks for local energy systems with one voice. Projects also stall because the actors they depend on rarely sit at the same table, and when they do, nobody leads the process."
   cards:
     - {title: "Fragmented tools", text: "Mature tools exist for design, but community-specific and interoperable ones are mostly prototypes."}
     - {title: "Evidence stays local", text: "Many ways to measure impact, none agreed, so lessons do not add up across projects."}
     - {title: "No shared voice", text: "Communities, cities and grid operators lobby separately, often on the same issues."}
-    - {title: "No neutral table", text: "City, utility, financiers, developers and neighbours rarely meet around the same project, so it stalls between planning and implementation."}
+    - {title: "No one leading the table", text: "City, utility, financiers, developers and neighbours rarely meet around the same project, and when they do, nobody is trusted to lead and guide the process. Without leadership the intermediary role is lost and things do not advance."}
   note: "Based on our review of recent literature on energy community gaps (2021 to 2026)."
 
 landscape_summary:
@@ -153,10 +152,10 @@ alliance:
       tagline: "Shared, open building blocks that no one wins by keeping private."
       detail: "Shared building blocks, open by default: data models and schemas, flexibility and grid-interaction methods, common KPIs and verification rules, validation tests, benchmark datasets, reference architecture, model contracts for buyers."
       value: "Value: any tool or study built on them can be compared, reused and trusted. Members keep their proprietary products."
-    - title: "Facilitation"
-      tagline: "A neutral table where the actors a project depends on sit down together."
-      detail: "A trusted intermediary that convenes the people a local energy project needs: neighbours and community groups, the city, the utility or grid operator, financiers, developers, engineers and lawyers. It runs workshops, maps each party's problems and constraints, agrees the rules of the game (roles, confidentiality, data), coordinates working groups and documents the result. It does not design the project or sell engineering; members' experts contribute the advice."
-      value: "Value: projects that would stall between planning and implementation get a shared diagnosis and an agreed way forward, and each organisation sees the others' barriers without giving up its own business. We already do this: see the next chapter."
+    - title: "Facilitation and leadership"
+      tagline: "A neutral table, and someone to lead it: a panel of experts that guides the process until things advance."
+      detail: "A trusted intermediary that convenes the people a local energy project needs: neighbours and community groups, the city, the utility or grid operator, financiers, developers, engineers and lawyers. The table alone is not enough. Without leadership and guidance the intermediary loses its role and nothing advances, so the Alliance would also provide the leadership: a panel of experts drawn from member teams who lead and guide the transition to local systems. They run workshops, map each party's problems, agree the rules of the game (roles, confidentiality, data), coordinate working groups, keep the process moving towards a decision and document the result. They do not design the project or sell engineering; members' experts contribute the advice."
+      value: "Value: projects that would stall between planning and implementation get a shared diagnosis, a leader and an agreed way forward, and each organisation sees the others' barriers without giving up its own business. We already do this: see the next chapter."
     - title: "Pipeline"
       tagline: "A way to turn ideas into funded projects, with the right partners."
       detail: "A proposal desk that watches calls, matches partners, offers consortium templates and a rotation rule so competing centres can cooperate. Shared deliverable and reporting templates."
@@ -276,7 +275,7 @@ govern:
     - title: "A short charter"
       items: ["Open by default for the shared core", "Members keep their proprietary work", "No services that compete with members", "Competition-law guidance for all meetings"]
     - title: "Balanced bodies"
-      items: ["Assembly of all members", "Board balanced across the five member families", "Technical committee for the commons", "Small secretariat"]
+      items: ["Assembly of all members", "Board balanced across the five member families", "Technical committee for the commons", "Panel of experts to lead facilitated processes", "Small secretariat"]
     - title: "Fair play on projects"
       items: ["Lead roles rotate with clear criteria", "The Alliance facilitates, never picks winners", "A share of won projects returns to the commons (if funders allow)"]
   note: "Legal form starts as a Spanish association (fast and low cost) and could move to an international non-profit when membership and funding justify it."
@@ -286,7 +285,7 @@ roadmap:
   title: "From first proof to a reference body."
   phases:
     - {when: "To mid-2027 · Foundation", title: "Be credible", text: "Association set up, founding members, Annex decision, first proposals."}
-    - {when: "2027–2029 · Prove", title: "Show it works", text: "Annex prototype and case studies, proposal desk live, first facilitated processes with partners, first training and position papers."}
+    - {when: "2027–2029 · Prove", title: "Show it works", text: "Annex prototype and case studies, proposal desk live, first processes led by the expert panel, first training and position papers."}
     - {when: "2030–2032 · Scale", title: "Become the default", text: "Release cycle, regional hubs, framework agreements with cities and grid operators."}
     - {when: "2033–2036 · Institutionalise", title: "Stable reference", text: "Standards cited by funders and regulators, stable multi-year funding."}
   note: "Indicative dates; they depend on funding and on the ExCo decision on the Annex proposal submitted in early October 2026 (supported by NRCan; ExCo meeting in November 2026). If approved, the Annex runs 1 year of preparation, 3 of work and 1 of reporting."
@@ -303,7 +302,7 @@ status:
       items: ["Concept note and long-term plan", "Market study and literature gap analysis", "Feasibility scorecard with 24 assumptions", "Annex proposal text (EBC Project Concept, 24 August 2026), as submitted to the ExCo"]
     - badge: "PROPOSED · NOT BUILT"
       style: pr
-      items: ["The association and its charter", "Membership and founders' package", "The commons (data models, methods, benchmarks)", "Proposal desk and first joint bids"]
+      items: ["The association and its charter", "The expert panel for leadership and facilitation", "Membership and founders' package", "The commons (data models, methods, benchmarks)", "Proposal desk and first joint bids"]
   note: "<b>Main open risks:</b> willingness to pay is unproven; it is not yet clear that competing centres and networks will share. We plan to test both with interviews, a short survey and a price test before committing."
 
 budget:
@@ -396,7 +395,7 @@ services:
     - {title: "A white paper", text: "An annual state of local energy and digital twins: evidence across projects, how indicators are defined, a map of tools and gaps. Cheap, builds credibility and gives the Alliance its voice."}
     - {title: "Case-record and indicator standard", text: "A common record for community and district case studies, with agreed indicator definitions and reference calculations, so cases can be compared like with like."}
     - {title: "Proposal desk", text: "Watches calls, matches partners, offers consortium and reporting templates and a rotation rule. It does not write bids or pick winners."}
-    - {title: "Facilitated processes", text: "A neutral convener runs a multi-stakeholder process around one concrete project or place: workshops, shared diagnosis, working groups, documented outcome. We already do this (see the facilitation chapter). It takes more effort, so it starts with a few pilot processes."}
+    - {title: "Led and facilitated processes", text: "A neutral convener, with a panel of experts from member teams as leaders, runs a multi-stakeholder process around one concrete project or place: workshops, shared diagnosis, working groups, documented outcome. We already do this (see the facilitation chapter). It takes more effort, so it starts with a few pilot processes."}
   first_note: "The first three are cheap, show value within a year, and none touches a member's own business. Facilitation is the Alliance's signature activity and needs a funded coordinator."
   later_title: "Once trust exists"
   later:
@@ -423,19 +422,21 @@ services:
 
 facilitation:
   kicker: "Already doing it"
-  title: "Bringing people to the table is something we already do."
-  lead: "Our centre has played the intermediary in two district heating initiatives and has started two projects that bring the stakeholders of a sector together. We would make this one of the Alliance's essential activities, with more partners and at a larger scale."
+  title: "Bringing people to the table, and leading them to a decision, is something we already do."
+  lead: "Our centre has played the intermediary in two district heating initiatives and has started two projects that bring the stakeholders of a sector together. In each case someone had to lead and guide the process, or it would not have advanced. We would make this one of the Alliance's essential activities, with more partners and at a larger scale."
   cards:
     - {title: "District heating at Laval and at Concordia", text: "We acted as the intermediary between the partners, running workshops and working out the different problems of the neighbours."}
     - {title: "ABC Accelerator (Montréal, since 2022)", text: "A \"sustainability SWAT team\" of the city, a utility, a bank, developers, engineers, architects, lawyers and the university works on real projects. Two pilots, over 200 hours each, a three-month process."}
     - {title: "CÔTÉ Habitat (Montréal)", text: "A centre that brings together a housing network, a transition alliance and Concordia around the transition of existing housing: technical, social, urban and financial support in one process. Under development, looking for a salaried lead."}
-    - {title: "What we learned", text: "A university as neutral convener builds trust. A concrete project beats an abstract debate. With the whole chain at one table, barriers become opportunities. It takes three to four months and a funded coordinator."}
+    - {title: "What we learned", text: "A university as neutral convener builds trust. A concrete project beats an abstract debate. With the whole chain at one table, barriers become opportunities. Without leadership and guidance, the intermediary role is lost and things stop. It takes three to four months and a funded coordinator."}
+  panel_title: "The Alliance would lead, not only host"
+  panel_text: "A panel of experts drawn from the different member teams would act as the leaders and intermediaries of these processes, to support the transition to local systems. The Alliance offers not only the table, but the leadership of how the processes are applied."
   note: "Method, lessons and the line with what members do are in the annex."
 
 facilitation_detail:
   kicker: "Facilitation: method and track record"
   title: "How the Alliance would run a facilitated process."
-  lead: "Local energy projects rarely fail because the technology does not work. They stall because the city, the utility, the financier, the developer and the neighbours have never worked out together who does what. A neutral convener closes that gap."
+  lead: "Local energy projects rarely fail because the technology does not work. They stall because the city, the utility, the financier, the developer and the neighbours have never worked out together who does what, and nobody leads them to a decision. A neutral convener with leadership closes that gap."
   record_title: "Track record"
   record:
     - {title: "District heating at Laval and at Concordia", text: "Our centre played the intermediary between the partners, ran workshops and worked out the different problems of the neighbours."}
@@ -448,6 +449,13 @@ facilitation_detail:
     - {value: "200+", label: "expert hours per project, plus about 400 hours to build reusable tools"}
     - {value: "3 months", label: "per project, ending in four documents"}
   abc_note: "Estimated emission reductions for the two pilots: about 19% with the baseline proposals and 33% with the next-generation proposals (the project's own estimates, not measured results)."
+  panel_title: "A panel of experts that leads"
+  panel_lead: "The table is not enough: without leadership and guidance the intermediary role is lost and nothing advances. The Alliance would form a panel to provide that leadership. This is a proposal, still to be designed."
+  panel:
+    - {title: "Who", text: "Experts from the different member teams (technical, social, financial, legal, urban), balanced across the member families."}
+    - {title: "What they do", text: "Lead and guide a local transition process, keep the intermediary role intact and make sure it moves towards a decision."}
+    - {title: "How it is assigned", text: "A lead or team per process, rotating, with a clear rule when a member has its own commercial interest in the outcome."}
+    - {title: "What supports them", text: "A small secretariat, shared templates and a funded coordinator, so leadership does not depend on free time."}
   method_title: "A process in six steps"
   method:
     - {title: "Start from a concrete project", text: "A real project or place, not an abstract topic."}
@@ -464,12 +472,33 @@ facilitation_detail:
     - "Technical teams can start as the conservative force. Meeting after meeting, with their fears addressed, they became collaborative."
     - "Three to four months of process help to smooth the first doubts."
     - "Confidentiality worries come first: a non-disclosure agreement with the convener and side agreements with each partner were needed."
+    - "Without leadership and guidance the intermediary role is lost. In the ABC Accelerator the university coordinated every step; CÔTÉ plans a salaried lead."
     - "Free expert time does not allow deep dedication. The coordination needs funding: CÔTÉ plans a salaried lead from the start."
   scope_title: "The line with what members do"
   scope_in_title: "The Alliance does"
-  scope_in: ["Convene, run workshops and facilitate", "Map problems and agree the rules", "Coordinate working groups and document the result", "Turn what is learned into templates and tools open to all"]
+  scope_in: ["Lead and guide the process with a panel of experts from member teams", "Convene, run workshops and facilitate", "Map problems and agree the rules", "Coordinate working groups and document the result", "Turn what is learned into templates and tools open to all"]
   scope_out_title: "The Alliance does not"
   scope_out: ["Design the project or sell engineering", "Take a commercial role in delivery", "Choose vendors or winners", "Replace the expertise members bring to the table"]
   link_title: "How it connects to the rest"
   link_text: "Each process produces a real case for the shared case-record standard, evidence for the white paper and the Annex's governance work, and a pipeline of projects that are ready to be funded."
   note: "Sources: draft chapter on the ABC Accelerator (2024) and the CÔTÉ Habitat two-pager. Partner organisations are not named here on purpose. Results are estimates."
+
+cover:
+  roof: "Local energy actors building the transition together"
+  pillars_label: "What the Alliance does"
+  pillars:
+    - {title: "Commons", text: "Shared, open building blocks"}
+    - {title: "Facilitation and leadership", text: "A neutral table, and someone to lead it"}
+    - {title: "Pipeline", text: "From ideas to funded projects"}
+    - {title: "Voice", text: "One evidence-based voice"}
+  base_label: "Principles it stands on"
+  base:
+    - {title: "Neutral by design", text: "Competitors and public bodies sit at the same table"}
+    - {title: "Open where it matters", text: "The shared core is open by default"}
+    - {title: "Members keep their business", text: "No services that compete with members"}
+    - {title: "Owned by its members", text: "Balanced governance across five families"}
+
+acts:
+  - {kicker: "Part 1", title: "The problem", lead: "Why local energy is stuck, and why now."}
+  - {kicker: "Part 2", title: "The proposal", lead: "What the Alliance is, what it does and who takes part."}
+  - {kicker: "Part 3", title: "The plan", lead: "How it grows, what it costs and what we ask."}
