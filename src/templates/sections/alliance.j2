@@ -8,5 +8,6 @@
   </div>
   <div class="chips" id="jtabs"></div>
   <div class="card" id="jout" style="min-height:140px"></div>
+  {% if s.extension %}<div class="card engine" style="margin-top:18px"><b>{{ s.extension.title }}</b><p>{{ s.extension.text }}</p><p class="note"><a href="#south">{{ s.extension.link }} ↓</a></p></div>{% endif %}
   <p class="note" style="margin-top:14px">{{ s.note }}</p>
 </section>

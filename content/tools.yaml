@@ -269,6 +269,55 @@ tools:
     openness: "Open"
     source: "https://tool-overview-energy-planning.readthedocs.io/en/latest/readme.html"
 
+  # ---- Tools for off-grid and mini-grid settings in the Global South
+  - id: onsset
+    short: "OnSSET"
+    topic: planning
+    scale: [3, 4]
+    who: research
+    geo: global
+    name: "OnSSET, Open Source Spatial Electrification Toolkit (KTH)"
+    owner: "KTH dESA, Sweden"
+    diagram: false
+    frontend: null
+    backend: "GIS-based least-cost comparison of grid extension, mini-grids and stand-alone systems"
+    data_model: null
+    capture: "Spatial datasets (population, grid, resources)"
+    kpis: "Least-cost electrification option and cost per location"
+    openness: "Open source"
+    source: "https://onsset.readthedocs.io/"
+  - id: omg
+    short: "OnSSET for Mini Grids"
+    topic: planning
+    scale: [2, 3]
+    who: research
+    geo: global
+    name: "OnSSET for Mini Grids (OMG)"
+    owner: "OnSSET community"
+    diagram: false
+    frontend: null
+    backend: "Python tool: hybrid solar-diesel-storage sizing and distribution design with bill of quantities; stand-alone or inside a national least-cost model"
+    data_model: null
+    capture: "Site and spatial data"
+    kpis: "Levelised cost of electricity, bill of quantities"
+    openness: "Open source"
+    source: "https://omg-userguide.readthedocs.io"
+  - id: microgridspy
+    short: "MicroGridsPy"
+    topic: planning
+    scale: [2, 2]
+    who: research
+    geo: global
+    name: "MicroGridsPy"
+    owner: "Research groups (to confirm)"
+    diagram: false
+    frontend: null
+    backend: "Optimisation of microgrid sizing; a 2026 master's thesis found OnSSET overestimates mini-grid costs against it on Kenyan sites (preliminary)"
+    data_model: null
+    capture: null
+    kpis: "Levelised cost of electricity"
+    openness: null
+    source: null
   # ---- Energy sharing, virtual metering and local trading (added October 2026)
   - id: recreation
     short: "RECreation"

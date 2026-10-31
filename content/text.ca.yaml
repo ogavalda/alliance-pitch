@@ -39,7 +39,7 @@ annex:
 hero:
   kicker: "Proposta preliminar · oberta a debat"
   title: "L'energia local és on es construeix la descarbonització. <em>Ningú no hauria de construir-la sol.</em>"
-  lead: "Una aliança proposada, participada pels seus membres, de xarxes comunitàries, ciutats, centres de recerca, operadors de xarxa i finançadors."
+  lead: "Una aliança proposada, participada pels seus membres, de xarxes comunitàries, ciutats, centres de recerca, operadors de xarxa i finançadors, oberta a socis del Sud global."
   meta:
     - {label: "Estat", value: "Esborrany, obert a debat"}
     - {label: "Primer motor", value: "Proposta d'Annex de l'IEA EBC presentada, amb el suport de NRCan"}
@@ -59,7 +59,7 @@ hero:
 why:
   kicker: "Per què ara"
   title: "Política, diners i tecnologia s'alineen a escala local."
-  lead: "Tres canvis fan que l'energia local sigui on es guanya o es perd la transició, i que els propers anys siguin una finestra poc habitual per organitzar-se."
+  lead: "Tres canvis fan que l'energia local sigui on es guanya o es perd la transició, i que els propers anys siguin una finestra poc habitual per organitzar-se. Les mateixes preguntes es plantegen al Sud global, on les microxarxes i els sistemes gestionats per la comunitat són sovint el primer accés a l'electricitat."
   cards:
     - {stat_key: policy, text: "<b>Política.</b> El Paquet d'Energia Ciutadana de la Comissió Europea del 2026 vol multiplicar per deu, aproximadament, les renovables de propietat comunitària el 2030. És voluntari, així que l'execució depèn de la capacitat sobre el terreny."}
     - {stat_key: scale,  text: "<b>Escala.</b> Comunitats energètiques comptades a la UE per la Comissió (un mapatge acadèmic en compta unes 3.900: les definicions difereixen). Ciutats, regions i operadors de xarxa també s'hi mouen."}
@@ -68,7 +68,7 @@ why:
 problem:
   kicker: "El problema"
   title: "L'obstacle no és l'esforç. És <em>la duplicació i l'aïllament</em>."
-  lead: "Les revisions troben sempre el mateix patró: hi ha eines i mètodes però fragmentats, difícils de connectar i poc pensats per a comunitats; les empreses emergents no tenen l'expertesa; l'evidència es queda dins de cada projecte; i ningú no parla amb una sola veu pels sistemes energètics locals. Els projectes també s'encallen perquè els actors dels quals depenen poques vegades seuen a la mateixa taula i, quan ho fan, ningú no lidera el procés."
+  lead: "Les revisions troben sempre el mateix patró: hi ha eines i mètodes però fragmentats, difícils de connectar i poc pensats per a comunitats; les empreses emergents no tenen l'expertesa; l'evidència es queda dins de cada projecte; i ningú no parla amb una sola veu pels sistemes energètics locals. Els projectes també s'encallen perquè els actors dels quals depenen poques vegades seuen a la mateixa taula i, quan ho fan, ningú no lidera el procés. L'experiència del Sud global, on les microxarxes i els sistemes gestionats per la comunitat són sovint el primer accés a l'electricitat, poques vegades arriba als projectes del Nord, i les eines del Nord poques vegades s'adapten als contextos del Sud."
   cards:
     - {title: "Eines fragmentades", text: "Hi ha eines madures per al disseny, però les específiques per a comunitats i interoperables són sobretot prototips."}
     - {title: "L'evidència es queda local", text: "Moltes maneres de mesurar l'impacte, cap d'acordada; les lliçons no se sumen entre projectes."}
@@ -78,7 +78,7 @@ problem:
 landscape_summary:
   kicker: "Moltes eines, sense fonaments comuns"
   title: "Hi ha bones eines. No comparteixen fonaments."
-  text: "Hem revisat {n} eines i famílies d'eines per gestionar comunitats energètiques i sistemes energètics locals, de projectes de recerca, xarxes, organismes públics i empreses. Cobreixen planificació, creació, repartiment d'energia i comptadors virtuals, agregació i flexibilitat, i seguiment. Cadascuna té la seva interfície, backend, model de dades i indicadors. De {m} d'elles no hem trobat el model de dades documentat en fonts públiques."
+  text: "Hem revisat {n} eines i famílies d'eines per gestionar comunitats energètiques i sistemes energètics locals, de projectes de recerca, xarxes, organismes públics i empreses. Cobreixen planificació, creació, repartiment d'energia i comptadors virtuals, agregació i flexibilitat, i seguiment. Cadascuna té la seva interfície, backend, model de dades i indicadors. De {m} d'elles no hem trobat el model de dades documentat en fonts públiques. Les eines per a entorns aïllats de xarxa i minixarxes del Sud global només ara comencen a quedar cobertes."
   points:
     - {title: "Interfícies diferents és bo", text: "Els usuaris són diferents, i les interfícies també ho han de ser."}
     - {title: "Fonaments diferents són cars", text: "L'estructura de dades, la captura i els indicadors es reconstrueixen cada cop; les eines són difícils d'integrar i els casos de comparar."}
@@ -94,7 +94,7 @@ landscape:
   map_by_geo: "Color segons d'on ve"
   map_note: "Primera classificació a partir de descripcions públiques; una eina pot cobrir diverses escales (caixes més amples). Clica una caixa per obrir-ne la font. La classificació s'edita a tools.yaml."
   matrix_title: "Una primera llista d'eines (per completar)"
-  matrix_note: "Recerca documental, octubre de 2026. Un interrogant vol dir que no ho hem trobat documentat en fonts públiques, no que no existeixi. Si us plau, corregiu i completeu la llista."
+  matrix_note: "Recerca documental, octubre de 2026. Un interrogant vol dir que no ho hem trobat documentat en fonts públiques, no que no existeixi. Si us plau, corregiu i completeu la llista. Hi ha eines de planificació de minixarxes del Sud, però la cobertura del Sud global encara és escassa."
   stack_title: "Què passa per sota"
   stack_lead: "Canvia entre avui i un món amb un nucli compartit."
   tab_today: "Avui: cada eina té els seus fonaments"
@@ -132,7 +132,7 @@ alliance:
   jobs:
     - title: "Comú"
       tagline: "Blocs compartits i oberts que ningú no guanya tenint-los en privat."
-      detail: "Blocs compartits, oberts per defecte: models i esquemes de dades, mètodes de flexibilitat i interacció amb la xarxa, KPI i regles de verificació comuns, proves de validació, conjunts de dades de referència, arquitectura de referència, contractes de model per als compradors."
+      detail: "Blocs compartits, oberts per defecte: models i esquemes de dades, mètodes de flexibilitat i interacció amb la xarxa, KPI i regles de verificació comuns, proves de validació, conjunts de dades de referència, arquitectura de referència, contractes de model per als compradors, també en versions que funcionin amb poques dades i en entorns aïllats de xarxa."
       value: "Valor: qualsevol eina o estudi construït sobre aquests blocs es pot comparar, reutilitzar i trobar fiable. Els membres conserven els seus productes propis."
     - title: "Facilitació i lideratge"
       tagline: "Una taula neutral, i algú que la lideri: un panell d'experts que guia el procés fins que les coses avancin."
@@ -140,12 +140,16 @@ alliance:
       value: "Valor: els projectes que s'encallarien entre la planificació i la implementació obtenen un diagnòstic compartit, un líder i una via acordada, i cada organització veu les barreres dels altres sense renunciar al seu negoci. Ja ho fem: vegeu el capítol següent."
     - title: "Cartera"
       tagline: "Una manera de convertir idees en projectes finançats, amb els socis adequats."
-      detail: "Una oficina de propostes que vigila convocatòries, busca socis, ofereix plantilles de consorci i una regla de rotació perquè centres competidors puguin cooperar. Plantilles compartides d'entregables i justificació."
+      detail: "Una oficina de propostes que vigila convocatòries, busca socis, ofereix plantilles de consorci i una regla de rotació perquè centres competidors puguin cooperar. Plantilles compartides d'entregables i justificació. Propostes conjuntes amb socis del Sud global."
       value: "Valor: més propostes i millors, cost d'escriptura compartit, i una via reconeguda cap a programes europeus, nacionals i internacionals. L'Aliança facilita; no tria guanyadors."
     - title: "Veu"
       tagline: "Una veu creïble i basada en l'evidència davant la UE, l'IEA, l'OCDE i les xarxes de ciutats."
       detail: "Posicionaments basats en l'evidència i declaracions conjuntes davant la Comissió Europea, l'IEA, l'OCDE i les xarxes de ciutats, transparents i aprovats pels membres."
       value: "Valor: un sol interlocutor per a les institucions, i sistemes energètics locals i bessons digitals reconeguts en el finançament i les polítiques."
+  extension:
+    title: "A banda de les quatre tasques: transferència de tecnologia i formació amb el Sud global"
+    text: "Membres amb experiència en microxarxes rurals i accés a l'energia (Azimut 360 i Aiguasol a l'Àfrica subsahariana) aportarien aquesta pràctica a l'Aliança. A canvi, eines obertes, fitxes de cas i formació s'adaptarien i es transferirien als socis del Sud, amb les organitzacions locals liderant l'adaptació. Travessa les quatre tasques: el comú també ha de servir per a casos aïllats de xarxa, el panell d'experts pot liderar processos locals, la cartera pot arribar al finançament de desenvolupament i clima, i la veu pot portar evidència Nord-Sud."
+    link: "Detalls a l'annex"
   note: "El comú comença on la literatura és més sòlida: models de dades compartits, mètodes de flexibilitat i interacció amb la xarxa, KPI comuns i validació. Són exemples, no tota la proposta."
 demo:
   kicker: "Què dona un mètode compartit"
@@ -211,7 +215,7 @@ govern:
     - title: "Una carta breu"
       items: ["Obert per defecte pel que fa al nucli compartit", "Els membres conserven la seva feina pròpia", "Cap servei que competeixi amb els membres", "Orientació de dret de la competència a totes les reunions"]
     - title: "Òrgans equilibrats"
-      items: ["Assemblea de tots els membres", "Junta equilibrada entre les cinc famílies de membres", "Comitè tècnic per al comú", "Panell d'experts per liderar els processos facilitats", "Secretaria petita"]
+      items: ["Assemblea de tots els membres", "Junta equilibrada entre les sis famílies de membres", "Comitè tècnic per al comú", "Panell d'experts per liderar els processos facilitats", "Secretaria petita"]
     - title: "Joc net en projectes"
       items: ["Els rols de lideratge roten amb criteris clars", "L'Aliança facilita, mai tria guanyadors", "Una part dels projectes guanyats torna al comú (si els finançadors ho permeten)"]
   note: "La forma jurídica comença com a associació espanyola (ràpida i barata) i podria passar a una entitat internacional sense ànim de lucre quan els membres i el finançament ho justifiquin."
@@ -220,8 +224,8 @@ roadmap:
   title: "De la primera prova a un organisme de referència."
   phases:
     - {when: "Fins a mitjan 2027 · Fonaments", title: "Ser creïble", text: "Associació creada, membres fundadors, decisió sobre l'Annex, primeres propostes."}
-    - {when: "2027–2029 · Demostrar", title: "Mostrar que funciona", text: "Prototip de l'Annex i estudis de cas, oficina de propostes activa, primers processos liderats pel panell d'experts, primera formació i documents de posició."}
-    - {when: "2030–2032 · Escalar", title: "Esdevenir el referent", text: "Cicle de versions, hubs regionals, acords marc amb ciutats i operadors de xarxa."}
+    - {when: "2027–2029 · Demostrar", title: "Mostrar que funciona", text: "Prototip de l'Annex i estudis de cas, oficina de propostes activa, primers processos liderats pel panell d'experts, primera formació, primeres fitxes de cas Nord-Sud i documents de posició."}
+    - {when: "2030–2032 · Escalar", title: "Esdevenir el referent", text: "Cicle de versions, hubs regionals, acords marc amb ciutats i operadors de xarxa, un programa de formació i transferència de tecnologia amb socis del Sud."}
     - {when: "2033–2036 · Institucionalitzar", title: "Referència estable", text: "Estàndards citats per finançadors i reguladors, finançament plurianual estable."}
   note: "Dates indicatives; depenen del finançament i de la decisió de l'ExCo sobre la proposta d'Annex presentada a principis d'octubre de 2026 (amb el suport de NRCan; reunió de l'ExCo al novembre de 2026). Si s'aprova, l'Annex dura 1 any de preparació, 3 de treball i 1 d'informes."
 status:
@@ -230,13 +234,13 @@ status:
   columns:
     - badge: "EXISTEIX"
       style: ex
-      items: ["Ontologies obertes i eines de modelització on construir [extern]", "Finançament de la UE per a instal·lacions comunitàries i per a bessons de xarxa [extern]", "Annexos de l'IEA EBC sobre comunitats i edificis basats en dades [extern]", "Proposta de nou Annex (tasca) presentada a l'ExCo a principis d'octubre de 2026, amb el suport de NRCan", "Trajectòria en facilitació: calefacció urbana a Laval i Concordia, ABC Accelerator (Montréal, des del 2022); CÔTÉ Habitat en desenvolupament", "Converses amb socis: [?] llista"]
+      items: ["Ontologies obertes i eines de modelització on construir [extern]", "Finançament de la UE per a instal·lacions comunitàries i per a bessons de xarxa [extern]", "Annexos de l'IEA EBC sobre comunitats i edificis basats en dades [extern]", "Proposta de nou Annex (tasca) presentada a l'ExCo a principis d'octubre de 2026, amb el suport de NRCan", "Trajectòria en facilitació: calefacció urbana a Laval i Concordia, ABC Accelerator (Montréal, des del 2022); CÔTÉ Habitat en desenvolupament", "Experiència dels membres en microxarxes rurals i accés a l'energia a l'Àfrica subsahariana (Azimut 360, Aiguasol)", "Converses amb socis: [?] llista"]
     - badge: "ESBORRANY DOCUMENTAT"
       style: dr
       items: ["Nota conceptual i pla a llarg termini", "Estudi de mercat i anàlisi de llacunes de la literatura", "Quadre de viabilitat amb 24 hipòtesis", "Text de la proposta d'Annex (EBC Project Concept, 24 d'agost de 2026), tal com es va presentar a l'ExCo"]
     - badge: "PROPOSAT · NO CONSTRUÏT"
       style: pr
-      items: ["L'associació i la seva carta", "El panell d'experts per al lideratge i la facilitació", "Afiliació i paquet de fundadors", "El comú (models de dades, mètodes, referències)", "Oficina de propostes i primeres ofertes conjuntes"]
+      items: ["L'associació i la seva carta", "El panell d'experts per al lideratge i la facilitació", "Afiliació i paquet de fundadors", "El comú (models de dades, mètodes, referències)", "Oficina de propostes i primeres ofertes conjuntes", "Línia de transferència de tecnologia i formació Nord-Sud"]
   note: "<b>Principals riscos oberts:</b> la disposició a pagar no està provada; encara no és clar que centres i xarxes competidors compartiran. Pensem provar-ho amb entrevistes, una enquesta breu i una prova de preu abans de comprometre'ns."
 budget:
   kicker: "Pressupost previst"
@@ -314,6 +318,7 @@ services:
   later:
     - {title: "Avaluació comparativa i validació", text: "Executar els models dels membres amb conjunts de dades de prova compartits i publicar els resultats. Un àrbitre neutral, no un consultor."}
     - {title: "Suport a la contractació", text: "Clàusules de contracte model i una llista de verificació per a ciutats que compren bessons digitals, perquè els compradors puguin exigir interoperabilitat."}
+    - {title: "Formació i transferència de tecnologia", text: "Cursos oberts, material per formar formadors i eines adaptades per a socis del Sud global, construïts amb organitzacions locals i finançats amb línies de desenvolupament i clima quan sigui possible."}
   scope_title: "Dins i fora de l'abast"
   col_in: "Dins de l'abast: infraestructura i serveis neutrals"
   col_out: "Fora de l'abast: el que fan els membres"
@@ -326,6 +331,7 @@ services:
     - ["Llibres blancs, avaluacions comparatives, formació i fòrums", "Consultoria i redacció d'ofertes per a membres concrets"]
     - ["Contractes model i llistes de verificació de contractació", "Triar proveïdors o guanyadors"]
     - ["Allotjar conjunts de dades anonimitzats que els membres accepten compartir", "Competir amb els serveis propis dels membres"]
+    - ["Material obert de formació i transferència de tecnologia, adaptat amb socis del Sud", "Executar o operar projectes al Sud global (el que fan membres com Azimut 360)"]
   paid_title: "Què es podria cobrar"
   paid_yes_title: "Serveis neutrals de pagament"
   paid_yes: ["Formació i cursos", "Participació en avaluacions comparatives", "Certificació segons el nucli compartit", "Coordinació d'un procés facilitat, a cost (per parlar-ne)"]
@@ -343,7 +349,7 @@ facilitation:
     - {title: "CÔTÉ Habitat (Montréal)", text: "Un centre que reuneix una xarxa d'habitatge, una aliança de transició i Concordia al voltant de la transició de l'habitatge existent: acompanyament tècnic, social, urbanístic i financer en un sol procés. En desenvolupament, cercant una persona líder assalariada."}
     - {title: "Què hem après", text: "Una universitat com a convocant neutral genera confiança. Un projecte concret val més que un debat abstracte. Amb tota la cadena a la mateixa taula, les barreres esdevenen oportunitats. Sense lideratge i guia, l'intermediari perd el seu paper i tot s'atura. Calen tres o quatre mesos i un coordinador finançat."}
   panel_title: "L'Aliança lideraria, no només acolliria"
-  panel_text: "Un panell d'experts de diferents equips membres actuaria com a líder i intermediari d'aquests processos, per donar suport a la transició cap als sistemes locals. L'Aliança no ofereix només la taula, sinó el lideratge de com s'apliquen els processos."
+  panel_text: "Un panell d'experts de diferents equips membres actuaria com a líder i intermediari d'aquests processos, per donar suport a la transició cap als sistemes locals. L'Aliança no ofereix només la taula, sinó el lideratge de com s'apliquen els processos. El mateix enfocament pot donar suport a processos locals al Sud global, amb líders locals."
   note: "El mètode, les lliçons i la frontera amb allò que fan els membres són a l'annex."
 
 facilitation_detail:
@@ -365,14 +371,14 @@ facilitation_detail:
   panel_title: "Un panell d'experts que lidera"
   panel_lead: "La taula no n'hi ha prou: sense lideratge i guia l'intermediari perd el seu paper i res no avança. L'Aliança formaria un panell per aportar aquest lideratge. És una proposta, encara per dissenyar."
   panel:
-    - {title: "Qui", text: "Experts dels diferents equips membres (tècnics, socials, financers, jurídics, urbanístics), equilibrats entre les famílies de membres."}
+    - {title: "Qui", text: "Experts dels diferents equips membres (tècnics, socials, financers, jurídics, urbanístics), equilibrats entre les famílies de membres, incloent-hi membres amb experiència al Sud global."}
     - {title: "Què fan", text: "Lideren i guien un procés de transició local, mantenen intacte el paper d'intermediari i procuren que avanci cap a una decisió."}
     - {title: "Com s'assigna", text: "Un líder o equip per procés, amb rotació, i una regla clara quan un membre té interès comercial propi en el resultat."}
     - {title: "Què els dona suport", text: "Una secretaria petita, plantilles compartides i un coordinador finançat, perquè el lideratge no depengui del temps lliure."}
   method_title: "Un procés en sis passos"
   method:
     - {title: "Partir d'un projecte concret", text: "Un projecte o lloc real, no un tema abstracte."}
-    - {title: "Convidar tota la cadena", text: "Ajuntament, empresa elèctrica, finançador, promotor, enginyeries i arquitectes, assessorament jurídic, i la comunitat o el veïnat."}
+    - {title: "Convidar tota la cadena", text: "Ajuntament, empresa elèctrica, finançador, promotor, enginyeries i arquitectes, assessorament jurídic, i la comunitat o el veïnat. En projectes aïllats de xarxa, també l'operador de la minixarxa i l'autoritat local."}
     - {title: "Acordar primer les regles", text: "Rols, confidencialitat, què es pot compartir, i una manera justa de seleccionar qui hi participa."}
     - {title: "Escoltar i cartografiar", text: "Tallers per entendre els problemes i les restriccions de cada part, i qui està més o menys obert al canvi."}
     - {title: "Treballar en comissions petites", text: "Per exemple espai públic, sistemes energètics, edificis i certificació, amb un plenari mensual."}
@@ -393,11 +399,11 @@ facilitation_detail:
   scope_out_title: "L'Aliança no fa"
   scope_out: ["Dissenyar el projecte ni vendre enginyeria", "Tenir un rol comercial en l'execució", "Triar proveïdors o guanyadors", "Substituir l'expertesa que els membres porten a la taula"]
   link_title: "Com es connecta amb la resta"
-  link_text: "Cada procés genera un cas real per a l'estàndard de fitxa de cas, evidència per al llibre blanc i per a la feina de governança de l'Annex, i una cartera de projectes preparats per ser finançats."
+  link_text: "Cada procés genera un cas real per a l'estàndard de fitxa de cas, evidència per al llibre blanc i per a la feina de governança de l'Annex, i una cartera de projectes preparats per ser finançats. Al Sud global, cada procés també podria servir com a cas de formació per als socis locals."
   note: "Fonts: capítol en esborrany sobre l'ABC Accelerator (2024) i el two-pager de CÔTÉ Habitat. Les organitzacions sòcies no hi apareixen amb nom a propòsit. Els resultats són estimacions."
 
 cover:
-  roof: "Actors de l'energia local construint junts la transició"
+  roof: "Actors de l'energia local, del Nord i del Sud, construint junts la transició"
   pillars_label: "Què fa l'Aliança"
   pillars:
     - {title: "Comú", text: "Blocs compartits i oberts"}
@@ -409,7 +415,7 @@ cover:
     - {title: "Neutral per disseny", text: "Competidors i organismes públics a la mateixa taula"}
     - {title: "Obert on importa", text: "El nucli compartit és obert per defecte"}
     - {title: "Els membres mantenen el seu negoci", text: "Cap servei que competeixi amb els membres"}
-    - {title: "Dels seus membres", text: "Governança equilibrada entre cinc famílies"}
+    - {title: "Dels seus membres", text: "Governança equilibrada entre sis famílies"}
 
 acts:
   - {kicker: "Part 1", title: "El problema", lead: "Per què l'energia local està encallada, i per què ara."}
@@ -451,6 +457,10 @@ lessons:
       text: "Les cooperatives energètiques exploren el rol d'agregador per donar valor a la flexibilitat dels seus socis."
       evidence: "REScoopVPP (uns 4 milions d'euros, 2020 a 2023, pilots a Bèlgica, França, Alemanya, Espanya i el Regne Unit); Enercoop es va convertir en responsable d'equilibri; Som Energia ha estudiat ser agregador."
       implication: "L'agregació és una activitat dels membres. L'Aliança l'hauria de documentar i comparar, no executar."
+    - title: "Els contextos del Sud afegeixen riscos de logística, seguretat i capacitat"
+      text: "Els projectes a l'Àfrica subsahariana topen amb límits de logística, seguretat i capacitat local que poques vegades es veuen en els estudis de cas del Nord."
+      evidence: "Descripció que fan Azimut 360 i Aiguasol de la seva feina a la regió."
+      implication: "La formació i els socis locals formen part de qualsevol transferència de tecnologia, no són un afegit."
     - title: "Els intermediaris fan que els projectes locals arrenquin"
       text: "Un convocant neutral amb prou autoritat per liderar desbloqueja projectes encallats entre actors."
       evidence: "El nostre historial: districte de calor a Laval i Concordia, ABC Accelerator, CÔTÉ (vegeu el capítol de facilitació)."
@@ -488,6 +498,13 @@ south:
     - {title: "Experiència subsahariana", text: "Feina en països com Burkina Faso, Costa d'Ivori, Ghana, Moçambic, Uganda i Gàmbia, amb coneixement directe de les limitacions de logística, seguretat i capacitat local."}
     - {title: "Models comunitaris i cooperatius", text: "Experiència declarada en comunitats energètiques i models cooperatius; un spin-off, Azimut O2, treballa en oxigen mèdic solar."}
   azimut_note: "A partir de descripcions públiques d'Azimut 360, octubre de 2026. Per confirmar i completar amb Azimut."
+  transfer_title: "Transferència de tecnologia i formació"
+  transfer_lead: "L'intercanvi en dues direccions es basa en quatre coses."
+  transfer:
+    - {title: "Eines obertes", text: "El nucli compartit, els validadors i la plantilla de fitxa de cas es publiquen oberts, perquè els socis del Sud els puguin usar sense llicències."}
+    - {title: "Adaptació amb socis locals", text: "Versions per a poques dades, sistemes aïllats i minixarxes i llengües locals, adaptades per universitats i cooperatives locals."}
+    - {title: "Formació", text: "Cursos i material per formar formadors, perquè les capacitats es quedin a la regió."}
+    - {title: "Un circuit de retorn", text: "El que s'aprèn als projectes del Sud torna al comú i millora les eines per a tothom."}
   work_title: "Com podria ser la feina"
   work:
     - {title: "Ampliar la fitxa de cas", text: "Descriure casos de microxarxes i comunitats del Sud amb els mateixos camps i indicadors que els del Nord, perquè es puguin comparar."}
