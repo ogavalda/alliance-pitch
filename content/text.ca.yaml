@@ -17,6 +17,8 @@ nav:
   budget_summary: "Pressupost"
   ask: "La petició"
   irec_ask: "IREC i la petició"
+  lessons: "Lliçons apreses"
+  south: "Sud global"
   annex: "Annex"
 ui:
   tool: "Eina"
@@ -76,12 +78,12 @@ problem:
 landscape_summary:
   kicker: "Moltes eines, sense fonaments comuns"
   title: "Hi ha bones eines. No comparteixen fonaments."
-  text: "Hem revisat {n} eines i famílies d'eines per gestionar comunitats energètiques i sistemes energètics locals, de projectes de recerca, xarxes, organismes públics i empreses. Cadascuna té la seva interfície, backend, model de dades i indicadors. De {m} d'elles no hem trobat el model de dades documentat en fonts públiques."
+  text: "Hem revisat {n} eines i famílies d'eines per gestionar comunitats energètiques i sistemes energètics locals, de projectes de recerca, xarxes, organismes públics i empreses. Cobreixen planificació, creació, repartiment d'energia i comptadors virtuals, agregació i flexibilitat, i seguiment. Cadascuna té la seva interfície, backend, model de dades i indicadors. De {m} d'elles no hem trobat el model de dades documentat en fonts públiques."
   points:
     - {title: "Interfícies diferents és bo", text: "Els usuaris són diferents, i les interfícies també ho han de ser."}
     - {title: "Fonaments diferents són cars", text: "L'estructura de dades, la captura i els indicadors es reconstrueixen cada cop; les eines són difícils d'integrar i els casos de comparar."}
     - {title: "Un nucli compartit ajudaria", text: "Si una eina desapareix o dues s'uneixen, les dades i els indicadors mantenen el significat."}
-  note: "El mapa i les taules d'eines són a l'annex."
+  note: "El mapa i les taules d'eines, i les lliçons apreses d'altres iniciatives, són a l'annex."
 landscape:
   kicker: "Les eines que hi ha avui"
   title: "Moltes bones eines. Cadascuna sobre els seus propis fonaments."
@@ -119,10 +121,10 @@ landscape:
   split_yours: "El vostre: interfícies, backends, algorismes, extres locals (amb un prefix clar) i el que decidiu intercanviar."
 members_summary:
   kicker: "Qui hi participa"
-  title: "Cinc tipus de membres, una sola taula."
-  lead: "Xarxes de comunitats i cooperatives, ciutats i regions, centres de recerca, operadors de xarxa i empreses elèctriques, i finançadors. Cadascú aporta el que als altres els falta."
-  families: ["Xarxes de comunitats", "Ciutats i regions", "Centres de recerca", "Operadors de xarxa i empreses elèctriques", "Finançadors i institucions"]
-  note: "El que aporta i rep cadascú, i el paquet de fundadors, són a l'annex."
+  title: "Sis tipus de membres, una sola taula."
+  lead: "Xarxes de comunitats i cooperatives, ciutats i regions, centres de recerca, operadors de xarxa i empreses elèctriques, finançadors, i professionals amb experiència al Sud global. Cadascú aporta el que als altres els falta."
+  families: ["Xarxes de comunitats", "Ciutats i regions", "Centres de recerca", "Operadors de xarxa i empreses elèctriques", "Finançadors i institucions", "Professionals del Sud global"]
+  note: "Les aliances amb el Sud global, començant per Azimut 360 (microxarxes i comunitats energètiques a l'Àfrica subsahariana), es descriuen a l'annex. Allà també hi ha el que aporta i rep cadascú, i el paquet de fundadors."
 alliance:
   kicker: "La proposta"
   title: "Una aliança amb quatre tasques."
@@ -173,7 +175,7 @@ form:
   note: "La valoració és la nostra lectura i és oberta a discussió. Els programes de l'IEA són acords entre governs i no tenen personalitat jurídica pròpia."
 members:
   kicker: "Qui hi participa i què hi guanya"
-  title: "Cinc tipus de membres, cadascun amb un motiu clar per unir-s'hi."
+  title: "Sis tipus de membres, cadascun amb un motiu clar per unir-s'hi."
   bring_label: "Què aportes"
   get_label: "Què reps"
   roles:
@@ -182,6 +184,7 @@ members:
     - {name: "Ciutats i regions", bring: "Casos d'ús, competències de planificació, emplaçaments pilot, dades locals.", get: "Mètodes llestos per a la planificació local, un facilitador neutral per a qüestions de planificació local, aprenentatge entre iguals, accés a consorcis de finançament."}
     - {name: "Operadors de xarxa i empreses elèctriques", bring: "Dades de xarxa sota acord, interfícies, cofinançament, accés a pilots.", get: "Visió anticipada d'estàndards, mètodes provats de congestió i flexibilitat, una manera estructurada de treballar amb comunitats."}
     - {name: "Finançadors i institucions", bring: "Orientació política, subvencions, capacitat de convocatòria.", get: "Evidència i mètodes validats, un sol interlocutor per a comunitats i bessons, menys duplicació."}
+    - {name: "Professionals del Sud global", bring: "Experiència de camp amb microxarxes i energia comunitària en contextos de baixos ingressos i aïllats de xarxa, socis locals, casos d'altres contextos.", get: "Eines compartides i fitxes de cas adaptades als seus casos, aprenentatge Nord-Sud, propostes conjuntes per a finançament de desenvolupament i clima."}
   early_title: "Unir-se d'hora"
   early_lead: "Els primers membres financen la feina abans que estigui provada, així que tindrien un paquet de fundadors. La forma encara és oberta:"
   early_cards:
@@ -412,3 +415,103 @@ acts:
   - {kicker: "Part 1", title: "El problema", lead: "Per què l'energia local està encallada, i per què ara."}
   - {kicker: "Part 2", title: "La proposta", lead: "Què és l'Aliança, què fa i qui hi participa."}
   - {kicker: "Part 3", title: "El pla", lead: "Com creix, què costa i què demanem."}
+
+lessons:
+  kicker: "Lliçons d'altres iniciatives"
+  title: "El que projectes anteriors ja ens han ensenyat."
+  lead: "El repartiment d'energia, l'agregació i el seguiment comunitari s'han provat en molts llocs. Les mateixes lliçons tornen a aparèixer i determinen què ha de fer i què no ha de fer l'Aliança."
+  evidence: "Evidència"
+  implication: "Per a l'Aliança"
+  items:
+    - title: "Escalar és més difícil que la tecnologia"
+      text: "Les plataformes de repartiment i comerç local van funcionar en pilots. Créixer va topar amb la regulació, la facturació i la implicació dels membres abans que amb la tecnologia."
+      evidence: "Revisions de plataformes entre iguals; la principal dificultat inicial del Brooklyn Microgrid va ser vendre energia a través de la factura d'una companyia elèctrica sense ser regulat com a tal."
+      implication: "Compartir entre membres coneixement regulatori i de facturació, no només codi."
+    - title: "Els ingressos de flexibilitat sols rarament paguen"
+      text: "El que s'obté de desplaçar o reduir càrrega és petit comparat amb l'esforç. Funciona quan forma part d'un cas de negoci més ampli."
+      evidence: "El Project LEO (Oxfordshire, 2019 a 2023) va concloure que els ingressos de flexibilitat han de formar part d'un cas més ampli."
+      implication: "Presentar l'agregació com un servei entre d'altres i comparar casos de negoci amb els mateixos indicadors."
+    - title: "Primer, els estàndards de dades"
+      text: "L'estandardització, l'automatització i la inversió en dades van ser els factors clau. Sense ells, cada comunitat nova comença de zero."
+      evidence: "Informe final del Project LEO; accés a dades de comptadors intel·ligents a Àustria (plataforma de comunicació de mercat, EDDIE de codi obert, interfície ISEG, qualitat de dades QODEC)."
+      implication: "És l'argument a favor del nucli compartit: ontologia, captura de dades i procedència."
+    - title: "Les regles de repartiment les fixen reguladors i operadors de xarxa"
+      text: "Com es reparteix l'energia entre membres depèn de les normes nacionals i de la voluntat de l'operador d'aplicar-les. Molts països encara usen coeficients estàtics."
+      evidence: "Portugal: coeficients fixos, proporcionals, jeràrquics i dinàmics, amb un pilot aprovat de dinàmics. Espanya: normalment coeficients estàtics i radi de 2 km. Alemanya: el repartiment d'energia és legal des de l'1 de juny de 2026, però encara sense regles vinculants de claus de repartiment i pocs operadors ofereixen subministrament a nivell d'edifici."
+      implication: "Mantenir una taula comparativa de normes i de pràctica dels operadors. És barata de mantenir i valuosa per a tots els membres."
+    - title: "Els veïns necessiten un relat, no una tarifa"
+      text: "La gent respon a una raó clara i a un missatger de confiança. La implicació repetida amb aplicacions de comerç és feble."
+      evidence: "Project LEO (aprendre a parlar amb els residents de flexibilitat); revisions de plataformes entre iguals; lliçons d'implicació social d'H2020."
+      implication: "Aquí la facilitació i el panell d'experts aporten un valor que el programari no dona."
+    - title: "Els beneficis rarament s'avaluen, i mai de la mateixa manera"
+      text: "Poques iniciatives mesuren resultats de manera empírica, i les que ho fan usen indicadors diferents, de manera que no es poden comparar."
+      evidence: "Revisions de pilots entre iguals; el Smart Energy Communities Benchmark del Canadà és una autoavaluació de deu indicadors per a nou municipis pilot; existeix un conjunt acadèmic de 25 indicadors però no s'usa gaire."
+      implication: "Publicar un conjunt mínim d'indicadors comuns i una fitxa de cas, i demanar als membres que hi informin."
+    - title: "Les cooperatives s'estan movent cap a l'agregació"
+      text: "Les cooperatives energètiques exploren el rol d'agregador per donar valor a la flexibilitat dels seus socis."
+      evidence: "REScoopVPP (uns 4 milions d'euros, 2020 a 2023, pilots a Bèlgica, França, Alemanya, Espanya i el Regne Unit); Enercoop es va convertir en responsable d'equilibri; Som Energia ha estudiat ser agregador."
+      implication: "L'agregació és una activitat dels membres. L'Aliança l'hauria de documentar i comparar, no executar."
+    - title: "Els intermediaris fan que els projectes locals arrenquin"
+      text: "Un convocant neutral amb prou autoritat per liderar desbloqueja projectes encallats entre actors."
+      evidence: "El nostre historial: districte de calor a Laval i Concordia, ABC Accelerator, CÔTÉ (vegeu el capítol de facilitació)."
+      implication: "Mantenir el lideratge del procés dins l'oferta, al costat de les eines."
+  kpi_title: "Un punt de partida per als indicadors comuns"
+  kpi_lead: "Per comparar comunitats, el primer pas és acordar un conjunt petit i compartit, agrupat com els marcs publicats. És una proposta per a debat, a provar amb els membres."
+  kpi:
+    - {title: "Energia", text: "Autoconsum, autosuficiència, part de la demanda coberta localment, punta de demanda i la seva reducció, flexibilitat aportada."}
+    - {title: "Econòmic", text: "Cost per membre, estalvi, ingressos per repartiment i flexibilitat, inversió per kW, retorn."}
+    - {title: "Social", text: "Membres, part de llars vulnerables, participació i permanència, indicadors de govern."}
+    - {title: "Ambiental", text: "Emissions evitades, part renovable local i el mètode de càlcul."}
+    - {title: "Capacitat (del benchmark canadenc)", text: "Govern, personal, dades, finançament i estratègia del municipi o la comunitat."}
+    - {title: "Qualitat de les dades", text: "Per a cada valor: mesurat, modelat o declarat; font; període; resolució."}
+  gaps_title: "Què no hem trobat"
+  gaps:
+    - "Un percentatge verificat de reducció de punta en un pilot real d'agregació d'una comunitat energètica; les fonts trobades descriuen dissenys i objectius."
+    - "Eines de repartiment documentades de cooperatives espanyoles i de pilots canadencs més enllà dels règims regulatoris; per confirmar amb els membres."
+    - "Els models de dades de la majoria de les eines anteriors. Les afirmacions dels proveïdors a la taula d'eines estan marcades com a tals i s'han de tractar com a no verificades."
+    - "El resultat del Brooklyn Microgrid després dels anys de pilot."
+  note: "Recerca documental, octubre de 2026. Corregiu i afegiu iniciatives; aquesta llista ha de créixer amb l'experiència dels membres."
+
+south:
+  kicker: "Socis del Sud global"
+  title: "Un pont cap als països on les microxarxes i l'energia comunitària són la manera d'accedir a l'electricitat."
+  lead: "A Europa i al Canadà, les comunitats optimitzen una xarxa existent. En molts països del Sud global, les microxarxes i els sistemes gestionats per la comunitat són sovint el primer accés a l'electricitat. Les preguntes són properes (dimensionament, dades, indicadors, govern, finançament), així que les eines i les lliçons poden viatjar en les dues direccions. Azimut 360 hi aportaria aquesta experiència."
+  why_title: "Per què té lloc a l'Aliança"
+  why:
+    - {title: "Mateixes preguntes, punt de partida diferent", text: "Planificació, captura de dades, indicadors i govern compten en tots dos contextos. Un nucli compartit que també serveixi per a casos aïllats de xarxa i minixarxes és més robust."}
+    - {title: "Les lliçons viatgen en dues direccions", text: "Els projectes del Sud fa temps que treballen amb propietat local, pressupostos ajustats i xarxes febles. Les comunitats del Nord s'enfronten ara a preguntes de flexibilitat i resiliència del mateix tipus."}
+    - {title: "Una base de finançament més àmplia", text: "Els finançadors de desenvolupament i clima donen suport a la feina que lliga Nord i Sud. Una oferta conjunta podria arribar a línies que una de purament europea o canadenca no pot (per explorar; res no està compromès)."}
+  azimut_title: "Què aporta Azimut 360"
+  azimut_text: "Una cooperativa catalana fundada el 2009, part de la xarxa d'economia social i solidària, amb enginyeria i execució de projectes d'energia solar fotovoltaica a Espanya i a l'estranger."
+  azimut:
+    - {title: "Microxarxes rurals", text: "Forta especialització en electrificació rural amb microxarxes, incloent-hi projectes de salut i energia, com electricitat per a hospitals, escoles i aigua."}
+    - {title: "Experiència subsahariana", text: "Feina en països com Burkina Faso, Costa d'Ivori, Ghana, Moçambic, Uganda i Gàmbia, amb coneixement directe de les limitacions de logística, seguretat i capacitat local."}
+    - {title: "Models comunitaris i cooperatius", text: "Experiència declarada en comunitats energètiques i models cooperatius; un spin-off, Azimut O2, treballa en oxigen mèdic solar."}
+  azimut_note: "A partir de descripcions públiques d'Azimut 360, octubre de 2026. Per confirmar i completar amb Azimut."
+  work_title: "Com podria ser la feina"
+  work:
+    - {title: "Ampliar la fitxa de cas", text: "Descriure casos de microxarxes i comunitats del Sud amb els mateixos camps i indicadors que els del Nord, perquè es puguin comparar."}
+    - {title: "Adaptar el nucli compartit", text: "Comprovar que l'estructura de dades, el protocol de captura i els indicadors també serveixen per a sistemes aïllats i minixarxes, i per a contextos amb poques dades."}
+    - {title: "Aprenentatge entre iguals Nord-Sud", text: "Intercanvi entre cooperatives, ciutats i centres de recerca sobre models de propietat, tarifes, manteniment i govern comunitari."}
+    - {title: "Propostes conjuntes", text: "Coescriure propostes amb socis del Sud i universitats locals, amb l'Aliança com a convocant i els membres com a executors."}
+    - {title: "Capacitació i formació", text: "Material formatiu i eines obertes reutilitzats en contextos del Sud, adaptats pels socis locals."}
+    - {title: "Facilitació", text: "La taula neutral amb lideratge, aplicada a processos locals on una comunitat, una empresa elèctrica i un finançador s'han de posar d'acord."}
+  scope_title: "On s'atura l'Aliança"
+  scope_in_title: "Dins l'abast"
+  scope_in:
+    - "Eines compartides, fitxes de cas i indicadors que cobreixin casos del Sud."
+    - "Convocar i coescriure propostes amb socis del Sud."
+    - "Aprenentatge entre iguals i formació."
+  scope_out_title: "Fora de l'abast"
+  scope_out:
+    - "Contractes d'enginyeria, compra o instal·lació: és el que fan membres com Azimut 360."
+    - "Consultoria per a un sol client."
+    - "Actuar com a agència de desenvolupament o gestionar fons de projectes per als executors."
+  open_title: "A decidir amb Azimut 360 i la resta de membres"
+  open:
+    - "Paper d'Azimut 360: membre fundador, associat o soci en propostes concretes [?]."
+    - "Amb quins països o regions començar, i amb quins socis locals [?]."
+    - "Model de quotes per als socis del Sud: reduït, gratuït o en espècie [?]."
+    - "Quines línies de finançament cal apuntar, i qui lidera cada proposta [?]."
+    - "Com s'enllaça amb la proposta d'Annex de l'IEA i amb el pressupost de l'Aliança [?]."
+  note: "Esborrany per a debat. Cap compromís per part de ningú encara."

@@ -15,6 +15,9 @@ map:
   topics:
     planning:     "Planning and simulation"
     operation:    "Operation and flexibility"
+    sharing:      "Energy sharing, virtual metering and local trading"
+    flexibility:  "Aggregation and flexibility (peak shaving, demand shifting)"
+    monitoring:   "Monitoring and benchmarking across communities"
     setup:        "Community set-up and administration"
     knowledge:    "Data, indicators and knowledge"
     unclassified: "Not yet classified"
@@ -265,6 +268,282 @@ tools:
     kpis: null
     openness: "Open"
     source: "https://tool-overview-energy-planning.readthedocs.io/en/latest/readme.html"
+
+  # ---- Energy sharing, virtual metering and local trading (added October 2026)
+  - id: recreation
+    short: "RECreation"
+    topic: sharing
+    scale: [2, 2]
+    who: research
+    geo: europe
+    name: "RECreation (INESC TEC)"
+    owner: "INESC TEC (Portugal)"
+    diagram: false
+    frontend: "Platform to size and manage renewable energy communities and collective self-consumption"
+    backend: "Modular; dynamic allocation coefficients and compensation flows between members"
+    data_model: null
+    capture: "Smart-meter data (via the grid operator)"
+    kpis: "Allocation coefficients, self-consumption, compensation flows"
+    openness: "Licensed (per public description)"
+    source: "https://www.inesctec.pt/en"
+  - id: eredes
+    short: "E-REDES sharing manager"
+    topic: sharing
+    scale: [2, 2]
+    who: company
+    geo: europe
+    name: "E-REDES Collective Self-consumption Manager (Portugal)"
+    owner: "E-REDES, distribution system operator (Portugal)"
+    diagram: false
+    frontend: "Grid-operator portal for collective self-consumption and energy communities"
+    backend: "Sharing coefficients applied by the operator: fixed, proportional, hierarchical or dynamic"
+    data_model: null
+    capture: "Operator's own metering data"
+    kpis: "Sharing coefficients per member and period"
+    openness: "Operator service"
+    source: "https://www.e-redes.pt/en/sharing-coefficients"
+  - id: energyid
+    short: "EnergyID"
+    topic: sharing
+    scale: [1, 2]
+    who: company
+    geo: europe
+    name: "EnergyID (Belgium, Netherlands)"
+    owner: "EnergyID (Belgium)"
+    diagram: false
+    frontend: "Member dashboards and scorecards; simulator for new participants"
+    backend: "Collective self-consumption analysis from smart-meter data"
+    data_model: null
+    capture: "Smart-meter and device data, member consent"
+    kpis: "Self-consumption and sharing per member"
+    openness: null
+    source: "https://www.energyid.eu/en/solutions/energy-communities/"
+  - id: communite
+    short: "Communit-e (CIRCE)"
+    topic: sharing
+    scale: [2, 2]
+    who: research
+    geo: spain
+    name: "Communit-e (CIRCE)"
+    owner: "CIRCE Technology Centre (Spain)"
+    diagram: false
+    frontend: "Community management portal"
+    backend: "User management and personalised distribution coefficients"
+    data_model: null
+    capture: "Smart-meter data"
+    kpis: null
+    openness: null
+    source: "https://www.fcirce.es"
+  - id: oyo
+    short: "OYO Communities"
+    topic: sharing
+    scale: [2, 2]
+    who: company
+    geo: europe
+    name: "OYO Communities (France)"
+    owner: "Company (France)"
+    diagram: false
+    frontend: null
+    backend: "Allocation keys for collective self-consumption; approved by the grid operator Enedis (per vendor)"
+    data_model: null
+    capture: "Operator metering data"
+    kpis: null
+    openness: "Proprietary"
+    source: null
+  - id: austria
+    short: "Austria: EDA, EDDIE, ISEG"
+    topic: sharing
+    scale: [2, 2]
+    who: eu
+    geo: europe
+    name: "Austrian energy-sharing data stack (EDA market communication, EDDIE, ISEG interface)"
+    owner: "Grid operators, market operators, Horizon Europe project EDDIE"
+    diagram: false
+    frontend: null
+    backend: "Standard market-communication platform with the smart meter as the data source; EDDIE open-source data-access framework; interoperable interface initiative (ISEG)"
+    data_model: "Standardised market messages (details to check)"
+    capture: "Smart-meter data under consent"
+    kpis: null
+    openness: "EDDIE open source (Apache 2.0)"
+    source: null
+  - id: energylocal
+    short: "Energy Local Club"
+    topic: sharing
+    scale: [2, 2]
+    who: network
+    geo: europe
+    name: "Energy Local Club (UK)"
+    owner: "Energy Local (UK community interest company)"
+    diagram: false
+    frontend: "Club statements for members"
+    backend: "Half-hourly matching of local generation and member demand, with a 'match' tariff through one supplier"
+    data_model: null
+    capture: "Half-hourly smart-meter data"
+    kpis: "Share of demand matched with local generation (52% reported in the first Bethesda club, about 2018)"
+    openness: "Open model, supplier partnership"
+    source: "https://ashden.org/winners/energy-local"
+  - id: p2p
+    short: "P2P trading platforms"
+    topic: sharing
+    scale: [2, 3]
+    who: company
+    geo: global
+    name: "Peer-to-peer trading platforms (Brooklyn Microgrid / LO3, Power Ledger, Vandebron)"
+    owner: "Companies (US, Australia, Netherlands)"
+    diagram: false
+    frontend: "Trading apps"
+    backend: "Local markets, often blockchain-based"
+    data_model: null
+    capture: "Smart-meter data"
+    kpis: null
+    openness: "Proprietary"
+    source: "https://microgridknowledge.com/community-microgrid-brooklyn/"
+  - id: canada_vnm
+    short: "Canada: virtual net metering"
+    topic: sharing
+    scale: [2, 2]
+    who: public
+    geo: canada
+    name: "Virtual and community net metering in Canada (Ontario demonstration, SolarShare, City of Nelson)"
+    owner: "Ontario regulation O. Reg. 679/21 and local projects"
+    diagram: false
+    frontend: null
+    backend: "Utility billing credits allocated to participants (rules, not a software tool)"
+    data_model: null
+    capture: "Utility meter data"
+    kpis: null
+    openness: "Regulatory scheme"
+    source: null
+  # ---- Aggregation and flexibility (peak shaving, demand shifting)
+  - id: flexmeasures
+    short: "FlexMeasures"
+    topic: flexibility
+    scale: [1, 3]
+    who: company
+    geo: europe
+    name: "FlexMeasures (Seita; LF Energy)"
+    owner: "Seita, LF Energy incubation (Netherlands)"
+    diagram: false
+    frontend: "Dashboard and API"
+    backend: "Open-source energy management: schedules batteries, heat pumps and V2G; asset grouping"
+    data_model: "Sensors and assets (details to check)"
+    capture: "Time-series from meters and devices"
+    kpis: "Costs, peak and self-consumption outcomes of schedules"
+    openness: "Open source (Apache 2.0)"
+    source: "https://flexmeasures.io"
+  - id: openems
+    short: "OpenEMS"
+    topic: flexibility
+    scale: [1, 1]
+    who: network
+    geo: europe
+    name: "OpenEMS (open-source energy management system)"
+    owner: "OpenEMS community"
+    diagram: false
+    frontend: "Web UI"
+    backend: "Java open-source EMS for storage and PV; peak shaving and self-consumption control"
+    data_model: null
+    capture: "Device protocols (Modbus and others)"
+    kpis: null
+    openness: "Open source"
+    source: "https://openems.io"
+  - id: piclo
+    short: "Piclo Flex"
+    topic: flexibility
+    scale: [3, 4]
+    who: company
+    geo: europe
+    name: "Piclo Flex (flexibility marketplace)"
+    owner: "Piclo (UK)"
+    diagram: false
+    frontend: "Marketplace for flexibility providers and grid operators"
+    backend: "Competitions run by distribution grid operators; used in several countries"
+    data_model: null
+    capture: "Asset registration and dispatch data"
+    kpis: "Claims over 3 GW of flexibility contracts enabled (June 2025, vendor figure, unverified)"
+    openness: "Proprietary"
+    source: "https://piclo.energy/flex"
+  - id: flexprojects
+    short: "EU flexibility projects"
+    topic: flexibility
+    scale: [1, 2]
+    who: eu
+    geo: europe
+    name: "EU flexibility projects for communities (FLEXCoop, DEDALUS, Scaling-up Power Flexible Communities)"
+    owner: "Horizon 2020 and Horizon Europe consortia"
+    diagram: false
+    frontend: "Aggregator and consumer interfaces"
+    backend: "Flexibility forecasting, aggregation and measurement and verification of consumer response"
+    data_model: null
+    capture: "Smart-meter and device data"
+    kpis: "Peak reduction and system cost targets (DEDALUS aims at 15%)"
+    openness: "Mixed"
+    source: null
+  - id: leo
+    short: "Project LEO"
+    topic: flexibility
+    scale: [3, 4]
+    who: public
+    geo: europe
+    name: "Project LEO, Local Energy Oxfordshire (2019 to 2023)"
+    owner: "SSEN, Oxford, Low Carbon Hub and partners (UK)"
+    diagram: false
+    frontend: "Resident engagement; trading and market platforms"
+    backend: "Distribution-grid flexibility market trials, peer-to-peer network capacity trading, local area energy planning"
+    data_model: null
+    capture: "More than 100 monitoring stations"
+    kpis: null
+    openness: "Final report public"
+    source: "https://www.lowcarbonhub.org/wp-content/uploads/2023/02/LEO-Final-Report-Web_lr.pdf"
+  # ---- Monitoring and benchmarking across communities
+  - id: kpi25
+    short: "25-KPI framework"
+    topic: monitoring
+    scale: [2, 2]
+    who: research
+    geo: europe
+    name: "Energy community KPI framework (Giannuzzo et al., Energy Reports 2025)"
+    owner: "Academic paper (Italy)"
+    diagram: false
+    frontend: null
+    backend: "Framework, not software"
+    data_model: null
+    capture: null
+    kpis: "25 KPIs in four domains: energy, economic, social, environmental; for planning, operation, monitoring and benchmarking"
+    openness: "Paper"
+    source: null
+  - id: iecpi
+    short: "IECPI"
+    topic: monitoring
+    scale: [2, 2]
+    who: research
+    geo: europe
+    name: "Integrated Energy Community Performance Index (IECPI)"
+    owner: "Academic proposal"
+    diagram: false
+    frontend: null
+    backend: "Composite index, not software"
+    data_model: null
+    capture: null
+    kpis: "Composite performance index (components to check)"
+    openness: "Paper"
+    source: null
+  - id: quest
+    short: "Smart Energy Communities Benchmark"
+    topic: monitoring
+    scale: [4, 4]
+    who: network
+    geo: canada
+    name: "Smart Energy Communities Benchmark (QUEST and Pollution Probe, 2020)"
+    owner: "QUEST Canada and Pollution Probe"
+    diagram: false
+    frontend: "Assessment per municipality"
+    backend: "Self-assessment against ten indicators"
+    data_model: null
+    capture: "Municipal self-reporting; nine pilot communities"
+    kpis: "Ten indicators: five on capacity (governance, staff, data, financials, strategy), five on outcomes (land use, energy networks, water and waste, transportation, buildings)"
+    openness: "Public report"
+    source: "https://questcanada.org/project/is-your-community-energy-smart/"
 
 # The proposed shared core: what would be developed once and shared by all.
 core_layers:

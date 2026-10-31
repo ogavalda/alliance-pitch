@@ -10,6 +10,9 @@ map:
   topics:
     planning: "Planificació i simulació"
     operation: "Operació i flexibilitat"
+    sharing: "Repartiment d'energia, comptadors virtuals i comerç local"
+    flexibility: "Agregació i flexibilitat (reducció de punta, desplaçament de demanda)"
+    monitoring: "Seguiment i comparació entre comunitats"
     setup: "Creació i administració de la comunitat"
     knowledge: "Dades, indicadors i coneixement"
     unclassified: "Pendent de classificar"

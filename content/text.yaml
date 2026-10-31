@@ -28,6 +28,8 @@ nav:                           # label of each chapter in the top bar (keys = te
   budget_summary: "Budget"
   ask: "The ask"
   irec_ask: "IREC and the ask"
+  lessons: "Lessons learned"
+  south: "Global South"
   annex: "Annex"
 
 ui:                            # small words used by tables and charts
@@ -93,12 +95,12 @@ problem:
 landscape_summary:
   kicker: "Many tools, no common foundations"
   title: "Good tools exist. They do not share foundations."
-  text: "We reviewed {n} tools and tool families for managing energy communities and local energy systems, from research projects, networks, public bodies and companies. Each has its own front end, back end, data model and indicators. For {m} of them we could not find the data model documented in public sources."
+  text: "We reviewed {n} tools and tool families for managing energy communities and local energy systems, from research projects, networks, public bodies and companies. They cover planning, set-up, energy sharing and virtual metering, aggregation and flexibility, and monitoring. Each has its own front end, back end, data model and indicators. For {m} of them we could not find the data model documented in public sources."
   points:
     - {title: "Different front ends are fine", text: "Users differ, so interfaces should too."}
     - {title: "Different foundations are costly", text: "Data structure, data capture and indicators are rebuilt each time, so tools are hard to integrate and cases hard to compare."}
     - {title: "A shared core would help", text: "If a tool disappears or two tools join, data and indicators keep their meaning."}
-  note: "The map and tables of tools are in the annex."
+  note: "The map and tables of tools, and the lessons learned from other initiatives, are in the annex."
 
 landscape:
   kicker: "The tools that exist today"
@@ -138,10 +140,10 @@ landscape:
 
 members_summary:
   kicker: "Who takes part"
-  title: "Five kinds of members, one shared table."
-  lead: "Community and cooperative networks, cities and regions, research centres, grid operators and utilities, and funders. Each brings something the others lack."
-  families: ["Community networks", "Cities and regions", "Research centres", "Grid operators and utilities", "Funders and institutions"]
-  note: "What each brings and gets, and the founders' package, are in the annex."
+  title: "Six kinds of members, one shared table."
+  lead: "Community and cooperative networks, cities and regions, research centres, grid operators and utilities, funders, and practitioners with experience in the Global South. Each brings something the others lack."
+  families: ["Community networks", "Cities and regions", "Research centres", "Grid operators and utilities", "Funders and institutions", "Practitioners in the Global South"]
+  note: "Partnerships with the Global South, starting with Azimut 360 (microgrids and energy communities in sub-Saharan Africa), are described in the annex. What each member brings and gets, and the founders' package, are there too."
 
 alliance:
   kicker: "The proposal"
@@ -197,7 +199,7 @@ form:
 
 members:
   kicker: "Who takes part, and what they get"
-  title: "Five kinds of members, each with a clear reason to join."
+  title: "Six kinds of members, each with a clear reason to join."
   bring_label: "What you bring"
   get_label: "What you get"
   roles:
@@ -206,6 +208,7 @@ members:
     - {name: "Cities and regions", bring: "Use cases, planning mandates, pilot sites, local data.", get: "Ready-to-use methods for local planning, a neutral facilitator for local planning questions, peer learning, access to funding consortia."}
     - {name: "Grid operators and utilities", bring: "Grid data under agreement, interfaces, co-funding, pilot access.", get: "Early view of standards, tested congestion and flexibility methods, a structured way to work with communities."}
     - {name: "Funders and institutions", bring: "Policy direction, grants, convening power.", get: "Evidence and validated methods, one counterpart for communities and twins, less duplication."}
+    - {name: "Practitioners in the Global South", bring: "Field experience with microgrids and community energy in low-income and off-grid settings, local partners, cases from other contexts.", get: "Shared tools and case records that fit their cases, North-South peer learning, joint proposals for development and climate funding."}
   early_title: "Joining early"
   early_lead: "Early members fund the work before it is proven, so they would get a founders' package. The shape is still open:"
   early_cards:
@@ -502,3 +505,103 @@ acts:
   - {kicker: "Part 1", title: "The problem", lead: "Why local energy is stuck, and why now."}
   - {kicker: "Part 2", title: "The proposal", lead: "What the Alliance is, what it does and who takes part."}
   - {kicker: "Part 3", title: "The plan", lead: "How it grows, what it costs and what we ask."}
+
+lessons:
+  kicker: "Lessons from other initiatives"
+  title: "What earlier projects already taught us."
+  lead: "Energy sharing, aggregation and community monitoring have been tried in many places. The same lessons come back. They shape what the Alliance should and should not do."
+  evidence: "Evidence"
+  implication: "For the Alliance"
+  items:
+    - title: "Scaling is harder than technology"
+      text: "Local trading and sharing platforms worked in pilots. Growing them hit regulation, billing and member engagement before it hit technology."
+      evidence: "Reviews of peer-to-peer platforms; Brooklyn Microgrid's main early difficulty was selling energy through a utility bill without being regulated as a utility."
+      implication: "Share regulatory and billing know-how between members, not only code."
+    - title: "Flexibility income alone rarely pays"
+      text: "Revenue from shifting or shaving load is small next to the effort. It works when it sits inside a wider business case."
+      evidence: "Project LEO (Oxfordshire, 2019 to 2023) concluded that flexibility income must be part of a broader case."
+      implication: "Position aggregation tools as one service among several, and compare business cases with the same indicators."
+    - title: "Data standards come first"
+      text: "Standardisation, automation and investment in data were the main enablers. Without them every new community starts from zero."
+      evidence: "Project LEO final report; Austrian smart-meter data access (market communication platform, EDDIE open source, ISEG interface, QODEC data quality)."
+      implication: "This is the case for the shared core: ontology, data capture and provenance."
+    - title: "Allocation rules are set by regulators and grid operators"
+      text: "How energy is split between members depends on national rules and on the operator's willingness to apply them. Many countries are still on static coefficients."
+      evidence: "Portugal: fixed, proportional, hierarchical and dynamic coefficients, with an approved pilot of dynamic ones. Spain: usually static coefficients and a 2 km radius. Germany: energy sharing legal from 1 June 2026, but no binding allocation-key rules yet and few operators offer building-level supply."
+      implication: "Keep a comparative table of rules and of operator practice. It is cheap to maintain and valuable to every member."
+    - title: "Residents need a story, not a tariff"
+      text: "People respond to a clear reason and a trusted messenger. Repeat engagement with trading apps is weak."
+      evidence: "Project LEO (learning how to talk to residents about flexibility); reviews of peer-to-peer platforms; H2020 social engagement lessons."
+      implication: "This is where facilitation and the panel of experts add value that software does not."
+    - title: "Benefits are rarely evaluated, and never the same way"
+      text: "Few initiatives measure outcomes empirically, and those that do use different indicators, so results cannot be compared."
+      evidence: "Reviews of peer-to-peer pilots; Canada's Smart Energy Communities Benchmark is a self-assessment of ten indicators for nine pilot municipalities; an academic 25-indicator set exists but is not widely used."
+      implication: "Publish a minimal common indicator set and a case record, and ask members to report against it."
+    - title: "Cooperatives are moving into aggregation"
+      text: "Energy cooperatives are exploring the aggregator role to value their members' flexibility."
+      evidence: "REScoopVPP (about EUR 4 million, 2020 to 2023, pilots in Belgium, France, Germany, Spain and the UK); Enercoop became a balance responsible party; Som Energia has studied becoming an aggregator."
+      implication: "Aggregation is a member activity. The Alliance should document and compare it, not run it."
+    - title: "Intermediaries are what make local projects start"
+      text: "A neutral convenor with enough authority to lead moves projects that stall between stakeholders."
+      evidence: "Our own record: district heating at Laval and Concordia, ABC Accelerator, CÔTÉ (see the facilitation chapter)."
+      implication: "Keep leadership of the process inside the offer, next to the tools."
+  kpi_title: "A starting point for common indicators"
+  kpi_lead: "To compare communities, the first step is to agree on a small shared set grouped like the published frameworks. This is a proposal for discussion, to be tested with members."
+  kpi:
+    - {title: "Energy", text: "Self-consumption, self-sufficiency, share of demand matched locally, peak demand and its reduction, flexibility delivered."}
+    - {title: "Economic", text: "Cost per member, savings, revenue from sharing and flexibility, investment per kW, payback."}
+    - {title: "Social", text: "Members, share of vulnerable households, participation and retention, governance indicators."}
+    - {title: "Environmental", text: "Avoided emissions, local renewable share, and the method used to calculate them."}
+    - {title: "Capacity (from the Canadian benchmark)", text: "Governance, staff, data, financing and strategy of the municipality or community."}
+    - {title: "Data quality", text: "For each value: measured, modelled or declared; source; period; resolution."}
+  gaps_title: "What we could not find"
+  gaps:
+    - "A verified percentage of peak reduction for a real energy community aggregation pilot; the sources found describe designs and targets."
+    - "Documented allocation tools from Spanish cooperatives and Canadian pilots beyond the regulatory schemes; to be confirmed with members."
+    - "The data models behind most of the tools above. Vendor claims in the tool table are marked as such and should be treated as unverified."
+    - "The outcome of Brooklyn Microgrid after its pilot years."
+  note: "Desk research, October 2026. Please correct and add initiatives; this list is meant to grow with members' own experience."
+
+south:
+  kicker: "Partners in the Global South"
+  title: "A bridge to countries where microgrids and community energy are how people get electricity."
+  lead: "In Europe and Canada, communities optimise an existing grid. In many countries of the Global South, microgrids and community-run systems are often the first access to electricity. The questions are close (sizing, data, indicators, governance, financing), so tools and lessons can travel in both directions. Azimut 360 would bring that experience."
+  why_title: "Why it belongs in the Alliance"
+  why:
+    - {title: "Same questions, different starting point", text: "Planning, data capture, indicators and governance matter in both settings. A shared core that also fits off-grid and mini-grid cases is more robust."}
+    - {title: "Lessons travel both ways", text: "Southern projects have long worked with local ownership, tight budgets and weak grids. Northern communities are now facing flexibility and resilience questions of the same kind."}
+    - {title: "A broader funding base", text: "Development and climate funders support work that links North and South. A joint offer could reach lines that a purely European or Canadian one cannot (to be explored; nothing is committed)."}
+  azimut_title: "What Azimut 360 brings"
+  azimut_text: "A Catalan cooperative founded in 2009, part of the social and solidarity economy network, with engineering and implementation of solar PV projects in Spain and abroad."
+  azimut:
+    - {title: "Rural microgrids", text: "Strong specialisation in rural electrification with microgrids, including health and energy projects such as electricity for hospitals, schools and water."}
+    - {title: "Sub-Saharan experience", text: "Work in countries such as Burkina Faso, Ivory Coast, Ghana, Mozambique, Uganda and Gambia, with first-hand knowledge of logistics, security and local capacity limits."}
+    - {title: "Community and cooperative models", text: "Listed expertise in energy communities and cooperative models; a spin-off, Azimut O2, works on solar-powered medical oxygen."}
+  azimut_note: "From public descriptions of Azimut 360, October 2026. To be confirmed and completed with Azimut."
+  work_title: "What the work could be"
+  work:
+    - {title: "Extend the case record", text: "Describe southern microgrid and community cases with the same fields and indicators as northern ones, so that they can be compared."}
+    - {title: "Adapt the shared core", text: "Check that the data structure, capture protocol and indicators also work for off-grid and mini-grid systems, and for contexts with little data."}
+    - {title: "Peer learning North-South", text: "Exchange between cooperatives, cities and research centres on ownership models, tariffs, maintenance and community governance."}
+    - {title: "Joint proposals", text: "Co-write proposals with southern partners and local universities, with the Alliance as convenor and the members as implementers."}
+    - {title: "Capacity and training", text: "Training material and open tools reused in southern contexts, with local partners adapting them."}
+    - {title: "Facilitation", text: "The neutral table with leadership, applied to local processes where a community, a utility and a funder must agree."}
+  scope_title: "Where the Alliance stops"
+  scope_in_title: "In scope"
+  scope_in:
+    - "Shared tools, case records and indicators that cover southern cases."
+    - "Convening and co-writing proposals with southern partners."
+    - "Peer learning and training."
+  scope_out_title: "Out of scope"
+  scope_out:
+    - "Engineering, procurement or installation contracts: this is what members such as Azimut 360 do."
+    - "Consulting for a single client."
+    - "Acting as a development agency or holding project funds for implementers."
+  open_title: "To decide with Azimut 360 and the other members"
+  open:
+    - "Role of Azimut 360: founding member, associate or partner in specific proposals [?]."
+    - "Which countries or regions to start with, and with which local partners [?]."
+    - "Fee model for southern partners: reduced, free or in kind [?]."
+    - "Which funding lines to target, and who leads each proposal [?]."
+    - "How this links to the IEA Annex proposal and to the Alliance budget [?]."
+  note: "Draft for discussion. No commitment from any party yet."
