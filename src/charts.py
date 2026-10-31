@@ -37,7 +37,7 @@ def network_svg(n: dict, labels: dict, connected: bool, hub_title: str, hub_sub:
         if p.get("engaged"):
             g.append(f'<circle cx="{p["x"]}" cy="{p["y"]}" r="17" fill="none" stroke="{pal["engaged"]}" stroke-width="2.5"/>')
         g.append(f'<circle cx="{p["x"]}" cy="{p["y"]}" r="11" fill="{pal[p["type"]]}" stroke="#fff" stroke-width="2">'
-                 f'<title>{p["label"]} ({scope_labels.get(p["scope"].upper(), p["scope"])})</title></circle>')
+                 f'<title>{p["label"]} ({scope_labels.get(p["scope"].upper(), p["scope"])}{"; " + p["note"] if p.get("note") else ""})</title></circle>')
         g.append(f'<text x="{p["x"]}" y="{p["y"]+(30 if p.get("engaged") else 26)}" text-anchor="middle" font-size="12.5" '
                  f'font-weight="{700 if p.get("engaged") else 400}" fill="#1f1a1b">{p["label"]}</text>')
     return ('<svg viewBox="0 0 1000 480" width="100%" role="img" '

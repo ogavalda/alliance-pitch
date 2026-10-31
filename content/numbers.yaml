@@ -50,6 +50,7 @@ network:
     - {label: "ADHAC", scope: Spain, type: dhc, x: 925, y: 180}
     - {label: "IREC", scope: Spain, type: research, x: 785, y: 265, engaged: true}
     - {label: "Aiguasol", scope: Spain, type: research, x: 915, y: 280, engaged: true}
+    - {label: "Azimut 360", scope: Spain, type: networks, x: 850, y: 335, engaged: true, note: "cooperative, microgrids in sub-Saharan Africa"}
     - {label: "Districlima", scope: Spain, type: dhc, x: 790, y: 360}
     - {label: "i-DE", scope: Spain, type: grid, x: 915, y: 385}
     - {label: "IDAE", scope: Spain, type: funders, x: 800, y: 445}
