@@ -1,0 +1,15 @@
+{% set s = t.lessons %}
+<section id="lessons">
+  <div class="kicker reveal">{{ num }} · {{ s.kicker }}</div>
+  <h2 class="reveal">{{ s.title }}</h2>
+  <p class="lead reveal">{{ s.lead }}</p>
+  <div class="grid g2 reveal" style="margin-top:20px">
+    {% for c in s['items'] %}<div class="card"><b>{{ loop.index }}. {{ c.title }}</b><p>{{ c.text }}</p><p><em>{{ s.evidence }}:</em> {{ c.evidence }}</p><p class="note" style="margin-top:6px"><b>{{ s.implication }}:</b> {{ c.implication }}</p></div>{% endfor %}
+  </div>
+  <h3 style="margin-top:28px">{{ s.kpi_title }}</h3>
+  <p class="lead">{{ s.kpi_lead }}</p>
+  <div class="grid g3 reveal">{% for c in s.kpi %}<div class="card"><b>{{ c.title }}</b><p>{{ c.text }}</p></div>{% endfor %}</div>
+  <h3 style="margin-top:28px">{{ s.gaps_title }}</h3>
+  <div class="card"><ul class="clean">{% for i in s.gaps %}<li>{{ i }}</li>{% endfor %}</ul></div>
+  <p class="note">{{ s.note }}</p>
+</section>

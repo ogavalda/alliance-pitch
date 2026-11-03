@@ -1,0 +1,10 @@
+{% set s = t.ebc_summary %}
+<section id="ebc_summary">
+  <div class="kicker reveal">{{ num }} · {{ s.kicker }}</div>
+  <h2 class="reveal">{{ s.title }}</h2>
+  <p class="lead reveal">{{ s.lead }}</p>
+  <div class="grid g3 reveal" style="margin:22px 0">
+    {% for c in s.cards %}<div class="card engine"><b>{{ c.title }}</b><p>{{ c.text }}</p></div>{% endfor %}
+  </div>
+  <p class="note">{{ s.note }} <a href="#ebc_annex">{{ t.ui.read_annex }} ↓</a></p>
+</section>

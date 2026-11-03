@@ -1,0 +1,11 @@
+{% set s = t.facilitation %}
+<section id="facilitation">
+  <div class="kicker reveal">{{ num }} · {{ s.kicker }}</div>
+  <h2 class="reveal">{{ s.title }}</h2>
+  <p class="lead reveal">{{ s.lead }}</p>
+  <div class="grid g2 reveal" style="margin:22px 0">
+    {% for c in s.cards %}<div class="card engine"><b>{{ c.title }}</b><p>{{ c.text }}</p></div>{% endfor %}
+  </div>
+  <div class="card engine reveal"><b>{{ s.panel_title }}</b><p>{{ s.panel_text }}</p></div>
+  <p class="note">{{ s.note }} <a href="#facilitation_detail">{{ t.ui.read_annex }} ↓</a></p>
+</section>

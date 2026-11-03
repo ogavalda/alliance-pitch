@@ -1,0 +1,22 @@
+{% set s = t.services %}
+<section id="services">
+  <div class="kicker reveal">{{ num }} · {{ s.kicker }}</div>
+  <h2 class="reveal">{{ s.title }}</h2>
+  <p class="lead reveal">{{ s.lead }}</p>
+  <h3 style="margin-top:24px">{{ s.first_title }}</h3>
+  <div class="grid g3 reveal">{% for c in s.first %}<div class="card"><b>{{ loop.index }}. {{ c.title }}</b><p>{{ c.text }}</p></div>{% endfor %}</div>
+  <p class="note">{{ s.first_note }}</p>
+  <h3 style="margin-top:24px">{{ s.later_title }}</h3>
+  <div class="grid g2 reveal">{% for c in s.later %}<div class="card"><b>{{ c.title }}</b><p>{{ c.text }}</p></div>{% endfor %}</div>
+  <h3 style="margin-top:24px">{{ s.scope_title }}</h3>
+  <div class="tscroll"><table class="t">
+    <thead><tr><th>{{ s.col_in }}</th><th>{{ s.col_out }}</th></tr></thead>
+    <tbody>{% for r in s.scope %}<tr><td>{{ r[0] }}</td><td>{{ r[1] }}</td></tr>{% endfor %}</tbody>
+  </table></div>
+  <h3 style="margin-top:24px">{{ s.paid_title }}</h3>
+  <div class="grid g2 reveal">
+    <div class="card"><b>{{ s.paid_yes_title }}</b><ul class="clean">{% for i in s.paid_yes %}<li>{{ i }}</li>{% endfor %}</ul></div>
+    <div class="card"><b>{{ s.paid_no_title }}</b><ul class="clean">{% for i in s.paid_no %}<li>{{ i }}</li>{% endfor %}</ul></div>
+  </div>
+  <p class="note">{{ s.note }}</p>
+</section>

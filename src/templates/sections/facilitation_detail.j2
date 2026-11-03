@@ -1,0 +1,26 @@
+{% set s = t.facilitation_detail %}
+<section id="facilitation_detail">
+  <div class="kicker reveal">{{ num }} · {{ s.kicker }}</div>
+  <h2 class="reveal">{{ s.title }}</h2>
+  <p class="lead reveal">{{ s.lead }}</p>
+  <h3 style="margin-top:24px">{{ s.record_title }}</h3>
+  <div class="grid g3 reveal">{% for c in s.record %}<div class="card"><b>{{ c.title }}</b><p>{{ c.text }}</p></div>{% endfor %}</div>
+  <h3 style="margin-top:24px">{{ s.abc_title }}</h3>
+  <div class="grid g4 reveal">{% for c in s.abc_stats %}<div class="card"><div class="stat">{{ c.value }}</div><small>{{ c.label }}</small></div>{% endfor %}</div>
+  <p class="note">{{ s.abc_note }}</p>
+  <h3 style="margin-top:24px">{{ s.panel_title }}</h3>
+  <p class="lead">{{ s.panel_lead }}</p>
+  <div class="grid g2 reveal">{% for c in s.panel %}<div class="card engine"><b>{{ c.title }}</b><p>{{ c.text }}</p></div>{% endfor %}</div>
+  <h3 style="margin-top:24px">{{ s.method_title }}</h3>
+  <div class="grid g3 reveal">{% for c in s.method %}<div class="card"><b>{{ loop.index }}. {{ c.title }}</b><p>{{ c.text }}</p></div>{% endfor %}</div>
+  <h3 style="margin-top:24px">{{ s.lessons_title }}</h3>
+  <div class="card"><ul class="clean">{% for i in s.lessons %}<li>{{ i }}</li>{% endfor %}</ul></div>
+  <h3 style="margin-top:24px">{{ s.scope_title }}</h3>
+  <div class="grid g2 reveal">
+    <div class="card"><b>{{ s.scope_in_title }}</b><ul class="clean">{% for i in s.scope_in %}<li>{{ i }}</li>{% endfor %}</ul></div>
+    <div class="card"><b>{{ s.scope_out_title }}</b><ul class="clean">{% for i in s.scope_out %}<li>{{ i }}</li>{% endfor %}</ul></div>
+  </div>
+  <h3 style="margin-top:24px">{{ s.link_title }}</h3>
+  <p class="lead">{{ s.link_text }}</p>
+  <p class="note">{{ s.note }}</p>
+</section>

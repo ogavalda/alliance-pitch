@@ -1,0 +1,19 @@
+{% set s = t.ebc_annex %}
+<section id="ebc_annex">
+  <div class="kicker reveal">{{ num }} · {{ s.kicker }}</div>
+  <h2 class="reveal">{{ s.title }}</h2>
+  <p class="lead reveal">{{ s.lead }}</p>
+  <h3 style="margin-top:24px">{{ s.problem_title }}</h3>
+  <p class="lead">{{ s.problem_text }}</p>
+  <h3 style="margin-top:24px">{{ s.objectives_title }}</h3>
+  <div class="grid g3 reveal">{% for c in s.objectives %}<div class="card"><b>{{ loop.index }}. {{ c.title }}</b><p>{{ c.text }}</p></div>{% endfor %}</div>
+  <h3 style="margin-top:24px">{{ s.outputs_title }}</h3>
+  <p class="lead">{{ s.outputs }}</p>
+  <h3 style="margin-top:24px">{{ s.lineage_title }}</h3>
+  <p class="lead">{{ s.lineage }}</p>
+  <h3 style="margin-top:24px">{{ s.plan_title }}</h3>
+  <div class="grid g3 reveal">{% for c in s.plan_cards %}<div class="card"><b>{{ c.title }}</b><p>{{ c.text }}</p></div>{% endfor %}</div>
+  <h3 style="margin-top:24px">{{ s.link_title }}</h3>
+  <p class="lead">{{ s.link_text }}</p>
+  <p class="note">{{ s.note }}</p>
+</section>
