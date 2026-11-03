@@ -343,3 +343,28 @@ def irec_first_years_svg(b: dict, ui: dict) -> str:
             x += w
         g.append(f'<text x="{W-18}" y="{top+bh+14}" text-anchor="end" font-size="11" fill="#5f5a5b">{ui["total_costs_word"]} {tot[r]:,} {ui["eur"]}</text>')
     return f'<svg viewBox="0 0 900 150" width="100%" role="img" aria-label="Who covers the costs in the first two years">' + "".join(g) + "</svg>"
+
+
+# ------------------------------------------------------------------ cover: four intersecting circles
+def venn_svg(cv: dict) -> str:
+    import textwrap
+    cols = ["#00776F", "#E08A00", "#E90065", "#1598D6"]
+    cx, cy, d, r = 320, 300, 100, 165
+    centres = [(cx, cy - d), (cx + d, cy), (cx, cy + d), (cx - d, cy)]
+    widths = [20, 15, 20, 15]
+    labpos = [(cx, cy - d - r + 62), (cx + d + r - 72, cy), (cx, cy + d + r - 62), (cx - d - r + 72, cy)]
+    g = []
+    for i, ((x, y), col) in enumerate(zip(centres, cols)):
+        p = cv["pillars"][i]
+        g.append(f'<circle class="vc" cx="{x}" cy="{y}" r="{r}" fill="{col}" fill-opacity=".42" stroke="{col}" stroke-width="2"><title>{_esc(p["title"])}: {_esc(p["text"])}</title></circle>')
+    for i, (lx, ly) in enumerate(labpos):
+        lines = textwrap.wrap(cv["pillars"][i]["title"], widths[i])
+        y0 = ly - (len(lines) - 1) * 10
+        tsp = "".join(f'<tspan x="{lx}" y="{y0 + k * 20}">{_esc(t)}</tspan>' for k, t in enumerate(lines))
+        g.append(f'<text text-anchor="middle" dominant-baseline="middle" font-size="16.5" font-weight="700" fill="#1f1a1b">{tsp}</text>')
+    words = textwrap.wrap(cv["centre"], 11)
+    y0 = cy - (len(words) - 1) * 10
+    tsp = "".join(f'<tspan x="{cx}" y="{y0 + k * 20}">{_esc(w)}</tspan>' for k, w in enumerate(words))
+    g.append(f'<circle cx="{cx}" cy="{cy}" r="62" fill="#93002D" stroke="#fff" stroke-width="3"/>'
+             f'<text text-anchor="middle" dominant-baseline="middle" font-size="15" font-weight="700" fill="#fff">{tsp}</text>')
+    return ('<svg viewBox="0 0 640 600" width="100%" role="img" aria-label="' + _esc(cv["roof"]) + '">' + "".join(g) + "</svg>")

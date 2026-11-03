@@ -5,12 +5,11 @@
   <div class="kicker">{{ h.kicker }}</div>
   <h1>{{ h.title }}</h1>
   <p class="lead">{{ h.lead }}</p>
-  <div class="temple" role="img" aria-label="{{ cv.roof }}">
-    <div class="roof">{{ cv.roof }}</div>
-    <div class="tlabel">{{ cv.pillars_label }}</div>
-    <div class="pillars">{% for p in cv.pillars %}<div class="pillar p{{ loop.index }}"><b>{{ p.title }}</b><span>{{ p.text }}</span></div>{% endfor %}</div>
-    <div class="tlabel">{{ cv.base_label }}</div>
-    <div class="base">{% for p in cv.base %}<div><b>{{ p.title }}</b><span>{{ p.text }}</span></div>{% endfor %}</div>
+  <div class="venn" role="group" aria-label="{{ cv.roof }}">
+    <div class="vroof">{{ cv.roof }}</div>
+    {{ figs.venn }}
+    <div class="vcards">{% for p in cv.pillars %}<div class="vcard p{{ loop.index }}"><b>{{ p.title }}</b><span>{{ p.text }}</span></div>{% endfor %}</div>
+    <div class="chips vbase">{% for p in cv.base %}<span class="tab" style="cursor:default" title="{{ p.text }}">{{ p.title }}</span>{% endfor %}</div>
   </div>
   <div class="meta">{% for m in h.meta %}<div><span>{{ m.label }}</span>{{ m.value }}</div>{% endfor %}</div>
   <a class="btn" href="#{{ main[0] }}">{{ h.button_start }}</a><a class="btn alt" href="#{{ main[-1] }}">{{ h.button_ask }}</a>

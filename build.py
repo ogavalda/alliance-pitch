@@ -103,6 +103,7 @@ def build_edition(ed: dict) -> Path:
         "stack_core": charts.stack_diagram_html(tools_cfg, t["landscape"]["rows"], True),
         "core_layers": charts.core_layers_html(tools_cfg),
         "tstats": tstats,
+        "venn": charts.venn_svg(t["cover"]),
         "feeder": {s: {"svg": charts.feeder_svg(n, s, demo["labels"]), **charts.feeder_stats(n, s)}
                    for s in ("base", "uncoordinated", "coordinated")},
     }

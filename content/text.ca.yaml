@@ -1,11 +1,11 @@
 # Traducció al català de tot el text comú.
 meta:
-  title: "Aliança de Bessons Digitals per a la Descarbonització: proposta preliminar"
-  description: "Proposta preliminar d'una aliança participada pels seus membres que dona als actors locals de l'energia un comú compartit, una taula neutral amb lideratge, una cartera de projectes i una veu comuna."
+  title: "Aliança per a l'Energia Local: proposta preliminar"
+  description: "Proposta preliminar d'una aliança participada pels seus membres que dona als actors locals de l'energia eines i estructures de dades compartides, una taula neutral amb lideratge, una cartera de la ciència a l'acció i una veu comuna."
   version_line: "Esborrany v0.2 · octubre de 2026"
-brand: "Aliança de Bessons Digitals"
+brand: "Aliança per a l'Energia Local"
 nav:
-  problem: "Problema"
+  problem: "Oportunitat"
   why: "Per què ara"
   ebc_summary: "Annex IEA"
   facilitation: "Lideratge"
@@ -38,20 +38,20 @@ annex:
   lead: "Les pàgines anteriors són la versió curta. Aquest annex recull l'evidència i el detall que hi ha al darrere."
 hero:
   kicker: "Proposta preliminar · oberta a debat"
-  title: "L'energia local és on es construeix la descarbonització. <em>Ningú no hauria de construir-la sol.</em>"
-  lead: "Una aliança proposada, participada pels seus membres, de xarxes comunitàries, ciutats, centres de recerca, operadors de xarxa i finançadors, oberta a socis del Sud global."
+  title: "L'energia local és on es construeix la descarbonització. <em>Construïm-la junts.</em>"
+  lead: "Una aliança participada pels seus membres, de xarxes comunitàries, ciutats, centres de recerca, operadors de xarxa i finançadors, oberta a socis del Sud global. Quatre forces, una aliança."
   meta:
     - {label: "Estat", value: "Esborrany, obert a debat"}
     - {label: "Primer motor", value: "Proposta d'Annex de l'IEA EBC presentada, amb el suport de NRCan"}
   button_start: "Comença la història ↓"
   button_ask: "Ves a la petició"
   presenting_hint: "Presentant? Fes servir les tecles <b>→</b> i <b>←</b> per canviar de secció."
-  net_tab_off: "Avui: esforços aïllats"
-  net_tab_on: "Amb l'Aliança: connectats"
+  net_tab_off: "Avui: molts esforços separats"
+  net_tab_on: "Amb l'Aliança: una sola xarxa"
   annex_call_title: "Annex IEA EBC presentat"
   annex_call_text: "Una proposta de nou Annex (tasca) sobre solucions energètiques comunitàries amb plataformes digitals es va presentar a l'ExCo a principis d'octubre de 2026, amb el suport de NRCan."
   net_hub_title: "Aliança"
-  net_hub_sub: "comú · lideratge · cartera · veu"
+  net_hub_sub: "eines · lideratge · ciència i acció · veu"
   net_note: "Organitzacions reals del nostre mapa d'actors (recerca documental, octubre de 2026), mostrades com a exemples. Sortir-hi no implica participació ni suport. Anell rosa: ja implicades. Les línies són il·lustratives."
   scope_labels: {CANADA: "CANADÀ", INTERNATIONAL: "INTERNACIONAL", SPAIN: "ESPANYA"}
   actor_labels: {networks: "Xarxes i cooperatives", cities: "Ciutats i regions", grid: "Xarxa i empreses elèctriques", dhc: "Calefacció i refrigeració urbanes", research: "Recerca", funders: "Govern i finançadors"}
@@ -63,31 +63,31 @@ why:
   cards:
     - {stat_key: policy, text: "<b>Política.</b> El Paquet d'Energia Ciutadana de la Comissió Europea del 2026 vol multiplicar per deu, aproximadament, les renovables de propietat comunitària el 2030. És voluntari, així que l'execució depèn de la capacitat sobre el terreny."}
     - {stat_key: scale,  text: "<b>Escala.</b> Comunitats energètiques comptades a la UE per la Comissió (un mapatge acadèmic en compta unes 3.900: les definicions difereixen). Ciutats, regions i operadors de xarxa també s'hi mouen."}
-    - {stat_key: twins,  text: "<b>Tecnologia i finançament.</b> Els programes de la UE ja financen bessons digitals del costat de la xarxa (p. ex. TwinEU, DSO4DT) i, per separat, instal·lacions comunitàries. Falta el pont entre els dos."}
+    - {stat_key: twins,  text: "<b>Tecnologia i finançament.</b> Els programes de la UE ja financen bessons digitals del costat de la xarxa (p. ex. TwinEU, DSO4DT) i, per separat, instal·lacions comunitàries. L'Aliança construiria el pont entre els dos."}
   note: "Fonts: Comissió Europea, REScoop.eu, estudi de mapatge (Sustainability 2023), webs de projectes. Vegeu referències."
 problem:
-  kicker: "El problema"
-  title: "L'obstacle no és l'esforç. És <em>la duplicació i l'aïllament</em>."
-  lead: "Les revisions troben sempre el mateix patró: hi ha eines i mètodes però fragmentats, difícils de connectar i poc pensats per a comunitats; les empreses emergents no tenen l'expertesa; l'evidència es queda dins de cada projecte; i ningú no parla amb una sola veu pels sistemes energètics locals. Els projectes també s'encallen perquè els actors dels quals depenen poques vegades seuen a la mateixa taula i, quan ho fan, ningú no lidera el procés. L'experiència del Sud global, on les microxarxes i els sistemes gestionats per la comunitat són sovint el primer accés a l'electricitat, poques vegades arriba als projectes del Nord, i les eines del Nord poques vegades s'adapten als contextos del Sud."
+  kicker: "L'oportunitat"
+  title: "L'energia local ja es mou. <em>Connectada, es mou més de pressa.</em>"
+  lead: "Comunitats, ciutats, xarxes, operadors de xarxa i centres de recerca del Canadà, Europa i més enllà construeixen ara mateix energia local, i cadascú aporta punts forts reals. L'Aliança els connecta al voltant de quatre forces: eines i estructures de dades compartides perquè la feina se sumi a la feina, una taula de confiança amb lideratge perquè els projectes arrenquin, una cartera de la ciència a l'acció perquè la recerca arribi a projectes reals, i una sola veu perquè l'energia local es faci sentir."
   cards:
-    - {title: "Eines fragmentades", text: "Hi ha eines madures per al disseny, però les específiques per a comunitats i interoperables són sobretot prototips."}
-    - {title: "L'evidència es queda local", text: "Moltes maneres de mesurar l'impacte, cap d'acordada; les lliçons no se sumen entre projectes."}
-    - {title: "Cap veu compartida", text: "Comunitats, ciutats i operadors de xarxa fan incidència per separat, sovint sobre els mateixos temes."}
-    - {title: "Ningú no lidera la taula", text: "Ajuntament, empresa elèctrica, finançadors, promotors i veïnat poques vegades es troben al voltant del mateix projecte, i quan ho fan ningú no té la confiança de tothom per liderar i guiar el procés. Sense lideratge, l'intermediari perd el seu paper i les coses no avancen."}
-  note: "Basat en la nostra revisió de la literatura recent sobre llacunes de les comunitats energètiques (2021 a 2026)."
+    - {title: "Eines que funcionen juntes", text: "Hi ha bones eines de disseny, operació i seguiment. Construïdes sobre estructures de dades compartides, es connecten i cada cas esdevé comparable."}
+    - {title: "Lideratge a la taula", text: "Ajuntament, empresa elèctrica, finançadors, promotors i veïnat al voltant d'un projecte, amb un panell d'experts de confiança que lidera i guia el procés fins que avança."}
+    - {title: "Ciència que arriba a l'acció", text: "Centres de recerca i projectes reals es presenten junts a les convocatòries, de manera que els mètodes es proven on compten i els projectes tenen la millor ciència."}
+    - {title: "Una sola veu", text: "Comunitats, ciutats i operadors de xarxa que parlen junts, amb evidència, arriben més lluny."}
+  note: "Basat en la nostra revisió de la literatura recent sobre comunitats energètiques (2021 a 2026)."
 landscape_summary:
-  kicker: "Moltes eines, sense fonaments comuns"
-  title: "Hi ha bones eines. No comparteixen fonaments."
-  text: "Hem revisat {n} eines i famílies d'eines per gestionar comunitats energètiques i sistemes energètics locals, de projectes de recerca, xarxes, organismes públics i empreses. Cobreixen planificació, creació, repartiment d'energia i comptadors virtuals, agregació i flexibilitat, i seguiment. Cadascuna té la seva interfície, backend, model de dades i indicadors. De {m} d'elles no hem trobat el model de dades documentat en fonts públiques. Les eines per a entorns aïllats de xarxa i minixarxes del Sud global només ara comencen a quedar cobertes."
+  kicker: "Bones eines, un fonament compartit"
+  title: "Ja hi ha bones eines. Un fonament compartit les fa funcionar juntes."
+  text: "Hem revisat {n} eines i famílies d'eines per gestionar comunitats energètiques i sistemes energètics locals, de projectes de recerca, xarxes, organismes públics i empreses. Cobreixen planificació, creació, repartiment d'energia i comptadors virtuals, agregació i flexibilitat, i seguiment. Cadascuna té la seva interfície, backend, model de dades i indicadors, que és on un nucli compartit ajuda més. De {m} d'elles no hem trobat el model de dades documentat en fonts públiques. Les eines per a entorns aïllats de xarxa i minixarxes del Sud global només ara comencen a quedar cobertes."
   points:
     - {title: "Interfícies diferents és bo", text: "Els usuaris són diferents, i les interfícies també ho han de ser."}
-    - {title: "Fonaments diferents són cars", text: "L'estructura de dades, la captura i els indicadors es reconstrueixen cada cop; les eines són difícils d'integrar i els casos de comparar."}
-    - {title: "Un nucli compartit ajudaria", text: "Si una eina desapareix o dues s'uneixen, les dades i els indicadors mantenen el significat."}
+    - {title: "Un fonament estalvia esforç", text: "L'estructura de dades, la captura i els indicadors es construeixen una vegada, no a cada eina; les eines s'integren i els casos es comparen."}
+    - {title: "Un nucli compartit fa que les eines durin", text: "Si una eina desapareix o dues s'uneixen, les dades i els indicadors mantenen el significat."}
   note: "El mapa i les taules d'eines, i les lliçons apreses d'altres iniciatives, són a l'annex."
 landscape:
   kicker: "Les eines que hi ha avui"
-  title: "Moltes bones eines. Cadascuna sobre els seus propis fonaments."
-  lead: "La gestió d'energia comunitària i local ja té eines de projectes de recerca, xarxes, organismes públics i empreses. És sa que les interfícies difereixin: els usuaris són diferents. El problema és a sota: cada eina organitza les dades, la captura i els indicadors a la seva manera."
+  title: "Moltes bones eines, a punt per connectar-se sobre fonaments compartits."
+  lead: "La gestió d'energia comunitària i local ja té eines de projectes de recerca, xarxes, organismes públics i empreses. És sa que les interfícies difereixin: els usuaris són diferents. L'oportunitat és a sota: cada eina organitza les dades, la captura i els indicadors a la seva manera, i un nucli compartit els pot connectar."
   map_title: "El panorama en un mapa"
   map_lead: "Cada eina se situa per tema (files) i per escala de treball (columnes). Acoloreix-la per qui la fa o d'on ve."
   map_by_who: "Color segons qui la fa"
@@ -127,21 +127,21 @@ members_summary:
   note: "Les aliances amb el Sud global, començant per Azimut 360 (microxarxes i comunitats energètiques a l'Àfrica subsahariana), es descriuen a l'annex. Allà també hi ha el que aporta i rep cadascú, i el paquet de fundadors."
 alliance:
   kicker: "La proposta"
-  title: "Una aliança amb quatre tasques."
-  lead: "Els bessons digitals són el llenguatge compartit i el primer que construïm, però l'Aliança va del que les organitzacions poden fer juntes. Selecciona una tasca."
+  title: "Quatre forces, una aliança."
+  lead: "L'Aliança és on es troben quatre forces. Els bessons digitals són el llenguatge compartit i el primer que construïm, però l'Aliança va del que les organitzacions poden fer juntes. Selecciona una força."
   jobs:
-    - title: "Comú"
-      tagline: "Blocs compartits i oberts que ningú no guanya tenint-los en privat."
-      detail: "Blocs compartits, oberts per defecte: models i esquemes de dades, mètodes de flexibilitat i interacció amb la xarxa, KPI i regles de verificació comuns, proves de validació, conjunts de dades de referència, arquitectura de referència, contractes de model per als compradors, també en versions que funcionin amb poques dades i en entorns aïllats de xarxa."
+    - title: "Eines i estructures de dades compartides"
+      tagline: "Blocs oberts que fan que cada eina i cada cas funcionin junts."
+      detail: "El comú: blocs compartits, oberts per defecte: models i esquemes de dades, mètodes de flexibilitat i interacció amb la xarxa, KPI i regles de verificació comuns, proves de validació, conjunts de dades de referència, arquitectura de referència, contractes de model per als compradors, també en versions que funcionin amb poques dades i en entorns aïllats de xarxa."
       value: "Valor: qualsevol eina o estudi construït sobre aquests blocs es pot comparar, reutilitzar i trobar fiable. Els membres conserven els seus productes propis."
     - title: "Facilitació i lideratge"
       tagline: "Una taula neutral, i algú que la lideri: un panell d'experts que guia el procés fins que les coses avancin."
       detail: "Un intermediari de confiança que reuneix les persones que necessita un projecte d'energia local: veïnat i grups comunitaris, l'ajuntament, l'empresa elèctrica o l'operador de xarxa, finançadors, promotors, enginyeries i advocats. La taula sola no n'hi ha prou. Sense lideratge i guia l'intermediari perd el seu paper i res no avança, així que l'Aliança també aportaria el lideratge: un panell d'experts de diferents equips membres que lideren i guien la transició cap als sistemes locals. Fan tallers, cartografien els problemes de cada part, acorden les regles del joc (rols, confidencialitat, dades), coordinen grups de treball, mantenen el procés en marxa cap a una decisió i documenten el resultat. No dissenyen el projecte ni venen enginyeria; els experts dels membres aporten l'assessorament."
       value: "Valor: els projectes que s'encallarien entre la planificació i la implementació obtenen un diagnòstic compartit, un líder i una via acordada, i cada organització veu les barreres dels altres sense renunciar al seu negoci. Ja ho fem: vegeu el capítol següent."
-    - title: "Cartera"
-      tagline: "Una manera de convertir idees en projectes finançats, amb els socis adequats."
-      detail: "Una oficina de propostes que vigila convocatòries, busca socis, ofereix plantilles de consorci i una regla de rotació perquè centres competidors puguin cooperar. Plantilles compartides d'entregables i justificació. Propostes conjuntes amb socis del Sud global."
-      value: "Valor: més propostes i millors, cost d'escriptura compartit, i una via reconeguda cap a programes europeus, nacionals i internacionals. L'Aliança facilita; no tria guanyadors."
+    - title: "Cartera de la ciència a l'acció"
+      tagline: "Recerca i projectes reals junts: convertir ciència i idees en acció finançada, amb els socis adequats."
+      detail: "Ciència i projectes reals de costat. Una oficina de propostes que vigila convocatòries, busca socis, ofereix plantilles de consorci i una regla de rotació perquè centres competidors puguin cooperar. Plantilles compartides d'entregables i justificació. Propostes conjuntes amb socis del Sud global."
+      value: "Valor: més propostes i millors, que uneixen recerca i projectes reals, cost d'escriptura compartit, i una via reconeguda cap a programes europeus, nacionals i internacionals. L'Aliança facilita; no tria guanyadors."
     - title: "Veu"
       tagline: "Una veu creïble i basada en l'evidència davant la UE, l'IEA, l'OCDE i les xarxes de ciutats."
       detail: "Posicionaments basats en l'evidència i declaracions conjuntes davant la Comissió Europea, l'IEA, l'OCDE i les xarxes de ciutats, transparents i aprovats pels membres."
@@ -355,7 +355,7 @@ facilitation:
 facilitation_detail:
   kicker: "Facilitació: mètode i trajectòria"
   title: "Com dirigiria l'Aliança un procés facilitat."
-  lead: "Els projectes d'energia local rarament fracassen perquè la tecnologia no funcioni. S'encallen perquè l'ajuntament, l'empresa elèctrica, el finançador, el promotor i el veïnat no han acordat mai junts qui fa què, i ningú no els porta fins a una decisió. Un convocant neutral amb lideratge tanca aquesta bretxa."
+  lead: "Els projectes d'energia local avancen quan l'ajuntament, l'empresa elèctrica, el finançador, el promotor i el veïnat acorden junts qui fa què, i algú els lidera cap a una decisió. Un convocant neutral amb lideratge ho fa possible."
   record_title: "Trajectòria"
   record:
     - {title: "Calefacció urbana a Laval i a Concordia", text: "El nostre centre va fer d'intermediari entre els socis, va fer tallers i va entendre els diferents problemes del veïnat."}
@@ -403,13 +403,14 @@ facilitation_detail:
   note: "Fonts: capítol en esborrany sobre l'ABC Accelerator (2024) i el two-pager de CÔTÉ Habitat. Les organitzacions sòcies no hi apareixen amb nom a propòsit. Els resultats són estimacions."
 
 cover:
-  roof: "Actors de l'energia local, del Nord i del Sud, construint junts la transició"
-  pillars_label: "Què fa l'Aliança"
+  roof: "Quatre forces es troben a l'Aliança"
+  centre: "Aliança per a l'Energia Local"
+  pillars_label: "El que l'Aliança reuneix"
   pillars:
-    - {title: "Comú", text: "Blocs compartits i oberts"}
-    - {title: "Facilitació i lideratge", text: "Una taula neutral, i algú que la lideri"}
-    - {title: "Cartera", text: "De les idees als projectes finançats"}
-    - {title: "Veu", text: "Una veu basada en l'evidència"}
+    - {title: "Eines i estructures de dades compartides", text: "Blocs oberts sobre els quals pot construir cada eina i cada cas"}
+    - {title: "Facilitació i lideratge", text: "Una taula neutral, i un panell d'experts que la lidera"}
+    - {title: "Cartera de la ciència a l'acció", text: "Recerca i projectes reals junts, finançats"}
+    - {title: "Veu", text: "Una veu basada en l'evidència per a l'energia local"}
   base_label: "Principis sobre els quals es fonamenta"
   base:
     - {title: "Neutral per disseny", text: "Competidors i organismes públics a la mateixa taula"}
@@ -418,7 +419,7 @@ cover:
     - {title: "Dels seus membres", text: "Governança equilibrada entre sis famílies"}
 
 acts:
-  - {kicker: "Part 1", title: "El problema", lead: "Per què l'energia local està encallada, i per què ara."}
+  - {kicker: "Part 1", title: "L'oportunitat", lead: "Què ja s'està movent, i per què ara és el moment."}
   - {kicker: "Part 2", title: "La proposta", lead: "Què és l'Aliança, què fa i qui hi participa."}
   - {kicker: "Part 3", title: "El pla", lead: "Com creix, què costa i què demanem."}
 

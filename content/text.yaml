@@ -2,11 +2,11 @@
 # Tip: keep each value on one line inside double quotes, or use the  >-  folded style.
 
 meta:
-  title: "Alliance for Digital Twins for Decarbonization: a draft proposal"
-  description: "A draft proposal for a member-owned alliance that gives local energy actors a shared commons, a neutral table with leadership, a project pipeline and a common voice."
+  title: "Alliance for Local Energy: a draft proposal"
+  description: "A draft proposal for a member-owned alliance that gives local energy actors shared tools and data structures, a neutral table with leadership, a science-to-action pipeline and a common voice."
   version_line: "Draft v0.2 · October 2026"
 
-brand: "Digital Twins Alliance"
+brand: "Alliance for Local Energy"
 
 # Logos shown in the hero band and the footer.
 # Put the image files in assets/logos/ (PNG, SVG or JPG) and set `file` to the file name.
@@ -16,7 +16,7 @@ logos:
   - {name: "IREC", file: "irec.png", url: ""}
 
 nav:                           # label of each chapter in the top bar (keys = template names)
-  problem: "Problem"
+  problem: "Opportunity"
   why: "Why now"
   ebc_summary: "IEA Annex"
   facilitation: "Leadership"
@@ -52,20 +52,20 @@ annex:
 
 hero:
   kicker: "Draft proposal · open for discussion"
-  title: "Local energy is where decarbonization gets built. <em>Nobody should build it alone.</em>"
-  lead: "A proposed member-owned alliance of community networks, cities, research centres, grid operators and funders, open to partners in the Global South."
+  title: "Local energy is where decarbonization gets built. <em>Let's build it together.</em>"
+  lead: "A member-owned alliance of community networks, cities, research centres, grid operators and funders, open to partners in the Global South. Four strengths, one alliance."
   meta:
     - {label: "Status", value: "Draft, open for discussion"}
     - {label: "First engine", value: "IEA EBC Annex proposal submitted, supported by NRCan"}
   button_start: "Start the story ↓"
   button_ask: "Jump to the ask"
   presenting_hint: "Presenting? Use the <b>→</b> and <b>←</b> keys to step through sections."
-  net_tab_off: "Today: isolated efforts"
-  net_tab_on: "With the Alliance: connected"
+  net_tab_off: "Today: many separate efforts"
+  net_tab_on: "With the Alliance: one network"
   annex_call_title: "IEA EBC Annex submitted"
   annex_call_text: "A proposal for a new Annex (task) on community energy solutions with digital platforms was submitted to the ExCo in early October 2026, supported by NRCan."
   net_hub_title: "Alliance"
-  net_hub_sub: "commons · leadership · pipeline · voice"
+  net_hub_sub: "tools · leadership · science to action · voice"
   net_note: "Real organisations from our stakeholder map (desk research, October 2026), shown as examples. Being listed does not mean participation or endorsement. Pink ring: already engaged. Lines are illustrative."
   scope_labels: {CANADA: "CANADA", INTERNATIONAL: "INTERNATIONAL", SPAIN: "SPAIN"}
   actor_labels: {networks: "Networks and cooperatives", cities: "Cities and regions", grid: "Grid and utilities", dhc: "District heating and cooling", research: "Research", funders: "Government and funders"}
@@ -78,34 +78,34 @@ why:
   cards:
     - {stat_key: policy, text: "<b>Policy.</b> The European Commission's 2026 Citizens Energy Package aims for roughly a tenfold rise in community-owned renewables by 2030. It is voluntary, so delivery depends on capacity on the ground."}
     - {stat_key: scale,  text: "<b>Scale.</b> Energy communities counted in the EU by the Commission (an academic mapping counts about 3,900: definitions differ). Cities, regions and grid operators are moving too."}
-    - {stat_key: twins,  text: "<b>Technology and funding.</b> EU programmes already fund digital twins on the grid side (e.g. TwinEU, DSO4DT) and community facilities separately. The bridge between them is missing."}
+    - {stat_key: twins,  text: "<b>Technology and funding.</b> EU programmes already fund digital twins on the grid side (e.g. TwinEU, DSO4DT) and community facilities separately. The Alliance would build the bridge between them."}
   note: "Sources: European Commission, REScoop.eu, mapping study (Sustainability 2023), project sites. See references."
 
 problem:
-  kicker: "The problem"
-  title: "The obstacle is not effort. It is <em>duplication and isolation</em>."
-  lead: "Reviews keep finding the same pattern: tools and methods exist but are fragmented, hard to connect and rarely built for communities; start-ups lack expertise; evidence stays inside each project; and no one speaks for local energy systems with one voice. Projects also stall because the actors they depend on rarely sit at the same table, and when they do, nobody leads the process. Experience from the Global South, where microgrids and community-run systems are often the first access to electricity, is seldom shared with northern projects, and northern tools are seldom adapted to southern settings."
+  kicker: "The opportunity"
+  title: "Local energy is already moving. <em>Connected, it moves faster.</em>"
+  lead: "Communities, cities, networks, grid operators and research centres in Canada, Europe and beyond are building local energy right now, and each brings real strengths. The Alliance connects them around four strengths: shared tools and data structures so that work builds on work, a trusted table with leadership so that projects start, a science-to-action pipeline so that research reaches real projects, and one voice so that local energy is heard."
   cards:
-    - {title: "Fragmented tools", text: "Mature tools exist for design, but community-specific and interoperable ones are mostly prototypes."}
-    - {title: "Evidence stays local", text: "Many ways to measure impact, none agreed, so lessons do not add up across projects."}
-    - {title: "No shared voice", text: "Communities, cities and grid operators lobby separately, often on the same issues."}
-    - {title: "No one leading the table", text: "City, utility, financiers, developers and neighbours rarely meet around the same project, and when they do, nobody is trusted to lead and guide the process. Without leadership the intermediary role is lost and things do not advance."}
-  note: "Based on our review of recent literature on energy community gaps (2021 to 2026)."
+    - {title: "Tools that work together", text: "Great tools exist for design, operation and monitoring. Built on shared data structures they connect, and every case becomes comparable."}
+    - {title: "Leadership at the table", text: "City, utility, financiers, developers and neighbours around one project, with a trusted panel of experts leading and guiding the process until it advances."}
+    - {title: "Science that reaches action", text: "Research centres and real projects bid together, so methods are tested where they matter and projects get the best science."}
+    - {title: "One voice", text: "Communities, cities and grid operators speaking together, with evidence, carry further."}
+  note: "Based on our review of recent literature on energy communities (2021 to 2026)."
 
 landscape_summary:
-  kicker: "Many tools, no common foundations"
-  title: "Good tools exist. They do not share foundations."
-  text: "We reviewed {n} tools and tool families for managing energy communities and local energy systems, from research projects, networks, public bodies and companies. They cover planning, set-up, energy sharing and virtual metering, aggregation and flexibility, and monitoring. Each has its own front end, back end, data model and indicators. For {m} of them we could not find the data model documented in public sources. Tools for off-grid and mini-grid settings in the Global South are only starting to be covered."
+  kicker: "Great tools, one shared foundation"
+  title: "Great tools already exist. A shared foundation lets them work together."
+  text: "We reviewed {n} tools and tool families for managing energy communities and local energy systems, from research projects, networks, public bodies and companies. They cover planning, set-up, energy sharing and virtual metering, aggregation and flexibility, and monitoring. Each has its own front end, back end, data model and indicators, which is where a shared core helps most. For {m} of them we could not find the data model documented in public sources. Tools for off-grid and mini-grid settings in the Global South are only starting to be covered."
   points:
     - {title: "Different front ends are fine", text: "Users differ, so interfaces should too."}
-    - {title: "Different foundations are costly", text: "Data structure, data capture and indicators are rebuilt each time, so tools are hard to integrate and cases hard to compare."}
-    - {title: "A shared core would help", text: "If a tool disappears or two tools join, data and indicators keep their meaning."}
+    - {title: "One foundation saves effort", text: "Data structure, data capture and indicators built once, not in every tool, so tools integrate and cases compare."}
+    - {title: "A shared core makes tools last", text: "If a tool disappears or two tools join, data and indicators keep their meaning."}
   note: "The map and tables of tools, and the lessons learned from other initiatives, are in the annex."
 
 landscape:
   kicker: "The tools that exist today"
-  title: "Many good tools. Each one built on its own foundations."
-  lead: "Community and local energy management already has tools from research projects, networks, public bodies and companies. It is healthy that front ends differ: users are different. The problem is underneath: every tool organises its data, its data capture and its indicators in its own way."
+  title: "Many good tools, ready to connect on shared foundations."
+  lead: "Community and local energy management already has tools from research projects, networks, public bodies and companies. It is healthy that front ends differ: users are different. The opportunity is underneath: every tool organises its data, its data capture and its indicators in its own way, so a shared core can connect them."
   map_title: "The landscape on one map"
   map_lead: "Each tool sits by topic (rows) and by the scale it works at (columns). Colour it by who builds it or by where it comes from."
   map_by_who: "Colour by who builds it"
@@ -147,21 +147,21 @@ members_summary:
 
 alliance:
   kicker: "The proposal"
-  title: "An alliance with four jobs."
-  lead: "Digital twins are the shared language and the first thing we build, but the Alliance is about what organisations can do together. Select a job."
+  title: "Four strengths, one alliance."
+  lead: "The Alliance is where four strengths meet. Digital twins are the shared language and the first thing we build, but the Alliance is about what organisations can do together. Select a strength."
   jobs:
-    - title: "Commons"
-      tagline: "Shared, open building blocks that no one wins by keeping private."
-      detail: "Shared building blocks, open by default: data models and schemas, flexibility and grid-interaction methods, common KPIs and verification rules, validation tests, benchmark datasets, reference architecture, model contracts for buyers, including versions that work with little data and in off-grid settings."
+    - title: "Shared tools and data structures"
+      tagline: "Open building blocks that make every tool and every case work together."
+      detail: "The commons: shared building blocks, open by default: data models and schemas, flexibility and grid-interaction methods, common KPIs and verification rules, validation tests, benchmark datasets, reference architecture, model contracts for buyers, including versions that work with little data and in off-grid settings."
       value: "Value: any tool or study built on them can be compared, reused and trusted. Members keep their proprietary products."
     - title: "Facilitation and leadership"
       tagline: "A neutral table, and someone to lead it: a panel of experts that guides the process until things advance."
       detail: "A trusted intermediary that convenes the people a local energy project needs: neighbours and community groups, the city, the utility or grid operator, financiers, developers, engineers and lawyers. The table alone is not enough. Without leadership and guidance the intermediary loses its role and nothing advances, so the Alliance would also provide the leadership: a panel of experts drawn from member teams who lead and guide the transition to local systems. They run workshops, map each party's problems, agree the rules of the game (roles, confidentiality, data), coordinate working groups, keep the process moving towards a decision and document the result. They do not design the project or sell engineering; members' experts contribute the advice."
       value: "Value: projects that would stall between planning and implementation get a shared diagnosis, a leader and an agreed way forward, and each organisation sees the others' barriers without giving up its own business. We already do this: see the next chapter."
-    - title: "Pipeline"
-      tagline: "A way to turn ideas into funded projects, with the right partners."
-      detail: "A proposal desk that watches calls, matches partners, offers consortium templates and a rotation rule so competing centres can cooperate. Shared deliverable and reporting templates. Joint proposals with partners in the Global South."
-      value: "Value: more and better bids, shared writing cost, and a recognised route into EU, national and international programmes. The Alliance facilitates; it does not pick winners."
+    - title: "Science-to-action pipeline"
+      tagline: "Research and real projects together: turning science and ideas into funded action, with the right partners."
+      detail: "Science and real projects side by side. A proposal desk that watches calls, matches partners, offers consortium templates and a rotation rule so competing centres can cooperate. Shared deliverable and reporting templates. Joint proposals with partners in the Global South."
+      value: "Value: more and better bids that join research and real projects, shared writing cost, and a recognised route into EU, national and international programmes. The Alliance facilitates; it does not pick winners."
     - title: "Voice"
       tagline: "One credible, evidence-based voice towards EU, IEA, OECD and city networks."
       detail: "Evidence-based positions and joint statements towards the European Commission, the IEA, the OECD and city networks, transparent and approved by members."
@@ -331,7 +331,7 @@ budget:
 
 ask:
   kicker: "The ask"
-  title: "This is a draft. <em>Tell us where it breaks.</em>"
+  title: "This is a draft. <em>Help us shape it.</em>"
   lead: "Depending on who you are, the next step is small. Select your role."
   next_step_label: "Next step for you"
   roles:
@@ -343,11 +343,11 @@ ask:
     - {name: "Practitioners in the Global South", text: "Tell us which cases, data and training needs would make shared tools useful in your setting; identify a first North-South proposal."}
   questions_title: "Six questions we need your critique on"
   questions:
-    - {tag: "Value", title: "Does the problem match your reality?", text: "Which of duplication, fragmented tools, lack of evidence or lack of voice costs your organisation most today?"}
+    - {tag: "Value", title: "Does this match your reality?", text: "Where would shared tools, leadership at the table, a science-to-action route or a common voice help your organisation most?"}
     - {tag: "Sharing", title: "What would you open, and what would stay yours?", text: "Which shared building blocks would you contribute to, and what would make you comfortable sharing with a competitor?"}
     - {tag: "Money", title: "What would you pay or contribute in kind?", text: "Fee, staff time, data, or a share of project income? Which founder benefits would matter to you?"}
     - {tag: "Governance", title: "Who should decide?", text: "One vote per member, per family, or weighted? How should changes to the shared core be reviewed?"}
-    - {tag: "Role", title: "Which job matters most: commons, facilitation, pipeline or voice?", text: "If we had to start with one, which should it be?"}
+    - {tag: "Role", title: "Which strength matters most: shared tools and data structures, facilitation and leadership, the science-to-action pipeline or voice?", text: "If we had to start with one, which should it be?"}
     - {tag: "Adoption", title: "What would stop you from joining?", text: "Budget, politics, trust, tooling, competition with your own services? Tell us what the first step would need to look like."}
   copy_button: "Copy the questions"
   copied: " Copied."
@@ -446,7 +446,7 @@ facilitation:
 facilitation_detail:
   kicker: "Facilitation: method and track record"
   title: "How the Alliance would run a facilitated process."
-  lead: "Local energy projects rarely fail because the technology does not work. They stall because the city, the utility, the financier, the developer and the neighbours have never worked out together who does what, and nobody leads them to a decision. A neutral convener with leadership closes that gap."
+  lead: "Local energy projects move when the city, the utility, the financier, the developer and the neighbours work out together who does what, and someone leads them to a decision. A neutral convener with leadership makes that happen."
   record_title: "Track record"
   record:
     - {title: "District heating at Laval and at Concordia", text: "Our centre played the intermediary between the partners, ran workshops and worked out the different problems of the neighbours."}
@@ -494,13 +494,14 @@ facilitation_detail:
   note: "Sources: draft chapter on the ABC Accelerator (2024) and the CÔTÉ Habitat two-pager. Partner organisations are not named here on purpose. Results are estimates."
 
 cover:
-  roof: "Local energy actors, North and South, building the transition together"
-  pillars_label: "What the Alliance does"
+  roof: "Four strengths meet in the Alliance"
+  centre: "Alliance for Local Energy"
+  pillars_label: "What the Alliance brings together"
   pillars:
-    - {title: "Commons", text: "Shared, open building blocks"}
-    - {title: "Facilitation and leadership", text: "A neutral table, and someone to lead it"}
-    - {title: "Pipeline", text: "From ideas to funded projects"}
-    - {title: "Voice", text: "One evidence-based voice"}
+    - {title: "Shared tools and data structures", text: "Open building blocks every tool and case can build on"}
+    - {title: "Facilitation and leadership", text: "A neutral table, and a panel of experts to lead it"}
+    - {title: "Science-to-action pipeline", text: "Research and real projects together, funded"}
+    - {title: "Voice", text: "One evidence-based voice for local energy"}
   base_label: "Principles it stands on"
   base:
     - {title: "Neutral by design", text: "Competitors and public bodies sit at the same table"}
@@ -509,7 +510,7 @@ cover:
     - {title: "Owned by its members", text: "Balanced governance across six families"}
 
 acts:
-  - {kicker: "Part 1", title: "The problem", lead: "Why local energy is stuck, and why now."}
+  - {kicker: "Part 1", title: "The opportunity", lead: "What is already moving, and why now is the moment."}
   - {kicker: "Part 2", title: "The proposal", lead: "What the Alliance is, what it does and who takes part."}
   - {kicker: "Part 3", title: "The plan", lead: "How it grows, what it costs and what we ask."}
 

@@ -121,3 +121,13 @@ table.bt tr.cnt td{color:var(--mute);font-style:italic}
 .actband{max-width:none;background:#93002D;color:#fff;padding:44px 24px;margin-top:40px}
 .actband>*{max-width:1032px;margin-left:auto;margin-right:auto}
 .actband .kicker{color:#ffc2da}.actband h2{color:#fff;font-size:2.2rem;margin:4px auto 6px}.actband p{color:rgba(255,255,255,.9);margin:0 auto;font-size:1.05rem}
+/* cover: four intersecting circles */
+.venn{background:#fff;color:var(--ink);border-radius:16px;padding:20px 22px 18px;margin:24px 0}
+.venn .vroof{text-align:center;font-weight:700;font-size:1.1rem;color:#93002D;margin-bottom:4px}
+.venn svg{display:block;max-width:560px;margin:0 auto}
+.venn .vc{transition:fill-opacity .2s}.venn .vc:hover{fill-opacity:.7}
+.vcards{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));margin-top:8px}
+.vcard{border-radius:10px;padding:12px 14px;color:#fff;display:flex;flex-direction:column;gap:3px}
+.vcard b{font-size:1rem}.vcard span{font-size:.86rem;opacity:.95}
+.vcard.p1{background:#00776F}.vcard.p2{background:#E08A00}.vcard.p3{background:#E90065}.vcard.p4{background:#1598D6}
+.venn .vbase{margin-top:14px;justify-content:center}
