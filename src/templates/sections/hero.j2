@@ -11,6 +11,8 @@
     <div class="vcards">{% for p in cv.pillars %}<div class="vcard p{{ loop.index }}"><b>{{ p.title }}</b><span>{{ p.text }}</span></div>{% endfor %}</div>
     <div class="chips vbase">{% for p in cv.base %}<span class="tab" style="cursor:default" title="{{ p.text }}">{{ p.title }}</span>{% endfor %}</div>
   </div>
+  <div class="hgoals"><div class="hglabel">{{ h.goals_label }} · <a href="#vision">{{ h.goals_link }}</a></div>
+    <div class="hgrid">{% for c in t.vision.goals %}<a class="hg hg{{ loop.index }}" href="#vision"><span class="hs">{{ c.stat }}</span><span>{{ c.title }}</span></a>{% endfor %}</div></div>
   <div class="meta">{% for m in h.meta %}<div><span>{{ m.label }}</span>{{ m.value }}</div>{% endfor %}</div>
   <a class="btn" href="#{{ main[0] }}">{{ h.button_start }}</a><a class="btn alt" href="#{{ main[-1] }}">{{ h.button_ask }}</a>
 </section>

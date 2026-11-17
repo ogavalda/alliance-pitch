@@ -1,11 +1,12 @@
 # Traducció al català de tot el text comú.
 meta:
   title: "Aliança per a l'Energia Local: proposta preliminar"
-  description: "Proposta preliminar d'una aliança participada pels seus membres que dona als actors locals de l'energia eines i estructures de dades compartides, una taula neutral amb lideratge, una cartera de la ciència a l'acció i una veu comuna."
+  description: "Proposta preliminar d'una aliança participada pels seus membres que dona als actors locals de l'energia eines i estructures de dades compartides, una taula neutral amb lideratge, una cartera de la ciència a l'acció i una incidència comuna."
   version_line: "Esborrany v0.2 · octubre de 2026"
 brand: "Aliança per a l'Energia Local"
 nav:
   problem: "Oportunitat"
+  vision: "Visió"
   why: "Per què ara"
   ebc_summary: "Annex IEA"
   facilitation: "Lideratge"
@@ -43,6 +44,8 @@ hero:
   meta:
     - {label: "Estat", value: "Esborrany, obert a debat"}
     - {label: "Primer motor", value: "Proposta d'Annex de l'IEA EBC presentada, amb el suport de NRCan"}
+  goals_label: "On volem ser d'aquí a cinc anys"
+  goals_link: "Veure la visió ↓"
   button_start: "Comença la història ↓"
   button_ask: "Ves a la petició"
   presenting_hint: "Presentant? Fes servir les tecles <b>→</b> i <b>←</b> per canviar de secció."
@@ -51,7 +54,7 @@ hero:
   annex_call_title: "Annex IEA EBC presentat"
   annex_call_text: "Una proposta de nou Annex (tasca) sobre solucions energètiques comunitàries amb plataformes digitals es va presentar a l'ExCo a principis d'octubre de 2026, amb el suport de NRCan."
   net_hub_title: "Aliança"
-  net_hub_sub: "eines · lideratge · ciència i acció · veu"
+  net_hub_sub: "eines · lideratge · ciència i acció · incidència"
   net_note: "Organitzacions reals del nostre mapa d'actors (recerca documental, octubre de 2026), mostrades com a exemples. Sortir-hi no implica participació ni suport. Anell rosa: ja implicades. Les línies són il·lustratives."
   scope_labels: {CANADA: "CANADÀ", INTERNATIONAL: "INTERNACIONAL", SPAIN: "ESPANYA"}
   actor_labels: {networks: "Xarxes i cooperatives", cities: "Ciutats i regions", grid: "Xarxa i empreses elèctriques", dhc: "Calefacció i refrigeració urbanes", research: "Recerca", funders: "Govern i finançadors"}
@@ -68,12 +71,12 @@ why:
 problem:
   kicker: "L'oportunitat"
   title: "L'energia local ja es mou. <em>Connectada, es mou més de pressa.</em>"
-  lead: "Comunitats, ciutats, xarxes, operadors de xarxa i centres de recerca del Canadà, Europa i més enllà construeixen ara mateix energia local, i cadascú aporta punts forts reals. L'Aliança els connecta al voltant de quatre forces: eines i estructures de dades compartides perquè la feina se sumi a la feina, una taula de confiança amb lideratge perquè els projectes arrenquin, una cartera de la ciència a l'acció perquè la recerca arribi a projectes reals, i una sola veu perquè l'energia local es faci sentir."
+  lead: "Comunitats, ciutats, xarxes, operadors de xarxa i centres de recerca del Canadà, Europa i més enllà construeixen ara mateix energia local, i cadascú aporta punts forts reals. L'Aliança els connecta al voltant de quatre forces: eines i estructures de dades compartides perquè la feina se sumi a la feina, una taula de confiança amb lideratge perquè els projectes arrenquin, una cartera de la ciència a l'acció perquè la recerca arribi a projectes reals, i incidència política perquè l'energia local es faci sentir."
   cards:
     - {title: "Eines que funcionen juntes", text: "Hi ha bones eines de disseny, operació i seguiment. Construïdes sobre estructures de dades compartides, es connecten i cada cas esdevé comparable."}
     - {title: "Lideratge a la taula", text: "Ajuntament, empresa elèctrica, finançadors, promotors i veïnat al voltant d'un projecte, amb un panell d'experts de confiança que lidera i guia el procés fins que avança."}
     - {title: "Ciència que arriba a l'acció", text: "Centres de recerca i projectes reals es presenten junts a les convocatòries, de manera que els mètodes es proven on compten i els projectes tenen la millor ciència."}
-    - {title: "Una sola veu", text: "Comunitats, ciutats i operadors de xarxa que parlen junts, amb evidència, arriben més lluny."}
+    - {title: "Incidència", text: "Comunitats, ciutats i operadors de xarxa que parlen junts, amb evidència, arriben més lluny."}
   note: "Basat en la nostra revisió de la literatura recent sobre comunitats energètiques (2021 a 2026)."
 landscape_summary:
   kicker: "Bones eines, un fonament compartit"
@@ -142,13 +145,13 @@ alliance:
       tagline: "Recerca i projectes reals junts: convertir ciència i idees en acció finançada, amb els socis adequats."
       detail: "Ciència i projectes reals de costat. Una oficina de propostes que vigila convocatòries, busca socis, ofereix plantilles de consorci i una regla de rotació perquè centres competidors puguin cooperar. Plantilles compartides d'entregables i justificació. Propostes conjuntes amb socis del Sud global."
       value: "Valor: més propostes i millors, que uneixen recerca i projectes reals, cost d'escriptura compartit, i una via reconeguda cap a programes europeus, nacionals i internacionals. L'Aliança facilita; no tria guanyadors."
-    - title: "Veu"
-      tagline: "Una veu creïble i basada en l'evidència davant la UE, l'IEA, l'OCDE i les xarxes de ciutats."
+    - title: "Incidència"
+      tagline: "Incidència creïble i basada en l'evidència davant la UE, l'IEA, l'OCDE i les xarxes de ciutats."
       detail: "Posicionaments basats en l'evidència i declaracions conjuntes davant la Comissió Europea, l'IEA, l'OCDE i les xarxes de ciutats, transparents i aprovats pels membres."
       value: "Valor: un sol interlocutor per a les institucions, i sistemes energètics locals i bessons digitals reconeguts en el finançament i les polítiques."
   extension:
     title: "A banda de les quatre tasques: transferència de tecnologia i formació amb el Sud global"
-    text: "Membres amb experiència en microxarxes rurals i accés a l'energia (Azimut 360 i Aiguasol a l'Àfrica subsahariana) aportarien aquesta pràctica a l'Aliança. A canvi, eines obertes, fitxes de cas i formació s'adaptarien i es transferirien als socis del Sud, amb les organitzacions locals liderant l'adaptació. Travessa les quatre tasques: el comú també ha de servir per a casos aïllats de xarxa, el panell d'experts pot liderar processos locals, la cartera pot arribar al finançament de desenvolupament i clima, i la veu pot portar evidència Nord-Sud."
+    text: "Membres amb experiència en microxarxes rurals i accés a l'energia (Azimut 360 i Aiguasol a l'Àfrica subsahariana) aportarien aquesta pràctica a l'Aliança. A canvi, eines obertes, fitxes de cas i formació s'adaptarien i es transferirien als socis del Sud, amb les organitzacions locals liderant l'adaptació. Travessa les quatre tasques: el comú també ha de servir per a casos aïllats de xarxa, el panell d'experts pot liderar processos locals, la cartera pot arribar al finançament de desenvolupament i clima, i la incidència pot portar evidència Nord-Sud."
     link: "Detalls a l'annex"
   note: "El comú comença on la literatura és més sòlida: models de dades compartits, mètodes de flexibilitat i interacció amb la xarxa, KPI comuns i validació. Són exemples, no tota la proposta."
 demo:
@@ -410,7 +413,7 @@ cover:
     - {title: "Eines i estructures de dades compartides", text: "Blocs oberts sobre els quals pot construir cada eina i cada cas"}
     - {title: "Facilitació i lideratge", text: "Una taula neutral, i un panell d'experts que la lidera"}
     - {title: "Cartera de la ciència a l'acció", text: "Recerca i projectes reals junts, finançats"}
-    - {title: "Veu", text: "Una veu basada en l'evidència per a l'energia local"}
+    - {title: "Incidència", text: "Incidència basada en l'evidència per a l'energia local"}
   base_label: "Principis sobre els quals es fonamenta"
   base:
     - {title: "Neutral per disseny", text: "Competidors i organismes públics a la mateixa taula"}
@@ -533,3 +536,55 @@ south:
     - "Quines línies de finançament cal apuntar, i qui lidera cada proposta [?]."
     - "Com s'enllaça amb la proposta d'Annex de l'IEA i amb el pressupost de l'Aliança [?]."
   note: "Esborrany per a debat. Cap compromís per part de ningú encara."
+
+vision:
+  kicker: "On volem ser d'aquí a cinc anys"
+  title: "Un mapa de 500 comunitats, una base de dades compartida i eines que fan cada comunitat més productiva."
+  lead: "Cinc objectius concrets per als cinc anys després del llançament. Són propostes per debatre amb els membres, i cadascun es pot mesurar."
+  goals:
+    - {stat: "500", title: "Comunitats avaluades a tot el món", text: "Cadascuna descrita amb els mateixos indicadors clars: cost, model de negoci, consums i produccions actualitzats, nombre de clients, model de governança i impacte social. Totes en un mapa del món, amb una fitxa clara i detallada de cada comunitat."}
+    - {stat: "1", title: "Base de dades comuna i actualitzada", text: "Una sola base de dades interoperable, actualitzada amb freqüència, amb els consums i les produccions de totes les comunitats i la diferència amb el cas de referència."}
+    - {stat: "⇄", title: "Eines compartides entre països", text: "Eines compartides entre comunitats energètiques de diferents països, que els hagin ajudat a augmentar la seva productivitat."}
+    - {stat: "3", title: "Projectes de recerca actius", text: "Cadascun entre quatre o més membres de l'Aliança."}
+    - {stat: "3+", title: "Llibres blancs i guies de referència", text: "Sobre comunitats energètiques a escala internacional, promoguts per l'Aliança."}
+  map_title: "El mapa: cada comunitat, una fitxa clara"
+  map_lead: "Selecciona un punt per obrir la fitxa. Cada comunitat es descriuria amb els mateixos camps, així que dues qualssevol es poden comparar."
+  map_note: "Il·lustració. Les ubicacions són exemples i les fitxes usen dades hipotètiques, només per mostrar la idea."
+  how_title: "Com sabríem que funciona"
+  how:
+    - {title: "Cobertura", text: "Nombre de comunitats amb la fitxa completa, i part d'elles actualitzades els darrers dotze mesos."}
+    - {title: "Comparabilitat", text: "Part de comunitats que informen dels mateixos indicadors amb la qualitat de les dades indicada (mesurada, modelada o declarada)."}
+    - {title: "Ús", text: "Nombre de països i comunitats que usen les eines compartides, i el guany de productivitat que declaren."}
+    - {title: "Recerca i referència", text: "Projectes de recerca actius amb quatre o més membres; llibres blancs i guies publicats i citats."}
+  how_note: "Els indicadors parteixen del conjunt comú proposat a l'annex (lliçons d'altres iniciatives)."
+  map_title_aria: "Mapa del món"
+  types: {ec: "Comunitat energètica", dh: "Calefacció urbana", mg: "Microxarxa o comunitat aïllada de xarxa"}
+  card:
+    name: "Comunitat d'exemple"
+    chart: "Producció i consum mensuals"
+    prod_word: "producció"
+    cons_word: "consum"
+    f_type: "Tipus"
+    f_customers: {ec: "Membres o clients", dh: "Edificis connectats", mg: "Llars ateses"}
+    f_capacity: {ec: "Potència instal·lada", dh: "Potència tèrmica", mg: "Potència instal·lada"}
+    f_prod: "Producció anual"
+    f_cons: "Consum anual"
+    f_share: "Part de subministrament local"
+    f_ref: "Respecte del cas de referència"
+    ref_text: "subministrament de xarxa o combustible un {imp}% menor; emissions un {co2}% menors"
+    f_cost: "Cost"
+    cost_text: "{capex} EUR per kW invertit; preu {price} EUR per kWh"
+    f_model: "Model de negoci"
+    f_gov: "Governança"
+    f_social: "Impacte social"
+    social_text: "{pov}% de clients en pobresa energètica; {jobs} llocs de treball locals"
+    f_quality: "Qualitat de les dades"
+    f_update: "Darrera actualització"
+    update_text: "fa {d} dies (exemple)"
+    models:
+      ec: ["Cooperativa amb autoconsum compartit", "Projecte municipal amb participacions ciutadanes", "Aliança amb l'empresa elèctrica local", "Associació d'habitatge"]
+      dh: ["Empresa municipal de calor", "Cooperativa de calor de propietat dels consumidors", "Associació públic-privada"]
+      mg: ["Microxarxa de propietat comunitària", "Operador amb tarifa de pagament per ús", "Cooperativa amb suport d'una ONG"]
+    gov: ["Un membre, un vot", "Junta escollida amb assemblea de membres", "Junta municipal amb panell ciutadà"]
+    quality: ["Mesurat amb comptadors intel·ligents", "Majoritàriament mesurat, en part modelat", "Declarat per la comunitat"]
+    hypothetical: "Dades hipotètiques, només per il·lustrar."

@@ -3,7 +3,7 @@
 
 meta:
   title: "Alliance for Local Energy: a draft proposal"
-  description: "A draft proposal for a member-owned alliance that gives local energy actors shared tools and data structures, a neutral table with leadership, a science-to-action pipeline and a common voice."
+  description: "A draft proposal for a member-owned alliance that gives local energy actors shared tools and data structures, a neutral table with leadership, a science-to-action pipeline and common advocacy."
   version_line: "Draft v0.2 · October 2026"
 
 brand: "Alliance for Local Energy"
@@ -17,6 +17,7 @@ logos:
 
 nav:                           # label of each chapter in the top bar (keys = template names)
   problem: "Opportunity"
+  vision: "Vision"
   why: "Why now"
   ebc_summary: "IEA Annex"
   facilitation: "Leadership"
@@ -57,6 +58,8 @@ hero:
   meta:
     - {label: "Status", value: "Draft, open for discussion"}
     - {label: "First engine", value: "IEA EBC Annex proposal submitted, supported by NRCan"}
+  goals_label: "Where we want to be in five years"
+  goals_link: "See the vision ↓"
   button_start: "Start the story ↓"
   button_ask: "Jump to the ask"
   presenting_hint: "Presenting? Use the <b>→</b> and <b>←</b> keys to step through sections."
@@ -65,7 +68,7 @@ hero:
   annex_call_title: "IEA EBC Annex submitted"
   annex_call_text: "A proposal for a new Annex (task) on community energy solutions with digital platforms was submitted to the ExCo in early October 2026, supported by NRCan."
   net_hub_title: "Alliance"
-  net_hub_sub: "tools · leadership · science to action · voice"
+  net_hub_sub: "tools · leadership · science to action · advocacy"
   net_note: "Real organisations from our stakeholder map (desk research, October 2026), shown as examples. Being listed does not mean participation or endorsement. Pink ring: already engaged. Lines are illustrative."
   scope_labels: {CANADA: "CANADA", INTERNATIONAL: "INTERNATIONAL", SPAIN: "SPAIN"}
   actor_labels: {networks: "Networks and cooperatives", cities: "Cities and regions", grid: "Grid and utilities", dhc: "District heating and cooling", research: "Research", funders: "Government and funders"}
@@ -84,12 +87,12 @@ why:
 problem:
   kicker: "The opportunity"
   title: "Local energy is already moving. <em>Connected, it moves faster.</em>"
-  lead: "Communities, cities, networks, grid operators and research centres in Canada, Europe and beyond are building local energy right now, and each brings real strengths. The Alliance connects them around four strengths: shared tools and data structures so that work builds on work, a trusted table with leadership so that projects start, a science-to-action pipeline so that research reaches real projects, and one voice so that local energy is heard."
+  lead: "Communities, cities, networks, grid operators and research centres in Canada, Europe and beyond are building local energy right now, and each brings real strengths. The Alliance connects them around four strengths: shared tools and data structures so that work builds on work, a trusted table with leadership so that projects start, a science-to-action pipeline so that research reaches real projects, and advocacy so that local energy is heard."
   cards:
     - {title: "Tools that work together", text: "Great tools exist for design, operation and monitoring. Built on shared data structures they connect, and every case becomes comparable."}
     - {title: "Leadership at the table", text: "City, utility, financiers, developers and neighbours around one project, with a trusted panel of experts leading and guiding the process until it advances."}
     - {title: "Science that reaches action", text: "Research centres and real projects bid together, so methods are tested where they matter and projects get the best science."}
-    - {title: "One voice", text: "Communities, cities and grid operators speaking together, with evidence, carry further."}
+    - {title: "Advocacy", text: "Communities, cities and grid operators speaking together, with evidence, carry further."}
   note: "Based on our review of recent literature on energy communities (2021 to 2026)."
 
 landscape_summary:
@@ -162,13 +165,13 @@ alliance:
       tagline: "Research and real projects together: turning science and ideas into funded action, with the right partners."
       detail: "Science and real projects side by side. A proposal desk that watches calls, matches partners, offers consortium templates and a rotation rule so competing centres can cooperate. Shared deliverable and reporting templates. Joint proposals with partners in the Global South."
       value: "Value: more and better bids that join research and real projects, shared writing cost, and a recognised route into EU, national and international programmes. The Alliance facilitates; it does not pick winners."
-    - title: "Voice"
-      tagline: "One credible, evidence-based voice towards EU, IEA, OECD and city networks."
+    - title: "Advocacy"
+      tagline: "Credible, evidence-based advocacy towards the EU, the IEA, the OECD and city networks."
       detail: "Evidence-based positions and joint statements towards the European Commission, the IEA, the OECD and city networks, transparent and approved by members."
       value: "Value: one counterpart for institutions, and local energy systems and digital twins recognised in funding and policy."
   extension:
     title: "Alongside the four jobs: technology transfer and training with the Global South"
-    text: "Members with experience in rural microgrids and energy access (Azimut 360 and Aiguasol in sub-Saharan Africa) would bring that practice into the Alliance. In return, open tools, case records and training would be adapted and transferred to southern partners, with local organisations leading the adaptation. It cuts across the four jobs: the commons must also fit off-grid cases, the expert panel can lead local processes, the pipeline can reach development and climate funding, and the voice can carry North-South evidence."
+    text: "Members with experience in rural microgrids and energy access (Azimut 360 and Aiguasol in sub-Saharan Africa) would bring that practice into the Alliance. In return, open tools, case records and training would be adapted and transferred to southern partners, with local organisations leading the adaptation. It cuts across the four jobs: the commons must also fit off-grid cases, the expert panel can lead local processes, the pipeline can reach development and climate funding, and advocacy can carry North-South evidence."
     link: "Details in the annex"
   note: "The commons starts where the literature is strongest: shared data models, flexibility and grid-interaction methods, common KPIs and validation. These are examples, not the whole proposal."
 
@@ -343,11 +346,11 @@ ask:
     - {name: "Practitioners in the Global South", text: "Tell us which cases, data and training needs would make shared tools useful in your setting; identify a first North-South proposal."}
   questions_title: "Six questions we need your critique on"
   questions:
-    - {tag: "Value", title: "Does this match your reality?", text: "Where would shared tools, leadership at the table, a science-to-action route or a common voice help your organisation most?"}
+    - {tag: "Value", title: "Does this match your reality?", text: "Where would shared tools, leadership at the table, a science-to-action route or common advocacy help your organisation most?"}
     - {tag: "Sharing", title: "What would you open, and what would stay yours?", text: "Which shared building blocks would you contribute to, and what would make you comfortable sharing with a competitor?"}
     - {tag: "Money", title: "What would you pay or contribute in kind?", text: "Fee, staff time, data, or a share of project income? Which founder benefits would matter to you?"}
     - {tag: "Governance", title: "Who should decide?", text: "One vote per member, per family, or weighted? How should changes to the shared core be reviewed?"}
-    - {tag: "Role", title: "Which strength matters most: shared tools and data structures, facilitation and leadership, the science-to-action pipeline or voice?", text: "If we had to start with one, which should it be?"}
+    - {tag: "Role", title: "Which strength matters most: shared tools and data structures, facilitation and leadership, the science-to-action pipeline or advocacy?", text: "If we had to start with one, which should it be?"}
     - {tag: "Adoption", title: "What would stop you from joining?", text: "Budget, politics, trust, tooling, competition with your own services? Tell us what the first step would need to look like."}
   copy_button: "Copy the questions"
   copied: " Copied."
@@ -501,7 +504,7 @@ cover:
     - {title: "Shared tools and data structures", text: "Open building blocks every tool and case can build on"}
     - {title: "Facilitation and leadership", text: "A neutral table, and a panel of experts to lead it"}
     - {title: "Science-to-action pipeline", text: "Research and real projects together, funded"}
-    - {title: "Voice", text: "One evidence-based voice for local energy"}
+    - {title: "Advocacy", text: "Evidence-based advocacy for local energy"}
   base_label: "Principles it stands on"
   base:
     - {title: "Neutral by design", text: "Competitors and public bodies sit at the same table"}
@@ -624,3 +627,55 @@ south:
     - "Which funding lines to target, and who leads each proposal [?]."
     - "How this links to the IEA Annex proposal and to the Alliance budget [?]."
   note: "Draft for discussion. No commitment from any party yet."
+
+vision:
+  kicker: "Where we want to be in five years"
+  title: "A map of 500 communities, one shared database, and tools that make every community more productive."
+  lead: "Five concrete goals for the five years after launch. They are proposals to discuss with members, and each can be measured."
+  goals:
+    - {stat: "500", title: "Communities assessed worldwide", text: "Each one described with the same clear indicators: cost, business model, up-to-date consumption and production, number of customers, governance model and social impact. All shown on a world map, with a clear, detailed fact sheet for every community."}
+    - {stat: "1", title: "Common, up-to-date database", text: "One interoperable database, updated frequently, with the consumption and production of all communities and the difference from the reference case."}
+    - {stat: "⇄", title: "Tools used across countries", text: "Tools shared between energy communities in different countries, that have helped them raise their productivity."}
+    - {stat: "3", title: "Active research projects", text: "Each running between four or more members of the Alliance."}
+    - {stat: "3+", title: "White papers and reference guides", text: "On energy communities at international level, promoted by the Alliance."}
+  map_title: "The map: every community, one clear fact sheet"
+  map_lead: "Select a point to open the fact sheet. Every community would be described with the same fields, so any two can be compared."
+  map_note: "Illustration. Locations are examples and the fact sheets use hypothetical data, only to show the idea."
+  how_title: "How we would know it is working"
+  how:
+    - {title: "Coverage", text: "Number of communities with a complete fact sheet, and share of them updated in the last twelve months."}
+    - {title: "Comparability", text: "Share of communities reporting the same indicators with their data quality flagged (measured, modelled or declared)."}
+    - {title: "Use", text: "Number of countries and communities using the shared tools, and the productivity gain they report."}
+    - {title: "Research and reference", text: "Research projects running with four or more members; white papers and guides published and cited."}
+  how_note: "The indicators build on the common set proposed in the annex (lessons from other initiatives)."
+  map_title_aria: "World map"
+  types: {ec: "Energy community", dh: "District heating", mg: "Mini-grid or off-grid community"}
+  card:
+    name: "Example community"
+    chart: "Monthly production and consumption"
+    prod_word: "production"
+    cons_word: "consumption"
+    f_type: "Type"
+    f_customers: {ec: "Members or customers", dh: "Connected buildings", mg: "Households served"}
+    f_capacity: {ec: "Installed capacity", dh: "Heat capacity", mg: "Installed capacity"}
+    f_prod: "Production per year"
+    f_cons: "Consumption per year"
+    f_share: "Local supply share"
+    f_ref: "Versus the reference case"
+    ref_text: "grid or fuel supply {imp}% lower; emissions {co2}% lower"
+    f_cost: "Cost"
+    cost_text: "{capex} EUR per kW invested; price {price} EUR per kWh"
+    f_model: "Business model"
+    f_gov: "Governance"
+    f_social: "Social impact"
+    social_text: "{pov}% of customers in energy poverty; {jobs} local jobs"
+    f_quality: "Data quality"
+    f_update: "Last update"
+    update_text: "{d} days ago (example)"
+    models:
+      ec: ["Cooperative with shared self-consumption", "Municipal project with citizen shares", "Partnership with the local utility", "Housing association"]
+      dh: ["Municipal heat company", "Consumer-owned heat cooperative", "Public-private partnership"]
+      mg: ["Community-owned mini-grid", "Operator with pay-as-you-go tariff", "NGO-supported cooperative"]
+    gov: ["One member, one vote", "Elected board with member assembly", "Municipal board with citizen panel"]
+    quality: ["Measured with smart meters", "Mostly measured, partly modelled", "Declared by the community"]
+    hypothetical: "Hypothetical data for illustration."

@@ -368,3 +368,73 @@ def venn_svg(cv: dict) -> str:
     g.append(f'<circle cx="{cx}" cy="{cy}" r="62" fill="#93002D" stroke="#fff" stroke-width="3"/>'
              f'<text text-anchor="middle" dominant-baseline="middle" font-size="15" font-weight="700" fill="#fff">{tsp}</text>')
     return ('<svg viewBox="0 0 640 600" width="100%" role="img" aria-label="' + _esc(cv["roof"]) + '">' + "".join(g) + "</svg>")
+
+
+# ------------------------------------------------------------------ vision: world map of communities with example fact sheets
+def world_map(markers: list, dots: dict, v: dict, lang: str) -> dict:
+    """Dot map of the world with example communities. Fact sheets use HYPOTHETICAL data, generated deterministically."""
+    import random
+    W, H, x0, y0 = 720, 300, 0, 0
+    sx = W / 360.0; top = 82.0
+    X = lambda lon: (lon + 180) * sx
+    Y = lambda lat: (top - lat) * sx
+    cols = {"ec": "#E90065", "dh": "#E08A00", "mg": "#00776F"}
+    g = ['<path d="' + "".join(f"M{X(a):.0f} {Y(b):.0f}h0" for a, b in dots["dots"]) + '" stroke="#d9cfd2" stroke-width="3.4" stroke-linecap="round" fill="none"/>']
+    fmt = (lambda x, d=0: (f"{x:,.{d}f}").replace(",", "§").replace(".", ",").replace("§", ".")) if lang == "ca" else (lambda x, d=0: f"{x:,.{d}f}")
+    cards = {}
+    mk = []
+    for m in markers:
+        rnd = random.Random(1000 + m["id"]); ty = m["type"]
+        place = m["place_" + lang]
+        if ty == "ec":
+            cust = rnd.randint(60, 1800); kw = rnd.randint(40, 1500); prod = kw * rnd.uniform(1.15, 1.45); share = rnd.randint(32, 78)
+            capex = rnd.randint(900, 1400); price = rnd.uniform(0.12, 0.22)
+        elif ty == "dh":
+            cust = rnd.randint(90, 3200); kw = rnd.randint(2500, 24000); prod = kw * rnd.uniform(1.8, 2.6); share = rnd.randint(45, 92)
+            capex = rnd.randint(700, 1500); price = rnd.uniform(0.07, 0.14)
+        else:
+            cust = rnd.randint(150, 2600); kw = rnd.randint(25, 420); prod = kw * rnd.uniform(1.3, 1.7); share = rnd.randint(70, 98)
+            capex = rnd.randint(1800, 3200); price = rnd.uniform(0.25, 0.45)
+        cons = prod * 100 / share
+        imp = rnd.randint(8, 32); co2 = rnd.randint(10, 45); pov = rnd.randint(4, 28); jobs = rnd.randint(2, 40)
+        bm = v["card"]["models"][ty][rnd.randrange(len(v["card"]["models"][ty]))]
+        gov = v["card"]["gov"][rnd.randrange(len(v["card"]["gov"]))]
+        qual = v["card"]["quality"][rnd.randrange(len(v["card"]["quality"]))]
+        # monthly bars (production vs consumption), seasonal shapes
+        pm = []; cm = []
+        for k in range(12):
+            s = math.cos((k - 5.5) / 12 * 2 * math.pi)       # 1 in summer, -1 in winter
+            if ty == "dh":
+                pm.append(1 + 0.15 * s + rnd.uniform(-.05, .05)); cm.append(1 - 0.55 * s + rnd.uniform(-.05, .05))
+            else:
+                pm.append(1 + 0.6 * s + rnd.uniform(-.06, .06)); cm.append(1 - 0.15 * s + rnd.uniform(-.06, .06))
+        mx = max(pm + cm); bars = []
+        for k in range(12):
+            bx = 8 + k * 24
+            hp = 56 * pm[k] / mx; hc = 56 * cm[k] / mx
+            bars.append(f'<rect x="{bx}" y="{62 - hp:.1f}" width="10" height="{hp:.1f}" fill="#E90065"/><rect x="{bx + 11}" y="{62 - hc:.1f}" width="10" height="{hc:.1f}" fill="#1598D6"/>')
+        chart = (f'<svg viewBox="0 0 300 70" width="100%" role="img" aria-label="{_esc(v["card"]["chart"])}">' + "".join(bars) + "</svg>")
+        rows = [
+            (v["card"]["f_type"], v["types"][ty]),
+            (v["card"]["f_customers"][ty], fmt(cust)),
+            (v["card"]["f_capacity"][ty], f"{fmt(kw)} kW"),
+            (v["card"]["f_prod"], f"{fmt(prod)} MWh"),
+            (v["card"]["f_cons"], f"{fmt(cons)} MWh"),
+            (v["card"]["f_share"], f"{share} %"),
+            (v["card"]["f_ref"], v["card"]["ref_text"].format(imp=imp, co2=co2)),
+            (v["card"]["f_cost"], v["card"]["cost_text"].format(capex=fmt(capex), price=fmt(price, 2))),
+            (v["card"]["f_model"], bm),
+            (v["card"]["f_gov"], gov),
+            (v["card"]["f_social"], v["card"]["social_text"].format(pov=pov, jobs=jobs)),
+            (v["card"]["f_quality"], qual),
+            (v["card"]["f_update"], v["card"]["update_text"].format(d=rnd.randint(1, 28))),
+        ]
+        tr = "".join(f"<tr><th>{_esc(a)}</th><td>{_esc(b)}</td></tr>" for a, b in rows)
+        cards[str(m["id"])] = (f'<div class="fs-head"><b>{_esc(v["card"]["name"])} {m["id"]}</b><span>{_esc(place)}</span></div>'
+                               f'<table class="fs">{tr}</table><div class="fs-chart"><small>{_esc(v["card"]["chart"])}: <span style="color:#E90065">■</span> {_esc(v["card"]["prod_word"])} <span style="color:#1598D6">■</span> {_esc(v["card"]["cons_word"])}</small>{chart}</div>'
+                               f'<p class="note">{_esc(v["card"]["hypothetical"])}</p>')
+        mk.append(f'<g class="wm" data-id="{m["id"]}" tabindex="0" role="button" aria-label="{_esc(place)}"><circle cx="{X(m["lon"]):.1f}" cy="{Y(m["lat"]):.1f}" r="9" fill="transparent"/>'
+                  f'<circle class="wd" cx="{X(m["lon"]):.1f}" cy="{Y(m["lat"]):.1f}" r="4.6" fill="{cols[m["type"]]}" stroke="#fff" stroke-width="1.4"><title>{_esc(place)}</title></circle></g>')
+    svg = f'<svg id="wsvg" viewBox="0 0 {W} {H}" width="100%" role="img" aria-label="{_esc(v["map_title"])}">' + "".join(g) + "".join(mk) + "</svg>"
+    legend = "".join(f'<span class="tab" style="cursor:default"><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:{cols[k]};margin-right:6px"></span>{_esc(v["types"][k])}</span>' for k in ("ec", "dh", "mg"))
+    return {"svg": svg, "legend": legend, "cards": cards, "first": str(markers[14]["id"])}

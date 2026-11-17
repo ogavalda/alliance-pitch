@@ -131,3 +131,25 @@ table.bt tr.cnt td{color:var(--mute);font-style:italic}
 .vcard b{font-size:1rem}.vcard span{font-size:.86rem;opacity:.95}
 .vcard.p1{background:#00776F}.vcard.p2{background:#E08A00}.vcard.p3{background:#E90065}.vcard.p4{background:#1598D6}
 .venn .vbase{margin-top:14px;justify-content:center}
+/* vision: goals and world map */
+.goals{display:grid;gap:12px;margin-top:22px}
+.goal{display:flex;gap:16px;align-items:center;background:#fff;border-radius:14px;padding:14px 18px;border-left:6px solid #93002D}
+.goal .gs{min-width:96px;text-align:center;font-weight:800;font-size:2rem;color:#93002D;line-height:1}
+.goal b{font-size:1.05rem}.goal p{margin:4px 0 0;font-size:.92rem;color:#3a3536}
+.goal.gl2{border-color:#E90065}.goal.gl3{border-color:#1598D6}.goal.gl4{border-color:#00776F}.goal.gl5{border-color:#E08A00}
+.wlayout{display:grid;gap:18px;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);align-items:start}
+@media(max-width:820px){.wlayout{grid-template-columns:1fr}}
+.wsvg svg{display:block}
+.wm{cursor:pointer}.wm .wd{transition:r .15s}.wm:hover .wd,.wm.on .wd{r:7.5;stroke:#93002D;stroke-width:2}
+.wm:focus{outline:none}.wm:focus .wd{stroke:#93002D;stroke-width:2}
+.wcard{background:#fff;border:1px solid #e6dde0;border-radius:12px;padding:14px 16px;font-size:.86rem}
+.fs-head{display:flex;flex-direction:column;margin-bottom:6px}.fs-head b{color:#93002D;font-size:1rem}.fs-head span{color:#5f5a5b}
+.fs{width:100%;border-collapse:collapse}.fs th{text-align:left;font-weight:600;color:#5f5a5b;padding:3px 8px 3px 0;vertical-align:top;width:38%}.fs td{padding:3px 0;border-bottom:1px solid #f0e9eb}
+.fs-chart{margin-top:8px}
+
+/* cover: vision strip */
+.hgoals{margin:6px 0 20px}.hglabel{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:#5f5a5b;margin-bottom:8px}.hglabel a{color:#93002D;text-decoration:none;font-weight:700}
+.hgrid{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.hg{background:#fff;border-radius:12px;padding:12px 14px;border-top:4px solid #93002D;text-decoration:none;color:var(--ink);display:flex;flex-direction:column;gap:2px;font-size:.84rem}
+.hg .hs{font-weight:800;font-size:1.7rem;color:#93002D;line-height:1.1}
+.hg2{border-color:#E90065}.hg3{border-color:#1598D6}.hg4{border-color:#00776F}.hg5{border-color:#E08A00}
