@@ -1,0 +1,29 @@
+{% set s = t.vision %}
+<section id="vision">
+  <div class="kicker reveal">{{ num }} · {{ s.kicker }}</div>
+  <h2 class="reveal">{{ s.title }}</h2>
+  <p class="lead reveal">{{ s.lead }}</p>
+  <div class="goals reveal">{% for c in s.goals %}<div class="goal gl{{ loop.index }}"><div class="gs">{{ c.stat }}</div><div><b>{{ c.title }}</b><p>{{ c.text }}</p></div></div>{% endfor %}</div>
+  <h3 style="margin-top:34px">{{ s.map_title }}</h3>
+  <p class="lead">{{ s.map_lead }}</p>
+  <div class="card wmap" id="wmap">
+    <div class="wlayout"><div class="wsvg">{{ figs.world.svg }}</div><div class="wcard" id="wcard"></div></div>
+    <div class="chips">{{ figs.world.legend }}</div>
+    <p class="note">{{ s.map_note }}</p>
+  </div>
+  <script type="application/json" id="wdata">{{ figs.world.cards | tojson }}</script>
+  <script>
+  (function(){
+    var cards = JSON.parse(document.getElementById('wdata').textContent), box = document.getElementById('wcard');
+    function show(id){ box.innerHTML = cards[id]; document.querySelectorAll('#wmap .wm').forEach(function(g){ g.classList.toggle('on', g.getAttribute('data-id') === id); }); }
+    document.querySelectorAll('#wmap .wm').forEach(function(g){
+      g.addEventListener('click', function(){ show(g.getAttribute('data-id')); });
+      g.addEventListener('keydown', function(e){ if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); show(g.getAttribute('data-id')); } });
+    });
+    show("{{ figs.world.first }}");
+  })();
+  </script>
+  <h3 style="margin-top:30px">{{ s.how_title }}</h3>
+  <div class="grid g4 reveal">{% for c in s.how %}<div class="card"><b>{{ c.title }}</b><p>{{ c.text }}</p></div>{% endfor %}</div>
+  <p class="note">{{ s.how_note }}</p>
+</section>
