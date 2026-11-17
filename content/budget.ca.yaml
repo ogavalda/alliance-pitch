@@ -6,8 +6,8 @@ costs:
   travel: {label: "Viatges i dietes"}
   total_costs: {label: "TOTAL COSTOS"}
 incomes:
-  concordia: {label: "Concordia en espècie"}
-  irec: {label: "IREC en espècie (lloguer)"}
+  concordia: {label: "Concordia"}
+  irec: {label: "IREC (lloguer)"}
   partners: {label: "Aportacions dels socis"}
   bilateral: {label: "Projecte de recerca bilateral"}
   horizon: {label: "Projecte Horizon"}
