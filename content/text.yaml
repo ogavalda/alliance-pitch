@@ -2,11 +2,11 @@
 # Tip: keep each value on one line inside double quotes, or use the  >-  folded style.
 
 meta:
-  title: "Alliance for Local Energy: a draft proposal"
+  title: "Alliance for Community Energy: a draft proposal"
   description: "A draft proposal for a member-owned alliance that gives local energy actors shared tools and data structures, a neutral table with leadership, a science-to-action pipeline and common advocacy."
   version_line: "Draft v0.2 · October 2026"
 
-brand: "Alliance for Local Energy"
+brand: "Alliance for Community Energy"
 
 # Logos shown in the hero band and the footer.
 # Put the image files in assets/logos/ (PNG, SVG or JPG) and set `file` to the file name.
