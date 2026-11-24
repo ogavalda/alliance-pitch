@@ -438,3 +438,61 @@ def world_map(markers: list, dots: dict, v: dict, lang: str) -> dict:
     svg = f'<svg id="wsvg" viewBox="0 0 {W} {H}" width="100%" role="img" aria-label="{_esc(v["map_title"])}">' + "".join(g) + "".join(mk) + "</svg>"
     legend = "".join(f'<span class="tab" style="cursor:default"><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:{cols[k]};margin-right:6px"></span>{_esc(v["types"][k])}</span>' for k in ("ec", "dh", "mg"))
     return {"svg": svg, "legend": legend, "cards": cards, "first": str(markers[14]["id"])}
+
+
+# ------------------------------------------------------------------ impact scenario
+def impact_calc(imp: dict, budget: dict, lang: str = "en") -> dict:
+    """Illustrative impact model: low / central / high scenarios from content/impact.yaml."""
+    ny = imp["cost_years"]
+    cost = sum(_num(v) for v in budget["costs"]["total_costs"]["values"][:ny])
+    sep = "." if lang == "ca" else ","
+    dec = "," if lang == "ca" else "."
+
+    def n0(v):
+        return f"{round(v):,}".replace(",", sep)
+
+    def n1(v):
+        return f"{v:,.1f}".replace(",", "\0").replace(".", dec).replace("\0", sep)
+
+    res = {}
+    for key, s in imp["scenarios"].items():
+        members = s["supported"] * s["members"]
+        saving = members * s["saving_eur_member"]
+        prod = s["supported"] * s["kw"] * s["yield_kwh_kw"]            # kWh
+        co2 = prod * s["ef_kg_kwh"] / 1000                            # t
+        mo = s["months_earlier"]
+        cost_comm = cost / s["supported"]
+        saving_comm = s["members"] * s["saving_eur_member"]
+        res[key] = {
+            "s": s, "members": members, "saving": saving, "prod": prod, "co2": co2,
+            "saving_attr": saving * mo / 12, "co2_attr": co2 * mo / 12,
+            "saving_comm": saving_comm, "co2_comm": s["kw"] * s["yield_kwh_kw"] * s["ef_kg_kwh"] / 1000,
+            "cost_comm": cost_comm, "payback": 12 * cost_comm / saving_comm,
+            "ratio": saving / cost, "ratio_attr": saving * mo / 12 / cost,
+        }
+    f = {"cost": n0(cost), "cost_years": ny, "city_n": imp["cities_example"]}
+    for key, p in (("low", "l_"), ("central", "c_"), ("high", "h_")):
+        r = res[key]; s = r["s"]
+        f.update({
+            p + "supported": n0(s["supported"]), p + "members_comm": n0(s["members"]), p + "kw": n0(s["kw"]),
+            p + "saving_member": n0(s["saving_eur_member"]), p + "ef": f"{s['ef_kg_kwh']:.2f}".replace(".", dec),
+            p + "months": n0(s["months_earlier"]), p + "members": n0(r["members"]),
+            p + "saving": n1(r["saving"] / 1e6), p + "saving_k": n0(r["saving"] / 1e3),
+            p + "prod": n1(r["prod"] / 1e6), p + "co2": n0(r["co2"]),
+            p + "saving_attr": n1(r["saving_attr"] / 1e6), p + "co2_attr": n0(r["co2_attr"]),
+            p + "saving_comm": n0(r["saving_comm"]), p + "co2_comm": n0(r["co2_comm"]),
+            p + "prod_comm": n0(s["kw"] * s["yield_kwh_kw"] / 1e3),
+            p + "payback": n0(r["payback"]), p + "ratio": n1(r["ratio"]), p + "ratio_attr": n1(r["ratio_attr"]),
+            p + "cost_comm": n0(r["cost_comm"]),
+            p + "city_co2": n0(r["co2_comm"] * imp["cities_example"]),
+        })
+    fmt = {"members": lambda r: n0(r["members"]), "saving": lambda r: n0(r["saving"]),
+           "prod_gwh": lambda r: n1(r["prod"] / 1e6), "co2": lambda r: n0(r["co2"]),
+           "saving_attr": lambda r: n0(r["saving_attr"]), "co2_attr": lambda r: n0(r["co2_attr"]),
+           "payback_months": lambda r: n0(r["payback"]), "ratio": lambda r: n1(r["ratio"]),
+           "ratio_attr": lambda r: n1(r["ratio_attr"])}
+    rows = [(k, *[fn(res[sc]) for sc in ("low", "central", "high")]) for k, fn in fmt.items()]
+    afmt = {"supported": n0, "members": n0, "kw": n0, "yield_kwh_kw": n0, "saving_eur_member": n0,
+            "ef_kg_kwh": lambda v: f"{v:.2f}".replace(".", dec), "months_earlier": n0}
+    assump = [(k, *[fn(imp["scenarios"][sc][k]) for sc in ("low", "central", "high")]) for k, fn in afmt.items()]
+    return {"f": f, "rows": rows, "assump": assump, "res": res, "cost": cost}

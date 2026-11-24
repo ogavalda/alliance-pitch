@@ -12,8 +12,8 @@ costs:
   total_costs:     {label: "TOTAL COSTS",                   values: [64207, 262936, 304122, 316603, 373467, 389415, 406161], total: true}
 
 incomes:
-  concordia:       {label: "Concordia",             values: [59207, 113495, null, null, null, null, null], colour: "#93002d"}
-  irec:            {label: "IREC (rent)",           values: [5000, 10000, null, null, null, null, null], colour: "#e90065"}
+  concordia:       {label: "Concordia in kind",             values: [59207, 113495, null, null, null, null, null], colour: "#93002d"}
+  irec:            {label: "IREC in kind (rent)",           values: [5000, 10000, null, null, null, null, null], colour: "#e90065"}
   partners:        {label: "Partner contributions",         values: [null, 47573, 92254, 111603, 168467, 184415, 201161], colour: "#1598d6"}
   bilateral:       {label: "Bilateral research project",    values: [null, 91868, 121868, 90000, 90000, 90000, 90000], colour: "#e08a00"}
   horizon:         {label: "Horizon project",               values: [null, null, 65000, 65000, 65000, 65000, 65000], colour: "#00776f"}

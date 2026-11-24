@@ -104,6 +104,7 @@ def build_edition(ed: dict) -> Path:
         "core_layers": charts.core_layers_html(tools_cfg),
         "tstats": tstats,
         "venn": charts.venn_svg(t["cover"]),
+        "impact": charts.impact_calc(load("impact.yaml"), budget, lang),
         "world": charts.world_map(load("worldmap.yaml")["markers"], json.load(open(ROOT / "content" / "worlddots.json")), t["vision"], lang),
         "feeder": {s: {"svg": charts.feeder_svg(n, s, demo["labels"]), **charts.feeder_stats(n, s)}
                    for s in ("base", "uncoordinated", "coordinated")},
@@ -119,7 +120,7 @@ def build_edition(ed: dict) -> Path:
         "copied": t["ask"]["copied"], "copy_failed": t["ask"]["copy_failed"],
         "demo": {"verdicts": demo["verdicts"], "feeder": figs["feeder"], "unit": demo["labels"]["unit"]},
     }
-    letters = "ABCDEFGHIJ"
+    letters = "ABCDEFGHIJKLMNOP"
     numbered = [(f"{i:02d}", s) for i, s in enumerate(main, 1)]
     annexed = [(f"{t['annex']['label']} {letters[i]}", s) for i, s in enumerate(annex)]
     env = Environment(loader=FileSystemLoader(ROOT / "src" / "templates"), undefined=StrictUndefined, autoescape=False)

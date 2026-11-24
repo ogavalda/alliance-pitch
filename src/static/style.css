@@ -148,8 +148,10 @@ table.bt tr.cnt td{color:var(--mute);font-style:italic}
 .fs-chart{margin-top:8px}
 
 /* cover: vision strip */
-.hgoals{margin:6px 0 20px}.hglabel{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:#fff;margin-bottom:8px}.hglabel a{color:#93002D;text-decoration:none;font-weight:700}
+.hgoals{margin:6px 0 20px}.hglabel{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:#fff;margin-bottom:8px}.hglabel a{color:#fff;text-decoration:underline;font-weight:700}
 .hgrid{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
 .hg{background:#fff;border-radius:12px;padding:12px 14px;border-top:4px solid #93002D;text-decoration:none;color:var(--ink);display:flex;flex-direction:column;gap:2px;font-size:.84rem}
 .hg .hs{font-weight:800;font-size:1.7rem;color:#93002D;line-height:1.1}
 .hg2{border-color:#E90065}.hg3{border-color:#1598D6}.hg4{border-color:#00776F}.hg5{border-color:#E08A00}
+
+.card small.who{display:block;color:#E90065;font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:.72rem;margin-bottom:4px}

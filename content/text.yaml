@@ -2,11 +2,11 @@
 # Tip: keep each value on one line inside double quotes, or use the  >-  folded style.
 
 meta:
-  title: "Alliance for Community Energy: a draft proposal"
+  title: "Alliance for Local Energy: a draft proposal"
   description: "A draft proposal for a member-owned alliance that gives local energy actors shared tools and data structures, a neutral table with leadership, a science-to-action pipeline and common advocacy."
   version_line: "Draft v0.2 · October 2026"
 
-brand: "Alliance for Community Energy"
+brand: "Alliance for Local Energy"
 
 # Logos shown in the hero band and the footer.
 # Put the image files in assets/logos/ (PNG, SVG or JPG) and set `file` to the file name.
@@ -18,6 +18,8 @@ logos:
 nav:                           # label of each chapter in the top bar (keys = template names)
   problem: "Opportunity"
   vision: "Vision"
+  impact: "Impact"
+  legal: "Legal form"
   why: "Why now"
   ebc_summary: "IEA Annex"
   facilitation: "Leadership"
@@ -288,13 +290,13 @@ govern:
       items: ["Assembly of all members", "Board balanced across the six member families", "Technical committee for the commons", "Panel of experts to lead facilitated processes", "Small secretariat"]
     - title: "Fair play on projects"
       items: ["Lead roles rotate with clear criteria", "The Alliance facilitates, never picks winners", "A share of won projects returns to the commons (if funders allow)"]
-  note: "Legal form starts as a Spanish association (fast and low cost) and could move to an international non-profit when membership and funding justify it."
+  note: "The legal form must not block the start: the next chapter sets out a plan B that begins now, with a collaboration agreement and a small Catalan association, while an international non-profit is worked out."
 
 roadmap:
   kicker: "Long term"
   title: "From first proof to a reference body."
   phases:
-    - {when: "To mid-2027 · Foundation", title: "Be credible", text: "Association set up, founding members, Annex decision, first proposals."}
+    - {when: "To mid-2027 · Foundation", title: "Be credible", text: "Collaboration agreement signed and a small association registered (plan B), founding members, Annex decision, first proposals."}
     - {when: "2027–2029 · Prove", title: "Show it works", text: "Annex prototype and case studies, proposal desk live, first processes led by the expert panel, first training, first North-South case records and position papers."}
     - {when: "2030–2032 · Scale", title: "Become the default", text: "Release cycle, regional hubs, framework agreements with cities and grid operators, a training and technology-transfer programme with southern partners."}
     - {when: "2033–2036 · Institutionalise", title: "Stable reference", text: "Standards cited by funders and regulators, stable multi-year funding."}
@@ -312,7 +314,7 @@ status:
       items: ["Concept note and long-term plan", "Market study and literature gap analysis", "Feasibility scorecard with 24 assumptions", "Annex proposal text (EBC Project Concept, 24 August 2026), as submitted to the ExCo"]
     - badge: "PROPOSED · NOT BUILT"
       style: pr
-      items: ["The association and its charter", "The expert panel for leadership and facilitation", "Membership and founders' package", "The commons (data models, methods, benchmarks)", "Proposal desk and first joint bids", "North-South technology transfer and training track"]
+      items: ["The association and its charter", "The expert panel for leadership and facilitation", "Membership and founders' package", "The commons (data models, methods, benchmarks)", "Proposal desk and first joint bids", "North-South technology transfer and training track", "Plan B legal route: collaboration agreement and a Catalan association"]
   note: "<b>Main open risks:</b> willingness to pay is unproven; it is not yet clear that competing centres and networks will share. We plan to test both with interviews, a short survey and a price test before committing."
 
 budget:
@@ -349,7 +351,7 @@ ask:
     - {tag: "Value", title: "Does this match your reality?", text: "Where would shared tools, leadership at the table, a science-to-action route or common advocacy help your organisation most?"}
     - {tag: "Sharing", title: "What would you open, and what would stay yours?", text: "Which shared building blocks would you contribute to, and what would make you comfortable sharing with a competitor?"}
     - {tag: "Money", title: "What would you pay or contribute in kind?", text: "Fee, staff time, data, or a share of project income? Which founder benefits would matter to you?"}
-    - {tag: "Governance", title: "Who should decide?", text: "One vote per member, per family, or weighted? How should changes to the shared core be reviewed?"}
+    - {tag: "Governance", title: "Who should decide, and in what legal form?", text: "One vote per member, per family, or weighted? How should changes to the shared core be reviewed? Could your organisation sign a short collaboration agreement now and join an association later?"}
     - {tag: "Role", title: "Which strength matters most: shared tools and data structures, facilitation and leadership, the science-to-action pipeline or advocacy?", text: "If we had to start with one, which should it be?"}
     - {tag: "Adoption", title: "What would stop you from joining?", text: "Budget, politics, trust, tooling, competition with your own services? Tell us what the first step would need to look like."}
   copy_button: "Copy the questions"
@@ -679,3 +681,99 @@ vision:
     gov: ["One member, one vote", "Elected board with member assembly", "Municipal board with citizen panel"]
     quality: ["Measured with smart meters", "Mostly measured, partly modelled", "Declared by the community"]
     hypothetical: "Hypothetical data for illustration."
+
+impact:
+  kicker: "What changes for end users and society"
+  title: "From access to knowledge to measurable benefits: lower bills, avoided emissions, communities that last."
+  lead: "The Alliance is not an end in itself. Its test is what changes for the energy communities, one-stop shops and cities it serves, and for society. This is an illustrative scenario for {c_supported} supported communities after five years, with a low and a high case. Every number is an assumption we can check, and each fact sheet would measure the real value against a reference case."
+  cards:
+    - {who: "Energy communities", title: "Economic sustainability", text: "Each supported community saves its {c_members_comm} members about EUR {c_saving_comm} a year (range {l_saving_comm} to {h_saving_comm}). The Alliance support costs about EUR {c_cost_comm} per community, repaid to its members in about {c_payback} months (range {h_payback} to {l_payback})."}
+    - {who: "One-stop shops", title: "A faster start", text: "Supported communities start operating about {c_months} months earlier (range {l_months} to {h_months}) thanks to the shared Starter Kit, comparable cases and led processes. Time to a first feasibility result is tracked in days on every fact sheet."}
+    - {who: "Cities", title: "Local emissions, local money", text: "About {c_co2_comm} t of CO2 avoided per community and year (range {l_co2_comm} to {h_co2_comm}). A city with {city_n} supported communities gets about {c_city_co2} t a year, and the savings stay in local households."}
+    - {who: "Society", title: "Scale and fairness", text: "{c_members} people as members, about EUR {c_saving} M a year in savings and {c_prod} GWh of local production, avoiding about {c_co2} t of CO2 a year (range {l_co2} to {h_co2}). Inclusion is measured on every fact sheet, not assumed."}
+  kpis:
+    - {value: "{c_ratio}×", label: "annual member savings per euro the Alliance costs over {cost_years} years (central; {l_ratio} to {h_ratio})"}
+    - {value: "EUR {c_saving_attr} M", label: "savings gained by starting earlier, one-off (central; {l_saving_attr} to {h_saving_attr} M)"}
+    - {value: "{c_co2_attr} t", label: "CO2 avoided by starting earlier, one-off (central; {l_co2_attr} to {h_co2_attr} t)"}
+  table_title: "Three cases"
+  cols: ["", "Low", "Central", "High"]
+  labels:
+    members: "People as members of supported communities"
+    saving: "Member savings per year (EUR)"
+    prod_gwh: "Local production per year (GWh)"
+    co2: "CO2 avoided per year (tonnes)"
+    saving_attr: "Savings gained by starting earlier (EUR, one-off)"
+    co2_attr: "CO2 avoided by starting earlier (tonnes, one-off)"
+    payback_months: "Months for members to repay the support cost"
+    ratio: "Annual member savings per euro of Alliance cost (gross)"
+    ratio_attr: "Same, counting only the effect of starting earlier"
+  note: "Illustrative, assumption-based scenario. The cases differ in community size, savings per member and grid emission factor. Gross benefits are not all attributable to the Alliance: the rows marked one-off count only the effect of starting earlier. Assumptions and sources are in the annex."
+
+impact_detail:
+  kicker: "Impact scenario: assumptions and evidence"
+  title: "How the impact numbers are built, and how real data would replace them."
+  lead: "All numbers on the impact page are computed from the assumptions below and from the Alliance budget (the first {cost_years} years cost EUR {cost}). Change an assumption and the results follow. The same model is available as a spreadsheet."
+  assump_title: "Assumptions"
+  cols: ["Assumption", "Low", "Central", "High", "Basis"]
+  labels:
+    supported: "Communities supported by the Alliance in five years"
+    members: "Members per community"
+    kw: "Installed solar capacity per community (kW)"
+    yield_kwh_kw: "Annual yield (kWh per kW)"
+    saving_eur_member: "Savings per member (EUR a year)"
+    ef_kg_kwh: "Grid emission factor (kg CO2 per kWh)"
+    months_earlier: "Months earlier to operation"
+  basis:
+    supported: "Assumption: a subset of the 500 communities on the map. The Canadian Starter program alone proposes 15 to 16."
+    members: "Assumption between about 200 members per cooperative in Germany and the Netherlands (market analysis) and 844 on average in an academic mapping of about 4,000 EU communities."
+    kw: "Assumption. Spanish supported projects average about 0.7 MW (planned); in Italy nearly half of community configurations are 10 kW or less."
+    yield_kwh_kw: "Typical order of magnitude for southern Canada and central Europe; to be replaced by measured yield."
+    saving_eur_member: "Anchored on modelled bill reductions of 3.8% (energy sharing) to 9.3% (collective solar) across 39 European countries, lower when members pay network charges, and on European Commission estimates of EUR 260 to 550 a year for individual households with solar (not community results)."
+    ef_kg_kwh: "Illustrative. It ranges from close to zero on hydro-based grids to above 0.4 where coal is used. Each fact sheet would use its own local factor."
+    months_earlier: "From the market analysis scenario (2, 6 and 10 months, assumption-based). No study measures the time saved by shared tools or an intermediary; the Annex pilots would measure it."
+  formulas_title: "How it is calculated"
+  formulas:
+    - "Savings = supported communities × members × savings per member."
+    - "Production = supported communities × kW × yield. CO2 avoided = production × grid emission factor."
+    - "Attributable (one-off) = annual benefit × months earlier ÷ 12: the part due to starting earlier."
+    - "Cost = the first {cost_years} years of the Alliance budget; payback = cost per community ÷ savings per community."
+  measure_title: "What would replace the assumptions"
+  measure:
+    - {title: "Fact sheet against a reference case", text: "Each community reports consumption, production, cost, business model, customers and governance, and the difference from its reference case."}
+    - {title: "Common indicators", text: "Energy, economic, social and environmental indicators, with data quality flagged as measured, modelled or declared."}
+    - {title: "A yearly impact report", text: "The Alliance would publish measured savings, emissions and inclusion for all supported communities, and compare supported with non-supported cases."}
+  caveats_title: "Limits to keep in mind"
+  caveats:
+    - "Gross benefits are not all due to the Alliance: some communities would exist anyway. Only the earlier start is attributed to it."
+    - "Savings depend on network charges, taxes and tariffs, which differ by country and province."
+    - "Carbon numbers use an illustrative grid factor, and the benefit is smaller where the grid is already clean."
+    - "Social benefits (inclusion, energy poverty, skills, local jobs) are measured on the fact sheet but not given a money value here."
+  sources_title: "Sources"
+  sources:
+    - "Energy sharing in European renewable energy communities: impact of taxes, charges, fees and levies, Energy (2023), Politecnico di Torino; modelled savings of 3.8% and 9.3%."
+    - "European Commission, energy communities pages: savings estimates for households with solar."
+    - "Mapping of energy communities in the EU (university study): about 4,000 communities and 900,000 members."
+    - "pv magazine (2026), Italian energy communities reach 303 MW; MITECO (2026) and Redeia (2026) for Spain."
+    - "Market analysis, Alliance for Local Energy (2026): scenario of time saved and community cooperative sizes."
+
+legal:
+  kicker: "Getting started"
+  title: "A legal home that does not block the start: plan B in parallel with plan A."
+  lead: "Setting up an international body with the lawyers of several institutions takes time. So the Alliance would start on two tracks at once: a short collaboration agreement and a small Catalan association that can be created quickly, while the international form is worked out."
+  steps:
+    - {tag: "Step 1 · weeks", title: "Collaboration agreement", text: "The founding partners sign a short agreement: charter, steering committee, a hosting partner that holds the budget and employs the director (as in the budget, with Concordia in kind), and rules on data and intellectual property. No new legal entity, easy to reverse, and the lawyers read one short text."}
+    - {tag: "Plan B · about 1 to 3 months", title: "A small Catalan association", text: "At least three founders, people or organisations, can constitute an association in Catalonia: founding act and statutes, then registration with the Generalitat, which resolves within three months if requirements are met. Cooperatives and smaller organisations can found it; larger institutions join as members once their own approvals are done. Until it is registered, members are personally liable, so step 1 comes first."}
+    - {tag: "Plan A · when justified", title: "An international non-profit", text: "When membership and funding justify it, move to an international non-profit, with the Catalan association as a founding member. Legal form, seat and timing are decided with the lawyers of the founding institutions."}
+  table_title: "The three options"
+  cols: ["Option", "Speed", "Who must approve", "Can hold money and staff", "Main limit"]
+  rows:
+    - ["Collaboration agreement with a host", "Weeks", "Each partner’s signatory", "Through the host partner", "The host carries the financial risk; no legal entity of its own"]
+    - ["Catalan association (plan B)", "About 1 to 3 months", "Only the founders (three or more)", "Yes, once registered", "Catalan and Spanish law; large institutions may need board approval to join"]
+    - ["International non-profit (plan A)", "Many months", "Lawyers and boards of all founding entities", "Yes", "Slow and costly; formalities in the chosen country"]
+  actions_title: "What can start now, without waiting"
+  actions:
+    - "Sign the collaboration agreement and name the host partner."
+    - "Open a list of founding signatories and collect letters of intent."
+    - "Register the association with three founders, and agree how fees will work once it exists."
+    - "Hold the first steering committee and publish the charter."
+  note: "Our understanding from public sources (Generalitat de Catalunya procedure for registering associations). Timings and legal points must be checked with a lawyer before anything is signed."

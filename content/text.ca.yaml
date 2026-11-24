@@ -7,6 +7,8 @@ brand: "Aliança per a l'Energia Local"
 nav:
   problem: "Oportunitat"
   vision: "Visió"
+  impact: "Impacte"
+  legal: "Forma jurídica"
   why: "Per què ara"
   ebc_summary: "Annex IEA"
   facilitation: "Lideratge"
@@ -221,12 +223,12 @@ govern:
       items: ["Assemblea de tots els membres", "Junta equilibrada entre les sis famílies de membres", "Comitè tècnic per al comú", "Panell d'experts per liderar els processos facilitats", "Secretaria petita"]
     - title: "Joc net en projectes"
       items: ["Els rols de lideratge roten amb criteris clars", "L'Aliança facilita, mai tria guanyadors", "Una part dels projectes guanyats torna al comú (si els finançadors ho permeten)"]
-  note: "La forma jurídica comença com a associació espanyola (ràpida i barata) i podria passar a una entitat internacional sense ànim de lucre quan els membres i el finançament ho justifiquin."
+  note: "La forma jurídica no ha de bloquejar l'inici: el capítol següent proposa un pla B que comença ja, amb un acord de col·laboració i una petita associació catalana, mentre es treballa una entitat internacional sense ànim de lucre."
 roadmap:
   kicker: "Llarg termini"
   title: "De la primera prova a un organisme de referència."
   phases:
-    - {when: "Fins a mitjan 2027 · Fonaments", title: "Ser creïble", text: "Associació creada, membres fundadors, decisió sobre l'Annex, primeres propostes."}
+    - {when: "Fins a mitjan 2027 · Fonaments", title: "Ser creïble", text: "Acord de col·laboració signat i una petita associació registrada (pla B), membres fundadors, decisió sobre l'Annex, primeres propostes."}
     - {when: "2027–2029 · Demostrar", title: "Mostrar que funciona", text: "Prototip de l'Annex i estudis de cas, oficina de propostes activa, primers processos liderats pel panell d'experts, primera formació, primeres fitxes de cas Nord-Sud i documents de posició."}
     - {when: "2030–2032 · Escalar", title: "Esdevenir el referent", text: "Cicle de versions, hubs regionals, acords marc amb ciutats i operadors de xarxa, un programa de formació i transferència de tecnologia amb socis del Sud."}
     - {when: "2033–2036 · Institucionalitzar", title: "Referència estable", text: "Estàndards citats per finançadors i reguladors, finançament plurianual estable."}
@@ -243,7 +245,7 @@ status:
       items: ["Nota conceptual i pla a llarg termini", "Estudi de mercat i anàlisi de llacunes de la literatura", "Quadre de viabilitat amb 24 hipòtesis", "Text de la proposta d'Annex (EBC Project Concept, 24 d'agost de 2026), tal com es va presentar a l'ExCo"]
     - badge: "PROPOSAT · NO CONSTRUÏT"
       style: pr
-      items: ["L'associació i la seva carta", "El panell d'experts per al lideratge i la facilitació", "Afiliació i paquet de fundadors", "El comú (models de dades, mètodes, referències)", "Oficina de propostes i primeres ofertes conjuntes", "Línia de transferència de tecnologia i formació Nord-Sud"]
+      items: ["L'associació i la seva carta", "El panell d'experts per al lideratge i la facilitació", "Afiliació i paquet de fundadors", "El comú (models de dades, mètodes, referències)", "Oficina de propostes i primeres ofertes conjuntes", "Línia de transferència de tecnologia i formació Nord-Sud", "Via jurídica pla B: acord de col·laboració i una associació catalana"]
   note: "<b>Principals riscos oberts:</b> la disposició a pagar no està provada; encara no és clar que centres i xarxes competidors compartiran. Pensem provar-ho amb entrevistes, una enquesta breu i una prova de preu abans de comprometre'ns."
 budget:
   kicker: "Pressupost previst"
@@ -588,3 +590,99 @@ vision:
     gov: ["Un membre, un vot", "Junta escollida amb assemblea de membres", "Junta municipal amb panell ciutadà"]
     quality: ["Mesurat amb comptadors intel·ligents", "Majoritàriament mesurat, en part modelat", "Declarat per la comunitat"]
     hypothetical: "Dades hipotètiques, només per il·lustrar."
+
+impact:
+  kicker: "Què canvia per als usuaris finals i la societat"
+  title: "De l'accés al coneixement a beneficis mesurables: factures més baixes, emissions evitades, comunitats que duren."
+  lead: "L'Aliança no és un fi en si mateixa. La prova és què canvia per a les comunitats energètiques, les finestretes úniques i les ciutats que serveix, i per a la societat. És un escenari il·lustratiu per a {c_supported} comunitats donades suport al cap de cinc anys, amb un cas baix i un d'alt. Cada xifra és una hipòtesi que es pot comprovar, i cada fitxa en mesuraria el valor real respecte d'un cas de referència."
+  cards:
+    - {who: "Comunitats energètiques", title: "Sostenibilitat econòmica", text: "Cada comunitat amb suport estalvia als seus {c_members_comm} membres uns {c_saving_comm} EUR l'any (rang {l_saving_comm} a {h_saving_comm}). El suport de l'Aliança costa uns {c_cost_comm} EUR per comunitat, que els membres recuperen en uns {c_payback} mesos (rang {h_payback} a {l_payback})."}
+    - {who: "Finestretes úniques", title: "Un inici més ràpid", text: "Les comunitats amb suport comencen a operar uns {c_months} mesos abans (rang {l_months} a {h_months}) gràcies al Kit d'inici compartit, els casos comparables i els processos liderats. El temps fins al primer resultat de viabilitat es registra en dies a cada fitxa."}
+    - {who: "Ciutats", title: "Emissions locals, diners locals", text: "Uns {c_co2_comm} t de CO2 evitades per comunitat i any (rang {l_co2_comm} a {h_co2_comm}). Una ciutat amb {city_n} comunitats amb suport n'obté uns {c_city_co2} t l'any, i l'estalvi es queda a les llars locals."}
+    - {who: "Societat", title: "Escala i equitat", text: "{c_members} persones com a membres, uns {c_saving} M EUR l'any d'estalvi i {c_prod} GWh de producció local, que eviten uns {c_co2} t de CO2 l'any (rang {l_co2} a {h_co2}). La inclusió es mesura a cada fitxa, no se suposa."}
+  kpis:
+    - {value: "{c_ratio}×", label: "estalvi anual dels membres per cada euro que costa l'Aliança en {cost_years} anys (central; {l_ratio} a {h_ratio})"}
+    - {value: "{c_saving_attr} M EUR", label: "estalvi guanyat per començar abans, un sol cop (central; {l_saving_attr} a {h_saving_attr} M)"}
+    - {value: "{c_co2_attr} t", label: "CO2 evitat per començar abans, un sol cop (central; {l_co2_attr} a {h_co2_attr} t)"}
+  table_title: "Tres casos"
+  cols: ["", "Baix", "Central", "Alt"]
+  labels:
+    members: "Persones com a membres de les comunitats amb suport"
+    saving: "Estalvi dels membres per any (EUR)"
+    prod_gwh: "Producció local per any (GWh)"
+    co2: "CO2 evitat per any (tones)"
+    saving_attr: "Estalvi guanyat per començar abans (EUR, un sol cop)"
+    co2_attr: "CO2 evitat per començar abans (tones, un sol cop)"
+    payback_months: "Mesos perquè els membres recuperin el cost del suport"
+    ratio: "Estalvi anual dels membres per euro de cost de l'Aliança (brut)"
+    ratio_attr: "Igual, comptant només l'efecte de començar abans"
+  note: "Escenari il·lustratiu basat en hipòtesis. Els casos difereixen en la mida de la comunitat, l'estalvi per membre i el factor d'emissió de la xarxa. Els beneficis bruts no són tots atribuïbles a l'Aliança: les files marcades com a únic compten només l'efecte de començar abans. Les hipòtesis i les fonts són a l'annex."
+
+impact_detail:
+  kicker: "Escenari d'impacte: hipòtesis i evidència"
+  title: "Com es construeixen les xifres d'impacte, i com les dades reals les substituirien."
+  lead: "Totes les xifres de la pàgina d'impacte es calculen a partir de les hipòtesis següents i del pressupost de l'Aliança (els primers {cost_years} anys costen {cost} EUR). Si canvies una hipòtesi, els resultats la segueixen. El mateix model està disponible com a full de càlcul."
+  assump_title: "Hipòtesis"
+  cols: ["Hipòtesi", "Baix", "Central", "Alt", "Base"]
+  labels:
+    supported: "Comunitats amb suport de l'Aliança en cinc anys"
+    members: "Membres per comunitat"
+    kw: "Potència solar instal·lada per comunitat (kW)"
+    yield_kwh_kw: "Rendiment anual (kWh per kW)"
+    saving_eur_member: "Estalvi per membre (EUR l'any)"
+    ef_kg_kwh: "Factor d'emissió de la xarxa (kg CO2 per kWh)"
+    months_earlier: "Mesos abans d'entrar en operació"
+  basis:
+    supported: "Hipòtesi: un subconjunt de les 500 comunitats del mapa. El programa d'inici canadenc sol ja en proposa 15 a 16."
+    members: "Hipòtesi entre uns 200 membres per cooperativa a Alemanya i als Països Baixos (anàlisi de mercat) i 844 de mitjana en un mapatge acadèmic d'unes 4.000 comunitats de la UE."
+    kw: "Hipòtesi. Els projectes espanyols amb suport fan de mitjana uns 0,7 MW (previstos); a Itàlia gairebé la meitat de les configuracions comunitàries són de 10 kW o menys."
+    yield_kwh_kw: "Ordre de magnitud típic per al sud del Canadà i el centre d'Europa; es substituiria pel rendiment mesurat."
+    saving_eur_member: "Basat en reduccions de factura modelades del 3,8% (repartiment d'energia) al 9,3% (solar col·lectiva) en 39 països europeus, menors quan els membres paguen els peatges de xarxa, i en estimacions de la Comissió Europea de 260 a 550 EUR l'any per a llars individuals amb solar (no resultats de comunitats)."
+    ef_kg_kwh: "Il·lustratiu. Va de gairebé zero en xarxes hidràuliques a més de 0,4 on s'usa carbó. Cada fitxa usaria el seu factor local."
+    months_earlier: "De l'escenari de l'anàlisi de mercat (2, 6 i 10 mesos, basat en hipòtesis). Cap estudi mesura el temps que estalvien les eines compartides o un intermediari; els pilots de l'Annex el mesurarien."
+  formulas_title: "Com es calcula"
+  formulas:
+    - "Estalvi = comunitats amb suport × membres × estalvi per membre."
+    - "Producció = comunitats amb suport × kW × rendiment. CO2 evitat = producció × factor d'emissió de la xarxa."
+    - "Atribuïble (un sol cop) = benefici anual × mesos abans ÷ 12: la part deguda a començar abans."
+    - "Cost = els primers {cost_years} anys del pressupost de l'Aliança; retorn = cost per comunitat ÷ estalvi per comunitat."
+  measure_title: "Què substituiria les hipòtesis"
+  measure:
+    - {title: "Fitxa contra un cas de referència", text: "Cada comunitat informa de consum, producció, cost, model de negoci, clients i governança, i de la diferència amb el seu cas de referència."}
+    - {title: "Indicadors comuns", text: "Indicadors d'energia, econòmics, socials i ambientals, amb la qualitat de les dades indicada com a mesurada, modelada o declarada."}
+    - {title: "Un informe d'impacte anual", text: "L'Aliança publicaria estalvis, emissions i inclusió mesurats de totes les comunitats amb suport, i compararia els casos amb suport amb els que no en tenen."}
+  caveats_title: "Límits a tenir presents"
+  caveats:
+    - "Els beneficis bruts no són tots mèrit de l'Aliança: algunes comunitats existirien igualment. Només se li atribueix l'inici anticipat."
+    - "L'estalvi depèn dels peatges, impostos i tarifes, que canvien per país i província."
+    - "Les xifres de carboni usen un factor de xarxa il·lustratiu, i el benefici és menor on la xarxa ja és neta."
+    - "Els beneficis socials (inclusió, pobresa energètica, capacitats, llocs de treball locals) es mesuren a la fitxa però aquí no tenen valor monetari."
+  sources_title: "Fonts"
+  sources:
+    - "Energy sharing in European renewable energy communities: impact of taxes, charges, fees and levies, Energy (2023), Politecnico di Torino; estalvis modelats del 3,8% i el 9,3%."
+    - "Comissió Europea, pàgines de comunitats energètiques: estimacions d'estalvi per a llars amb solar."
+    - "Mapatge de comunitats energètiques a la UE (estudi universitari): unes 4.000 comunitats i 900.000 membres."
+    - "pv magazine (2026), comunitats energètiques italianes arriben a 303 MW; MITECO (2026) i Redeia (2026) per a Espanya."
+    - "Anàlisi de mercat, Aliança per a l'Energia Local (2026): escenari de temps estalviat i mides de cooperatives."
+
+legal:
+  kicker: "Per començar"
+  title: "Una llar jurídica que no bloquegi l'inici: el pla B en paral·lel al pla A."
+  lead: "Crear un organisme internacional amb els advocats de diverses institucions porta temps. Així que l'Aliança començaria per dues vies alhora: un acord de col·laboració breu i una petita associació catalana que es pot crear aviat, mentre es treballa la forma internacional."
+  steps:
+    - {tag: "Pas 1 · setmanes", title: "Acord de col·laboració", text: "Els socis fundadors signen un acord breu: carta, comitè de direcció, un soci amfitrió que tingui el pressupost i contracti la direcció (com al pressupost, amb Concordia en espècie), i regles de dades i propietat intel·lectual. Cap entitat jurídica nova, fàcil de revertir, i els advocats llegeixen un sol text breu."}
+    - {tag: "Pla B · d'1 a 3 mesos aprox.", title: "Una petita associació catalana", text: "Almenys tres fundadors, persones o organitzacions, poden constituir una associació a Catalunya: acta fundacional i estatuts, i inscripció a la Generalitat, que resol en un màxim de tres mesos si es compleixen els requisits. La poden fundar cooperatives i organitzacions petites; les institucions grans s'hi afegeixen com a membres quan tinguin les seves aprovacions. Mentre no estigui inscrita, els membres en responen personalment, per això el pas 1 va primer."}
+    - {tag: "Pla A · quan es justifiqui", title: "Una entitat internacional sense ànim de lucre", text: "Quan els membres i el finançament ho justifiquin, es passa a una entitat internacional sense ànim de lucre, amb l'associació catalana com a membre fundador. La forma jurídica, la seu i el calendari es decideixen amb els advocats de les institucions fundadores."}
+  table_title: "Les tres opcions"
+  cols: ["Opció", "Rapidesa", "Qui ha d'aprovar", "Pot tenir diners i personal", "Límit principal"]
+  rows:
+    - ["Acord de col·laboració amb un amfitrió", "Setmanes", "El signant de cada soci", "Mitjançant el soci amfitrió", "L'amfitrió assumeix el risc financer; no és una entitat jurídica pròpia"]
+    - ["Associació catalana (pla B)", "D'1 a 3 mesos aprox.", "Només els fundadors (tres o més)", "Sí, un cop inscrita", "Dret català i espanyol; les institucions grans poden necessitar l'aprovació del seu consell per afegir-s'hi"]
+    - ["Entitat internacional sense ànim de lucre (pla A)", "Molts mesos", "Advocats i consells de totes les entitats fundadores", "Sí", "Lenta i cara; formalitats al país escollit"]
+  actions_title: "Què pot començar ja, sense esperar"
+  actions:
+    - "Signar l'acord de col·laboració i designar el soci amfitrió."
+    - "Obrir una llista de signants fundadors i recollir cartes d'intenció."
+    - "Inscriure l'associació amb tres fundadors, i acordar com funcionaran les quotes un cop existeixi."
+    - "Fer el primer comitè de direcció i publicar la carta."
+  note: "Segons el nostre coneixement de fonts públiques (tràmit de la Generalitat de Catalunya per inscriure associacions). Els terminis i els punts jurídics s'han de comprovar amb un advocat abans de signar res."
