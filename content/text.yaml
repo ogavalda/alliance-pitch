@@ -292,7 +292,7 @@ govern:
       items: ["Assembly of all members", "Board balanced across the six member families", "Technical committee for the commons", "Panel of experts to lead facilitated processes", "Small secretariat"]
     - title: "Fair play on projects"
       items: ["Lead roles rotate with clear criteria", "The Alliance facilitates, never picks winners", "A share of won projects returns to the commons (if funders allow)"]
-  note: "The legal form must not block the start: the next chapter sets out a plan B that begins now, with a collaboration agreement and a small Catalan association, while an international non-profit is worked out."
+  note: "The legal form must not block the start: the next chapter sets out a plan B that begins now, with a collaboration agreement and a small association in Catalonia or Canada, while an international non-profit is worked out."
 
 roadmap:
   kicker: "Long term"
@@ -323,7 +323,7 @@ status:
       items: ["Concept note and long-term plan", "Market study and literature gap analysis", "Feasibility scorecard with 24 assumptions", "Annex proposal text (EBC Project Concept, 24 August 2026), as submitted to the ExCo"]
     - badge: "PROPOSED · NOT BUILT"
       style: pr
-      items: ["The association and its charter", "The expert panel for leadership and facilitation", "Membership and founders' package", "The commons (data models, methods, benchmarks)", "Proposal desk and first joint bids", "North-South technology transfer and training track", "Plan B legal route: collaboration agreement and a Catalan association"]
+      items: ["The association and its charter", "The expert panel for leadership and facilitation", "Membership and founders' package", "The commons (data models, methods, benchmarks)", "Proposal desk and first joint bids", "North-South technology transfer and training track", "Plan B legal route: collaboration agreement and a small association (Catalonia or Canada)"]
   note: "<b>Main open risks:</b> willingness to pay is unproven; it is not yet clear that competing centres and networks will share. We plan to test both with interviews, a short survey and a price test before committing."
 
 budget:
@@ -768,24 +768,25 @@ impact_detail:
 legal:
   kicker: "Getting started"
   title: "A legal home that does not block the start: plan B in parallel with plan A."
-  lead: "Setting up an international body with the lawyers of several institutions takes time. So the Alliance would start on two tracks at once: a short collaboration agreement and a small Catalan association that can be created quickly, while the international form is worked out."
+  lead: "Setting up an international body with the lawyers of several institutions takes time. So the Alliance would start on two tracks at once: a short collaboration agreement and a small association that can be created quickly, in Catalonia or in Canada (to be decided), while the international form is worked out."
   steps:
     - {tag: "Step 1 · weeks", title: "Collaboration agreement", text: "The founding partners sign a short agreement: charter, steering committee, a hosting partner that holds the budget and employs the director (as in the budget, with Concordia in kind), and rules on data and intellectual property. No new legal entity, easy to reverse, and the lawyers read one short text."}
-    - {tag: "Plan B · about 1 to 3 months", title: "A small Catalan association", text: "At least three founders, people or organisations, can constitute an association in Catalonia: founding act and statutes, then registration with the Generalitat, which resolves within three months if requirements are met. Cooperatives and smaller organisations can found it; larger institutions join as members once their own approvals are done. Until it is registered, members are personally liable, so step 1 comes first."}
-    - {tag: "Plan A · when justified", title: "An international non-profit", text: "When membership and funding justify it, move to an international non-profit, with the Catalan association as a founding member. Legal form, seat and timing are decided with the lawyers of the founding institutions."}
-  table_title: "The three options"
+    - {tag: "Plan B · weeks to a few months", title: "A small association, in Catalonia or in Canada", text: "We leave open where it is set up. In Catalonia, at least three founders, people or organisations, constitute an association: founding act and statutes, then registration with the Generalitat, which resolves within three months if requirements are met. In Canada, the options are a federal not-for-profit corporation (Corporations Canada) or a Quebec non-profit, in both cases with a board of at least three directors. The choice depends on where the first funding and the host sit: some Canadian funds may require a Canadian entity, and some European funds a European one. Larger institutions join as members once their own approvals are done. Until the association exists, members could be personally liable, so step 1 comes first."}
+    - {tag: "Plan A · when justified", title: "An international non-profit", text: "When membership and funding justify it, move to an international non-profit, with the plan B association as a founding member. Legal form, seat and timing are decided with the lawyers of the founding institutions."}
+  table_title: "The options"
   cols: ["Option", "Speed", "Who must approve", "Can hold money and staff", "Main limit"]
   rows:
     - ["Collaboration agreement with a host", "Weeks", "Each partner’s signatory", "Through the host partner", "The host carries the financial risk; no legal entity of its own"]
-    - ["Catalan association (plan B)", "About 1 to 3 months", "Only the founders (three or more)", "Yes, once registered", "Catalan and Spanish law; large institutions may need board approval to join"]
+    - ["Association in Catalonia (plan B)", "Up to about 3 months for registration", "Only the founders (three or more)", "Yes, once registered", "Catalan and Spanish law; European funds easier, Canadian funds may need a Canadian entity"]
+    - ["Not-for-profit in Canada (plan B)", "To be checked", "Founders and a board of at least three directors", "Yes, once incorporated", "Federal or Quebec rules (residency and timing to verify); Canadian funds easier, European funds may need a European entity"]
     - ["International non-profit (plan A)", "Many months", "Lawyers and boards of all founding entities", "Yes", "Slow and costly; formalities in the chosen country"]
   actions_title: "What can start now, without waiting"
   actions:
     - "Sign the collaboration agreement and name the host partner."
     - "Open a list of founding signatories and collect letters of intent."
-    - "Register the association with three founders, and agree how fees will work once it exists."
+    - "Decide where the association is set up (Catalonia or Canada), based on where the first funding and the host sit."
     - "Hold the first steering committee and publish the charter."
-  note: "Our understanding from public sources (Generalitat de Catalunya procedure for registering associations). Timings and legal points must be checked with a lawyer before anything is signed."
+  note: "Our understanding from public sources (Generalitat de Catalunya procedure for registering associations; Corporations Canada for federal not-for-profits). The Canadian and Quebec details, timings and residency rules are not yet checked. All of it must be confirmed with a lawyer in each place before anything is signed."
 
 europe:
   kicker: Learning from Europe's support organizations

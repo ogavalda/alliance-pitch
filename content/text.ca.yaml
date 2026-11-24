@@ -226,7 +226,7 @@ govern:
       items: ["Assemblea de tots els membres", "Junta equilibrada entre les sis famílies de membres", "Comitè tècnic per al comú", "Panell d'experts per liderar els processos facilitats", "Secretaria petita"]
     - title: "Joc net en projectes"
       items: ["Els rols de lideratge roten amb criteris clars", "L'Aliança facilita, mai tria guanyadors", "Una part dels projectes guanyats torna al comú (si els finançadors ho permeten)"]
-  note: "La forma jurídica no ha de bloquejar l'inici: el capítol següent proposa un pla B que comença ja, amb un acord de col·laboració i una petita associació catalana, mentre es treballa una entitat internacional sense ànim de lucre."
+  note: "La forma jurídica no ha de bloquejar l'inici: el capítol següent proposa un pla B que comença ja, amb un acord de col·laboració i una petita associació a Catalunya o al Canadà, mentre es treballa una entitat internacional sense ànim de lucre."
 roadmap:
   kicker: "Llarg termini"
   title: "De la primera prova a un organisme de referència."
@@ -255,7 +255,7 @@ status:
       items: ["Nota conceptual i pla a llarg termini", "Estudi de mercat i anàlisi de llacunes de la literatura", "Quadre de viabilitat amb 24 hipòtesis", "Text de la proposta d'Annex (EBC Project Concept, 24 d'agost de 2026), tal com es va presentar a l'ExCo"]
     - badge: "PROPOSAT · NO CONSTRUÏT"
       style: pr
-      items: ["L'associació i la seva carta", "El panell d'experts per al lideratge i la facilitació", "Afiliació i paquet de fundadors", "El comú (models de dades, mètodes, referències)", "Oficina de propostes i primeres ofertes conjuntes", "Línia de transferència de tecnologia i formació Nord-Sud", "Via jurídica pla B: acord de col·laboració i una associació catalana"]
+      items: ["L'associació i la seva carta", "El panell d'experts per al lideratge i la facilitació", "Afiliació i paquet de fundadors", "El comú (models de dades, mètodes, referències)", "Oficina de propostes i primeres ofertes conjuntes", "Línia de transferència de tecnologia i formació Nord-Sud", "Via jurídica pla B: acord de col·laboració i una petita associació (Catalunya o Canadà)"]
   note: "<b>Principals riscos oberts:</b> la disposició a pagar no està provada; encara no és clar que centres i xarxes competidors compartiran. Pensem provar-ho amb entrevistes, una enquesta breu i una prova de preu abans de comprometre'ns."
 budget:
   kicker: "Pressupost previst"
@@ -678,24 +678,25 @@ impact_detail:
 legal:
   kicker: "Per començar"
   title: "Una llar jurídica que no bloquegi l'inici: el pla B en paral·lel al pla A."
-  lead: "Crear un organisme internacional amb els advocats de diverses institucions porta temps. Així que l'Aliança començaria per dues vies alhora: un acord de col·laboració breu i una petita associació catalana que es pot crear aviat, mentre es treballa la forma internacional."
+  lead: "Crear un organisme internacional amb els advocats de diverses institucions porta temps. Així que l'Aliança començaria per dues vies alhora: un acord de col·laboració breu i una petita associació que es pot crear aviat, a Catalunya o al Canadà (per decidir), mentre es treballa la forma internacional."
   steps:
     - {tag: "Pas 1 · setmanes", title: "Acord de col·laboració", text: "Els socis fundadors signen un acord breu: carta, comitè de direcció, un soci amfitrió que tingui el pressupost i contracti la direcció (com al pressupost, amb Concordia en espècie), i regles de dades i propietat intel·lectual. Cap entitat jurídica nova, fàcil de revertir, i els advocats llegeixen un sol text breu."}
-    - {tag: "Pla B · d'1 a 3 mesos aprox.", title: "Una petita associació catalana", text: "Almenys tres fundadors, persones o organitzacions, poden constituir una associació a Catalunya: acta fundacional i estatuts, i inscripció a la Generalitat, que resol en un màxim de tres mesos si es compleixen els requisits. La poden fundar cooperatives i organitzacions petites; les institucions grans s'hi afegeixen com a membres quan tinguin les seves aprovacions. Mentre no estigui inscrita, els membres en responen personalment, per això el pas 1 va primer."}
-    - {tag: "Pla A · quan es justifiqui", title: "Una entitat internacional sense ànim de lucre", text: "Quan els membres i el finançament ho justifiquin, es passa a una entitat internacional sense ànim de lucre, amb l'associació catalana com a membre fundador. La forma jurídica, la seu i el calendari es decideixen amb els advocats de les institucions fundadores."}
-  table_title: "Les tres opcions"
+    - {tag: "Pla B · de setmanes a uns mesos", title: "Una petita associació, a Catalunya o al Canadà", text: "Deixem obert on es crea. A Catalunya, almenys tres fundadors, persones o organitzacions, constitueixen una associació: acta fundacional i estatuts, i inscripció a la Generalitat, que resol en un màxim de tres mesos si es compleixen els requisits. Al Canadà, les opcions són una corporació federal sense ànim de lucre (Corporations Canada) o una entitat sense ànim de lucre del Quebec, en tots dos casos amb un consell d'almenys tres administradors. L'elecció depèn d'on siguin el primer finançament i l'amfitrió: alguns fons canadencs poden exigir una entitat canadenca, i alguns fons europeus una d'europea. Les institucions grans s'hi afegeixen com a membres quan tinguin les seves aprovacions. Mentre l'associació no existeixi, els membres en podrien respondre personalment, per això el pas 1 va primer."}
+    - {tag: "Pla A · quan es justifiqui", title: "Una entitat internacional sense ànim de lucre", text: "Quan els membres i el finançament ho justifiquin, es passa a una entitat internacional sense ànim de lucre, amb l'associació del pla B com a membre fundador. La forma jurídica, la seu i el calendari es decideixen amb els advocats de les institucions fundadores."}
+  table_title: "Les opcions"
   cols: ["Opció", "Rapidesa", "Qui ha d'aprovar", "Pot tenir diners i personal", "Límit principal"]
   rows:
     - ["Acord de col·laboració amb un amfitrió", "Setmanes", "El signant de cada soci", "Mitjançant el soci amfitrió", "L'amfitrió assumeix el risc financer; no és una entitat jurídica pròpia"]
-    - ["Associació catalana (pla B)", "D'1 a 3 mesos aprox.", "Només els fundadors (tres o més)", "Sí, un cop inscrita", "Dret català i espanyol; les institucions grans poden necessitar l'aprovació del seu consell per afegir-s'hi"]
+    - ["Associació a Catalunya (pla B)", "Fins a uns 3 mesos d'inscripció", "Només els fundadors (tres o més)", "Sí, un cop inscrita", "Dret català i espanyol; més fàcil per a fons europeus, els fons canadencs poden exigir una entitat canadenca"]
+    - ["Entitat sense ànim de lucre al Canadà (pla B)", "Per comprovar", "Fundadors i un consell d'almenys tres administradors", "Sí, un cop constituïda", "Normes federals o del Quebec (residència i terminis per verificar); més fàcil per a fons canadencs, els europeus poden exigir una entitat europea"]
     - ["Entitat internacional sense ànim de lucre (pla A)", "Molts mesos", "Advocats i consells de totes les entitats fundadores", "Sí", "Lenta i cara; formalitats al país escollit"]
   actions_title: "Què pot començar ja, sense esperar"
   actions:
     - "Signar l'acord de col·laboració i designar el soci amfitrió."
     - "Obrir una llista de signants fundadors i recollir cartes d'intenció."
-    - "Inscriure l'associació amb tres fundadors, i acordar com funcionaran les quotes un cop existeixi."
+    - "Decidir on es crea l'associació (Catalunya o Canadà), segons on siguin el primer finançament i l'amfitrió."
     - "Fer el primer comitè de direcció i publicar la carta."
-  note: "Segons el nostre coneixement de fonts públiques (tràmit de la Generalitat de Catalunya per inscriure associacions). Els terminis i els punts jurídics s'han de comprovar amb un advocat abans de signar res."
+  note: "Segons el nostre coneixement de fonts públiques (tràmit de la Generalitat de Catalunya per inscriure associacions; Corporations Canada per a entitats federals sense ànim de lucre). Els detalls del Canadà i del Quebec, els terminis i les normes de residència encara no s'han comprovat. Tot s'ha de confirmar amb un advocat a cada lloc abans de signar res."
 
 europe:
   kicker: Aprendre de les organitzacions de suport europees
