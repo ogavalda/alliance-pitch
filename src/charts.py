@@ -365,8 +365,8 @@ def venn_svg(cv: dict) -> str:
     words = textwrap.wrap(cv["centre"], 11)
     y0 = cy - (len(words) - 1) * 10
     tsp = "".join(f'<tspan x="{cx}" y="{y0 + k * 20}">{_esc(w)}</tspan>' for k, w in enumerate(words))
-    g.append(f'<circle cx="{cx}" cy="{cy}" r="62" fill="#93002D" stroke="#fff" stroke-width="3"/>'
-             f'<text text-anchor="middle" dominant-baseline="middle" font-size="15" font-weight="700" fill="#fff">{tsp}</text>')
+    g.append(f'<circle cx="{cx}" cy="{cy}" r="72" fill="#93002D" stroke="#fff" stroke-width="3"/>'
+             f'<text text-anchor="middle" dominant-baseline="middle" font-size="14.5" font-weight="700" fill="#fff">{tsp}</text>')
     return ('<svg viewBox="0 0 640 600" width="100%" role="img" aria-label="' + _esc(cv["roof"]) + '">' + "".join(g) + "</svg>")
 
 

@@ -1,9 +1,9 @@
 # Traducció al català de tot el text comú.
 meta:
-  title: "Aliança per a l'Energia Local: proposta preliminar"
+  title: "Aliança Internacional d'Energia Comunitària: proposta preliminar"
   description: "Proposta preliminar d'una aliança participada pels seus membres que dona als actors locals de l'energia eines i estructures de dades compartides, una taula neutral amb lideratge, una cartera de la ciència a l'acció i una incidència comuna."
   version_line: "Esborrany v0.2 · octubre de 2026"
-brand: "Aliança per a l'Energia Local"
+brand: "Aliança Internacional d'Energia Comunitària"
 nav:
   problem: "Oportunitat"
   vision: "Visió"
@@ -409,7 +409,7 @@ facilitation_detail:
 
 cover:
   roof: "Quatre forces es troben a l'Aliança"
-  centre: "Aliança per a l'Energia Local"
+  centre: "Aliança Internacional d'Energia Comunitària"
   pillars_label: "El que l'Aliança reuneix"
   pillars:
     - {title: "Eines i estructures de dades compartides", text: "Blocs oberts sobre els quals pot construir cada eina i cada cas"}
@@ -663,7 +663,7 @@ impact_detail:
     - "Comissió Europea, pàgines de comunitats energètiques: estimacions d'estalvi per a llars amb solar."
     - "Mapatge de comunitats energètiques a la UE (estudi universitari): unes 4.000 comunitats i 900.000 membres."
     - "pv magazine (2026), comunitats energètiques italianes arriben a 303 MW; MITECO (2026) i Redeia (2026) per a Espanya."
-    - "Anàlisi de mercat, Aliança per a l'Energia Local (2026): escenari de temps estalviat i mides de cooperatives."
+    - "Anàlisi de mercat, Aliança Internacional d'Energia Comunitària (2026): escenari de temps estalviat i mides de cooperatives."
 
 legal:
   kicker: "Per començar"

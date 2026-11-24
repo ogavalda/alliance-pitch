@@ -2,11 +2,11 @@
 # Tip: keep each value on one line inside double quotes, or use the  >-  folded style.
 
 meta:
-  title: "Alliance for Local Energy: a draft proposal"
+  title: "International Community Energy Alliance: a draft proposal"
   description: "A draft proposal for a member-owned alliance that gives local energy actors shared tools and data structures, a neutral table with leadership, a science-to-action pipeline and common advocacy."
   version_line: "Draft v0.2 · October 2026"
 
-brand: "Alliance for Local Energy"
+brand: "International Community Energy Alliance"
 
 # Logos shown in the hero band and the footer.
 # Put the image files in assets/logos/ (PNG, SVG or JPG) and set `file` to the file name.
@@ -500,7 +500,7 @@ facilitation_detail:
 
 cover:
   roof: "Four strengths meet in the Alliance"
-  centre: "Alliance for Local Energy"
+  centre: "International Community Energy Alliance"
   pillars_label: "What the Alliance brings together"
   pillars:
     - {title: "Shared tools and data structures", text: "Open building blocks every tool and case can build on"}
@@ -754,7 +754,7 @@ impact_detail:
     - "European Commission, energy communities pages: savings estimates for households with solar."
     - "Mapping of energy communities in the EU (university study): about 4,000 communities and 900,000 members."
     - "pv magazine (2026), Italian energy communities reach 303 MW; MITECO (2026) and Redeia (2026) for Spain."
-    - "Market analysis, Alliance for Local Energy (2026): scenario of time saved and community cooperative sizes."
+    - "Market analysis, International Community Energy Alliance (2026): scenario of time saved and community cooperative sizes."
 
 legal:
   kicker: "Getting started"
