@@ -5,5 +5,9 @@
   <div class="timeline reveal">
     {% for p in s.phases %}<div class="ph"><small>{{ p.when }}</small><h3>{{ p.title }}</h3><p>{{ p.text }}</p></div>{% endfor %}
   </div>
+  {% if s.start %}<h3 style="margin-top:26px">{{ s.start_title }}</h3>
+  <div class="grid g3 reveal">{% for c in s.start %}<div class="card"><b>{{ c.title }}</b><p>{{ c.text }}</p></div>{% endfor %}</div>
+  <h3 style="margin-top:22px">{{ s.targets_title }}</h3>
+  <div class="chips">{% for x in s.targets %}<span class="tab" style="cursor:default">{{ x }}</span>{% endfor %}</div>{% endif %}
   <p class="note">{{ s.note }}</p>
 </section>

@@ -19,6 +19,9 @@ nav:                           # label of each chapter in the top bar (keys = te
   problem: "Opportunity"
   vision: "Vision"
   impact: "Impact"
+  europe: "Europe's support"
+  offer: "What we offer"
+  revenue: "Revenue services"
   legal: "Legal form"
   why: "Why now"
   ebc_summary: "IEA Annex"
@@ -95,6 +98,12 @@ problem:
     - {title: "Leadership at the table", text: "City, utility, financiers, developers and neighbours around one project, with a trusted panel of experts leading and guiding the process until it advances."}
     - {title: "Science that reaches action", text: "Research centres and real projects bid together, so methods are tested where they matter and projects get the best science."}
     - {title: "Advocacy", text: "Communities, cities and grid operators speaking together, with evidence, carry further."}
+  gaps_title: "Four gaps that connected work can close"
+  gaps:
+    - {title: "Tools that talk to each other", text: "A review of 35 planning and management tools for energy communities found that each has its own data model and indicators, and for 29 of them the data model is not publicly documented. With a shared foundation, cases compare and a community that changes tool keeps its history."}
+    - {title: "Finance that fits community scale", text: "Projects are small for lenders, every share offering carries fixed legal costs, and programs often leave out co-operatives or informal groups. Pooled finance and bankable data open the door, and impact that matters to communities, such as local income and acceptance, can finally be counted."}
+    - {title: "Rules that travel", text: "Energy sharing, market access, securities and co-operative law vary by country, province and region. A shared comparison of rules makes legal and policy knowledge cheaper and less local."}
+    - {title: "Services designed once", text: "One-stop shops and umbrellas each design their own technical, social and governance services. A shared catalogue lets lessons on flexibility, district heating and cooling or community-led renovation travel between countries."}
   note: "Based on our review of recent literature on energy communities (2021 to 2026)."
 
 landscape_summary:
@@ -143,13 +152,6 @@ landscape:
   split_core: "Core (shared, versioned, open): ontology, capture and provenance rules, indicator definitions, case-record format."
   split_yours: "Yours: front ends, back ends, algorithms, local extras (with a clear prefix), and whatever you choose to exchange."
 
-members_summary:
-  kicker: "Who takes part"
-  title: "Six kinds of members, one shared table."
-  lead: "Community and cooperative networks, cities and regions, research centres, grid operators and utilities, funders, and practitioners with experience in the Global South. Each brings something the others lack."
-  families: ["Community networks", "Cities and regions", "Research centres", "Grid operators and utilities", "Funders and institutions", "Practitioners in the Global South"]
-  note: "Partnerships with the Global South, starting with Azimut 360 (microgrids and energy communities in sub-Saharan Africa), are described in the annex. What each member brings and gets, and the founders' package, are there too."
-
 alliance:
   kicker: "The proposal"
   title: "Four strengths, one alliance."
@@ -162,7 +164,7 @@ alliance:
     - title: "Facilitation and leadership"
       tagline: "A neutral table, and someone to lead it: a panel of experts that guides the process until things advance."
       detail: "A trusted intermediary that convenes the people a local energy project needs: neighbours and community groups, the city, the utility or grid operator, financiers, developers, engineers and lawyers. The table alone is not enough. Without leadership and guidance the intermediary loses its role and nothing advances, so the Alliance would also provide the leadership: a panel of experts drawn from member teams who lead and guide the transition to local systems. They run workshops, map each party's problems, agree the rules of the game (roles, confidentiality, data), coordinate working groups, keep the process moving towards a decision and document the result. They do not design the project or sell engineering; members' experts contribute the advice."
-      value: "Value: projects that would stall between planning and implementation get a shared diagnosis, a leader and an agreed way forward, and each organisation sees the others' barriers without giving up its own business. We already do this: see the next chapter."
+      value: "Value: projects that would stall between planning and implementation get a shared diagnosis, a leader and an agreed way forward, and each organisation sees the others' barriers without giving up its own business. We already do this: see the Leadership chapter."
     - title: "Science-to-action pipeline"
       tagline: "Research and real projects together: turning science and ideas into funded action, with the right partners."
       detail: "Science and real projects side by side. A proposal desk that watches calls, matches partners, offers consortium templates and a rotation rule so competing centres can cooperate. Shared deliverable and reporting templates. Joint proposals with partners in the Global South."
@@ -300,6 +302,13 @@ roadmap:
     - {when: "2027–2029 · Prove", title: "Show it works", text: "Annex prototype and case studies, proposal desk live, first processes led by the expert panel, first training, first North-South case records and position papers."}
     - {when: "2030–2032 · Scale", title: "Become the default", text: "Release cycle, regional hubs, framework agreements with cities and grid operators, a training and technology-transfer programme with southern partners."}
     - {when: "2033–2036 · Institutionalise", title: "Stable reference", text: "Standards cited by funders and regulators, stable multi-year funding."}
+  start_title: "It builds on work already under way"
+  start:
+    - {title: "Research engine", text: "A proposed IEA EBC Annex on enabling community energy through digital platforms, submitted with support from Natural Resources Canada; the open-source TOOLS4Cities urban digital-twin platform; and a proposed NSERC Alliance Society program led from Concordia's Next-Generation Cities Institute."}
+    - {title: "Global convening", text: "A Global Expert Working Group on financing and evaluating community-led energy, proposed for June 2027 in Montréal with UN-Habitat and Indigenous Clean Energy."}
+    - {title: "Service networks", text: "European one-stop shops and energy community umbrellas, with links through partners in SOSS4EREC, COLOUR and GiDomus, the EU Peers community and the EU Citizen-led Renovation initiative (which of them join as members or partners is to be confirmed)."}
+  targets_title: "Five-year targets"
+  targets: ["500 communities assessed worldwide", "One common, up-to-date database", "Tools used across countries", "3 active research projects", "At least 3 white papers and reference guides"]
   note: "Indicative dates; they depend on funding and on the ExCo decision on the Annex proposal submitted in early October 2026 (supported by NRCan; ExCo meeting in November 2026). If approved, the Annex runs 1 year of preparation, 3 of work and 1 of reporting."
 
 status:
@@ -432,7 +441,7 @@ services:
   paid_yes_title: "Neutral paid services"
   paid_yes: ["Training and courses", "Participation in benchmarks", "Certification against the shared core", "Coordination of a facilitated process, at cost (to be discussed)"]
   paid_no_title: "Not offered"
-  paid_no: ["Anything that looks like consulting"]
+  paid_no: ["Generic consulting or bid writing for individual clients. Paid planning, flexibility and retrofit services (see Revenue services) are delivered with research centres and members, using the shared tools under licence."]
   note: "Our proposal, open to discussion. Members' views on the line between neutral and competing are one of the questions we need critique on."
 
 facilitation:
@@ -777,3 +786,103 @@ legal:
     - "Register the association with three founders, and agree how fees will work once it exists."
     - "Hold the first steering committee and publish the charter."
   note: "Our understanding from public sources (Generalitat de Catalunya procedure for registering associations). Timings and legal points must be checked with a lawyer before anything is signed."
+
+europe:
+  kicker: Learning from Europe's support organizations
+  title: Europe's support organizations already show which building blocks are missing.
+  lead: 'Two kinds of support organization have grown up in Europe: one-stop shops for building renovation and umbrella organizations for energy communities. Both are now looking for the building blocks the Alliance would offer.'
+  cards:
+  - {who: One-stop shops, title: Becoming mandatory, text: 'The recast Energy Performance of Buildings Directive (EU) 2024/1275 requires at least one one-stop shop per 80,000 inhabitants, per region, or within 90 minutes of average travel; the transposition deadline was 29 May 2026. Commission Recommendation (EU) 2026/536 gives priority to vulnerable households. Practice is maturing: EU Peers (LIFE, to 2029) and GiDomus in Girona (104 homes in Banyoles).'}
+  - {who: Umbrellas, title: 'Many communities, one framework', text: 'SOSS4EREC (LIFE, started October 2026) works with four very different umbrellas that support 175 energy communities, about 700 across the consortium, and co-designs a catalogue of 34 services (25 technical, 5 social, 4 governance) for five project types. Their shared weakness is finding the right approach and staying financially sustainable.'}
+  - {who: Where they meet, title: Renovation and energy communities converge, text: 'The EU Citizen-led Renovation initiative helps energy communities organize renovation for their members and is scaling up through a network of 11 organizations. Within it, COLOUR (Fundació Europace, OECOOP, IREC) offers a five-step path from exploring the opportunity to verifying the works.'}
+  implications_title: What this means for the Alliance
+  implications:
+  - {title: Build the blocks once, text: 'Both kinds of organization need building and project data, finance packages, legal templates, engagement methods and quality monitoring.'}
+  - {title: Cut the cost of services, text: 'Their weakest point is financial sustainability, not ideas. Shared tools, templates and mutualised services lower the cost of each service they deliver.'}
+  - {title: Keep the catalogue modular, text: 'They differ in legal form and maturity, so each organization adopts what fits its stage.'}
+  - {title: Treat retrofit as community energy, text: 'The Alliance links one-stop shops with energy community umbrellas, in Europe and in Canada, where comparable structures are still emerging.'}
+  note: Full text, projects and links are in the annex.
+europe_detail:
+  kicker: 'Europe''s support organizations: detail'
+  title: One-stop shops, umbrellas and where the two meet.
+  sections:
+  - title: One-stop shops for building renovation
+    paras: ['The recast Energy Performance of Buildings Directive (EU) 2024/1275 makes them mandatory: Member States must provide at least one one-stop shop per 80,000 inhabitants, per region, or within 90 minutes of average travel time, and the transposition deadline was 29 May 2026. Commission Recommendation (EU) 2026/536 of 10 March 2026 gives practical guidance on their services and gives priority to vulnerable households, people affected by energy poverty and social housing residents.', 'The EU Peers project (LIFE, September 2023 to August 2026, continued as EU Peers II until 2029) built a knowledge hub and learning labs on business models, alliances and partnerships, homeowner activation, impact monitoring, multilevel governance, energy poverty and quality of works, including how quality data supports bank financing. In the province of Girona, the GiDomus LIFE project led by Fundació Europace (October 2024 to September 2027) is refining a complete one-stop-shop service with administrative,
+        technical and financial support through local offices, including the renovation of 104 homes in Banyoles.']
+  - title: Umbrella organizations for energy communities
+    paras: ['Umbrellas, second-level co-operatives and regional agencies support many energy communities under a common governance and service framework. The SOSS4EREC LIFE project, which started in October 2026, works with four very different umbrellas (a rural local action group, a young co-operative spun off from a consultancy, a regional second-degree co-operative and a regional public energy agency) that support 175 energy communities and reach about 700 across the consortium. It co-designs a catalogue of 34 services (25 technical, 5 social and 4 governance) for five project types: flexibility, district heating and cooling, building retrofit, collective PV self-consumption and storage.', 'The umbrellas share three weaknesses: finding service approaches and alliances that fit their context, keeping their skills up in a field that needs continuous innovation, and staying financially sustainable when communities have little money, especially in the development phase and for governance
+        and social services.']
+  - title: Where the two meet
+    paras: ['The EU Citizen-led Renovation initiative, run by the European Commission''s Directorate-General for Energy, helps energy communities organize renovation for their members and is now scaling up through a network of 11 organizations. Within it, the COLOUR project of Fundació Europace, OECOOP and IREC helps energy communities design and carry out collective renovation, with technical, administrative and legal, financial and social support, training, and a five-step path from exploring the opportunity to verifying the works.']
+  links_title: Further reading
+  links:
+  - {label: EU guidance on one-stop shops for building renovation (Recommendation (EU) 2026/536), url: 'https://managenergy.ec.europa.eu/publications/eu-publishes-guidance-one-stop-shops-building-renovation_en'}
+  - {label: EU Peers knowledge hub, url: 'https://www.eu-peers.eu/knowledge-hub'}
+  - {label: GiDomus LIFE project, url: 'https://en.gidomus.cat/'}
+  - {label: COLOUR project, url: 'https://www.fundacioeuropace.com/colour'}
+  - {label: EU Citizen-led Renovation initiative, url: 'https://citizen-led-renovation.ec.europa.eu/index_en'}
+offer:
+  kicker: What the Alliance offers
+  title: Five service lines, from first idea to daily operation, on one shared data commons.
+  lead: A feasibility study, a finance application and an operating dashboard draw on the same data. Members deliver services to communities; the Alliance develops, tests and shares the building blocks they use, so that no community, umbrella organization or city has to build them alone.
+  lines:
+  - {n: 1, title: Digital tools and platforms, text: 'An open data commons and a common case record; interoperable digital twins that screen options in days and model energy sharing and grid hosting; operation tools; a low-data version for small, remote and Global South communities; building-stock screening for collective renovation; case management for one-stop shops and umbrellas.'}
+  - {n: 2, title: Financing support, text: 'Pooled finance that raises community capital once and lends to many projects; an investor-grade project package from the digital twin; frame agreements with ethical banks, credit unions and crowdfunding platforms; impact metrics funders accept; aggregation of small projects into portfolios; verified quality data for lenders.'}
+  - {n: 3, title: Legal and policy support, text: 'Model statutes, bylaws and share-offering templates for each jurisdiction; a living comparison of energy sharing, market access, securities, co-operative and tax rules; policy evidence for members'' advocacy; permit checklists and model contracts, including for multi-owner and rented buildings.'}
+  - {n: 4, title: Technical services for growing project types, text: 'Tested procedures and business models beyond rooftop solar: collective self-consumption, storage, demand flexibility, district heating and cooling, retrofit and community-led renovation, shared electric mobility. Includes a collective renovation pathway and networks of accredited contractors.'}
+  - {n: 5, title: Social and governance services, text: 'Citizen engagement and awareness raising, activation and co-design with local working groups, inclusive governance and board training, measures against energy poverty and for vulnerable households, and training for citizens, professionals and boards. These make projects accepted, fair and lasting, and they are the least shared today.'}
+  more_link: Full list of services in the annex
+  table_title: The trusted table and mutualised services
+  table_text: Members can pool insurance, joint procurement, legal services and finance frame agreements to cut costs for small communities. Around one project at a time, a panel of experts brings the city, the utility, financiers, developers and residents to a decision; research centres and projects bid together so methods are tested where they matter; and members speak with evidence when they choose to speak together.
+  support_title: Support for the support organizations
+  support_items: ['Business models and sustainability plans for public, private and hybrid organizations.', 'Peer-to-peer workshops, mentoring and communities of practice between mature and emerging organizations, across countries.', 'A shared catalogue of service procedures, with costs and results, so an organization adopts a tested service instead of designing it.', Help to combine the renovation one-stop shop and energy community umbrella roles where policy allows.]
+  why_title: Why this alliance
+  why:
+  - {title: Neutral by design, text: 'A short charter, balanced bodies across member families and competition-law guidance, so competitors can sit at the same table. The Alliance facilitates; it never picks winners.'}
+  - {title: Open where it matters, text: 'The data model, case record and service templates are open by default; members keep their proprietary tools and business.'}
+  - {title: No competition with members, text: The Alliance builds shared building blocks; members deliver services to communities.}
+  - {title: Digital and social together, text: Most initiatives offer either tools or support services. The Alliance links the two around the same data and the same project record.}
+  - {title: Global from the start, text: 'Canadian, European and Global South members learn from each other''s rules, finance models and service catalogues.'}
+offer_detail:
+  kicker: 'What the Alliance offers: detail'
+  title: The five service lines in full.
+  lines:
+  - title: 1. Digital tools and platforms for planning and operation
+    items: ['An open data commons: a common data model and case record covering generation, storage, heat networks, retrofit, mobility, ownership, finance and social outcomes, so every case becomes comparable and every tool can read it.', 'Interoperable planning tools: digital twins that screen a community''s options in days (solar, wind, storage, heat pumps and district heating and cooling, retrofit, shared mobility), model energy sharing under local rules, and estimate grid hosting capacity with utilities.', 'Operation tools: monitoring that compares performance with design, flexibility and battery dispatch, and simple dashboards that show members what their project produces, saves and earns.', 'Fit for every context: a low-data version for small, remote and Global South communities, built with members such as Azimut 360.', 'Building and renovation data: building-stock screening that finds clusters of homes suited to collective renovation, links to renovation passports, and one record
+        per building from first advice to verified works.', 'Tools for support organizations: a shared client-journey and case-management module for one-stop shops and umbrellas, and quality and impact dashboards that also serve lenders and funders.']
+  - title: 2. Financing support
+    items: ['Pooled finance: models that raise community capital once and lend to many projects, while local equity and control stay local.', 'Bankable data: an investor-grade project package generated from the digital twin, cutting due-diligence time and cost.', 'Finance frame agreements with ethical banks, credit unions and crowdfunding platforms, and help matching each project stage to public funding.', 'Impact metrics funders accept: local income, jobs, emissions, acceptance and energy-poverty outcomes, measured the same way everywhere.', 'Aggregation: bundling small renovation and energy projects into portfolios large enough for lenders, combining public grants, green loans and community crowdfunding.', 'Quality data for finance: verified works and measured savings that lenders can rely on, building on the EU Peers work on quality and bank financing.']
+  - title: 3. Legal and policy support
+    items: ['Model statutes, bylaws and share-offering templates for each jurisdiction, so a new community does not pay for the same legal work again.', 'Rules compared: a living comparison of energy sharing, market access, securities, co-operative and tax rules across countries and provinces.', 'Policy evidence: white papers and reference guides that members use in their own advocacy, and common positions where members agree.', 'Permits, licences and contracts: permit checklists, model contracts for collective renovation in multi-owner and rented buildings, and review of works and financing agreements.']
+  - title: 4. Technical services for growing project types
+    intro: 'Tested service procedures and business models for the project types communities now take on beyond rooftop solar: collective PV and self-consumption, storage, demand flexibility and aggregation, district heating and cooling (including low-temperature networks), building retrofit and community-led renovation, and shared electric mobility. One-stop shops that already offer a service share it; those that do not can adopt it.'
+    items: ['A collective renovation pathway: from diagnosis and a free pre-study, through the community''s decision, selection of local professionals and comparison of quotes, to monitoring and verification of the works, as in COLOUR.', 'Trusted contractors: networks of accredited professionals and quality assurance, so communities can trust contractors and lenders can trust results.']
+  - title: 5. Social and governance services
+    intro: Citizen engagement and awareness raising from set-up to operation, inclusive governance and board training, measures against energy poverty and for vulnerable households, and support for cooperation between communities.
+    items: ['Activation and co-design: homeowner and member activation campaigns, and local working groups that bring communities, citizens and public administrations into service design, as in SOSS4EREC.', 'Energy poverty: targeted support for energy-poor and vulnerable households, with attention to gender equity.', 'Training: training for citizens, vulnerable groups, professionals and community boards.']
+revenue:
+  kicker: Services that can earn revenue
+  title: Three services show how shared tools can earn income for members and fund the commons.
+  lead: The Alliance with its associated research centres can deliver and invoice services for its members. It also maintains the shared tools and methods, trains and certifies providers, and receives a licence fee or a small share of revenue when members deliver and invoice the service.
+  fields: {how: How it works, who: Who pays, rev: Revenue, why: Why through the Alliance}
+  services:
+  - {title: District heating and cooling planning with TOOLS4Cities, tagline: 'A planning service that tells a municipality, co-operative or developer within weeks whether a neighbourhood heat network makes sense, and how to build and own it.', how: 'A digital twin of the neighbourhood from building, land and energy data; hourly heating and cooling demand today and after retrofit; supply options such as large heat pumps, geothermal, waste heat and solar thermal; network sizing and routing, including low-temperature and fifth-generation networks; costs, emissions and ownership models compared.', who: Municipalities and regional agencies preparing heat plans; co-operatives and energy communities; utilities and developers screening sites; funders who require a pre-feasibility study., rev: 'A fixed fee per pre-feasibility study, a larger fee for a detailed study with stakeholder workshops, and an annual licence for organizations that run the tool themselves. After construction, a subscription
+      for operation and monitoring.', why: 'One shared tool and data model means every study, in Canada or Europe, uses the same method, so results compare and the method improves with each case. Starting points: district energy work with the City of Montréal and the interest of European umbrellas in low-temperature networks.'}
+  - {title: Flexibility and demand response services, tagline: 'A service that turns a community''s heat pumps, batteries, electric vehicles and water heaters into flexible capacity, and earns money by using it when the grid needs it.', how: 'The operational digital twin forecasts each site''s demand and solar output; an aggregator (the community, an umbrella or a partner) shifts consumption away from peak hours and dispatches batteries within comfort limits agreed with members; results are measured and verified against a baseline.', who: 'Utilities and grid operators through demand response programs and local flexibility markets; suppliers that reduce peak purchases; and members, who lower their bills and use more of their own solar power.', rev: 'Payments for capacity and for energy shifted, shared between members and the aggregator; a service fee for forecasting, dispatch and verification; grid upgrades avoided, valued together with the utility.', why: 'Flexibility rules differ by country
+      and province. The Alliance keeps a common method for baselines and verification, a comparison of market rules, and open interfaces to member tools, so a community can offer flexibility without building its own platform.'}
+  - {title: Zero-emission retrofit and renewable integration, tagline: 'A one-stop service that takes a building or group of buildings to a zero-emission standard by bundling deep retrofit, heat pumps, on-site solar and storage, and connecting them to the community''s energy system.', how: 'Building-stock screening finds groups of similar buildings; the Urban Building Energy Retrofitting Tool in TOOLS4Cities compares packages on life-cycle cost and emissions; the service prepares a renovation passport, a bundled works package with accredited contractors, a finance plan and, where possible, community ownership of solar and storage; monitoring then verifies the savings.', who: 'Homeowners and condominium associations, social and co-operative housing providers, municipalities for public buildings, and one-stop shops that buy the analysis for their clients.', rev: 'Fees for assessment and project management; a margin on bundled procurement; performance-based fees tied to verified savings; income
+      from community-owned solar and storage, with dividends shared among members.', why: 'The recast EPBD requires one-stop shops across the EU and aims for a zero-emission building stock by 2050, so demand will grow quickly. Shared tools, contract templates and quality data let one-stop shops and umbrellas offer this at a cost small communities can afford.'}
+  note: 'None of this income is in the budget yet. It is upside to test: willingness to pay is one of the open risks we plan to check with interviews and a price test. The split between members and the Alliance (licence fee or small share) is to be agreed.'
+members_summary:
+  kicker: Who takes part
+  title: 'Six kinds of members, one shared table: what each gains and brings.'
+  lead: Each family brings something the others lack, and gains something it could not build alone.
+  cols: [Member, What it gains, What it brings]
+  rows:
+  - ['Community and co-operative networks, one-stop shops and umbrellas', 'A catalogue of tested technical, social and governance services to adopt instead of design; mutualised insurance, procurement and legal services; tools that make each new project faster and cheaper', 'Real projects and members, field experience, services to share']
+  - [Cities and regions, Screening tools for municipal hosting or co-ownership; facilitated processes that take a project to a decision; comparable impact data for climate plans, 'Sites, buildings, local data, convening power']
+  - [Grid operators and utilities, Community projects designed with grid constraints in mind; hosting-capacity and flexibility methods; a single counterpart for many small projects, 'Grid data and models, connection know-how']
+  - [Research centres, Real projects to test methods; joint bids with practitioners; a common data model that makes studies comparable, 'Tools, methods, trainees, scientific credibility']
+  - [Funders and finance institutions, 'A pipeline of investment-ready projects, standard project packages, and impact metrics measured the same way across countries', 'Capital, program design, frame agreements']
+  - [Practitioners in the Global South, Tools and services adapted to low-data and off-grid contexts; partners for joint projects and funding, 'Experience with microgrids and energy access, new markets for the commons']
+  note: Partnerships with the Global South, starting with Azimut 360 (microgrids and energy communities in sub-Saharan Africa), are described in the annex. What each member brings and gets, and the founders' package, are there too.
